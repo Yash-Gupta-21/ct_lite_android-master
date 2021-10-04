@@ -1,0 +1,228 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:inputType="textCapSentences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sort_by"
+                android:textSize="12sp"
+                android:layout_marginLeft="12dp"
+                android:padding="14dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/filterDateAscending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pickup Date"
+                android:inputType="textCapSentences"
+                android:textSize="12sp"
+                android:layout_marginLeft="12dp"
+                android:padding="14dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/filterDateDescending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pickup Date Descending"
+                android:inputType="textCapSentences"
+                android:textSize="12sp"
+                android:layout_marginLeft="12dp"
+                android:padding="14dp"/>
+
+            <View
+                android:id="@+id/viewLineSatelite"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:inputType="textCapSentences"
+                android:id="@+id/filterNoOfBagAsc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. of Bags Ascending"
+                android:textSize="12sp"
+                android:layout_marginLeft="12dp"
+                android:padding="14dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:inputType="textCapSentences"
+                android:id="@+id/filterNoOfBagD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. of Bag Descending"
+                android:textSize="12sp"
+                android:layout_marginLeft="12dp"
+                android:padding="14dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:inputType="textCapSentences"
+                android:id="@+id/filterNetWeightAsc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Net Weight Ascending"
+                android:textSize="12sp"
+                android:layout_marginLeft="12dp"
+                android:padding="14dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:inputType="textCapSentences"
+                android:id="@+id/filterNetWeightD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Net Weight Descending"
+                android:textSize="12sp"
+                android:layout_marginLeft="12dp"
+                android:padding="14dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+           <!-- <TextView
+                android:inputType="textCapSentences"
+                android:id="@+id/filterHarvestTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/harvest_label"
+                android:textSize="12sp"
+                android:layout_marginLeft="12dp"
+                android:padding="14dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+
+            <TextView
+                android:inputType="textCapSentences"
+                android:id="@+id/filterHealthCardTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/soil_health_card_label"
+                android:textSize="12sp"
+                android:layout_marginLeft="12dp"
+                android:padding="14dp"/>
+
+            <View
+                android:id="@+id/viewLineHealthCard"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+
+            <TextView
+                android:inputType="textCapSentences"
+                android:id="@+id/filterInputTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/input_cost_label"
+                android:textSize="12sp"
+                android:layout_marginLeft="12dp"
+                android:padding="14dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+
+            <TextView
+                android:inputType="textCapSentences"
+                android:id="@+id/filterResourceTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/resources_used_label"
+                android:textSize="12sp"
+                android:layout_marginLeft="12dp"
+                android:padding="14dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+-->
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

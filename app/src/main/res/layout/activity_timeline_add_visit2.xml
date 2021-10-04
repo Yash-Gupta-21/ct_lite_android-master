@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_add_visit_full_lay_timeline"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SubmitVisitForm.TimelineAddVisitActivity2">
+
+    <include
+        android:id="@+id/toolbar_actionbar_timeline_visit"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_actionbar_timeline_visit">
+
+        <LinearLayout
+            android:layout_below="@+id/toolbar_actionbar_timeline_visit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/pendingActivityLayout"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Pending Activities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/farm_image1_timeline_visit"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/_3sdp"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12ssp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:id="@+id/pendingActivityRecycler"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/images_to_upload_lieanr_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/farm_image1_timeline_visit"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="@dimen/_4sdp"
+                                android:paddingBottom="@dimen/_4sdp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/photo_big" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/farm_image1_timeline_visit"
+                                android:layout_centerHorizontal="true"
+                                android:padding="@dimen/_5sdp"
+                                android:text="@string/visit_farm_image1_msg"
+                                android:textColor="@color/yel_gre_mix_dark"
+                                android:textSize="@dimen/_13ssp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/farm_image2_timeline_visit"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="@dimen/_4sdp"
+                                android:paddingBottom="@dimen/_4sdp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/photo_big" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/farm_image2_timeline_visit"
+                                android:layout_centerHorizontal="true"
+                                android:padding="@dimen/_5sdp"
+                                android:text="@string/visit_farm_image2_msg"
+                                android:textColor="@color/yel_gre_mix_dark"
+                                android:textSize="@dimen/_13ssp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/farm_image3_timeline_visit"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="@dimen/_4sdp"
+                                android:paddingBottom="@dimen/_4sdp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/photo_big" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/farm_image3_timeline_visit"
+                                android:layout_centerHorizontal="true"
+                                android:padding="@dimen/_5sdp"
+                                android:text="@string/visit_farm_and_farmer_image_msg"
+                                android:textColor="@color/yel_gre_mix_dark"
+                                android:textSize="@dimen/_13ssp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/farm_image4_timeline_visit"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="@dimen/_4sdp"
+                                android:paddingBottom="@dimen/_4sdp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/photo_big" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/farm_image4_timeline_visit"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:gravity="center"
+                                android:padding="@dimen/_5sdp"
+                                android:text="@string/visit_selfie_famer_image_msg"
+                                android:textColor="@color/yel_gre_mix_dark"
+                                android:textSize="@dimen/_13ssp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/extra_img_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:gravity="center">
+
+
+                        <ImageView
+                            android:id="@+id/farm_image5_timeline_visit"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/_80sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/photo_big" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:gravity="center">
+
+
+                        <ImageView
+                            android:id="@+id/farm_image6_timeline_visit"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/_80sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="@dimen/_7sdp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/photo_big" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/add_more_img_butt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/ic_add_circle_outline_dark_grey_black_24dp"
+                    android:padding="@dimen/_5sdp"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/hidden_linear_extra_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/farm_image5"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="@dimen/_7sdp"
+                                android:paddingBottom="@dimen/_7sdp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/photo_big" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/farm_image5"
+                                android:layout_centerHorizontal="true"
+                                android:padding="@dimen/_5sdp"
+                                android:text="Extra Farm Image1"
+                                android:textColor="@color/yel_gre_mix_dark"
+                                android:textSize="@dimen/_13ssp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/farm_image6"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="@dimen/_7sdp"
+                                android:paddingBottom="@dimen/_7sdp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/photo_big" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/farm_image6"
+                                android:layout_centerHorizontal="true"
+                                android:padding="@dimen/_5sdp"
+                                android:text="Extra Farm Image2"
+                                android:textColor="@color/yel_gre_mix_dark"
+                                android:textSize="@dimen/_13ssp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cpcCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:elevation="@dimen/_1sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_activity_description_cpc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/intense_li8_new_theme_back"
+                        android:padding="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/cpcTitleTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/grade_label"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/cpc_activity_action_instructions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cpcTitleTv"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="@string/visit_cpc_msg"
+                            android:textSize="@dimen/_11ssp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/cpc_linear_lay_timeline_visit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rel_activity_description_cpc"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:text="@string/grade_label"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <Spinner
+                            android:id="@+id/cpcSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_weight=".5"
+                            android:prompt="@string/grade_prompt" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:id="@+id/gradeLayoutStar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cpc_linear_lay_timeline_visit"
+                        android:orientation="horizontal">
+                        <RatingBar
+                            android:scaleX="0.7"
+                            android:scaleY="0.7"
+                            android:id="@+id/ratingGrade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:numStars="4"
+                             />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/visitActivityRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"></androidx.recyclerview.widget.RecyclerView>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/act_pres_submit_timeline_visit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fabParentVisitAct"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/button_background_color"
+                android:gravity="center"
+                android:padding="@dimen/_9sdp"
+                android:text="@string/submit"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/_15ssp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <uk.co.senab.photoview.PhotoView
+        android:elevation="@dimen/_24sdp"
+        android:id="@+id/imagefull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/app_tour_floating_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:fab_colorNormal="@color/darkgreen"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="45dp"
+        fab:menu_animationDelayPerItem="50"
+        android:visibility="invisible"
+        android:src="@drawable/fab_add"
+
+        />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fabParentVisitAct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="@dimen/_45sdp"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="@color/darkgreen"
+        fab:menu_colorPressed="@color/new_theme"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_showShadow="true">
+
+
+
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabChildAddIpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pest_management"
+            app:fab_colorNormal="@color/darkgreen"
+            app:fab_colorPressed="@color/new_theme"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_label="@string/add_agri_input"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_size="mini" />
+
+        <!-- <com.github.clans.fab.FloatingActionButton
+             android:id="@+id/fabChildAddCpc"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/ic_grade_24dp"
+             app:fab_colorNormal="@color/darkgreen"
+             app:fab_colorPressed="@color/new_theme"
+             app:fab_colorRipple="#99FFFFFF"
+             app:fab_hideAnimation="@anim/fab_scale_down"
+             app:fab_showAnimation="@anim/fab_scale_up"
+             app:fab_size="mini"
+             fab:fab_label="@string/grade_label" />-->
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabChildAddSml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_soil_moisture"
+            app:fab_colorNormal="@color/darkgreen"
+            app:fab_colorPressed="@color/new_theme"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_size="mini"
+            fab:fab_label="@string/soil_moisture_level_label" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabChildViewComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_insert_comment_24dp"
+            app:fab_colorNormal="@color/darkgreen"
+            app:fab_colorPressed="@color/new_theme"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_size="mini"
+            fab:fab_label="@string/add_comment_label" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/connectivityLine"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <include
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adLayout"
+        layout="@layout/ad_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

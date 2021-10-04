@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubmitPld.PldConfirmationActivity">
+
+    <include
+        android:id="@+id/toolbar_setting"
+        layout="@layout/my_toolbar_for_pld_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_below="@id/toolbar_setting"
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/rel_pld_confirmation_instructions"
+        android:layout_width="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/rel_pld_confirmation_inst_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_pld_details_label"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_13sdp"/>
+        <TextView
+            android:id="@+id/germination_text_instructions"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@id/rel_pld_confirmation_inst_title"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/_11ssp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/please_enter_pld_area_and_its_reason_in_the_fields_mentioned_below_label"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:id="@+id/lin_eff_area_lay"
+        android:layout_below="@id/rel_pld_confirmation_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="@dimen/_10sdp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/effective_farm_area_label"/>
+
+        <TextView
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/eff_farm_area_tv"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pld_acres_and_reason_linear_lay"
+        android:layout_below="@id/lin_eff_area_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/pld_acres_label"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_weight=".4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        />
+                    <EditText
+                        android:id="@+id/pld_area_in_acre"
+                        android:inputType="numberDecimal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pld_reason_layout"
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:padding="@dimen/_10sdp"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="@string/reason_for_pld_label"
+                        android:layout_weight=".4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        />
+                    <EditText
+                        android:id="@+id/pld_reason_for_damage"
+                        android:inputType="textAutoComplete"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"/>
+                </LinearLayout>
+
+                <AutoCompleteTextView
+                    android:visibility="gone"
+                    android:id="@+id/autoCompleteTextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="AutoCompleteTextView" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:background="@color/button_background_color"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/button_text_color"
+        android:id="@+id/submit_pld_area"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15ssp"
+        android:padding="@dimen/_9sdp"
+        android:text="@string/submit_label"/>
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:id="@+id/pld_already_done_msg_tv"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_above="@+id/submit_pld_area"
+        android:text="@string/pld_already_submitted_for_this_farm_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/progressBar_cyclic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

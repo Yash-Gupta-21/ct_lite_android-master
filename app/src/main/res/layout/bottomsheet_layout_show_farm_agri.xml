@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/agriBottomLayout"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cr_invoice_save_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-10dp"
+        app:cardCornerRadius="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="1dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/colorPrimaryDark"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:id="@+id/totalInputTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:shadowColor="@color/black"
+                        android:layout_marginLeft="1dp"
+                        android:textSize="@dimen/_15ssp"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="Total Inputs"/>
+
+
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_3sdp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:drawableLeft="@drawable/ic_crop"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".45"
+                        android:text="Total Inputs"></TextView>
+                    <TextView
+                        android:text="  :  "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/totalInputTv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".55"
+                        android:text="0"></TextView>
+
+
+                </LinearLayout>-->
+
+
+
+
+                <View
+                    android:background="@color/grey5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:padding="@dimen/_2sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="Expected Expense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_3sdp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:drawableLeft="@drawable/ic_crop"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".45"
+                        android:text="Total Exp. Amount"></TextView>
+                    <TextView
+                        android:text="  :  "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/totalExpQty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".55"
+                        android:text="0"></TextView>
+
+
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/chartExpected"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                     />
+
+                <View
+                    android:background="@color/grey5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"/>
+                <TextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:padding="@dimen/_2sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="Actual Expense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_3sdp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:drawableLeft="@drawable/ic_crop"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".45"
+                        android:text="Total Act. Amount"></TextView>
+                    <TextView
+                        android:text="  :  "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/totalActQty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".55"
+                        android:text="0"></TextView>
+
+
+                </LinearLayout>
+
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/chart"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/timeline_view_activity_parent_rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_20sdp"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_20sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_full_screen_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_full"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/new_theme"/>
+            
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/timeline_view_activity_full_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar_full_screen_dialog"
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/_5sdp">
+
+        <androidx.core.widget.NestedScrollView
+            android:paddingBottom="@dimen/_50sdp"
+            android:id="@+id/whole_nested_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/timeline_view_activity_inner_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/label_all_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/li8_new_theme_back"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/calendar_activity_details_label"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="@dimen/_15ssp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_farm_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_farm_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/label_all_details"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:background="@color/white"
+                        android:padding="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_farm_dtls_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/farm_detail_label"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_farm_dtls_label">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/rounded_farm_image"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/rounded_farm_image"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_lot_no_cal_act_label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_4sdp"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="@string/farm_id_label"
+                                        android:textColor="#696969" />
+
+                                    <TextView
+                                        android:id="@+id/tv_lot_no_cal_act_deatil"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_2sdp"
+                                        android:layout_toRightOf="@+id/tv_lot_no_cal_act_label"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="-"
+                                        android:textColor="@color/black" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <TextView
+                                        android:id="@+id/tv_farmer_name_cal_act_label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_4sdp"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="Farmer Name :"
+                                        android:textColor="#696969" />
+
+                                    <TextView
+                                        android:id="@+id/tv_farmer_name_cal_act_detail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_2sdp"
+                                        android:layout_toRightOf="@+id/tv_farmer_name_cal_act_label"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="-"
+                                        android:textColor="@color/black" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_activity_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rel_farm_details"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:background="@color/white"
+                        android:padding="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_activity_dtls_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Activity Details"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <!--Inner Activity Details Layout-->
+                        <RelativeLayout
+                            android:id="@+id/rel_activity_details_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_activity_dtls_label">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/rounded_act_image"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:layout_toRightOf="@id/rounded_act_image"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_3sdp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_activity_name_cal_act_label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Actiivty :"
+                                        android:textColor="#696969" />
+
+
+                                    <TextView
+                                        android:id="@+id/tv_activity_name_cal_act_deatail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_2sdp"
+                                        android:layout_toRightOf="@+id/tv_activity_name_cal_act_label"
+                                        android:text="-"
+                                        android:textColor="@color/black" />
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_date_cal_act_label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Date:"
+                                        android:textColor="#696969" />
+
+                                    <TextView
+                                        android:id="@+id/tv_date_cal_act_detail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginLeft="@dimen/_2sdp"
+                                        android:layout_marginTop="0dp"
+                                        android:layout_toRightOf="@+id/tv_date_cal_act_label"
+                                        android:text="-"
+                                        android:textColor="@color/black" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_desc_cal_act_label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Description :"
+                                        android:textColor="#696969" />
+
+                                    <TextView
+                                        android:id="@+id/tv_desc_cal_act_details"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@+id/tv_desc_cal_act_label"
+                                        android:text="-"
+                                        android:textColor="@color/black" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rel_activity_details_lay">
+
+                            <TextView
+                                android:id="@+id/tv_activity_chem_dtls_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Chemical Details"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13ssp"
+                                android:visibility="gone" />
+
+                            <!--Inner chemical details layout-->
+                            <RelativeLayout
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@id/tv_activity_chem_dtls_label"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_3sdp">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_chem_cal_act_label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chemical : " />
+
+                                    <TextView
+                                        android:id="@+id/tv_chem_cal_act"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_2sdp"
+                                        android:layout_toRightOf="@+id/tv_chem_cal_act_label"
+                                        android:text="-"
+                                        android:textColor="@color/black" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true">
+
+                                    <TextView
+                                        android:id="@+id/tv_chem_qty_cal_act_label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="@dimen/_10sdp"
+                                        android:text="Quantity :" />
+
+                                    <TextView
+                                        android:id="@+id/tv_chem_qty_cal_act"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="@dimen/_10sdp"
+                                        android:layout_toRightOf="@+id/tv_chem_qty_cal_act_label"
+                                        android:text="-"
+                                        android:textColor="@color/black" />
+                                </RelativeLayout>
+
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:id="@+id/whole_input_rel_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+                    <!--Gone above rel lay-->
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:id="@+id/rel_for_farm_act_cal_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white">
+
+
+                        <TextView
+                            android:id="@+id/tv_input_label_act_cal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/li8_new_theme_back"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Activity Inputs"
+                            android:textColor="@color/darkgreen"
+                            android:textSize="@dimen/_15ssp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_input_label_act_cal"
+                            android:layout_marginBottom="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@id/tv_input_label_act_cal"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:id="@+id/no_of_labour_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/no_of_labour_et_label"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight=".4"
+                                        android:inputType="textEmailAddress|textAutoComplete"
+                                        android:text="Number of Labour"
+                                        android:textColor="#696969" />
+
+                                    <TextView
+                                        android:id="@+id/no_of_labour_tv_deatil"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight=".6"
+                                        android:inputType="textEmailAddress|textAutoComplete"
+                                        android:text="Number of Labour"
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/labour_cost_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/labour_total_cost_tv_label"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight=".4"
+                                        android:inputType="textEmailAddress|textAutoComplete"
+                                        android:text="Labour Total Cost"
+                                        android:textColor="#696969" />
+
+                                    <TextView
+                                        android:id="@+id/labour_total_cost_tv_detail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight=".6"
+                                        android:inputType="textEmailAddress|textAutoComplete"
+                                        android:text="Number of Labour"
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/number_of_machine_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/no_of_machine_tv_label"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight=".4"
+                                        android:inputType="textEmailAddress|textAutoComplete"
+                                        android:text="Number of Machines"
+                                        android:textColor="#696969" />
+
+                                    <TextView
+                                        android:id="@+id/no_of_machine_tv_detail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight=".6"
+                                        android:inputType="textEmailAddress|textAutoComplete"
+                                        android:text="Number of Labour"
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/machine_cost_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/total_machine_cost_label"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight=".4"
+                                        android:inputType="textEmailAddress|textAutoComplete"
+                                        android:text="Total Machine Cost"
+                                        android:textColor="#696969" />
+
+                                    <TextView
+                                        android:id="@+id/total_machine_cost_detail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight=".6"
+                                        android:inputType="textEmailAddress|textAutoComplete"
+                                        android:text="Number of Labour"
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/no_of_chemical_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/total_chemical_qty_label"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight=".4"
+                                        android:inputType="textEmailAddress|textAutoComplete"
+                                        android:text="Chemical Quantity"
+                                        android:textColor="#696969" />
+
+                                    <TextView
+                                        android:id="@+id/total_chemical_qty_detail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight=".6"
+                                        android:inputType="textEmailAddress|textAutoComplete"
+                                        android:text="Number of Labour"
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/chemical_cost_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/total_chemical_cost_tv_label"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight=".4"
+                                        android:inputType="textEmailAddress|textAutoComplete"
+                                        android:text="Total Chemical Cost"
+                                        android:textColor="#696969" />
+
+                                    <TextView
+
+                                        android:id="@+id/total_chemical_cost_tv_detail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight=".6"
+                                        android:inputType="textEmailAddress|textAutoComplete"
+                                        android:text="Number of Labour"
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/multiple_chem_dynamic_lay_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rel_for_farm_act_cal_input"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/li8_new_theme_back"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/agri_inputs"
+                            android:textColor="@color/darkgreen"
+                            android:textSize="@dimen/_15ssp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_input_label_act_cal"
+                            android:layout_marginBottom="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:id="@+id/multiple_chem_dynamic_lay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/rel_for_farm_act_cal_input"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start|center_vertical"
+                                    android:layout_marginBottom="@dimen/_3sdp"
+                                    android:drawablePadding="@dimen/_5sdp"
+                                    android:gravity="start|center_vertical"
+                                    android:text="Chemicals :-"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12ssp"
+                                    android:visibility="gone" />
+
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/_2sdp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="4"
+                                        android:gravity="center"
+                                        android:text="@string/chemical_label"
+                                        android:textColor="#696969"></TextView>
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:gravity="center"
+                                        android:inputType="number"
+                                        android:text="@string/quantity_hint"
+                                        android:textColor="#696969"
+                                        android:textSize="@dimen/_12ssp" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="2"
+                                        android:gravity="center"
+                                        android:text="@string/unit_prompt"
+                                        android:textColor="#696969"></TextView>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/_5sdp"
+                                    android:visibility="gone"
+                                    android:weightSum="10">
+
+                                    <Spinner
+
+                                        android:id="@+id/timeline_form_chemicals_spinner"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="4"></Spinner>
+
+                                    <EditText
+                                        android:id="@+id/timeline_chemi_qty_et"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:hint="e.g. 10 "
+                                        android:inputType="number"
+                                        android:textSize="@dimen/_12ssp" />
+
+                                    <Spinner
+                                        android:id="@+id/timeline_qty_unit_spinner"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="2"></Spinner>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2">
+
+                                        <TextView
+                                            android:id="@+id/add_more_chemicals"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_gravity="end"
+                                            android:layout_marginRight="@dimen/_5sdp"
+                                            android:background="@drawable/gradient_button"
+                                            android:gravity="center"
+                                            android:padding="@dimen/_10sdp"
+                                            android:text="@string/add_label" />
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+
+                                    android:id="@+id/chemical_list_recycler_details"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white">
+
+                                </androidx.recyclerview.widget.RecyclerView>
+
+
+                                <LinearLayout
+                                    android:id="@+id/linearLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"></LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/_5sdp"
+                                    android:visibility="gone"
+                                    android:weightSum="10">
+
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start|center_vertical"
+                                        android:layout_weight="5"
+                                        android:drawableLeft="@drawable/ic_water_pump_grey_24dp"
+                                        android:drawablePadding="@dimen/_5sdp"
+                                        android:gravity="start|center_vertical"
+                                        android:text="Quantity"
+                                        android:textColor="#696969"
+                                        android:textSize="@dimen/_12ssp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/farmer_reply_linear_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/multiple_chem_dynamic_lay_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/li8_new_theme_back"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/farmer_reply_hint"
+                            android:textColor="@color/darkgreen"
+                            android:textSize="@dimen/_15ssp" />
+
+                        <TextView
+                            android:id="@+id/farmer_reply_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="N/A"
+                            android:textColor="@color/dark_grey" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/images_linear_layout_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/farmer_reply_linear_lay"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/label_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/li8_new_theme_back"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/uploaded_images_label"
+                            android:textColor="@color/darkgreen"
+                            android:textSize="@dimen/_15ssp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@color/white"
+                            app:cardElevation="@dimen/_3sdp">
+
+                            <LinearLayout
+                                android:id="@+id/images_linear_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/multiple_chem_dynamic_lay"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/_5sdp"
+                                    android:weightSum="1">
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".5"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:id="@+id/timeline_form_img1"
+                                            android:layout_width="@dimen/_100sdp"
+                                            android:layout_height="@dimen/_100sdp"
+                                            android:src="@drawable/photo_big" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".5"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:id="@+id/timeline_form_img2"
+                                            android:layout_width="@dimen/_100sdp"
+                                            android:layout_height="@dimen/_100sdp"
+                                            android:src="@drawable/photo_big" />
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/_5sdp"
+                                    android:weightSum="1">
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".5"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:id="@+id/timeline_form_img3"
+                                            android:layout_width="@dimen/_100sdp"
+                                            android:layout_height="@dimen/_100sdp"
+                                            android:src="@drawable/photo_big" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".5"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:id="@+id/timeline_form_img4"
+                                            android:layout_width="@dimen/_100sdp"
+                                            android:layout_height="@dimen/_100sdp"
+                                            android:src="@drawable/photo_big" />
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/farmer_reply_linear_lay_only"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar_full_screen_dialog"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/li8_new_theme_back"
+            android:padding="@dimen/_5sdp"
+            android:text="User Reply"
+            android:textColor="@color/darkgreen"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:id="@+id/farmer_reply_tv_only"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp" />
+
+    </LinearLayout>
+
+
+   <!-- <ProgressBar
+        android:id="@+id/view_activity_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="@dimen/_20sdp"
+        android:visibility="invisible" />-->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/view_activity_progress_bar"
+        android:elevation="@dimen/_10sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/croptrails_loader2"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/connectivityLine"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <include
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adLayout"
+        layout="@layout/ad_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>

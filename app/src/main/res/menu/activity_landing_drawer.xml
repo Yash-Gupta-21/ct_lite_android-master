@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/ic_task"
+            android:title="@string/task" />
+
+        <item
+            android:id="@+id/nav_crop_cycle"
+            android:icon="@drawable/ic_cycle"
+            android:title="@string/crop_cycle" />
+        <item
+            android:id="@+id/nav_add_farm"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="@string/title_dashboard" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_vetting"
+            android:icon="@drawable/ic_checklist"
+            android:title="@string/vetting_label" />
+
+        <item
+            android:id="@+id/nav_farmers"
+            android:icon="@drawable/ic_vetting_rejected"
+            android:title="@string/rejected_farms" />
+
+
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_open_in_new_red_500_24dp"
+            android:title="@string/drawer_check_area" />
+
+
+        <item
+            android:id="@+id/nav_offline"
+            android:icon="@drawable/ic_touch_app_red_500_24dp"
+            android:title="@string/drawer_offline_mode" />
+
+        <item
+
+            android:id="@+id/nav_sv_expense"
+            android:icon="@drawable/ic_expenditure_black_24dp"
+            android:title="@string/bottom_nav_expenditure" />
+
+
+        <item
+            android:id="@+id/nav_noti"
+            android:icon="@drawable/ic_notifications_none_black_24dp"
+            android:title="@string/notification_label" />
+
+        <item
+            android:id="@+id/nav_harvest_paln"
+            android:icon="@drawable/ic_directions_bus_red_500_24dp"
+            android:title="@string/drawer_plan_harvest" />
+
+
+        <item
+            android:id="@+id/nav_show_planned_harvest"
+            android:icon="@drawable/ic_assignment_ind_red_500_24dp"
+            android:title="@string/drawer_planned_harvest" />
+
+
+
+        <item
+            android:id="@+id/crop_trac"
+            android:icon="@drawable/ic_track_crop_24px"
+            android:title="@string/crop_track_label" />
+
+        <item
+            android:id="@+id/soil_sense"
+            android:icon="@drawable/ic_iconfinder_air_soil_sensor_data_nutrient_future_farming_agriculture_4071395"
+            android:title="@string/soil_sense" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_red_500_24dp"
+            android:title="@string/drawer_settings" />
+
+        <item
+            android:id="@+id/nav_pro"
+            android:icon="@drawable/ic_iconfinder_medal_award_trophy_premium_win_first_place_19_4640282"
+            android:title="@string/want_remove_ads" />
+
+
+        <item
+            android:id="@+id/contactUs"
+            android:icon="@drawable/contact_us_icon_black_24"
+            android:title="@string/contact_us_label" />
+
+
+        <!--<item
+            android:id="@+id/queryAdd"
+            android:icon="@drawable/ic_question_fill_black_24"
+            android:title="@string/query" />-->
+
+        <item
+            android:id="@+id/signOut"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/setting_signout" />
+
+        <item
+            android:id="@+id/nav_online"
+            android:icon="@drawable/ic_autorenew_red_500_24dp"
+            android:title="@string/drawer_back_to_online" />
+
+
+
+    </group>
+
+    <!-- <item android:title="Communicate">
+         <menu>
+             <item
+                 android:id="@+id/contactUs"
+                 android:icon="@drawable/contact_us_icon_black_24"
+                 android:title="@string/contact_us_label" />
+
+
+         </menu>
+     </item>-->
+
+</menu>

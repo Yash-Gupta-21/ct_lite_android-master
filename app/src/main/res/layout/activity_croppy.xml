@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Croppy.CroppyActivity">
+
+    <include
+        android:id="@+id/toolbar_setting"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messageRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rel"
+        android:layout_below="@+id/toolbar_setting">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+<LinearLayout
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="@dimen/_5sdp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:layout_margin="@dimen/_3sdp"
+            android:elevation="@dimen/_2sdp"
+            android:maxLines="4"
+            android:padding="@dimen/_7sdp"
+            android:layout_gravity="center"
+            android:hint="Ask a question"
+            android:background="@drawable/message_edittext_background"
+            android:layout_weight=".8"
+            android:id="@+id/messageEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/sendButton"
+            ></EditText>
+
+
+        <ImageView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_gravity="bottom"
+            android:id="@+id/sendButton"
+            android:layout_weight=".2"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_send_white_24px">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <include
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adLayout"
+        layout="@layout/ad_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+</RelativeLayout>

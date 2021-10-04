@@ -1,0 +1,2142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_setting"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_setting"
+        android:paddingBottom="@dimen/_30sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/red"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <!--<CheckBox
+                    android:id="@+id/checkbox_add_farm"
+                    android:checked="true"
+                    android:text="Choose Existing Farmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />-->
+
+
+                <LinearLayout
+                    android:id="@+id/new_farmer_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/li8_new_theme_back"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:text="@string/farmer_details_label"
+                            android:textSize="@dimen/_20sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/whole_cv_farm_frag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:elevation="@dimen/_5sdp"
+                        app:cardBackgroundColor="#F8F8F8"
+                        app:cardCornerRadius="@dimen/_2sdp">
+
+
+                        <RelativeLayout
+                            android:id="@+id/add_farm_rel_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_2sdp">
+
+
+                            <ProgressBar
+                                android:id="@+id/prog_add_new_farm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:visibility="invisible" />
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/ti_name_of_farmer"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/ti_et_name_of_farmer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/farmer_name_hint"
+                                    android:inputType="textPersonName"
+                                    android:padding="8dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/phone_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ti_name_of_farmer"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:orientation="vertical">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/ti_phone"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:layout_toRightOf="@+id/countryCodePicker"
+                                    android:gravity="center"
+                                    android:visibility="gone">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/ti_et_phone2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@+id/countryCodePicker"
+                                        android:background="@null"
+
+                                        android:drawablePadding="4dp"
+                                        android:hint="@string/farmer_phone_hint"
+                                        android:inputType="number"
+                                        android:padding="8dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_15ssp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <LinearLayout
+                                    android:gravity="center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <RelativeLayout
+                                        android:id="@+id/phone_layout_inner"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.60"
+                                        android:background="@drawable/spinner_background_phone"
+                                        android:orientation="horizontal"
+                                        android:padding="2dp">
+
+                                        <com.hbb20.CountryCodePicker
+                                            android:id="@+id/countryCodePicker"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:visibility="gone"
+                                            app:ccp_showFlag="false"
+                                            app:ccp_showNameCode="false">
+
+                                        </com.hbb20.CountryCodePicker>
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/ti_et_phone"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_toRightOf="@+id/countryCodePicker"
+                                            android:background="@null"
+
+                                            android:drawablePadding="4dp"
+                                            android:hint="@string/farmer_phone_hint"
+                                            android:inputType="number"
+                                            android:padding="8dp"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_15ssp" />
+                                        <!--
+                                                                    </com.google.android.material.textfield.TextInputLayout>
+                                        -->
+
+
+                                    </RelativeLayout>
+
+                                    <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                        android:id="@+id/networkSpinner"
+                                        android:layout_width="0dp"
+                                        android:layout_height="@dimen/_37sdp"
+                                        android:layout_marginLeft="@dimen/_3sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_3sdp"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:layout_weight=".40"
+                                        android:background="@drawable/spinner_background2"
+                                        android:gravity="center_horizontal"
+                                        android:outlineProvider="background"
+                                        app:RevealEmptyText="@string/select_network"
+                                        app:ShowBorders="true" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <!-- <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                 android:id="@+id/SearchableSpinner"
+                                 android:layout_marginTop="@dimen/_100sdp"
+                                 android:layout_below="@+id/phone_layout"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 app:ShowBorders="true"
+                                 app:BordersSize="1dp"
+                                 app:RevealEmptyText="Touch to select"
+                                 app:BoarderColor="@color/colorPrimary"
+                                 app:SpinnerExpandHeight="250dp"/>
+
+                             <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                 android:id="@+id/SearchableSpinner1"
+                                 android:layout_below="@+id/SearchableSpinner"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 app:ShowBorders="true"
+                                 app:BordersSize="1dp"
+                                 app:BoarderColor="@android:color/holo_blue_light"
+                                 android:background="@drawable/spinner_background_phone"
+                                 app:SpinnerExpandHeight="0dp"/>-->
+
+
+                            <LinearLayout
+                                android:id="@+id/extraFarmerDetails"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/phone_layout"
+                                android:orientation="vertical">
+                                <!--android:visibility="gone"-->
+
+
+                                <LinearLayout
+                                    android:id="@+id/newInfoLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+
+                                    android:id="@+id/personalOuter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:id="@+id/personalAnim"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_3sdp"
+                                            android:text="@string/personal_info"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_13ssp"
+                                            android:textStyle="bold"></TextView>
+
+                                        <ImageView
+                                            android:id="@+id/personalArroImageview"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="@dimen/_3sdp"
+                                            android:src="@drawable/ic_keyboard_arrow_down_grey_24dp">
+
+                                        </ImageView>
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/personalInner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_father_name"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_5sdp"
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_father_name"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/farmer_father_name_hint"
+                                                android:inputType="textPersonName"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_2sdp"
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_date_of_birth_age"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawableRight="@drawable/ic_date_range_grey_24dp"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/age_date_of_birth"
+                                                android:inputType="date"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_dob"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_2sdp"
+                                            android:padding="2dp"
+                                            android:visibility="gone">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_date_of_birth"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:focusable="false"
+                                                android:hint="@string/date_of_birth_label"
+                                                android:inputType="date"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_7sdp"
+                                            android:layout_marginRight="@dimen/_3sdp"
+                                            android:background="@drawable/spinner_background_phone"
+                                            android:orientation="horizontal"
+                                            android:padding="@dimen/_1sdp"
+                                            android:weightSum="1">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginLeft="@dimen/_2sdp"
+                                                android:gravity="center_vertical"
+                                                android:text="@string/gender"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_13ssp"
+                                                android:textStyle="bold"></TextView>
+
+                                            <RadioGroup
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:gravity="center_vertical"
+                                                android:orientation="horizontal"
+                                                android:weightSum="1">
+
+                                                <RadioButton
+                                                    android:id="@+id/maleRadio"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="@dimen/_2sdp"
+                                                    android:text="@string/male_label" />
+
+                                                <RadioButton
+                                                    android:id="@+id/femaleRadio"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="@dimen/_2sdp"
+                                                    android:text="@string/female_label" />
+
+                                                <RadioButton
+                                                    android:id="@+id/otherRadio"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="@dimen/_2sdp"
+                                                    android:text="@string/other_label" />
+                                            </RadioGroup>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_7sdp"
+                                            android:layout_marginRight="@dimen/_3sdp"
+                                            android:background="@drawable/spinner_background_phone"
+                                            android:orientation="horizontal"
+                                            android:padding="@dimen/_1sdp"
+                                            android:weightSum="1">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginLeft="@dimen/_2sdp"
+                                                android:gravity="center_vertical"
+                                                android:text="Literacy"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_13ssp"
+                                                android:textStyle="bold"></TextView>
+
+                                            <RadioGroup
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:gravity="center_vertical"
+                                                android:orientation="horizontal"
+                                                android:weightSum="1">
+
+                                                <RadioButton
+                                                    android:id="@+id/literateRadio"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="@dimen/_2sdp"
+                                                    android:text="Literate" />
+
+                                                <RadioButton
+                                                    android:id="@+id/illiterateRadio"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="@dimen/_2sdp"
+                                                    android:text="Illiterate" />
+                                            </RadioGroup>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_7sdp"
+                                            android:layout_marginRight="@dimen/_3sdp"
+                                            android:background="@drawable/spinner_background_phone"
+                                            android:orientation="horizontal"
+                                            android:padding="@dimen/_1sdp"
+                                            android:weightSum="1">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginLeft="@dimen/_2sdp"
+                                                android:gravity="center_vertical"
+                                                android:text="Financial status"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_13ssp"
+                                                android:textStyle="bold"></TextView>
+
+                                            <RadioGroup
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:gravity="center_vertical"
+                                                android:orientation="horizontal"
+                                                android:weightSum="1">
+
+                                                <RadioButton
+                                                    android:id="@+id/aplRadio"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="@dimen/_2sdp"
+                                                    android:text="APL" />
+
+                                                <RadioButton
+                                                    android:id="@+id/bplRadio"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="@dimen/_2sdp"
+                                                    android:text="BPL" />
+                                            </RadioGroup>
+                                        </LinearLayout>
+
+
+                                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                            android:id="@+id/religionSpinner"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_5sdp"
+                                            android:layout_marginRight="@dimen/_3sdp"
+                                            android:layout_marginBottom="@dimen/_5sdp"
+                                            android:background="@drawable/spinner_background2"
+                                            android:gravity="center_horizontal"
+                                            android:outlineProvider="background"
+                                            app:RevealEmptyText="@string/select_religion"
+                                            app:ShowBorders="true" />
+
+                                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                            android:id="@+id/casteCategoryspinner"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_5sdp"
+                                            android:layout_marginRight="@dimen/_3sdp"
+                                            android:layout_marginBottom="@dimen/_5sdp"
+                                            android:background="@drawable/spinner_background2"
+                                            android:gravity="center_horizontal"
+                                            android:outlineProvider="background"
+                                            app:RevealEmptyText="@string/select_caste_category"
+                                            app:ShowBorders="true" />
+
+                                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                            android:id="@+id/casteSpinner"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_5sdp"
+                                            android:layout_marginRight="@dimen/_3sdp"
+                                            android:layout_marginBottom="@dimen/_5sdp"
+                                            android:background="@drawable/spinner_background2"
+                                            android:gravity="center_horizontal"
+                                            android:outlineProvider="background"
+                                            app:RevealEmptyText="@string/select_caste"
+                                            app:ShowBorders="true" />
+
+
+
+
+                                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                            android:id="@+id/microIrriAwarenessSpinner"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_5sdp"
+                                            android:layout_marginRight="@dimen/_3sdp"
+                                            android:layout_marginBottom="@dimen/_5sdp"
+                                            android:background="@drawable/spinner_background2"
+                                            android:gravity="center_horizontal"
+                                            android:outlineProvider="background"
+                                            app:RevealEmptyText="@string/select_mia"
+                                            app:ShowBorders="true" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="@dimen/_2sdp"
+                                            android:background="@drawable/spinner_background_phone"
+                                            android:orientation="horizontal"
+                                            android:padding="@dimen/_2sdp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginLeft="@dimen/_2sdp"
+                                                android:gravity="center_vertical"
+                                                android:text="@string/is_using_smart_phone"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_13ssp"
+                                                android:textStyle="bold"></TextView>
+
+
+                                            <RadioGroup
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal"
+                                                android:padding="@dimen/_2sdp">
+
+                                                <RadioButton
+                                                    android:id="@+id/radioSPhoneYes"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="@dimen/_3sdp"
+                                                    android:checked="true"
+                                                    android:text="@string/yes"></RadioButton>
+
+                                                <RadioButton
+
+                                                    android:id="@+id/radioSPhoneNo"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="@dimen/_2sdp"
+                                                    android:text="@string/no"></RadioButton>
+                                            </RadioGroup>
+
+
+                                        </LinearLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_cast"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:padding="2dp"
+                                            android:visibility="gone">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_cast"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/cast_category"
+                                                android:inputType="text"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/familyOuter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+
+                                        <RelativeLayout
+                                            android:id="@+id/familyAnim"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_3sdp"
+                                                android:text="@string/farmer_family_information"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_13ssp"
+                                                android:textStyle="bold"></TextView>
+
+                                            <ImageView
+                                                android:id="@+id/familyArroImageview"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_gravity="center"
+                                                android:layout_marginRight="@dimen/_3sdp"
+                                                android:src="@drawable/ic_keyboard_arrow_down_grey_24dp"></ImageView>
+
+                                        </RelativeLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/familyInner"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                                android:id="@+id/civil_status_spinner"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_5sdp"
+                                                android:layout_marginRight="@dimen/_3sdp"
+                                                android:layout_marginBottom="@dimen/_5sdp"
+                                                android:background="@drawable/spinner_background2"
+                                                android:gravity="center_horizontal"
+                                                android:outlineProvider="background"
+                                                app:RevealEmptyText="@string/select_civil_status"
+                                                app:ShowBorders="true" />
+
+                                            <com.google.android.material.textfield.TextInputLayout
+                                                android:id="@+id/tiSpouse"
+                                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:padding="2dp">
+
+                                                <com.google.android.material.textfield.TextInputEditText
+                                                    android:id="@+id/etSpouse"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:drawablePadding="4dp"
+                                                    android:hint="@string/spouse"
+                                                    android:inputType="textCapWords"
+                                                    android:padding="8dp"
+                                                    android:textColor="@color/black"
+                                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                                            </com.google.android.material.textfield.TextInputLayout>
+
+                                            <com.google.android.material.textfield.TextInputLayout
+                                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                android:layout_width="match_parent"
+                                                android:id="@+id/tiSpouseAge"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_2sdp"
+                                                android:padding="2dp">
+
+                                                <com.google.android.material.textfield.TextInputEditText
+                                                    android:id="@+id/etSpouseAge"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:drawableRight="@drawable/ic_date_range_grey_24dp"
+                                                    android:drawablePadding="4dp"
+                                                    android:hint="@string/spouse_age_date_of_birth"
+                                                    android:inputType="number"
+                                                    android:padding="8dp"
+                                                    android:textColor="@color/black"
+                                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                                            </com.google.android.material.textfield.TextInputLayout>
+
+                                            <com.google.android.material.textfield.TextInputLayout
+                                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/tiSpouseDob"
+                                                android:layout_marginTop="@dimen/_2sdp"
+                                                android:padding="2dp"
+                                                android:visibility="gone">
+
+                                                <com.google.android.material.textfield.TextInputEditText
+                                                    android:id="@+id/etSpouseDob"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:drawablePadding="4dp"
+                                                    android:focusable="false"
+                                                    android:hint="@string/spouse_dob"
+                                                    android:inputType="date"
+                                                    android:padding="8dp"
+                                                    android:textColor="@color/black"
+                                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                                            <com.google.android.material.textfield.TextInputLayout
+                                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:padding="2dp">
+
+                                                <com.google.android.material.textfield.TextInputEditText
+                                                    android:id="@+id/familyCount"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:drawablePadding="4dp"
+                                                    android:hint="@string/farmer_family_members"
+                                                    android:inputType="number"
+                                                    android:padding="8dp"
+                                                    android:textColor="@color/black"
+                                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                                            </com.google.android.material.textfield.TextInputLayout>
+
+                                            <com.google.android.material.textfield.TextInputLayout
+                                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:padding="2dp">
+
+                                                <com.google.android.material.textfield.TextInputEditText
+                                                    android:id="@+id/adultCount"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:drawablePadding="4dp"
+                                                    android:hint="@string/adults_count"
+                                                    android:inputType="number"
+                                                    android:padding="8dp"
+                                                    android:textColor="@color/black"
+                                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                                            </com.google.android.material.textfield.TextInputLayout>
+
+                                            <com.google.android.material.textfield.TextInputLayout
+                                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:padding="2dp">
+
+                                                <com.google.android.material.textfield.TextInputEditText
+                                                    android:id="@+id/kidsCount"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:drawablePadding="4dp"
+                                                    android:hint="@string/kids_count"
+                                                    android:inputType="number"
+                                                    android:padding="8dp"
+                                                    android:textColor="@color/black"
+                                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                                            </com.google.android.material.textfield.TextInputLayout>
+
+                                            <com.google.android.material.textfield.TextInputLayout
+                                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:padding="2dp">
+
+                                                <com.google.android.material.textfield.TextInputEditText
+                                                    android:id="@+id/dependentCount"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:drawablePadding="4dp"
+                                                    android:hint="@string/dependent_count"
+                                                    android:inputType="number"
+                                                    android:padding="8dp"
+                                                    android:textColor="@color/black"
+                                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                                            </com.google.android.material.textfield.TextInputLayout>
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:id="@+id/socialOuter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:id="@+id/socialAnim"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_3sdp"
+                                            android:text="@string/farmer_social_info"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_13ssp"
+                                            android:textStyle="bold"></TextView>
+
+                                        <ImageView
+                                            android:id="@+id/socialArroImageview"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="@dimen/_3sdp"
+                                            android:src="@drawable/ic_keyboard_arrow_down_grey_24dp">
+
+                                        </ImageView>
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/socialInner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_2sdp"
+                                            android:padding="2dp"
+                                            android:visibility="gone">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/etCast"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/cast_category"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_2sdp"
+                                            android:padding="2dp"
+                                            android:visibility="gone">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/etReligion"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="Religion"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                                    </LinearLayout>
+
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:visibility="gone">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/ti_et_cast"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:drawablePadding="4dp"
+                                            android:hint="@string/cast_category"
+                                            android:inputType="text"
+                                            android:padding="8dp"
+                                            android:textColor="@color/black"
+                                            android:textColorHint="@color/yel_gre_mix_dark" />
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/addressOuter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:id="@+id/addressAnim"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_3sdp"
+                                            android:text="@string/farmer_contact_information"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_13ssp"
+                                            android:textStyle="bold"></TextView>
+
+                                        <ImageView
+                                            android:id="@+id/addressArroImageview"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="@dimen/_3sdp"
+                                            android:src="@drawable/ic_keyboard_arrow_down_grey_24dp"></ImageView>
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/addressInner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                            android:id="@+id/countrySpinner"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_5sdp"
+                                            android:layout_marginRight="@dimen/_3sdp"
+                                            android:layout_marginBottom="@dimen/_5sdp"
+                                            android:background="@drawable/spinner_background2"
+                                            android:gravity="center_horizontal"
+                                            android:outlineProvider="background"
+                                            app:RevealEmptyText="@string/select_country"
+                                            app:ShowBorders="true" />
+
+
+                                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                            android:id="@+id/stateSpinner"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_5sdp"
+                                            android:layout_marginRight="@dimen/_3sdp"
+                                            android:layout_marginBottom="@dimen/_5sdp"
+                                            android:background="@drawable/spinner_background2"
+                                            android:gravity="center_horizontal"
+                                            android:outlineProvider="background"
+                                            app:RevealEmptyText="@string/select_state"
+                                            app:ShowBorders="true" />
+
+                                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                            android:id="@+id/districtSpinner"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_5sdp"
+                                            android:layout_marginRight="@dimen/_3sdp"
+                                            android:layout_marginBottom="@dimen/_5sdp"
+                                            android:background="@drawable/spinner_background2"
+                                            android:gravity="center_horizontal"
+                                            android:outlineProvider="background"
+                                            app:RevealEmptyText="@string/select_district"
+                                            app:ShowBorders="true" />
+
+                                        <!-- <Spinner
+                                             android:id="@+id/districtSpinner"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:layout_below="@id/ti_farmarea"
+                                             android:layout_marginTop="@dimen/_5sdp"
+                                             android:layout_marginRight="@dimen/_3sdp"
+                                             android:layout_marginBottom="@dimen/_5sdp"
+                                             android:background="@drawable/spinner_background"
+                                             android:gravity="center"
+                                             android:padding="5dp"
+                                             android:stateListAnimator="@drawable/spinner_state_listener_animator"></Spinner>
+ -->
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_country"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/ti_state"
+
+                                            android:padding="2dp"
+                                            android:visibility="gone">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_country"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/country_prompt"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:text="@string/india_label"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_state"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/ti_district"
+                                            android:padding="2dp"
+                                            android:visibility="gone">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_state"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/farmer_state_hint"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_district"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/ti_mandal_or_tehsil"
+                                            android:padding="2dp"
+                                            android:visibility="gone">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_district"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/farmer_district_hint"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_mandal_or_tehsil"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/ti_village_or_city"
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_mandal_or_tehsil"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/farmer_madal_or_tehsil_hint"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_village_or_city"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/ti_addL2"
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_village_or_city"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/farmer_village_or_city_hint"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_addL2"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+
+                                            android:layout_below="@id/ti_addL1"
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/etAddressLine2"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/address_line_2_label"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_addL1"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+
+                                            android:layout_below="@id/ti_aadhaarcard"
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/etAddressLine1"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/address_line_1_label"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/addressMobRel"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/spinner_background_phone"
+                                            android:orientation="horizontal"
+                                            android:padding="2dp">
+
+                                            <com.hbb20.CountryCodePicker
+                                                android:id="@+id/countryCodePickerAddress"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerVertical="true"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:visibility="gone"
+                                                app:ccp_showFlag="false"
+                                                app:ccp_showNameCode="false">
+
+                                            </com.hbb20.CountryCodePicker>
+
+
+                                            <!-- <com.google.android.material.textfield.TextInputLayout
+                                                 android:id="@+id/ti_phone"
+                                                 android:layout_centerVertical="true"
+                                                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:layout_gravity="center"
+                                                 android:layout_toRightOf="@+id/countryCodePicker"
+                                                 android:gravity="center">
+                 -->
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_phone_address"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_toRightOf="@+id/countryCodePickerAddress"
+                                                android:background="@null"
+
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/farmer_phone_hint"
+                                                android:inputType="number"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_15ssp" />
+                                            <!--
+                                                                        </com.google.android.material.textfield.TextInputLayout>
+                                            -->
+
+
+                                        </RelativeLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+
+                                            android:layout_below="@id/ti_aadhaarcard"
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/emailEt"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/email_label"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/bankOuter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+                                    <RelativeLayout
+                                        android:id="@+id/bankAnim"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_3sdp"
+                                            android:text="@string/farmer_financial_information"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_13ssp"
+                                            android:textStyle="bold"></TextView>
+
+                                        <ImageView
+                                            android:id="@+id/bankArroImageview"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="@dimen/_3sdp"
+                                            android:src="@drawable/ic_keyboard_arrow_down_grey_24dp"></ImageView>
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/bankInner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_ifsccode"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/ti_branch"
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_ifsccode"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/ifsc_code_label"
+                                                android:inputType="textCapCharacters"
+                                                android:maxLength="11"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_bankname"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/ti_country"
+                                            android:padding="2dp">
+
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_bankname"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/bank_name_label"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_accountno."
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/ti_bankname"
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_accountno"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/account_number_label"
+                                                android:inputType="number"
+                                                android:maxLength="18"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_holdername"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/ti_accountno."
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_holdername"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/account_holder_name_label"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_branch"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/ti_holdername"
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_branch"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/branch_label"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/ti_accountno."
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/etUpi"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/upi"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/ti_accountno."
+                                            android:padding="2dp"
+                                            android:visibility="gone">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/etSwiftCode"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/swift_code"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_beneficiary"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_beneficiary"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/benefeciary"
+                                                android:inputType="textCapWords"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_income"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/estimated_consumer_income"
+                                                android:inputType="number"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="@dimen/_2sdp"
+                                            android:background="@drawable/spinner_background_phone"
+                                            android:orientation="vertical"
+                                            android:padding="@dimen/_2sdp"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/is_shareholder"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_14ssp"
+                                                android:textStyle="bold"></TextView>
+
+                                            <RadioGroup
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal"
+                                                android:padding="@dimen/_2sdp">
+
+                                                <RadioButton
+                                                    android:id="@+id/radioIsShareYes"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="@dimen/_3sdp"
+                                                    android:text="@string/yes"></RadioButton>
+
+                                                <RadioButton
+                                                    android:id="@+id/radioIsShareNo"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="@dimen/_2sdp"
+                                                    android:checked="true"
+                                                    android:text="@string/no"></RadioButton>
+                                            </RadioGroup>
+
+                                            <LinearLayout
+                                                android:id="@+id/shareCertLayout"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical"
+                                                android:visibility="gone">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="@string/is_there_a_share_certificate"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="@dimen/_14ssp"></TextView>
+
+                                                <RadioGroup
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="horizontal"
+                                                    android:padding="@dimen/_2sdp">
+
+                                                    <RadioButton
+                                                        android:id="@+id/radioShareCertYes"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_margin="@dimen/_3sdp"
+                                                        android:text="@string/yes"></RadioButton>
+
+                                                    <RadioButton
+                                                        android:id="@+id/radioShareCertNo"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_margin="@dimen/_2sdp"
+                                                        android:checked="true"
+                                                        android:text="@string/no"></RadioButton>
+                                                </RadioGroup>
+
+                                                <LinearLayout
+                                                    android:id="@+id/shareCertLay2"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical"
+                                                    android:visibility="gone">
+
+                                                    <com.google.android.material.textfield.TextInputLayout
+                                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_gravity="center"
+                                                        android:layout_toRightOf="@+id/countryCodePicker"
+                                                        android:gravity="center">
+
+                                                        <com.google.android.material.textfield.TextInputEditText
+                                                            android:id="@+id/ti_et_cert_count"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_toRightOf="@+id/countryCodePicker"
+                                                            android:background="@null"
+                                                            android:drawablePadding="4dp"
+                                                            android:hint="@string/how_many_certificate"
+                                                            android:inputType="number"
+                                                            android:padding="8dp"
+                                                            android:textColor="@color/black"
+                                                            android:textSize="@dimen/_15ssp" />
+                                                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                                                    <com.google.android.material.textfield.TextInputLayout
+                                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_gravity="center"
+                                                        android:layout_toRightOf="@+id/countryCodePicker"
+                                                        android:gravity="center">
+
+                                                        <com.google.android.material.textfield.TextInputEditText
+                                                            android:id="@+id/ti_et_cert_value"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_toRightOf="@+id/countryCodePicker"
+                                                            android:background="@null"
+                                                            android:drawablePadding="4dp"
+                                                            android:hint="@string/how_much_value"
+                                                            android:inputType="number"
+                                                            android:padding="8dp"
+                                                            android:textColor="@color/black"
+                                                            android:textSize="@dimen/_15ssp" />
+                                                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/identityOuter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <RelativeLayout
+                                        android:id="@+id/identityAnim"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_3sdp"
+                                            android:text="@string/identity"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_13ssp"
+                                            android:textStyle="bold"></TextView>
+
+                                        <ImageView
+                                            android:id="@+id/identityArroImageview"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="@dimen/_3sdp"
+                                            android:src="@drawable/ic_keyboard_arrow_down_grey_24dp"></ImageView>
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/identityInner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/ti_aadhaarcard"
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/ti_father_name"
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_aadhaarcard"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/adhaar_label"
+                                                android:inputType="number"
+                                                android:maxLength="12"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/ti_father_name"
+                                            android:padding="2dp">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_pan"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/pan"
+                                                android:inputType="textCapCharacters"
+                                                android:maxLength="12"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textColorHint="@color/yel_gre_mix_dark" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/_2sdp"
+                                    android:background="@drawable/spinner_background_phone"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/_2sdp"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/cows_cattle_cows_buffalo"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_14ssp"
+                                        android:textStyle="bold"></TextView>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_toRightOf="@+id/countryCodePicker"
+                                            android:gravity="center">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_animal_count"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_toRightOf="@+id/countryCodePicker"
+                                                android:background="@null"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/count"
+                                                android:inputType="number"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_15ssp" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_toRightOf="@+id/countryCodePicker"
+                                            android:gravity="center">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_milk_sale"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_toRightOf="@+id/countryCodePicker"
+                                                android:background="@null"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/daily_milk_sale_in_litter"
+                                                android:inputType="number"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_15ssp" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_toRightOf="@+id/countryCodePicker"
+                                            android:gravity="center">
+
+                                            <com.google.android.material.textfield.TextInputEditText
+                                                android:id="@+id/ti_et_milk_sale_price"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_toRightOf="@+id/countryCodePicker"
+                                                android:background="@null"
+                                                android:drawablePadding="4dp"
+                                                android:hint="@string/sale_price_approx"
+                                                android:inputType="number"
+                                                android:padding="8dp"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_15ssp" />
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                    </LinearLayout>
+
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:layout_toRightOf="@+id/countryCodePicker"
+                                        android:gravity="center">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/ti_et_other_animal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_toRightOf="@+id/countryCodePicker"
+                                            android:background="@null"
+                                            android:drawablePadding="4dp"
+                                            android:hint="@string/if_there_are_chickens_goats_or_other_animals"
+                                            android:inputType="text"
+                                            android:padding="8dp"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_15ssp" />
+                                    </com.google.android.material.textfield.TextInputLayout>
+                                    <!--<TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/_5sdp"
+                                        android:text="@string/if_there_are_chickens_goats_or_other_animals"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_14ssp"></TextView>
+
+                                    <RadioGroup
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="@dimen/_2sdp">
+
+                                        <RadioButton
+                                            android:id="@+id/radioAnimalsYes"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="@dimen/_3sdp"
+                                            android:text="@string/yes"></RadioButton>
+
+                                        <RadioButton
+                                            android:checked="true"
+                                            android:id="@+id/radioAnimalsNo"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="@dimen/_2sdp"
+                                            android:text="@string/no"></RadioButton>
+                                    </RadioGroup>-->
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/imgRelLay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/extraFarmerDetails"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:gravity="center_horizontal"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <RelativeLayout
+
+                                    android:id="@+id/farmerImageRel"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/sv_profile_photo"
+                                        android:layout_width="@dimen/_50sdp"
+                                        android:layout_height="@dimen/_50sdp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:adjustViewBounds="false"
+                                        android:background="@drawable/rounded_lay_for_farmer_profile"
+                                        android:elevation="4dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/ic_person_white_24dp"
+                                        android:transitionName="imageTransition"
+                                        app:civ_border_color="@color/new_theme"
+                                        app:civ_border_width="1px" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/capture_image_profile"
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:layout_marginLeft="-19dp"
+                                        android:layout_marginTop="@dimen/_40sdp"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:layout_toRightOf="@id/sv_profile_photo"
+                                        android:background="@drawable/rounded_bg_for_camera_crop"
+                                        android:elevation="4dp"
+                                        android:src="@drawable/ic_photo_camera_white_24dp"
+
+                                        />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/sv_profile_photo"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:text="@string/photo" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+
+                                    android:id="@+id/idImageRel"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/idCircularImg"
+                                        android:layout_width="@dimen/_50sdp"
+                                        android:layout_height="@dimen/_50sdp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:adjustViewBounds="false"
+                                        android:background="@drawable/rounded_lay_for_farmer_profile"
+                                        android:elevation="4dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/ic_iconfinder_id_card"
+                                        android:transitionName="imageTransition"
+                                        app:civ_border_color="@color/new_theme"
+                                        app:civ_border_width="1px" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/id_capture_image"
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:layout_marginLeft="-19dp"
+                                        android:layout_marginTop="@dimen/_40sdp"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:layout_toRightOf="@id/idCircularImg"
+                                        android:background="@drawable/rounded_bg_for_camera_crop"
+                                        android:elevation="4dp"
+                                        android:src="@drawable/ic_photo_camera_white_24dp"
+
+                                        />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/idCircularImg"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:text="@string/id_proof" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+
+                                    android:id="@+id/addressImageRel"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/addressIdCircularImage"
+                                        android:layout_width="@dimen/_50sdp"
+                                        android:layout_height="@dimen/_50sdp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:adjustViewBounds="false"
+                                        android:background="@drawable/rounded_lay_for_farmer_profile"
+                                        android:elevation="4dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/ic_iconfinder_address"
+                                        android:transitionName="imageTransition"
+                                        app:civ_border_color="@color/new_theme"
+                                        app:civ_border_width="1px" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/address_capture_image"
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:layout_marginLeft="-19dp"
+                                        android:layout_marginTop="@dimen/_40sdp"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:layout_toRightOf="@id/addressIdCircularImage"
+                                        android:background="@drawable/rounded_bg_for_camera_crop"
+                                        android:elevation="4dp"
+                                        android:src="@drawable/ic_photo_camera_white_24dp"
+
+                                        />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/addressIdCircularImage"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:text="@string/adress_proof" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/moreDetailsFarmerBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imgRelLay"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:background="@drawable/large_edittext_background"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingRight="@dimen/_10sdp"
+                                android:paddingBottom="@dimen/_5sdp"
+                                android:text="@string/add_more_details_label"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/farmDetailsLAyout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/farm_details_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:elevation="@dimen/_5sdp"
+                        app:cardBackgroundColor="@color/li8_new_theme_back"
+                        app:cardCornerRadius="@dimen/_2sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center"
+                                android:text="@string/farm_details_label"
+                                android:textSize="@dimen/_20sdp"
+                                android:textStyle="bold" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/addFarmTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/large_edittext_background"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/add_farm_label"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_add_new_farm_submit_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@color/button_background_color"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/submit_label"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="@dimen/_14ssp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/progressBar_image"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:src="@drawable/croptrails_loader2"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/internetSpeedTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:drawableLeft="@drawable/ic_iconfinder_arrow_up_2561334"
+        android:drawablePadding="@dimen/_3sdp"
+        android:gravity="center"
+        android:padding="@dimen/_3sdp"
+        android:text=""
+        android:textSize="@dimen/_9ssp"
+        android:visibility="gone" />
+
+
+    <View
+        android:id="@+id/connectivityLine"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yellow"
+        android:visibility="gone" />
+
+</RelativeLayout>

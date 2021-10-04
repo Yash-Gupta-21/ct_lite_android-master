@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/nameTv"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_12ssp"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:id="@+id/qtyTv"
+            android:padding="@dimen/_2sdp"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_12ssp"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/unitTvExp"
+                android:gravity="bottom"
+                android:padding="@dimen/_2sdp"
+                android:layout_gravity="bottom"
+                android:textSize="@dimen/_7ssp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/actQtyTv"
+                android:padding="@dimen/_2sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_12ssp"
+
+                android:layout_weight="2.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/unitTvAct"
+                android:gravity="bottom"
+                android:padding="@dimen/_2sdp"
+                android:layout_gravity="bottom"
+                android:textSize="@dimen/_7ssp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@color/grey5"
+        android:layout_width="match_parent"
+        android:layout_height="3px"/>
+
+</LinearLayout>

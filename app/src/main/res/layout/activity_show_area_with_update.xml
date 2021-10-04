@@ -1,0 +1,473 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:id="@+id/confirm_order_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/new_theme"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="@android:color/background_light"
+                    android:text="My Title"/>
+
+                <ImageView
+                    android:id="@+id/helpImage"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_mode_edit_white_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_setting" />
+    <!--map:uiRotateGestures="false"
+    map:uiScrollGestures="false"
+    map:uiTiltGestures="true"
+    map:uiZoomGestures="false"-->
+
+
+    <LinearLayout
+        android:id="@+id/linear_lay_for_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_setting"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_72sdp"
+            android:layout_height="@dimen/_72sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_bg_for_map_area_for_touch" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clear_butt"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/latTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/lngTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/zoomTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/area_tv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kasraAndFarmerLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@color/button_background_color"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/button_text_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/areaUnitTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kasraAndFarmerLayout"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/area_tv"
+        android:text="@string/acers_label"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/areaUnitTv"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+
+            android:layout_gravity="center"
+            android:background="@drawable/circle_transparent_strock">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/myLocationImg"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_my_location"
+
+                />
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mapTypeImage"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@id/myLocationImg"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/circle_transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/map_type_normal"
+            app:civ_border_width="1dp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/back_to_farm"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@id/accuracyImage"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/farm_icon_map"
+            app:civ_border_width="1dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:visibility="gone"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:id="@+id/submit_butt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@color/button_background_color"
+            android:gravity="center"
+            android:text="@string/area_label"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <Button
+            android:visibility="gone"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:id="@+id/submit_area_butt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@color/button_background_color"
+            android:gravity="center"
+            android:text="@string/submit_area_label"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/normal_mode_butt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@color/button_background_color"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="@string/map_option_normal_mode"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:background="@color/new_theme"
+        android:layout_below="@+id/toolbar_setting"
+        android:id="@+id/kasraAndFarmerLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/farmerNameLayout"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_2sdp">
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/farmerNameLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".35"
+                android:text="@string/farmer_name_hint"
+                android:textSize="@dimen/_11ssp" />
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/farmerNamrTv"
+                android:layout_width="0dp"
+                android:layout_weight=".65"
+                android:layout_height="wrap_content"
+                android:text="Name Here"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_2sdp"
+            android:id="@+id/khasraLayout"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_2sdp">
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/kasraLabelTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".35"
+                android:text="@string/farmer_name_hint"
+                android:textSize="@dimen/_11ssp" />
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/khasraTv"
+                android:layout_width="0dp"
+                android:layout_weight=".65"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/clear_butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kasraAndFarmerLayout"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:background="@color/button_background_color"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/clear"
+        android:textColor="@color/button_text_color"
+        android:textSize="@dimen/_12sdp" />
+
+
+    <!--<ProgressBar
+        android:id="@+id/progressBar_cyclic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:visibility="invisible" />-->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/progressBar_cyclic"
+        android:elevation="@dimen/_30sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/croptrails_loader2"
+        android:visibility="invisible" />
+
+    <View
+        android:visibility="gone"
+        android:elevation="@dimen/_10sdp"
+        android:id="@+id/connectivityLine"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fabParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:elevation="@dimen/_10sdp"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="@color/darkgreen"
+        fab:menu_colorPressed="@color/new_theme"
+        fab:menu_colorRipple="#99FFFFFF"
+        android:backgroundTint="@color/colorPrimary"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_showShadow="true">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabChildAddOmittanceArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_add"
+            app:fab_colorNormal="@color/darkgreen"
+            app:fab_colorPressed="@color/new_theme"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_label="Add Omittance Area"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:visibility="gone"
+            android:id="@+id/fabChildWayPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_add"
+            app:fab_colorNormal="@color/darkgreen"
+            app:fab_colorPressed="@color/new_theme"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_size="mini"
+            fab:fab_label="@string/way_point" />
+
+
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+    <include
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adLayout"
+        layout="@layout/ad_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>
+
+
+
+
+

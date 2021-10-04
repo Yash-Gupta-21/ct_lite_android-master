@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_setting"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_above="@+id/submitBtn"
+        android:id="@+id/compRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_setting"
+        android:layoutAnimation="@anim/layout_animation">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/no_data_available_harvest_plan_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/no_data_available_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:alpha=".6"
+            android:src="@drawable/database" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/no_data_available_image"
+            android:layout_centerHorizontal="true"
+            android:text="@string/no_harvest_paln_data_avaialble_label"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:src="@drawable/croptrails_loader2"
+        android:elevation="@dimen/_10sdp"
+            android:id="@+id/progressBar"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:textColor="@color/white"
+            android:text="@string/submit"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"></Button>
+        <View
+            android:visibility="gone"
+            android:id="@+id/connectivityLine"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/yellow"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <include
+
+            android:layout_alignParentBottom="true"
+            android:id="@+id/adLayout"
+            layout="@layout/ad_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

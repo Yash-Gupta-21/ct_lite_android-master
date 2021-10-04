@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:id="@+id/navigation_stats"
+        android:title="@string/bottom_nav_dashboard" />
+
+
+    <item
+        android:icon="@drawable/ic_home_black_24dp"
+        android:id="@+id/navigation_farm"
+        android:title="@string/bottom_nav_home" />
+
+
+    <!--<item
+        android:icon="@drawable/ic_vetting_nav"
+        android:id="@+id/navigation_selected"
+        android:title="@string/title_home" />
+-->
+       <!-- <item
+            android:icon="@drawable/ic_arrow"
+            android:id="@+id/navigation_data_entry"
+            android:title="Data Entry" />-->
+    <!--
+          <item
+              android:icon="@drawable/ic_area_farm"
+              android:id="@+id/navigation_rejected"
+              android:title="Rejected" />-->
+
+    <item
+        android:icon="@drawable/ic_my_location_white_24dp"
+        android:id="@+id/near_me"
+        android:title="@string/near_me_label" />
+
+
+
+    <item
+        android:id="@+id/navigation_expense"
+        android:icon="@drawable/ic_expenditure_black_24dp"
+        android:title="@string/bottom_nav_expenditure" />
+
+</menu>

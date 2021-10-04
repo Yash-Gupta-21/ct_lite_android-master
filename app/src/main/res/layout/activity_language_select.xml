@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:pickerui="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_theme">
+
+    <include
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adLayout"
+        layout="@layout/ad_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/new_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextTv"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:drawableLeft="@drawable/ic_translate_black_24dp"
+            android:drawablePadding="@dimen/_8sdp"
+            android:text="@string/txt_select_a_language"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <com.i9930.croptrails.Language.picker.PickerUI
+            android:id="@+id/picker_ui_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_17ssp"
+            android:gravity="center"
+            pickerui:autoDismiss="true"
+            pickerui:backgroundColor="#4cffa5"
+            pickerui:blur="true"
+            pickerui:blur_FilterColor="#ff5e48"
+            pickerui:blur_downScaleFactor="1"
+            pickerui:blur_radius="1"
+            pickerui:blur_use_renderscript="true"
+            pickerui:itemsClickables="true"
+            pickerui:linesCenterColor="#3941ff"
+            pickerui:textCenterColor="#000000"
+            pickerui:textNoCenterColor="#737373" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/nextTv"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:clickable="false"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:pickerui="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/new_theme"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.2"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/new_background" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_translate_black_24dp"
+            android:drawablePadding="@dimen/_8sdp"
+            android:text="@string/txt_select_a_language"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/select_english"
+            android:layout_width="@dimen/_110ssp"
+            android:layout_height="@dimen/_40ssp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            app:cardBackgroundColor="@color/yellow4"
+            app:cardCornerRadius="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.456">
+
+            <TextView
+                android:id="@+id/txt_english"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ENGLISH"
+                android:textColor="@color/darkgreen"
+                android:textSize="@dimen/_14ssp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/select_hindi"
+            android:layout_width="@dimen/_110ssp"
+            android:layout_height="@dimen/_40ssp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_32sdp"
+            app:cardBackgroundColor="@color/yellow4"
+            app:cardCornerRadius="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/select_english"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/select_english">
+
+            <TextView
+                android:id="@+id/txt_hindi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" हिंदी"
+                android:textColor="@color/darkgreen"
+                android:textSize="@dimen/_14ssp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/select_marathi"
+            android:layout_width="@dimen/_110ssp"
+            android:layout_height="@dimen/_40ssp"
+            android:layout_marginTop="@dimen/_22sdp"
+            app:cardBackgroundColor="@color/yellow4"
+            app:cardCornerRadius="@dimen/_4sdp"
+            app:layout_constraintEnd_toEndOf="@+id/select_english"
+            app:layout_constraintStart_toStartOf="@+id/select_english"
+            app:layout_constraintTop_toBottomOf="@+id/select_english">
+
+            <TextView
+                android:id="@+id/txt_marathi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" मराठी"
+                android:textColor="@color/darkgreen"
+                android:textSize="@dimen/_14ssp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/select_telugu"
+            android:layout_width="@dimen/_110ssp"
+            android:layout_height="@dimen/_40ssp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_32sdp"
+            app:cardBackgroundColor="@color/yellow4"
+            app:cardCornerRadius="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/select_marathi"
+            app:layout_constraintEnd_toEndOf="@+id/select_hindi"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/select_hindi"
+            app:layout_constraintTop_toTopOf="@+id/select_marathi"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/txt_telugu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="తెలుగు"
+                android:textColor="@color/darkgreen"
+                android:textSize="@dimen/_14ssp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/select_kannada"
+            android:layout_width="@dimen/_110ssp"
+            android:layout_height="@dimen/_40ssp"
+            android:layout_marginTop="@dimen/_22sdp"
+            app:cardBackgroundColor="@color/yellow4"
+            app:cardCornerRadius="@dimen/_4sdp"
+            app:layout_constraintEnd_toEndOf="@+id/select_marathi"
+            app:layout_constraintStart_toStartOf="@+id/select_marathi"
+            app:layout_constraintTop_toBottomOf="@+id/select_marathi">
+
+            <TextView
+                android:id="@+id/txt_kannada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" ಕನ್ನಡ್"
+                android:textColor="@color/darkgreen"
+                android:textSize="@dimen/_14ssp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/select_gujrati"
+            android:layout_width="@dimen/_110ssp"
+            android:layout_height="@dimen/_40ssp"
+            app:cardBackgroundColor="@color/yellow4"
+            app:cardCornerRadius="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/select_kannada"
+            app:layout_constraintEnd_toEndOf="@+id/select_telugu"
+            app:layout_constraintStart_toStartOf="@+id/select_telugu"
+            app:layout_constraintTop_toTopOf="@+id/select_kannada">
+
+            <TextView
+                android:id="@+id/txt_gujrati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ગુજરતી"
+                android:textColor="@color/darkgreen"
+                android:textSize="@dimen/_14ssp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+
+            android:id="@+id/txt_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:clickable="false"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/select_gujrati" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

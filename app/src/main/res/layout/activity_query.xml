@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Query.QueryActivity">
+
+
+    <include
+        android:id="@+id/toolbar_setting"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <LinearLayout
+        android:layout_above="@+id/submitBtn"
+        android:layout_below="@+id/toolbar_setting"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <Spinner
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/typeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@drawable/spinner_background"
+            android:gravity="center"
+            android:stateListAnimator="@drawable/spinner_state_listener_animator"></Spinner>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiComment"
+        android:layout_margin="@dimen/_5sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:gravity="top|left"
+        android:padding="2dp">
+
+        <EditText
+            android:layout_gravity="top|left"
+            android:gravity="top|left"
+            android:id="@+id/etQuery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="5"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/yel_gre_mix_dark" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/progressBar"
+        android:elevation="@dimen/_30sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/croptrails_loader2"
+        android:visibility="invisible" />
+<LinearLayout
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adLayout"
+        layout="@layout/ad_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+</RelativeLayout>

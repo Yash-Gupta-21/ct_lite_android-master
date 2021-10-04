@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    app:cardElevation="@dimen/_2sdp"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:inputType="textCapSentences"
+            android:fontFamily="@font/roboto"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="@dimen/_3sdp"
+            android:textSize="@dimen/_13ssp"
+            android:id="@+id/cycleNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text=""></TextView>
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_3sdp"
+            android:weightSum="1">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableLeft="@drawable/ic_crop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".45"
+                android:text="@string/crop_name"></TextView>
+            <TextView
+                android:text="  :  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/cropNameTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".55"
+                android:text=""></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_3sdp"
+            android:weightSum="1">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableLeft="@drawable/ic_season"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".45"
+                android:text="@string/growing_season"></TextView>
+            <TextView
+                android:text="  :  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/seasonNameTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".55"
+                android:text=""></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_3sdp"
+            android:weightSum="1">
+
+            <TextView
+
+                android:gravity="center_vertical"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableLeft="@drawable/ic_region"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".45"
+                android:text="@string/growing_region"></TextView>
+            <TextView
+                android:text="  :  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/regionNameTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".55"
+                android:text=""></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_3sdp"
+            android:weightSum="1">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableLeft="@drawable/ic_soil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".45"
+                android:text="@string/soil_type_label"></TextView>
+
+            <TextView
+
+                android:text="  :  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/soilNameTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".55"
+                android:text=""></TextView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/onAssign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="@string/select_label"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"></TextView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

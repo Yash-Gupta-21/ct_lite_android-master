@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hidden_panel"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_200sdp"
+    android:layout_alignParentBottom="true"
+    android:animateLayoutChanges="true"
+    android:background="@android:color/transparent"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <com.i9930.croptrails.Language.picker.PickerUIListView
+        android:id="@+id/picker_ui_listview"
+        style="@style/PickerUI.ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        tools:listitem="@layout/pickerui_item" />
+
+    <View
+
+        android:id="@+id/picker_line_top"
+        style="@style/line_center_default"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_80sdp" />
+
+    <View
+        android:id="@+id/picker_line_bottom"
+        style="@style/line_center_default"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_120sdp" />
+
+</RelativeLayout>

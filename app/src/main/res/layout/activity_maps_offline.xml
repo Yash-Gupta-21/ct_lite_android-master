@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_setting"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@id/toolbar_setting"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:uiRotateGestures="false"
+        map:uiScrollGestures="false"
+        map:uiTiltGestures="true"
+        map:uiZoomGestures="false" />
+    <!--
+     map:uiRotateGestures="false"
+        map:uiScrollGestures="false"
+        map:uiTiltGestures="true"
+        map:uiZoomGestures="false"
+    -->
+
+    <!--  map:uiRotateGestures="false"
+      map:uiScrollGestures="false"
+      map:uiTiltGestures="true"
+      map:uiZoomGestures="false"
+      tools:context=".Map.VerifyArea.MapsActivity" />
+  -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linear_lay_for_map"
+        android:layout_below="@id/toolbar_setting"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_72sdp"
+            android:layout_height="@dimen/_72sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_bg_for_map_area_for_touch"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_below="@id/toolbar_setting"
+        android:id="@+id/area_tv"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:layout_width="100dp"
+        android:textColor="#000000"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/area_unit_label"
+        android:layout_below="@id/toolbar_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acers_label"
+        android:layout_toRightOf="@id/area_tv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="@dimen/_3sdp"
+        android:layout_below="@id/area_unit_label"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:layout_width="@dimen/_30sdp"
+        android:background="@drawable/large_edittext_background3"
+        android:layout_alignParentRight="true"
+        android:layout_height="@dimen/_30sdp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/mapTypeImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/map_type_normal"
+
+
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:background="@color/button_background_color"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:id="@+id/submit_butt"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:text="@string/area"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:textColor="@color/button_text_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/button_background_color"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:id="@+id/next_butt"
+            android:gravity="center"
+            android:text="@string/submit_area"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/button_text_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/clear_butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_setting"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:background="@color/button_background_color"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/clear"
+        android:textColor="@color/button_text_color" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/progressBar_cyclic"
+        android:elevation="@dimen/_30sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/croptrails_loader2"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+
+
+
+
+

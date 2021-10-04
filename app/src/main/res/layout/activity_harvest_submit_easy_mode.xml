@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HarvestSubmit.EasyMode.HarvestSubmitEasyModeActivity">
+
+    <include
+        android:id="@+id/toolbar_setting"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:paddingBottom="@dimen/_50sdp"
+        android:layout_below="@+id/toolbar_setting"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f5f5f5"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_help_outline_theme_24dp" />
+
+            <RelativeLayout
+                android:id="@+id/rel_standing_crop_inst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/li8_new_theme_back"
+                android:padding="@dimen/_10sdp">
+                <!--  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_80sdp"
+                      android:background="@color/li8_new_theme_back">
+                  </View>-->
+
+                <TextView
+                    android:id="@+id/rel_standing_crop_inst_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="@string/step_1_enter_farmer_details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rel_standing_crop_instructions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rel_standing_crop_inst_title"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:text="@string/enter_crop_area_in_which_crop_can_be_seen"
+                    android:textSize="@dimen/_11ssp" />
+
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/_3sdp"
+                android:padding="@dimen/_15sdp"
+                app:cardElevation="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_weight="3.97"
+                            android:gravity="start"
+                            android:text="@string/harvest_done_date"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/harvestDoneDateEasy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5.95"
+                            android:backgroundTint="#f5f5f5"
+                            android:focusable="false"
+                            android:hint="YYYY-MM-DD"
+                            android:textColor="#000000"
+                            android:textCursorDrawable="@null"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_weight="3.97"
+                            android:gravity="start"
+                            android:text="@string/weighment_date_label"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/weighmentDateEasy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5.95"
+                            android:backgroundTint="#f5f5f5"
+                            android:focusable="false"
+                            android:hint="YYYY-MM-DD"
+                            android:textColor="#000000"
+                            android:textCursorDrawable="@null"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_weight="3.97"
+                            android:gravity="start"
+                            android:text="@string/harvested_area_label"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/harvestAreaEasy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5.95"
+                            android:backgroundTint="#f5f5f5"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:layout_weight="3.97"
+                            android:text="@string/standing_area_label"
+                            android:textColor="#000" />
+
+                        <EditText
+                            android:id="@+id/tv_standing_areaEasy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5.95"
+                            android:backgroundTint="#f5f5f5"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:hint="in acres"
+                            android:inputType="numberDecimal"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/rel_standing_crop_inst2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/li8_new_theme_back"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/rel_standing_crop_inst_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="@string/step_2_enter_bag_details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rel_standing_crop_instructions2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rel_standing_crop_inst_title2"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:text="@string/enter_bag_no_and_weights_in_which_crop_can_be_seen"
+                    android:textSize="@dimen/_11ssp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/secondLinearEasy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        app:cardElevation="@dimen/_2sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:weightSum="10">
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.8">
+
+                                <EditText
+                                    android:id="@+id/dynamicBagsWeightEasy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:background="@drawable/large_edittext_background2"
+                                    android:hint="@string/weight_in_kgs"
+                                    android:inputType="numberDecimal"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.8">
+
+                                <EditText
+                                    android:id="@+id/dynamicBagsTextEasy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:background="@drawable/large_edittext_background2"
+                                    android:hint="@string/bags_qty_label"
+                                    android:inputType="numberDecimal"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <TextView
+                                android:id="@+id/addBagButtonEasy"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="2.4"
+                                android:background="@color/darkgreen"
+                                android:gravity="center"
+                                android:padding="@dimen/_5sdp"
+                                android:text="@string/add_label"
+                                android:textColor="@color/white"
+                                android:visibility="visible" />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/weightAndBagCardEasy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        android:visibility="gone"
+                        app:cardElevation="@dimen/_2sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:id="@+id/packingCOuntLabel"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:text="@string/bags_qty_label"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/totalWeightLabel"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="5"
+                                android:gravity="center"
+                                android:text="@string/weight_in_kgs"
+                                android:textColor="#000000" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/dynamicBagRecyclerViewEasy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_3sdp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/add_more_imgEasy"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/ic_add_circle_outline_dark_grey_black_24dp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/submit_bag_buttonEasy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@color/button_background_color"
+                            android:gravity="center"
+                            android:text="@string/submit"
+                            android:textColor="@color/button_text_color"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/harvest_progress"
+        android:src="@drawable/croptrails_loader2"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <include
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adLayout"
+        layout="@layout/ad_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>

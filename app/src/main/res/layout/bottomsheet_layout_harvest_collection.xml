@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/_35sdp"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="80dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:id="@+id/selectBagHeadTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            android:text="@string/select_bags_label"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:id="@+id/markBagTipTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectBagHeadTv"
+            android:padding="@dimen/_3sdp"
+            android:text="@string/mark_bags_tip_msg"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/submitTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@drawable/large_edittext_background2"
+            android:elevation="@dimen/_33sdp"
+            android:padding="@dimen/_3sdp"
+            android:text="SUBMIT"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bagRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

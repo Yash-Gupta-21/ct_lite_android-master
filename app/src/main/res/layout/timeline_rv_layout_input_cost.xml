@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_rel_layout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/dot_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/timelineDotImage"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:src="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/timelineLine"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/timelineActLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_35sdp">
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/inputCostCard"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_35sdp"
+
+                app:cardElevation="2dp"
+                android:layout_height="@dimen/_140sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:elevation="@dimen/_2sdp"
+                        android:textColor="@color/white"
+                        android:id="@+id/timelineInputHead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="@string/input_cost_label"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold"
+                        tools:fontFamily="@font/roboto_thin" />
+
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:id="@+id/cost_img"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/ploughed_farm"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:background="#99696969"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+
+                        <TextView
+                            android:id="@+id/cost_date_tv_"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/colorAccent"
+                            android:elevation="@dimen/_3sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text="25 Dec"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9ssp"
+                            tools:fontFamily="@font/roboto_thin" />
+
+                        <LinearLayout
+                            android:layout_below="@+id/cost_date_tv_"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/amount_label"
+                                    android:textSize="@dimen/_9ssp"
+                                    android:text="Amount: "
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_toRightOf="@+id/amount_label"
+                                    android:id="@+id/cost_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:layout_marginLeft="@dimen/_2sdp"
+                                    android:layout_weight="1"
+                                    android:text="-"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/_12ssp" />
+
+
+                            </RelativeLayout>
+
+                            <View
+
+                                android:layout_margin="@dimen/_3sdp"
+                                android:background="@color/darkgreen"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_2sdp"/>
+
+                            <RelativeLayout
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:id="@+id/costDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:layout_marginLeft="@dimen/_2sdp"
+                                    android:layout_weight="1"
+                                    android:text="cost"
+                                    android:textSize="@dimen/_12ssp" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/type_label"
+                                    android:textSize="@dimen/_9ssp"
+                                    android:text="Type: "
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:layout_toRightOf="@+id/type_label"
+                                    android:id="@+id/cost_type_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:layout_marginLeft="@dimen/_2sdp"
+                                    android:layout_weight="1"
+                                    android:text="cost type"
+                                    android:textSize="@dimen/_10ssp" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:paddingBottom="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/name_label"
+                                    android:textSize="@dimen/_9ssp"
+                                    android:text="Added By: "
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+
+                                    android:layout_toRightOf="@+id/name_label"
+                                    android:id="@+id/added_by_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:layout_marginLeft="@dimen/_2sdp"
+                                    android:layout_weight="1"
+                                    android:text="name"
+                                    android:textSize="@dimen/_9ssp" />
+                            </RelativeLayout>
+
+
+
+                            <RelativeLayout
+                                android:visibility="gone"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/date_label"
+                                    android:textSize="@dimen/_9ssp"
+                                    android:text="Cost Date: "
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_toRightOf="@+id/date_label"
+                                    android:id="@+id/cost_date_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="@dimen/_2sdp"
+                                    android:layout_weight="1"
+                                    android:text="name"
+                                    android:textSize="@dimen/_10ssp" />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+        </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>

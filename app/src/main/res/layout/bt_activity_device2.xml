@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/toolbar_setting"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/toolbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <ListView
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/listViewPaired"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+            </ListView>
+
+
+            <ListView
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/listViewDetected"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:background="@color/darkgreen"
+            android:textColor="@color/white"
+            android:layout_marginRight="1px"
+            android:visibility="gone"
+            android:id="@+id/buttonOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="On"/>
+        <Button
+            android:background="@color/darkgreen"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:id="@+id/buttonDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Make Discoverable"/>
+        <Button
+            android:background="@color/darkgreen"
+            android:textColor="@color/white"
+            android:layout_marginLeft="1px"
+            android:layout_weight="1"
+            android:id="@+id/buttonSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Search"/>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/buttonOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bluetooth Off"/>
+
+
+    </LinearLayout>
+    <include
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adLayout"
+        layout="@layout/ad_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+</RelativeLayout>

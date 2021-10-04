@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubmitHealthCard.ShowHealthCardActivity">
+
+    <include
+        android:id="@+id/toolbarHealthCardShow"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbarHealthCardShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/healthCardProgress"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:id="@+id/healthCardRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/no_data_available_health_card"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:alpha=".3"
+                android:id="@+id/no_data_available_image"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/database"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_below="@id/no_data_available_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_soil_health_card_data_added_yet_msg"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:text="@string/add_new_sample_health_card_label"
+        android:id="@+id/addHeathCard"
+        android:textColor="@color/white"
+        android:paddingBottom="@dimen/_7sdp"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:elevation="@dimen/_10sdp"
+        android:gravity="center"
+        android:textSize="@dimen/_11ssp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_floating_textview"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

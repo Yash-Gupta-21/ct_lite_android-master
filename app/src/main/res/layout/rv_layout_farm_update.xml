@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="#cccccc">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/add_farm_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/whole_cv_farm_frag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/_5sdp"
+                app:cardBackgroundColor="#F8F8F8"
+                app:cardCornerRadius="@dimen/_2sdp">
+
+                <LinearLayout
+                    android:id="@+id/add_farm_rel_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/deleteFarm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_margin="@dimen/_5sdp"
+                        app:srcCompat="@drawable/ic_cross_delete_red" />
+
+                    <LinearLayout
+                        android:id="@+id/farmDetailsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ti_farmid"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/deleteFarm"
+                            android:layout_marginTop="2dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ti_et_farmid"
+                                android:focusable="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="4dp"
+                                android:hint="@string/lot_no"
+                                android:inputType="textCapWords"
+                                android:padding="8dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/yel_gre_mix_dark" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ti_farmarea"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ti_farmid"
+                            android:layout_marginTop="2dp"
+                            android:paddingBottom="@dimen/_3sdp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ti_et_farmarea"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:drawablePadding="4dp"
+                                android:hint="@string/farm_area_label"
+                                android:inputType="numberDecimal"
+                                android:padding="8dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/yel_gre_mix_dark" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/farmDetailsLayoutN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/ti_farmname"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/soilTypeSpinner"
+                                android:padding="2dp"
+                                android:paddingBottom="@dimen/_3sdp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/ti_et_farmname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/large_edittext_background3"
+                                    android:drawablePadding="4dp"
+                                    android:hint="@string/farm_name_label"
+                                    android:inputType="textCapWords"
+                                    android:padding="8dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                android:id="@+id/irrigationSourceSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="@drawable/spinner_background2"
+                                android:gravity="center_horizontal"
+                                android:outlineProvider="background"
+                                app:RevealEmptyText="@string/select_irri_source_prompt"
+                                app:ShowBorders="true" />
+
+                            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                android:id="@+id/irrigationTypeSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="@drawable/spinner_background2"
+                                android:gravity="center_horizontal"
+                                android:outlineProvider="background"
+                                app:RevealEmptyText="@string/select_irri_type_prompt"
+                                app:ShowBorders="true" />
+
+                            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                android:id="@+id/soilTypeSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="@drawable/spinner_background2"
+                                android:gravity="center_horizontal"
+                                android:outlineProvider="background"
+                                app:RevealEmptyText="@string/select_soil_type_prompt"
+                                app:ShowBorders="true" />
+
+                            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                android:id="@+id/motorHPSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="@drawable/spinner_background2"
+                                android:gravity="center_horizontal"
+                                android:outlineProvider="background"
+                                app:RevealEmptyText="@string/select_motor_hp"
+                                app:ShowBorders="true" />
+
+                            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                android:id="@+id/spinnerLandCategory"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="@drawable/spinner_background2"
+                                android:gravity="center_horizontal"
+                                android:outlineProvider="background"
+                                app:RevealEmptyText="@string/select_land_category"
+                                app:ShowBorders="true" />
+
+
+                            <LinearLayout
+                                android:id="@+id/isOwnLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/spinner_background_phone"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_1sdp"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/is_owned" />
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <RadioButton
+                                        android:id="@+id/radioOwnYes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/_2sdp"
+                                        android:checked="true"
+                                        android:text="@string/yes" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioOwnNo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/_2sdp"
+                                        android:text="@string/no" />
+
+
+                                </RadioGroup>
+
+
+                            </LinearLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/soilTypeSpinner"
+                                android:padding="2dp"
+                                android:paddingBottom="@dimen/_3sdp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etFarmImage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/large_edittext_background3"
+                                    android:drawableRight="@drawable/ic_iconfinder_attach"
+                                    android:drawablePadding="4dp"
+                                    android:focusable="false"
+                                    android:hint="@string/choose_farm_image"
+                                    android:inputType="textCapWords"
+                                    android:padding="8dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/soilTypeSpinner"
+                                android:padding="2dp"
+                                android:paddingBottom="@dimen/_3sdp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etOwnershipImage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/large_edittext_background3"
+                                    android:drawableRight="@drawable/ic_iconfinder_attach"
+                                    android:drawablePadding="4dp"
+                                    android:focusable="false"
+                                    android:hint="@string/choose_ownership_document"
+                                    android:inputType="textCapWords"
+                                    android:padding="8dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/cropLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:text="@string/current_crop_details"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"></TextView>
+
+                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                            android:id="@+id/seasonSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/spinner_background2"
+                            android:gravity="center_horizontal"
+                            android:outlineProvider="background"
+                            app:RevealEmptyText="@string/select_season_prompt"
+                            app:ShowBorders="true" />
+
+                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                            android:id="@+id/spinnerCroppingPattern"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/spinner_background2"
+                            android:gravity="center_horizontal"
+                            android:outlineProvider="background"
+                            app:RevealEmptyText="@string/select_cropping_pattern"
+                            app:ShowBorders="true" />
+
+                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                            android:id="@+id/cropSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/seasonSpinner"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/spinner_background2"
+                            android:gravity="center_horizontal"
+                            android:outlineProvider="background"
+                            app:RevealEmptyText="@string/select_crop_rompt"
+                            app:ShowBorders="true" />
+
+
+                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                            android:visibility="gone"
+                            android:id="@+id/cropSpinnerPrevious"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cropSpinner"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/spinner_background2"
+                            android:gravity="center_horizontal"
+                            android:outlineProvider="background"
+                            app:RevealEmptyText="@string/previous_crop_label"
+                            app:ShowBorders="true" />
+
+                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                            android:id="@+id/spinnerPlantingMethod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/spinner_background2"
+                            android:gravity="center_horizontal"
+                            android:outlineProvider="background"
+                            app:RevealEmptyText="@string/select_planting_method"
+                            app:ShowBorders="true" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ti_currentCrop"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ti_farmname"
+                            android:padding="2dp"
+                            android:visibility="gone">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/et_current_crop"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                android:drawablePadding="4dp"
+                                android:hint="@string/current_crop_label"
+                                android:inputType="textCapWords"
+                                android:padding="8dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/yel_gre_mix_dark" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tiTransplant"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/soilTypeSpinner"
+                            android:padding="2dp"
+                            android:paddingBottom="@dimen/_3sdp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etTransplantingData"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/large_edittext_background3"
+                                android:drawableRight="@drawable/ic_date_range_black_24dp"
+                                android:drawablePadding="4dp"
+                                android:focusable="false"
+                                android:hint="@string/date_of_transplanting"
+                                android:inputType="textCapWords"
+                                android:padding="8dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/yel_gre_mix_dark" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/extraFarmDetailsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cropSpinnerPrevious"
+                        android:orientation="vertical">
+                        <!--android:visibility="gone"-->
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ti_previousCrop"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ti_currentCrop"
+                            android:padding="2dp">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/ti_et_previous_crop"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                android:drawablePadding="4dp"
+                                android:hint="@string/previous_crop_label"
+                                android:inputType="textCapWords"
+                                android:padding="8dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/yel_gre_mix_dark" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ti_previousCrop"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_3sdp"
+                                    android:text="Farm Demographics"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13ssp"
+                                    android:textStyle="bold"></TextView>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="@dimen/_3sdp"
+                                    android:src="@drawable/ic_keyboard_arrow_down_grey_24dp"></ImageView>
+
+                            </RelativeLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ti_farmarea"
+                                android:padding="2dp"
+                                android:visibility="gone">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/countryEt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                    android:drawablePadding="4dp"
+                                    android:hint="@string/country_prompt"
+                                    android:inputType="textCapWords"
+                                    android:padding="8dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ti_farmarea"
+                                android:padding="2dp"
+                                android:visibility="gone">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/stateEt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                    android:drawablePadding="4dp"
+                                    android:hint="@string/farmer_state_hint"
+                                    android:inputType="textCapWords"
+                                    android:padding="8dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ti_farmarea"
+                                android:padding="2dp"
+                                android:visibility="gone">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/districtEt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                    android:drawablePadding="4dp"
+                                    android:hint="@string/farmer_district_hint"
+                                    android:inputType="textCapWords"
+                                    android:padding="8dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                android:id="@+id/countrySpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="@drawable/spinner_background2"
+                                android:gravity="center_horizontal"
+                                android:outlineProvider="background"
+                                app:RevealEmptyText="@string/select_country"
+                                app:ShowBorders="true" />
+
+
+                            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                android:id="@+id/stateSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="@drawable/spinner_background2"
+                                android:gravity="center_horizontal"
+                                android:outlineProvider="background"
+                                app:RevealEmptyText="@string/select_state"
+                                app:ShowBorders="true" />
+
+                            <!--<Spinner
+                                android:id="@+id/stateSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ti_farmarea"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="@drawable/spinner_background"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:spinnerMode="dropdown"
+                                android:stateListAnimator="@drawable/spinner_state_listener_animator"></Spinner>-->
+
+                            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                android:id="@+id/districtSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="@drawable/spinner_background2"
+                                android:gravity="center_horizontal"
+                                android:outlineProvider="background"
+                                app:RevealEmptyText="@string/select_district"
+                                app:ShowBorders="true" />
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ti_farmarea"
+                                android:padding="2dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/mandlTehasilEt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                    android:drawablePadding="4dp"
+                                    android:hint="@string/farmer_madal_or_tehsil_hint"
+                                    android:inputType="textCapWords"
+                                    android:padding="8dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ti_farmarea"
+                                android:padding="2dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/villageOrCity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                    android:drawablePadding="4dp"
+                                    android:hint="@string/farmer_village_or_city_hint"
+                                    android:inputType="textCapWords"
+                                    android:padding="8dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/tiAddl2"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ti_farmarea"
+                                android:padding="2dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etAddressLine2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="4dp"
+                                    android:hint="@string/chak"
+                                    android:inputType="textCapWords"
+                                    android:padding="8dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ti_farmarea"
+                                android:padding="2dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etAddressLine1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="4dp"
+                                    android:hint="@string/khasra"
+                                    android:inputType="textCapWords"
+                                    android:padding="8dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/yel_gre_mix_dark" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewAssets"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/moreDetailsFarmBtn"></androidx.recyclerview.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/moreDetailsFarmBtn"></androidx.recyclerview.widget.RecyclerView>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/moreDetailsFarmBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/extraFarmDetailsLayout"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/large_edittext_background"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="@string/add_more_details_label" />
+
+                    <TextView
+
+                        android:id="@+id/addFpoDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/recyclerView"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/large_edittext_background"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="@string/add_crop_details" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

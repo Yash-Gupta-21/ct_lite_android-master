@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:weightSum="1"
+    android:padding="@dimen/_3sdp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_weight=".1"
+        android:id="@+id/seq_number_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_weight=".45"
+        android:id="@+id/cost_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_weight=".37"
+        android:id="@+id/cost_amount_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/remove_image"
+        app:srcCompat="@drawable/ic_remove_circle_outline_dark_grey_24dp"
+        android:layout_weight=".08"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

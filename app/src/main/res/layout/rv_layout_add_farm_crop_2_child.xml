@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/formHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"></TextView>
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/delete"
+        android:src="@drawable/ic_cross_delete_red"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.5">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiColumn1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_farmid"
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".5"
+            android:paddingBottom="@dimen/_3sdp">
+
+            <EditText
+                android:id="@+id/etColumn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:drawablePadding="4dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/yel_gre_mix_dark" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:id="@+id/tiColumn2"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_farmid"
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".5"
+            android:paddingBottom="@dimen/_3sdp">
+
+            <EditText
+                android:id="@+id/etColumn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:drawablePadding="4dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/yel_gre_mix_dark" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiColumn3"
+            android:layout_below="@id/ti_farmid"
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".5"
+            android:paddingBottom="@dimen/_3sdp">
+
+            <EditText
+                android:id="@+id/etColumn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:drawablePadding="4dp"
+
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/yel_gre_mix_dark" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.5">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_farmid"
+            android:layout_margin="@dimen/_2sdp"
+            android:id="@+id/tiColumn4"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".5"
+            android:paddingBottom="@dimen/_3sdp">
+
+            <EditText
+                android:id="@+id/etColumn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:drawablePadding="4dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/yel_gre_mix_dark" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_farmid"
+            android:id="@+id/tiColumn5"
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".5"
+            android:paddingBottom="@dimen/_3sdp">
+
+            <EditText
+                android:id="@+id/etColumn5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:drawablePadding="4dp"
+
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/yel_gre_mix_dark" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:id="@+id/tiColumn6"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_farmid"
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".5"
+            android:paddingBottom="@dimen/_3sdp">
+
+            <EditText
+                android:id="@+id/etColumn6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:drawablePadding="4dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/yel_gre_mix_dark" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/addMore"
+        android:src="@drawable/ic_add_circle_outline_dark_grey_black_24dp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"></ImageView>
+
+</LinearLayout>

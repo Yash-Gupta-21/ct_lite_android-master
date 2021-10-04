@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/custom_tab_day1"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/weather_tab_day1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"/>
+        <TextView
+            android:id="@+id/weather_tab_date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="#8B9800"
+            android:textSize="@dimen/_20sdp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/weather_tab_icon1"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/custom_tab_day2"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/weather_tab_day2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"/>
+        <TextView
+            android:id="@+id/weather_tab_date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="#8B9800"
+            android:textSize="@dimen/_20sdp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/weather_tab_icon2"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/custom_tab_day3"
+        android:paddingTop="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/weather_tab_day3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"/>
+        <TextView
+            android:id="@+id/weather_tab_date3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="#8B9800"
+            android:textSize="@dimen/_20sdp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/weather_tab_icon3"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/custom_tab_day4"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/weather_tab_day4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"/>
+        <TextView
+            android:id="@+id/weather_tab_date4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="#8B9800"
+            android:textSize="@dimen/_20sdp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/weather_tab_icon4"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/custom_tab_day5"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/weather_tab_day5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"/>
+        <TextView
+            android:id="@+id/weather_tab_date5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="#8B9800"
+            android:textSize="@dimen/_20sdp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/weather_tab_icon5"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/custom_tab_day6"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/weather_tab_day6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"/>
+        <TextView
+            android:id="@+id/weather_tab_date6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="#8B9800"
+            android:textSize="@dimen/_20sdp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/weather_tab_icon6"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/custom_tab_day7"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/weather_tab_day7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"/>
+        <TextView
+            android:id="@+id/weather_tab_date7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="#8B9800"
+            android:textSize="@dimen/_20sdp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/weather_tab_icon7"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/custom_tab_day8"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/weather_tab_day8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"/>
+        <TextView
+            android:id="@+id/weather_tab_date8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="#8B9800"
+            android:textSize="@dimen/_20sdp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/weather_tab_icon8"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+</LinearLayout>
+-->

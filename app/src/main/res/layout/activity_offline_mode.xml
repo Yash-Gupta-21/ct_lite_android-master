@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/offline_mode_parent_rel_lay"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/toolbar_setting"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/toolbar_setting"
+        android:id="@+id/recycler_make_offline_list"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_40sdp"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/make_all_farm_offline_button"
+        android:background="@color/button_background_color"
+        android:textColor="@color/button_text_color"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/go_offline"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/connectivityLine"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/yellow"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+    </LinearLayout>
+    <ProgressBar
+        android:max="10"
+        android:indeterminate="false"
+        android:visibility="invisible"
+        android:id="@+id/prog_bar_offline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:elevation="10dp"
+        android:src="@drawable/photo_big"
+        android:id="@+id/test_imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/prog_bar_offline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/no_data_available"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:alpha=".3"
+            android:id="@+id/no_data_available_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/database"/>
+        <TextView
+            android:textSize="20sp"
+            android:layout_below="@id/no_data_available_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_no_farm_data_avaialble"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/no_internet_layout"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:alpha=".3"
+            android:id="@+id/no_internet_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/no_network"/>
+        <TextView
+            android:textSize="20sp"
+            android:layout_below="@id/no_internet_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_no_internet"/>
+    </RelativeLayout>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loader"
+        android:elevation="@dimen/_30sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/croptrails_loader2"
+        android:visibility="invisible" />
+
+</RelativeLayout>

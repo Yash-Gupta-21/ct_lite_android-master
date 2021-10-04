@@ -1,0 +1,460 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/toolbar_setting"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/img_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="8dp"
+        app:srcCompat="@drawable/ic_mode_edit_white_24dp"
+        android:layout_marginEnd="8dp" />
+
+    <RelativeLayout
+        android:layout_marginTop="?android:attr/windowTitleSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+
+        android:paddingBottom="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f1f1f1"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/sv_profile_photo"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/rounded_lay_for_farmer_profile"
+                    android:elevation="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_person_white_24dp"
+                    android:transitionName="imageTransition"
+                    app:civ_border_color="@color/new_theme"
+                    app:civ_border_width="1px" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/capture_image_profile"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginLeft="-15dp"
+                    android:layout_marginTop="@dimen/_85sdp"
+                    android:layout_toRightOf="@id/sv_profile_photo"
+                    android:background="@drawable/rounded_bg_for_camera_crop"
+                    android:elevation="4dp"
+                    android:src="@drawable/ic_photo_camera_white_24dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/sv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sv_profile_photo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="---------"
+                    android:textColor="@color/new_theme"
+                    android:textSize="@dimen/_20ssp"
+                    android:textStyle="bold"
+                    android:transitionName="usernameTransition" />
+
+                <TextView
+                    android:id="@+id/sv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sv_user_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/new_theme_dark"
+                    android:textSize="@dimen/_15ssp" />
+
+            </RelativeLayout>
+            <!--name-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:elevation="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.43">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_account_box_black_24dp"
+                            android:drawablePadding="@dimen/_8sdp"
+                            android:paddingLeft="@dimen/_16sdp"
+                            android:paddingTop="@dimen/_16sdp"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="@dimen/_16sdp"
+                            android:text="@string/name_label"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight=".6">
+                        <TextView
+                            android:id="@+id/sv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Name"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/editText_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:layout_gravity="center_vertical"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/timeline_act_upcomming"
+                            android:textSize="16sp"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--end of name-->
+
+            <!--Father's name-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:elevation="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.43">
+
+                        <TextView
+                            android:id="@+id/fathers_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+                            android:drawablePadding="@dimen/_8sdp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/_16sdp"
+                            android:paddingTop="@dimen/_16sdp"
+                            android:paddingBottom="@dimen/_16sdp"
+                            android:text="@string/father_name_label"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight=".6">
+                        <TextView
+                            android:id="@+id/sv_fathers_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Father Name"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="14sp"/>
+
+                        <EditText
+                            android:id="@+id/editText_father_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:layout_gravity="center_vertical"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/timeline_act_upcomming"
+                            android:textSize="16sp"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--end of father's name-->
+
+            <!--DOB-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="#ffffff"
+                android:elevation="@dimen/_10sdp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.43">
+
+                        <TextView
+                            android:id="@+id/dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/_16sdp"
+                            android:paddingTop="@dimen/_16sdp"
+                            android:paddingBottom="@dimen/_16sdp"
+                            android:text="@string/dob_label"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight=".6">
+                        <TextView
+                            android:id="@+id/sv_dob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Dob"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--end of DOB-->
+
+            <!--mobile-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="#ffffff"
+                android:elevation="@dimen/_10sdp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.43">
+
+                        <TextView
+                            android:id="@+id/sv_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                            android:drawablePadding="@dimen/_8sdp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/_16sdp"
+                            android:paddingTop="@dimen/_16sdp"
+                            android:paddingBottom="@dimen/_16sdp"
+                            android:text="@string/contact_label"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight=".6">
+                        <TextView
+                            android:id="@+id/txt_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contact"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--end of mobile-->
+
+            <!--email-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="#ffffff"
+                android:elevation="@dimen/_10sdp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.43">
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_email_black_24dp"
+                            android:drawablePadding="@dimen/_8sdp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/_16sdp"
+                            android:paddingTop="@dimen/_16sdp"
+                            android:paddingBottom="@dimen/_16sdp"
+                            android:text="@string/email_label"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight=".6">
+
+                        <TextView
+                            android:id="@+id/sv_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/editText_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/timeline_act_upcomming"
+                            android:textSize="16sp"
+                            android:layout_gravity="center_vertical"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/button_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="56dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/button_background_color"
+                android:text="@string/profile_btn_update"
+                android:textColor="@color/button_text_color"
+                android:visibility="gone" />
+
+
+            <!--end of email-->
+
+        </LinearLayout>
+    </ScrollView>
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/connectivityLine"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/yellow"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <include
+
+            android:layout_alignParentBottom="true"
+            android:id="@+id/adLayout"
+            layout="@layout/ad_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+</FrameLayout>

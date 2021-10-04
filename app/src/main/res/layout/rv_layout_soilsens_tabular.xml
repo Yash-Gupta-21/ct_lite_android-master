@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    >
+
+   <!-- <View
+        android:id="@+id/v1"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="3px"/>-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:background="@drawable/large_edittext_background_black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:id="@+id/dateTimeTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:background="@drawable/large_edittext_background_black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:textIsSelectable="true"
+                android:id="@+id/locationTv"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:background="@drawable/large_edittext_background_black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:textIsSelectable="true"
+                android:id="@+id/moistureTv"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+   <!-- <View
+        android:id="@+id/v2"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="3px"/>-->
+</LinearLayout>

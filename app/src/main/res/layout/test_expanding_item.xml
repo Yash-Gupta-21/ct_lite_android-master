@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_height="@dimen/_40sdp">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|left"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+               <!-- <CheckBox
+                    android:id="@+id/select_all_bags_check"
+                    android:text="@string/select_all"
+                    android:layout_weight=".5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />-->
+
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,1471 @@
+<resources>
+    <string name="app_name">CropTrails</string>
+    <!-- Strings related to login -->
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">Email address is invalid</string>
+    <string name="error_invalid_password">Password is too short</string>
+    <string name="error_incorrect_password">Password is incorrect</string>
+    <string name="error_field_required">Field is required</string>
+    <string name="permiViewFailDialogssion_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="amount_cant_be_null">Amount can\'t be null</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_landing">LandingActivity</string>
+    <string name="title_home">Home</string>
+    <string name="invalid_number_please_check">Invalid number, Please check</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="back_press">Press Back again to Exit.</string>
+    <string name="submit_label_login">Submit</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="internet_not_connected">Please check your internet Connection and Try again</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="country_prompt">Select country</string>
+
+    <string-array name="country_arrays">
+        <item>India</item>
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+    </string-array>
+
+    <string name="state_prompt">Choose a state</string>
+    <string-array name="state_arrays">
+        <item>MP</item>
+        <item>UP</item>
+        <item>Delhi</item>
+    </string-array>
+
+    <string name="tehsil_prompt">Choose a tehsil</string>
+    <string-array name="tehsil_arrays">
+        <item>Indore</item>
+        <item>Ujjain</item>
+        <item>Dewas</item>
+    </string-array>
+
+    <string name="city_prompt">Choose a City</string>
+    <string-array name="city_arrays">
+        <item>Indore</item>
+        <item>Ujjain</item>
+        <item>Dewas</item>
+    </string-array>
+
+    <string name="district_prompt">Choose a Destrict</string>
+    <string-array name="district_arrays">
+        <item>Indore</item>
+        <item>Ujjain</item>
+        <item>Dewas</item>
+    </string-array>
+
+
+    <string name="date_prompt">Choose a Date</string>
+    <string-array name="date_arrays">
+        <item>2018/06/8</item>
+        <item>2018/06/9</item>
+    </string-array>
+
+    <string-array name="irrigation_type_array">
+        <item>Select</item>
+        <item>Surface irrigation</item>
+        <item>Localized irrigation</item>
+        <item>Drip irrigation</item>
+        <item>Sprinkler irrigation</item>
+        <item>Center pivot irrigation</item>
+        <item>Lateral move irrigation</item>
+        <item>Sub-irrigation</item>
+        <item>Manual irrigation</item>
+
+    </string-array>
+
+
+    <string-array name="previous_crops_array">
+        <item>Select</item>
+        <item>Soybean</item>
+        <item>Maize</item>
+        <item>Sunflower</item>
+        <item>Mustard</item>
+        <item>Wheat</item>
+        <item>Barley</item>
+        <item>NA</item>
+    </string-array>
+
+
+    <string-array name="irrigation_source_array">
+        <item>Select</item>
+        <item>Canals</item>
+        <item>Wells</item>
+        <item>Tube-wells</item>
+        <item>Tanks</item>
+    </string-array>
+
+    <string-array name="soil_type_array">
+        <item>Select</item>
+        <item>Clay Soil</item>
+        <item>Loam Soil</item>
+        <item>Sandy Soil</item>
+        <item>Silty Soil</item>
+        <item>Peaty Soil</item>
+    </string-array>
+
+    <string name="moisture_prompt">Choose Moisture Level</string>
+    <string-array name="moisture_level">
+        <item>Select</item>
+        <item>Moist</item>
+        <item>Not Moist</item>
+        <item>Less Moist</item>
+        <item>High Moist</item>
+    </string-array>
+
+    <string name="grade_prompt">Select Grade</string>
+    <string-array name="grade">
+        <item>Select</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+
+    <string name="ipm_prompt">Select Material</string>
+    <string-array name="ipm">
+        <item>Select</item>
+        <item>Carazen</item>
+        <item>Amistar</item>
+    </string-array>
+
+    <string name="unit_prompt">Units</string>
+    <string-array name="unit">
+        <item>kg</item>
+        <item>litre</item>
+        <item>quintol</item>
+        <item>ton</item>
+    </string-array>
+
+
+    <string name="iwm_prompt">Select Material</string>
+    <string-array name="iwm">
+        <item>Select</item>
+        <item>Atrizen</item>
+        <item>Laudis</item>
+        <item>Roundup</item>
+    </string-array>
+
+    <string name="inm_prompt">Select Material</string>
+    <string-array name="inm">
+        <item>Select</item>
+        <item>DAP</item>
+        <item>MOP</item>
+        <item>Urea</item>
+        <item>20-20-0-13</item>
+    </string-array>
+
+    <string name="path_below">M7.41,7.84L12,12.42l4.59,-4.58L18,9.25l-6,6 -6,-6z</string>
+    <string name="search_hint">Search User</string>
+
+
+    <item name="myDynamic1" type="id" />
+    <item name="rt1" type="id" />
+
+    <string name="inm_test_status">Select Material</string>
+    <string-array name="status_test">
+        <item>Select</item>
+        <item>Good</item>
+        <item>Bad</item>
+        <item>Worse</item>
+    </string-array>
+    <string name="title_activity_harvest_show_single_plan_map">Map</string>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="rupee_symbol">\u20A8</string>
+    <string name="no_response">Oops something went wrong. Please try again</string>
+    <string name="no_response_plz_reload">Oops something went wrong. Please Reload</string>
+
+    <string name="setting_activity_title">Settings</string>
+    <string name="setting_no_username">Name : -</string>
+    <string name="setting_no_fathername">Father Name :</string>
+    <string name="signout_alert_dialog_message">Are you sure you want to exit ?</string>
+    <string name="signout_alert_dialog_yes">YES</string>
+    <string name="signout_alert_dialog_no">NO</string>
+    <string name="offline_mode_logout_error">You can not logout in offline mode</string>
+    <string name="snackbar_ok">OK</string>
+    <string name="share_title">Share via</string>
+
+    <string name="image_select_image_title">Add Photo!</string>
+    <string name="image_choose_from_library">Choose from gallery</string>
+    <string name="image_take_photo">Click a photo</string>
+    <string name="image_cancel">Cancel</string>
+    <string name="gallery_intent_title">Select File</string>
+    <string name="select_from_gallery_error">Some error occurred! try again later</string>
+    <string name="alert_title_label">Alert!</string>
+    <string name="profile_alert_dialog_message">Do you want to discard changes?</string>
+    <string name="profile_alert_dialog_yes">YES</string>
+    <string name="profile_alert_dialog_no">NO</string>
+    <string name="profile_image_update_failed">Failed to update profile photo. Please try again</string>
+
+    <string name="name_label">Name </string>
+    <string name="father_name_label">Father Name :</string>
+    <string name="dob_label">Dob :</string>
+    <string name="contact_label">Contact</string>
+    <string name="email_label">Email</string>
+    <string name="setting_add_farm">Add Farm</string>
+    <string name="setting_reset_password">Reset Password</string>
+    <string name="setting_share">Share</string>
+    <string name="setting_rate_us">Rate Us</string>
+    <string name="setting_signout">Sign out</string>
+    <string name="setting_privacy_policy">Privacy Policy</string>
+    <string name="setting_feedback">Feedback</string>
+    <string name="setting_terms_and_conditions">Terms and Conditions</string>
+    <string name="mayur_nagdev">Mayur Nagdev</string>
+    <string name="harvest_date">Harvest Date:</string>
+
+    <string name="_10_07_2018">10/07/2018</string>
+    <string name="father_s_name">Father Name :</string>
+    <string name="no_old_expnse_data_avaialble_label">No expense added yet</string>
+    <string name="no_harvest_paln_data_avaialble_label">No record found for planed harvest</string>
+    <string name="no_harvest_data_available">No record found for harvest collection</string>
+    <string name="expense_type_hint">Enter Expense Type</string>
+    <string name="harvest_date_exp_label_act">Harvest Date(Act.)</string>
+    <string name="harvest_date_exp_label_exp">Harvest Date(Exp.)</string>
+    <string name="amount_hint">Enter Amount</string>
+
+    <string name="date_msg">Date</string>
+    <string name="narration">Description</string>
+    <string name="submit">Submit</string>
+    <string name="submit_area">SUBMIT AREA</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="cant_add_expense_in_offline_mode">Cannot add expense in offline mode</string>
+    <string name="add_new_expenditure">Add new Expense</string>
+    <string name="expenditure_amount">Expenditure amount:</string>
+    <string name="expenditure_hint">Expenditure amount</string>
+    <string name="narration_hint">Description</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="add_an_image_of_bill_msg">Add bill image</string>
+    <string name="add_label">Add</string>
+    <string name="add_more_label">Add More</string>
+    <string name="chemicals">Chemicals</string>
+    <string name="e_g_10_hint">E.g. 10</string>
+    <string name="activity_label">Activity</string>
+    <string name="activity_type_label">Activity type</string>
+    <string name="desc_label">Desc</string>
+    <string name="more_label">More</string>
+    <string name="view_activity_label">View Activity</string>
+    <string name="add_todays_activity_label">Add Today\'s Activity</string>
+    <string name="pending_label">Pending</string>
+    <string name="upcomming_activity_label">Upcoming Activity</string>
+    <string name="visit_label">Visit</string>
+    <string name="visit_added_for_today_label">Today\'s Visit Added</string>
+    <string name="view_visit_label">View Visit</string>
+    <string name="visited_label">Visited</string>
+    <string name="timeline_label">Timeline</string>
+    <string name="failed_to_load_timeline_msg">Failed to load timeline. Please try again later</string>
+    <string name="no_network_available_msg">No network available</string>
+    <string name="there_is_no_standing_area_avilable_to_enter_for_pld_label">No standing area available to enter for PLD</string>
+    <string name="no_actual_area_available_go_to_capture">No actual area available,Please go to capture farm area</string>
+    <string name="ok_label">OK</string>
+    <string name="date_label">Date :</string>
+    <string name="please_enter_integrated_nutrient_management_data_in_the_below_form_label">Please enter Integrated Nutrient Management data in below form</string>
+    <string name="please_enter_integrated_weight_management_data_in_the_below_form_label">Please enter Integrated Weight Management data in below form</string>
+    <string name="please_enter_integrated_pest_management_data_in_the_below_form_label">Please enter Integrated Pest Management data in below form</string>
+    <string name="please_grade_crop_physical_condition_label">Please grade Crop Physical Condition</string>
+    <string name="please_provide_soil_moisture_level_label">Please provide Soil Moisture Level</string>
+
+
+    <!--MultiLanguages Strings Starting here-->
+    <string name="add_farm_title">Add Farm</string>
+    <string name="add_existing_farm_title">Add Farm To Existing Farmer</string>
+    <string name="new_farm_added_msg">New farm added successfully</string>
+    <string name="new_farm_fail_msg">Failed to add farm. Please try again later.</string>
+    <string name="add_farmer_name_msg">Please Enter Farmer Name</string>
+    <string name="farmer_name_cant_null_msg">Farmer name can\'t be null</string>
+    <string name="enter_father_name_msg">Please Enter Father Name</string>
+    <string name="father_name_cant_null_msg">Father name can\'t be null</string>
+    <string name="farmer_name_hint">Farmer Name</string>
+    <string name="farmer_father_name_hint">Father Name</string>
+    <string name="farmer_phone_hint">Phone</string>
+    <string name="farmer_village_or_city_hint">Village or city</string>
+    <string name="farmer_madal_or_tehsil_hint">Mandal or Tehsil</string>
+    <string name="farmer_district_hint">District</string>
+    <string name="farmer_state_hint">State</string>
+    <string name="farmer_counrty_hint">Country</string>
+    <string name="submit_label">SUBMIT</string>
+    <string name="opps_message">Oops!</string>
+    <string name="dash"> - </string>
+
+    <string name="update_farm_details_title">Update Farm Details</string>
+    <string name="update_farm_details_sub_msg">Enter farm details as described by farmer</string>
+    <string name="select_message_tag">Select</string>
+    <string name="select_irrigation_source_msg">Please Select Irrigation Source</string>
+    <string name="select_previous_crop_msg">Please Select Previous Crop</string>
+    <string name="select_irrigation_type_msg">Please Select Irrigation Type</string>
+    <string name="select_soil_type_msg">Please Select Soil Type</string>
+    <string name="select_sowing_date_msg">Please Choose Sowing Date</string>
+    <string name="farm_detail_update_fail_msg">Failed to update farm details. Please try again.</string>
+    <string name="farm_details_updated_success">Farm details updated successfully.</string>
+    <string name="dynamic_bag_act_title">Harvest Details</string>
+    <string name="irrigation_source_label">Irrigation Source</string>
+    <string name="previous_crop_label">Previous Crop</string>
+    <string name="irrigation_type">Irrigation Type</string>
+    <string name="soil_type_label">Soil Type</string>
+    <string name="sowing_date_label">Sowing Date</string>
+    <string name="expected_flowering_date_label">Expected Flowering Date</string>
+    <string name="expected_harvest_date_label">Expected Harvesting Date</string>
+    <string name="additional_farm_details_label">Additional Farm Details</string>
+    <string name="capture_farm_area_label">Capture Area</string>
+    <string name="mobile_label">Mobile</string>
+    <string name="farm_id_label">Farm Id:</string>
+    <string name="farm_name_label">Farm Name</string>
+    <string name="expected_area_label">Quoted area</string>
+    <string name="actual_area_label">Actual Area</string>
+    <string name="exp_flowering_date_label">Exp.Flowering Date</string>
+    <string name="exp_harvest_date">Exp.Harvest Date</string>
+    <string name="actual_flowering_date_label">Actual Flowering Date</string>
+    <string name="actual_harvest_date_label">Actual Harvest Date</string>
+
+    <string name="average_pp_spacing_label">Avg P-P spacing :</string>
+    <string name="average_rr_spacing_label">Avg R-R spacing :</string>
+    <string name="average_germiantion_label">Avg Plant Pop.(%) :</string>
+    <string name="average_farm_population_label">Avg Total Plant Pop. :</string>
+
+    <string name="view_samples_label">View Samples</string>
+    <string name="add_visit_label">Add Visit</string>
+    <string name="harvest_details_label">Harvest Details</string>
+    <string name="visit_step1_head_label">Step 1: Enter Standing Crop Area</string>
+    <string name="visit_step2_head_label">Step 2: Enter activities done by the Farmer</string>
+    <string name="visit_step1_msg_label">Enter crop area in which crop can be seen.</string>
+    <string name="visit_step2_msg_label">Enter Visit details in the form below. These details will be provided by the farmer on your visit</string>
+    <string name="last_standing_area">* Last Standing Area</string>
+    <string name="pld_form_label">PLD Form</string>
+    <string name="standing_crop_area_label">Standing Crop Area</string>
+    <string name="acres_msg_brkt">(acres)</string>
+    <string name="hectare_msg_brkt">(hectare)</string>
+    <string name="bigha_msg_brkt">(bigha)</string>
+    <string name="in_acres_hint">in acres</string>
+    <string name="inm_label">INM</string>
+    <string name="visit_inm_msg1">Enter Integrated Nutrient Management data in the form below.</string>
+    <string name="visit_select_na_msg">Select N/A if not available.</string>
+    <string name="visit_inm_msg3">Fill INM form and click save. You can save multiple entries.</string>
+    <string name="quantity_hint">Quantity</string>
+    <string name="prescribed_comment_hint">Prescribed Comment</string>
+    <string name="iwm_label">IWM</string>
+    <string name="visit_iwm_msg1">Enter Integrated Weight Management Data in the form below.</string>
+    <string name="visit_iwm_msg3">Fill IWM form and click save. You can save multiple entries.</string>
+    <string name="done_date_label">Done Date:</string>
+    <string name="save_label">Save</string>
+    <string name="ipm_label">IPM</string>
+    <string name="visit_ipm_msg1">Enter Integrated Pest Management Data in the form below.</string>
+    <string name="visit_ipm_msg3">Fill IPM form and click save. You can save multiple entries.</string>
+    <string name="cpc_label">CPC</string>
+    <string name="visit_cpc_msg">Select Grade Crop Physical Condition</string>
+    <string name="grade_label">Grade</string>
+    <string name="sml_label">SML</string>
+    <string name="visit_sml_msg">Provide Soil Moisture Level</string>
+    <string name="mositure_level_label">Mositure Level</string>
+    <string name="other_label">Other</string>
+    <string name="visit_other_msg">If any Special Comment or Task please sepcify here</string>
+    <string name="comment_label">Comment</string>
+    <string name="visit_farm_image1_msg">*Farm Image1</string>
+    <string name="visit_farm_image2_msg">*Farm Image2</string>
+    <string name="visit_farm_and_farmer_image_msg">*Farm And Farmer</string>
+    <string name="visit_selfie_famer_image_msg">*Selfie With Farm and Farmer</string>
+    <string name="add_new_harvest_label">Add New Harvest</string>
+    <string name="flowering_date_updated_success_msg">Flowering Date Updated Successfully</string>
+    <string name="flowering_date_update_fail_msg">Failed to update flowering date. Please try again later.</string>
+    <string name="harvest_date_updated_success_msg">Harvesting Date Updated Successfully</string>
+    <string name="harvest_date_update_fail_msg">Failed to update harvesting date. Please try again later.</string>
+    <string name="no_standing_area_for_harvest_msg">No standing acres remaining for harvest.</string>
+    <string name="farm_detail_label">Farm Details</string>
+    <string name="germination_and_spacing_form_label">Germination And Spacing Form</string>
+    <string name="select_dropdown">Select</string>
+    <string name="unit_dropdown">Unit</string>
+
+    <string name="please_select_inm_msg">Please select INM material.</string>
+    <string name="please_select_iwm_msg">Please select IWM material.</string>
+    <string name="please_select_ipm_msg">Please select IPM material.</string>
+
+    <string name="please_enter_material_quantity">Please enter material quantity.</string>
+    <string name="please_select_quantity_unit_msg">Please select any unit of material quantity.</string>
+    <string name="please_choose_done_date_msg">Please select done date.</string>
+    <string name="please_fill_validation_text">Please fill all the fields above to add more fields.</string>
+    <string name="please_fill_in_field">Please fill in this field</string>
+    <string name="correct_harvest_area">Please enter correct harvest area</string>
+    <string name="capture_first_image_msg">Please capture 1st image first</string>
+    <string name="capure_secong_image_msg">Please capture 2nd image first</string>
+    <string name="capture_third_image_msg">Please capture 3rd image first</string>
+    <string name="capture_fourth_image_msg">Please capture 4rh image first</string>
+    <string name="capture_fifth_image_msg">Please capture 5th image first</string>
+    <string name="capture_all_image_msg">Please capture all images to add more images</string>
+    <string name="standing_area_cant_null_msg">Standing Area Can not be null</string>
+    <string name="enter_standing_crop_area_msg">Please Enter Standing Crop Area.</string>
+    <string name="enter_appropriate_area_msg">Please fill appropriate value of standing crop area</string>
+    <string name="enter_coorect_standing_area_msg">Please enter correct value of standing area.</string>
+    <string name="add_chemical_or_na_msg">Please add any chemical or select N/A in INM .</string>
+    <string name="please_select_chemical_msg">Please select chemical</string>
+    <string name="please_select_chemical_unit_msg">Please select chemical unit</string>
+    <string name="add_chemical_na_iwm_msg">Please add any chemical or select N/A in IWM .</string>
+    <string name="add_chemical_or_na_ipm_msg">Please add any chemical or select N/A in IPM .</string>
+    <string name="select_cpc_msg">Please select grade</string>
+    <string name="select_sml_msg">Please select soil moisture level record</string>
+    <string name="uploading_visit_msg">Uploading Visit...</string>
+    <string name="visit_submit_success_msg">Visit Submitted Successfully.</string>
+    <string name="visit_submit_fail_msg">Failed to add this visit. Please try again</string>
+    <string name="fail_to_connect_msg">Failed to connect!</string>
+    <string name="check_internet_connection_msg">Please check your internet connection.</string>
+    <string name="visit_data_saved_msg">Your Data Saved.</string>
+    <string name="cant_view_farm_in_offline_msg">You cannot view farm in offline mode.</string>
+    <string name="no_standing_area_for_visit">There is no standing area for visit.</string>
+    <string name="error_message">Error!</string>
+    <string name="verify_farm_area_first_msg">Please Verify farm area first.</string>
+    <string name="no_previous_visit_available_msg">No previous visit available for this farm.</string>
+    <string name="failed_to_load_visits_msg">Failed to load visit data. Please try again</string>
+    <string name="failed_to_load_previous_harvest_msg">Failed to load previous harvest data. Please try again</string>
+    <string name="need_to_mark_gps_coordinates">You Need to Mark Gps Coordinates first to view farm Area</string>
+    <string name="failed_to_get_farm_location_msg">Failed to get farm location. Please try again later</string>
+    <string name="timeline_activity_title">Timeline</string>
+    <string name="failed_to_load_timeline">Failed to load timeline. Please try again later</string>
+    <string name="moisture_level_label">Moisture Level</string>
+    <string name="add_visit_activity_title">Add Visit</string>
+    <string name="choose_other_image_to_upload_msg">Please choose another image to upload.</string>
+    <string name="please_wait_msg">Please Wait...</string>
+    <string name="fill_date_msg">Fill Data</string>
+    <string name="select_chemical_label">Select Chemical</string>
+    <string name="please_fill_date_msg">Please fill data</string>
+    <string name="farmer_reply_must_entered_msg">Farmer reply must be entered</string>
+    <string name="ok_msg">Ok</string>
+    <string name="fill_data_properly_msg">Please fill out data properly</string>
+    <string name="select_file_msg">Select File</string>
+    <string name="activity_submitted_success_msg">Activity Submitted successfully.</string>
+    <string name="activity_submit_fail_msg">Failed to upload data on timeline. Please try again later</string>
+    <string name="error_occurred_try_again_msg">Error Occurred. Try Again</string>
+    <string name="retry_msg">Retry</string>
+    <string name="something_went_wrong_msg">Something went wrong</string>
+    <string name="please_try_again_later_msg">Please try again later</string>
+    <string name="visit_report_activity_title">Farm Visit Report</string>
+    <string name="farm_visit_details_label">Farm Visit Details</string>
+    <string name="visit_number_label">Visit Number :</string>
+    <string name="visited_on_label">Visited on :</string>
+    <string name="farmer_name_label">Farmer Name :</string>
+    <string name="click_to_view_images_label">Click to view images</string>
+    <string name="downloading_is_pending">Some image downloading is pending.</string>
+    <string name="no_image_for_this_visit">No images for this Visit</string>
+    <string name="image_activity_title">Images</string>
+    <string name="enter_pld_details_label">Enter Details</string>
+    <string name="please_enter_pld_area_and_its_reason_in_the_fields_mentioned_below_label">Please enter Crop Loss / Damage area and it\'s reason in the fields mentioned below.</string>
+    <string name="effective_farm_area_label">Effective farm area</string>
+    <string name="pld_acres_label">Loss Area</string>
+    <string name="reason_for_pld_label">Loss Reason</string>
+    <string name="pld_already_submitted_for_this_farm_label">* Pld already submitted for this farm.</string>
+    <string name="pld_form_title">Crop Loss / Damage</string>
+    <string name="already_pld_added">Already PLD added.</string>
+    <string name="invalid_entry_error">Invalid entry in area field</string>
+    <string name="invalid_entry_in_pld">Invalid entry in PLD Reason</string>
+    <string name="your_pld_data_update">Your PLD Data Updated</string>
+    <string name="failure_upload_msg">Failed to upload PLD Data. Please try again later</string>
+    <string name="enter_pld_hint">Enter Loss Here.</string>
+    <string name="enter_reason_for_pld_hint">Enter reason for loss area</string>
+    <string name="enter_pld_here_hint">Enter Loss here.</string>
+    <string name="make_offline_label">Go Offline</string>
+    <string name="lot_no">Farm ID</string>
+    <string name="fathers_name">Father :</string>
+    <string name="offline_mode_title">Offline Mode</string>
+    <string name="preparing_your_data_for_offline_mode">Preparing your data for offline mode. It may take several minutes</string>
+    <string name="stay_connected">Stay connected</string>
+    <string name="please_select_at_least_one_farm">Please Select at least one farm to go Offline</string>
+    <string name="please_check_your_internet">Please Check Your Internet Connection.</string>
+    <string name="fail_to_load_offline_mode">Failed to load farms for offline mode. Please try again later</string>
+    <string name="oops_messsage_label">Oops something went wrong. Please try again</string>
+    <string name="failed_to_make_data_offline">Failed to make data offline. Please try again later</string>
+    <string name="please_allow_storage_permission">Please allow storage permission for offline mode.</string>
+    <string name="click_on_storage"><![CDATA[Permissions-> Click on storage]]></string>
+    <string name="yes">Yes</string>
+    <string name="go_offline">Go Offline</string>
+    <string name="check_area_title">Check Area</string>
+    <string name="area">Area</string>
+    <string name="clear">Clear</string>
+    <string name="acers_label">Acres</string>
+    <string name="please_submit_at_least_3_points">Please submit atleast 3 points</string>
+    <string name="outside_circle_radius">Outside Circle radius</string>
+    <string name="this_app_needs_location_permisssion">This app needs to access the Location, please give permission to app to use location functionality</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="please_clear_then_add">Please Clear Then Add More</string>
+    <string name="response_error">Response Error Try again later</string>
+    <string name="farm_area_title">Farm Area</string>
+    <string name="this_app_needs_location_permission">This app needs the Location permission, please accept to use location functionality</string>
+    <string name="please_clear_then_add_more">Please Clear Then Add More</string>
+    <string name="should_have_at_least_two_points_to_display">Should have atleast 2 points to display</string>
+    <string name="capture_farm_area_maps_activity_title">Capture Farm Area</string>
+    <string name="sure_to_submit_area">Are you sure you want to submit the Area ?</string>
+    <string name="area_is_too_short_for_capture">Area is too short to capture. Please capture again</string>
+    <string name="no">No</string>
+    <string name="please_enter_valid_area">Please Enter Valid Area</string>
+    <string name="actual_area_update_successfully">Actual area updated successfully.</string>
+    <string name="failed_to_update_actual_area">Failed to update actual area. Please try again later</string>
+    <string name="please_click_inside_circle_to_mark">Please Click on inside circle to mark point</string>
+    <string name="location_permission_needed">Location Permission Needed</string>
+    <string name="this_apps_needs_location_permission">This app needs the Location permission, please accept to use location functionality</string>
+    <string name="cant_add_more_points">Cannot add more points</string>
+    <string name="failed_to_get_farm_ocation_please_try_again_later">Failed to get Farm locations. Please try again later</string>
+    <string name="area_successfully_added">Area Successfully added...</string>
+    <string name="failed_to_verify_farm_area">Failed to verify farm area. Please try again later</string>
+    <string name="add_actual_area_manually">Manually Add Actual Area </string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="username">Username Or Phone</string>
+    <string name="log_in">LOG IN</string>
+    <string name="username_cant_be_null">Username cannot be empty</string>
+    <string name="password_cant_be_empty">Password cannot be empty</string>
+    <string name="failed_to_connect">Failed to connect!</string>
+    <string name="invalid_username_password">Invalid username or password. Please try again later</string>
+    <string name="failed_to_login">Failed to login. Please try again later</string>
+    <string name="account_deactivated_contact_admin_msg">Profile deactivated. Please contact your admin to reactivate.</string>
+    <string name="plan">Plan -</string>
+    <string name="location_not_available">Current Location Not available please try again later</string>
+    <string name="server_error">Server Error. Please try again</string>
+    <string name="bags">Bags :</string>
+    <string name="harvest_plan">Harvest Plan</string>
+    <string name="notification_label">Notification</string>
+    <string name="failed_to_load_harvest_data">Failed to load harvest data. Please try again later</string>
+
+    <string name="profile_activity_title">Profile</string>
+    <string name="old_expense_data_unavaialble">No Data Available For Old Expense</string>
+    <string name="hint_amount">Amount</string>
+    <string name="txt_date">Date</string>
+    <string name="hint_narration">Description</string>
+    <string name="hint_submit">Submit</string>
+    <string name="txt_no_internet">No Internet Connection</string>
+    <string name="txt_can_not_add_expense_offline_mode">Cannot add expense in offline mode</string>
+    <string name="txt_no_farm_data_avaialble">No farm available</string>
+    <string name="txt_no_timeline_data_avaialble">No timeline data available</string>
+    <string name="txt_no_notification_available">No notification available</string>
+    <string name="txt_no_harvest_data_avaialble">No harvest data available</string>
+    <string name="txt_total_farms">Total Farms</string>
+    <string name="txt_total_standing_area">Total Standing Area</string>
+    <string name="txt_in_acres">( in acres )</string>
+    <string name="txt_total_expected_area">Total Expected Area</string>
+    <string name="txt_last_visited_farm">Last Visited Farm</string>
+    <string name="txt_max_standing_area">Max. Standing Area</string>
+    <string name="txt_max_population">Max. Population</string>
+    <string name="txt_grade_wise_distribution">Grade Wise Distribution</string>
+    <string name="drawer_check_area">Check Area</string>
+    <string name="drawer_offline_mode">Offline Mode</string>
+    <string name="drawer_plan_harvest">Plan Harvest</string>
+    <string name="drawer_planned_harvest">Planned Harvest</string>
+    <string name="drawer_back_to_online">Back To Online</string>
+    <string name="drawer_settings">Settings</string>
+    <string name="main_menu_search">Search</string>
+    <string name="harvest_plan_submit">Submit</string>
+    <string name="bottom_nav_dashboard">Dashboard</string>
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_expenditure">Expenditure</string>
+    <string name="landing_search">Search</string>
+    <string name="landing_filter">Filter</string>
+    <string name="update_farm_failure">Failed to update farm data. Please try again later</string>
+    <string name="txt_data_uploaded_to_server">Data Uploaded to server</string>
+    <string name="txt_germination_data_upload_failed">Failed to upload germination and sample data. Please try again later</string>
+    <string name="txt_harvest_data_upload_failed">Failed to upload harvest data. Please try again later</string>
+    <string name="txt_visit_data_upload_failed">Failed to upload visit data. Please try again later</string>
+    <string name="online_now_no_offline_upload">You are Online Now... No Offline Data to upload</string>
+    <string name="txt_uploading_data">Uploading Data...</string>
+    <string name="txt_server_error">Server Error. Please try again</string>
+    <string name="dialog_heading_unable_to_connect">Unable to connect!</string>
+    <string name="connect_to_3g_or_4g">Make sure that you are connected with 3G or 4G network to upload data.</string>
+    <string name="go_online_upload_offline_data">Are you sure you want to Go Back Online and Upload Offline Data ?</string>
+
+    <string name="validation_amount_null">Amount cannot be null</string>
+    <string name="validation_comment_null">Comment cannot be null</string>
+    <string name="validation_date_null">Please Choose Date</string>
+    <string name="validation_image_null">Please Upload expenditure image</string>
+
+    <string name="expense_data_upload_failed">Failed to load expense data. Please try again later</string>
+    <string name="expense_added">Expense Added Successfully</string>
+    <string name="password_updated">Updated Successfully</string>
+    <string name="expense_error_occured">Error Occurred. Please try again later</string>
+    <string name="pick_up_date">Pick Up Date </string>
+    <string name="select_all">Select All</string>
+    <string name="bag">Bag</string>
+    <string name="please_enter_valid_vehicle_no">Please enter valid vehicle No.</string>
+    <string name="please_enter_valid_vehicle_weight">Please enter valid vehicle weight</string>
+    <string name="please_enter_valid_remark">Please enter valid remark</string>
+    <string name="please_choose_valid_date">Please choose valid Date</string>
+    <string name="harvest_collection_planned_successfully">Harvest Collection planned Successfully</string>
+    <string name="failed_to_plan_harvest_collection">Failed to plan harvest collection. Please try again</string>
+    <string name="please_select">Please select</string>
+    <string name="harvest_plan_activity_title">Harvest Collection</string>
+    <string name="no_data_available_to_plan_harvest">No data available to plan harvest. Please try again</string>
+    <string name="failed_to_load_plan_harvest">Failed to load farms to plan harvest. Please try again</string>
+    <string name="farm_details">Farm Details</string>
+    <string name="harvest_done_date">Harvest Done Date</string>
+    <string name="bag_details">Bag Details</string>
+    <string name="you_must_fill_this_field_first">You must fill this field first</string>
+    <string name="harvest_data">Harvest Data</string>
+    <string name="do_you_want_to_submit_this_data">Do you want to submit this data?</string>
+    <string name="cancel">Cancel</string>
+    <string name="please_fill_out_this_field">please fill out this field</string>
+    <string name="are_you_want_to_submit_this_data">Are you sure you want to submit this data?</string>
+    <string name="failed_to_add_harvest_data">Failed to add harvest data. Please try again later</string>
+    <string name="your_data_saved">Your Data Saved.</string>
+    <string name="bags_no">Bags No</string>
+    <string name="weight_in_kgs">Total Weight(in Kg)</string>
+    <string name="step_2_enter_bag_details">Step 2: Procurement Details</string>
+    <string name="enter_bag_no_and_weights_in_which_crop_can_be_seen">Enter Total harvested crop weight &amp; package count.</string>
+    <string name="enter_bag_no_and_weights_in_which_crop_can_be_seen_easy">Enter total weight and number of packs in which </string>
+    <string name="step_1_enter_farmer_details">Step 1: Enter Harvest Details</string>
+    <string name="enter_crop_area_in_which_crop_can_be_seen">Enter crop area in which crop can be seen</string>
+
+    <string name="framer_lot_no">Farm Id</string>
+    <string name="farmer_no_of_farms">No. Of Farms</string>
+    <string name="location_permission_title">Location Permission Needed</string>
+    <string name="location_permission_message">This app needs the Location permission, please accept to use location functionality</string>
+    <string name="toast_permission_denied">Permission denied</string>
+    <string name="farm_fragment_toast_selected">Selected</string>
+    <string name="farm_fragment_dates_not_equal">Dates are not equal, Insering...</string>
+    <string name="farm_fragment_in_expecption">In Exception, Insering...</string>
+    <string name="frm_fragment_no_previous_date">No Previous date, Insering...</string>
+    <string name="failed_load_farm">Failed to load farms. Please try again later</string>
+
+    <string name="enter_germination_heading">Enter plant population and spacing details</string>
+    <string name="germination_desc_msg">Please enter area measured in the fields below sample wise you need to enter atleast 1 sample.</string>
+    <string name="sample1_msg">*Sample 1</string>
+    <string name="configured_area_hint">Configured Area (in sq. feet)</string>
+    <string name="p_p_spacing_in_inches_hint">P-P spacing (in inches)</string>
+    <string name="r_r_spacing_in_inches_hint">R-R spacing (in inches)</string>
+    <string name="ideal_population_label">Ideal population</string>
+    <string name="actual_population_hint">Actual Population</string>
+    <string name="germination_label">Plant Population</string>
+    <string name="total_farm_population_label">Total Plant Population</string>
+    <string name="sample2_label">*Sample 2</string>
+    <string name="sample3_label">*Sample 3</string>
+    <string name="average_p_p_spacing_label">Average P-P spacing :</string>
+    <string name="average_r_r_spacing_label">Average R-R spacing :</string>
+    <string name="average_germination_label">Average Germination :</string>
+    <string name="germination_sapcing_activity_title">Germination and Spacing</string>
+    <!--<string name="Rs">\u20B9</string>-->
+    <string name="enter_configured_of_sample1_msg">Please enter configured area of sample %1$s</string>
+    <string name="enter_pp_spacing_of_sample1_msg">Please enter plant to plant spacing of sample %1$s</string>
+    <string name="enter_rr_spacing_of_sample1_msg">Please enter row to row spacing of sample %1$s</string>
+    <string name="enter_actual_pop_of_sample1_msg">Please enter actual population of sample %1$s</string>
+
+    <string name="invalid_pp_spacing_msg">Invalid P-P spacing</string>
+    <string name="invalid_rr_spacing_msg">Invalid R-R spacing</string>
+    <string name="invalid_population_msg">Invalid population</string>
+    <string name="enter_configured_of_sample2_msg">Please enter configured area of sample 2</string>
+    <string name="enter_pp_spacing_of_sample2_msg">Please enter plant to plant spacing of sample 2</string>
+    <string name="enter_rr_spacing_of_sample2_msg">Please enter row to row spacing of sample 2</string>
+    <string name="enter_actual_pop_of_sample2_msg">Please enter actual population of sample 2</string>
+
+    <string name="enter_configured_of_sample3_msg">Please enter configured area of sample $s</string>
+    <string name="enter_pp_spacing_of_sample3_msg">Please enter plant to plant spacing of sample 3</string>
+    <string name="enter_rr_spacing_of_sample3_msg">Please enter row to row spacing of sample 3</string>
+    <string name="enter_actual_pop_of_sample3_msg">Please enter actual population of sample 3</string>
+    <string name="fill_fourth_sample_msg">First fill out the 4th sample</string>
+    <string name="fill_all_field_of_sample4">Fill all sample 4 fields</string>
+    <string name="fill_all_field_of_sample5">Fill all sample 5 fields</string>
+    <string name="germination_submitted_success_msg">Plant population record added successfully</string>
+    <string name="germination_update_fail_msg">Failed to update Germination Spacing. Please try again later</string>
+    <string name="harvest_done_date_label">Harvest Done Date</string>
+    <string name="weighment_date_label">Weighment Date</string>
+    <string name="harvested_area_label">Harvested Area</string>
+    <string name="standing_area_label">Standing Area</string>
+    <!--<string name="bag_details_label">Bag Details</string>
+    <string name="bags_no_label">Bags No.</string>-->
+    <string name="weight_in_kgs_label">Weight (in Kgs)</string>
+    <string name="harvest_report_activity_title">Harvest Report</string>
+    <string name="bags_no_label">Bags No</string>
+    <string name="txt_select_a_language">SELECT A LANGUAGE</string>
+    <string name="profile_btn_update">Update</string>
+
+
+    <string name="stock_weight_label">Stock Weight</string>
+    <string name="bags_blk_label">Bags(Blk)</string>
+    <string name="remark_label">Remark: </string>
+    <string name="vehicle_weight_label">Vehicle Weight</string>
+    <string name="total_bags_label">Total Bags</string>
+    <string name="acre_msg"> acre</string>
+    <string name="growing_area_msg">Geofenced Area</string>
+    <string name="farm_area_label">Farm area</string>
+    <string name="address_label">Address :</string>
+    <string name="login_hint_password">Password</string>
+    <string name="add_expense_title">Add Image!</string>
+    <string name="add_expense_take_photo">Capture Image</string>
+    <string name="add_expense_choose_from_library">Choose from Library</string>
+    <string name="add_expense_cancel">Cancel</string>
+    <string name="expense_content_amount">Amount</string>
+    <string name="password_label">Password</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="vehicle_net_weight">Vehicle Net Weight</string>
+    <string name="remark">Remark</string>
+    <string name="total_planned_weight">Total Planned Weight</string>
+    <string name="farm_details_view_area">View Area</string>
+    <string name="farm_details_edit_details">Edit</string>
+    <string name="previous_visits_label">Previous Visits</string>
+    <string name="forget_password_activity_title">Reset Password</string>
+    <string name="show_sample_germination_activity_title">Sample Germination And Spacing</string>
+
+    <string name="visit_button_label">Visit</string>
+    <string name="harvest_button_label">Harvest</string>
+    <string name="flowering_date_hint">Flowering Date</string>
+    <string name="harvesting_date_hint">Harvesting Date</string>
+    <string name="bag_added_harvest">Bags Added Successfully</string>
+    <string name="setting_change_language">Change Language</string>
+
+    <!--18/1/19-->
+    <string name="configured_area_in_sqm_label">Configured Area (in sqm)</string>
+    <string name="plant_to_plant_spacing_label">Plant to Plant Spacing :</string>
+    <string name="row_to_row_spacing_label">Row to Row Spacing :</string>
+    <string name="activity_details_label">Activity Details</string>
+    <string name="description_label">Description :</string>
+    <string name="chemical_label">Chemical</string>
+    <string name="quantity_label">Quantity </string>
+    <string name="i_have_completed_the_activity_label">I have completed the activity.</string>
+    <string name="activity_inputs_label">Activity Inputs</string>
+    <string name="number_of_labour_hint">Number of Labour</string>
+    <string name="labour_total_cost_hint">Labour Total Cost</string>
+    <string name="number_of_machines_hint">Number of machines</string>
+    <string name="machine_total_cost_hint">Machine Total Cost</string>
+    <string name="chemical_quantity_hint">Chemical Quantity</string>
+    <string name="total_cost_of_chemical_hint">Total Cost of Chemical</string>
+    <string name="chemicals_added_label">Chemicals Added</string>
+    <string name="chemicals_label">Chemicals :-</string>
+    <string name="chemical_name_label">Chemical Name</string>
+    <string name="upload_images_label">Upload Images</string>
+    <string name="farmer_reply_hint">Farmer Reply</string>
+    <!--19/1/19-->
+    <string name="capture_all_images_msg">Please capture all images.</string>
+    <string name="cannot_view_farm_in_offline_msg">You cannot view farm area in offline mode.</string>
+    <string name="no_data_for_this_visit_msg">No data available for this visit.</string>
+    <!--21/1/19-->
+    <string name="fail_to_load_farm_data">Failed to load farm data. Please try again later</string>
+    <string name="no_chart_data_msg">No Data Available For Chart</string>
+    <string name="location_unavailable">unavailable</string>
+    <string name="probability">Probability</string>
+    <string name="rain">RAIN</string>
+    <string name="wind">WIND</string>
+    <string name="humidity">HUMIDITY</string>
+    <string name="cloud_cover">CLOUD COVER</string>
+    <string name="city">City</string>
+    <string name="region">Region</string>
+    <string name="weather">weather</string>
+    <string name="today_s_weather_report">Today\'s weather report</string>
+    <string name="max">Max</string>
+    <string name="min">Min</string>
+    <string name="sort_by">SORT BY</string>
+    <string name="harvest_date_high_to_low">Harvest date -- High to Low</string>
+    <string name="standing_area_high_to_low">Standing area -- High to Low</string>
+    <string name="standing_area_low_to_high">Standing area -- Low to High</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="otp_message">Enter Otp</string>
+    <string name="loading">Loading...</string>
+    <string name="invalid_code_message_label">Invalid Code</string>
+
+    <string name="invalid_number_message_label">Invalid phone number</string>
+
+    <string name="message_quota_finished_message_label">You exceeded maximum limit of login attemt</string>
+    <string name="title_activity_check_area_map">Map</string>
+    <string name="title_activity_show_area_on_map">Map</string>
+    <string name="season_label">Season</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="msg_token_fmt">Token</string>
+
+    <string name="input_cost_head_label">Step 1: Add Input Cost</string>
+    <string name="resource_cost_head_label">Step 2: Add Resources Used</string>
+    <string name="resource_name_hint">Resource Name</string>
+    <string name="txt_no_cost_and_resource_data_avaialble">No input cost and resource data available</string>
+    <string name="enter_area_hint">Enter area</string>
+    <string name="no_of_days_offline_exceeded">Please sync with server daily, at max you can be in offline mode for 3 days</string>
+
+    <string name="map_option_bottom_sheet">Choose Mode</string>
+    <string name="map_option_easy_mode">Easy Mode</string>
+    <string name="map_option_normal_mode">Normal Mode</string>
+    <string name="area_entere_manually_msg">Area is added manually</string>
+    <string name="nutrient_management_label">Nutrient Record</string>
+    <string name="weight_management_label">Herbicide Record</string>
+    <string name="pest_management_label">Pesticide Record</string>
+    <string name="soil_moisture_level_label">Soil Moisture Level Record</string>
+    <string name="add_comment_label">Add Comment</string>
+    <string name="update_standing_area">Update Standing Area</string>
+    <string name="add_photo_msg">Add Photo</string>
+    <string name="farms_label">Farms</string>
+    <string name="farmers_label">Farmers</string>
+    <string name="add_more_details_label">Add More Details</string>
+    <string name="remove_details_label">Hide Details</string>
+    <string name="invalid_area_msg">Invalid area</string>
+    <string name="no_germination_available_msg">No germination added yet</string>
+    <string name="enter_weight_label">Enter Weight :</string>
+    <string name="invalid_input_msg">Invalid Input</string>
+    <string name="standing_area_not_available_harvest_msg">Standing Area not Available for harvest</string>
+    <string name="bags_qty_label">Packing Count</string>
+    <string name="enter_total_weghts_of_packing_count_msg">Please enter total weights of packing count</string>
+    <string name="enter_packing_count_msg">Please enter packing count</string>
+    <string name="select_harvest_done_date_msg">Please enter harvest done date</string>
+    <string name="enter_weighment_date_msg">Please enter weighment date</string>
+    <string name="enter_harvested_area_msg">Please enter harvested area</string>
+    <string name="add_farm_label">Add Farm</string>
+    <string name="add_more_farm_label">Add More Farm</string>
+    <string name="help_label">Help</string>
+    <string name="crop_loss_damage_labe">Crop Loss / Damage</string>
+    <string name="version_label">App Version:</string>
+    <string name="near_me_label">Near Me</string>
+    <string name="adhaar_label">Adhaar</string>
+    <string name="address_line_1_label">Address Line 1</string>
+    <string name="address_line_2_label">Address Line 2</string>
+    <string name="india_label">India</string>
+    <string name="bank_name_label">Bank Name</string>
+    <string name="account_number_label">Account Number</string>
+    <string name="account_holder_name_label">Account Holder Name</string>
+    <string name="ifsc_code_label">IFSC Code</string>
+    <string name="branch_label">Branch</string>
+    <string name="current_crop_label">Current Crop</string>
+    <string name="submit_area_label">Submit Area</string>
+    <string name="area_label">AREA</string>
+    <string name="farmer_and_farm_added_succes_msg">Farmer and farm added successfully</string>
+    <string name="already_registered_mobile_msg">Already registered mobile number</string>
+    <string name="failed_add_farm_and_farmer_msg">Failed to add farmer and farm</string>
+    <string name="login_again_label">Login Again</string>
+    <string name="multiple_login_msg">CropTrails is open on another phone. Login again to use it in this Phone.</string>
+    <string name="select_irri_source_prompt">Select Irrigation Source</string>
+    <string name="select_irri_type_prompt">Select Irrigation Type</string>
+    <string name="select_soil_type_prompt">Select Soil Type</string>
+    <string name="select_season_prompt">Select Season</string>
+    <string name="failed_to_load_data_msg">Failed to load data, Please try again later</string>
+    <string name="enter_farm_id_msg">Please enter farm id</string>
+    <string name="enter_farm_area_msg">Please enter farm area</string>
+    <string name="select_season_msg">Please select season</string>
+    <string name="farm_added_success_msg">Farm added successfully</string>
+    <string name="failed_add_farm_msg">Failed to add farm, Please try again</string>
+    <string name="enter_sowing_date_hint">Enter Sowing Date</string>
+    <string name="enter_expected_flowering_date_hint">Enter Expected Flowering Date</string>
+    <string name="enter_expected_harvesting_date_hint">Enter Expected Harvesting Date</string>
+    <string name="total_expense_labe">Total Expense:</string>
+    <string name="sure_want_to_enter_actual_flowering_mg">Are you sure you want to enter Actual Flowering Date ?</string>
+    <string name="sure_want_to_enter_actual_harvest_mg">Are you sure you want to enter Actual Harvesting Date ?</string>
+    <string name="view_more_label">View More</string>
+    <string name="now_not_allowed_to_add_activity_msg">Now you are not allowed to add activity</string>
+    <string name="add_input_cost_label">Add Input Cost</string>
+    <string name="you_can_add_upto_10_visit_in_offline">You can only add upto 10 visits on a farm in offline mode</string>
+    <string name="timeline_activity_label">Timeline Activity</string>
+    <string name="no_data_found_for_activity_msg">No data found for this activity</string>
+    <string name="error_occurred_msg">Error Occurred.</string>
+    <string name="no_image_found_for_activity_msg">No image found for this Activity</string>
+    <string name="soil_moisture">Soil Moisture</string>
+    <string name="material_label">Material</string>
+    <string name="days_label">days</string>
+    <string name="seed_provided_on_label">Seed Provided On</string>
+    <string name="qty_seed_provided_label">Qty (Seed provided)</string>
+    <string name="grade_d">GRADE D</string>
+    <string name="grade_c">GRADE C</string>
+    <string name="grade_b">GRADE B</string>
+    <string name="grade_a">GRADE A</string>
+    <string name="farmer_not_allowed_to_add_area_msg">Farmer is not allowed to add farm area</string>
+    <string name="details_label">Details</string>
+    <string name="sample_label">Sample</string>
+    <string name="sample_data_stored_msg">Sample data stored successfully</string>
+    <string name="weight_label">Weight</string>
+    <string name="kg_label">kg</string>
+    <string name="total_expenses_label">Total Expenses</string>
+    <string name="monthly_expenses_expense">Monthly Expenses</string>
+    <string name="remove_label">Remove</string>
+    <string name="calendar_activity_details_label">Calendar Activity Details</string>
+    <string name="farmer_cost_title">Farmer Cost</string>
+    <string name="fail_to_load_cost_msg">Failed to load cost data, Please try again later</string>
+    <string name="input_cost_and_resource_title">Input Cost And Resource Used</string>
+    <string name="enter_expense_ammount_msg">Please enter expense amount</string>
+    <string name="enter_date_of_expense_msg">Please enter date of expense</string>
+    <string name="enter_expense_reson_msg">Please enter reason of expense</string>
+    <string name="cost_added_sussessful_msg">Farmer cost added successfully</string>
+    <string name="failed_to_add_farmer_expense">Failed to add expense, Please try again later</string>
+    <string name="select_cost_type_promt">Select Input Cost Type</string>
+    <string name="select_resource_type_prompt">Select Resource Type</string>
+    <string name="other_labe">Other</string>
+    <string name="select_cost_type_msg">Please select any cost type</string>
+    <string name="enter_cost_ammount_msg">Please enter cost amount</string>
+    <string name="enter_cost_date_msg">Please enter cost date</string>
+    <string name="enter_expense_type_msg">Please enter expense type</string>
+    <string name="select_resource_type_msg">Please select any resource type</string>
+    <string name="please_enter_resource_qty_msg">Please enter resource quantity</string>
+    <string name="enter_resource_name_msg">Please enter resource name</string>
+    <string name="enter_resource_unit_msg">Please enter resource unit</string>
+    <string name="select_date_msg">Select any date</string>
+    <string name="select_resource_use_date_msg">Please enter resource used date</string>
+    <string name="data_submit_success_msg">Data submitted successfully</string>
+    <string name="failed_to_submit_resource_and_cost_msg">Failed to submit input cost and resource data, Please try again later</string>
+    <string name="need_to_fill_input_or_resorce_msg">You need feel input cost form or resource used form to submit</string>
+    <string name="enable_location_msg">Please enable your location</string>
+    <string name="no_far_found_near_you">There is no farm found near you</string>
+    <string name="input_cost_label">Input Cost</string>
+    <string name="farmer_details_label">Farmer Details</string>
+    <string name="farm_details_label">Farm Details</string>
+    <string name="uploaded_images_label">Uploaded Images</string>
+    <string name="expense_remove_success_msg">Expense removed successfully</string>
+    <string name="expense_remove_fail_msg">Failed to remove expense</string>
+    <string name="confirm_remove_ecpense_msg">Are you sure to delete this expense?</string>
+
+    <string name="enter_health_card_number_msg">Please enter soil health card no.</string>
+    <string name="enter_health_card_validity_date_start_msg">Please enter start date of card validity</string>
+    <string name="enter_health_card_validity_date_end_msg">Please enter end date of card validity</string>
+    <string name="add_atleast_one_param_health_card">Please add atleast one parameter</string>
+    <string name="required_label">Required</string>
+    <string name="capure_1_image_msg">Please Capture 1st image first</string>
+    <string name="capure_2_image_msg">Please Capture 2nd image first</string>
+    <string name="capure_3_image_msg">Please Capture 3rd image first</string>
+    <string name="activity_added_success_msg">Activity added successfully</string>
+
+    <string name="enter_health_card_sample_number_msg">Please enter soil sample number</string>
+    <string name="enter_health_card_sample_collect_date_msg">Please enter date of sample collection</string>
+    <string name="card_please_enter_value_msg">Please enter value</string>
+    <string name="card_please_enter_unit_msg">Please enter unit</string>
+    <string name="enter_crop_id_msg">Please enter farm id</string>
+    <string name="select_crop_for_farm_msg">Select crop for the farm</string>
+    <string name="select_crop_rompt">Select Crop</string>
+    <string name="soil_health_card_no_label">Soil Health Card No.</string>
+    <string name="health_card_no_hint">*Health Card No.</string>
+    <string name="validity_label">Validity</string>
+    <string name="from_date_hint">*From</string>
+    <string name="to_date_hint">*To</string>
+    <string name="parameters_label">Parameters</string>
+    <string name="soil_sample_details_label">Soil Sample Details</string>
+    <string name="soil_sample_number_hint">*Soil Sample Number</string>
+    <string name="sample_collected_on_hint">*Sample Collected on</string>
+    <string name="mobile_number_not_availbale_msg">Mobile number not available</string>
+    <string name="arrow_symbol">\u2BC8</string>
+    <string name="sowing_date_not_available_label">Sowing date not available</string>
+    <string name="sure_want_to_enter_sowing_date_mg">Are you sure you want to enter sowing date ?</string>
+    <string name="add_sowing_date_msg">Sowing date unavailable, Please add sowing date</string>
+    <string name="sowing_date_updated_success_msg">Sowing Date Updated Successfully</string>
+
+    <string name="soil_health_card_label">Soil Health Card</string>
+    <string name="no_soil_health_card_data_added_yet_msg">No Soil Health Card Data Added yet!</string>
+    <string name="add_new_sample_health_card_label">Add New Sample</string>
+    <string name="soil_health_card_seen_and_addded_in_online_mode_msg">Currently soil health card data can not be seen/added in online mode</string>
+    <string name="no_parameter_values_found_for_adding_soil_health_card">No soil health card parameters found, Please contact your company to add parameters</string>
+    <string name="health_card_added_success_msg">Health card added successfully</string>
+    <string name="laboratory_name">Laboratory Name</string>
+    <string name="select_parameter_prompt">Select Parameter</string>
+    <string name="test_value_hint">*Test Value</string>
+    <string name="unit_hint_star">*Unit</string>
+    <string name="add_health_card_title">Add Health Card</string>
+    <string name="rainfall_label">Rainfall</string>
+    <string name="mm_unit">mm</string>
+    <string name="farm_coordinates_not_availabe_showing_weather_data_of_your_current_location">Showing weather data of your current location as farm geolocation is unavailable</string>
+    <string name="showing_weather_data_of_your_farm_location">Showing weather data of your farm location</string>
+
+    <string name="please_zoom_map_msg_easy_mode">Please zoom in the map and tap again to measure area</string>
+    <string name="try_again_msg">Try again</string>
+    <string name="failed_to_measure_area_msg">Failed to measure area</string>
+    <string name="enter_laboratory_name_msg">Please enter laboratory name</string>
+
+    <string name="resources_used_label">Resources Used</string>
+    <string name="sample_number_label">Sample Number</string>
+    <string name="sample_collected_on_label">Sample Collected On</string>
+    <string name="input_cost_type_label">Input Cost Type</string>
+    <string name="added_by_label">Added By</string>
+    <string name="pick_expense_date_hint">Pick Expense Date</string>
+    <string name="pick_used_date_hint">Pick Used Date</string>
+    <string name="expense_date_label">Expense Date</string>
+    <string name="resource_used_date_label">Resource Used Date</string>
+    <string name="resource_type_label">Resource type</string>
+    <string name="filter_by_label">Filter By</string>
+    <string name="harvest_label">Harvest</string>
+    <string name="weather_data_not_available_right_now_msg">Weather data not available right now.</string>
+    <string name="plant_population_label">Plant Population</string>
+    <string name="input_cost_and_resource_label">Input Cost And Resource</string>
+    <string name="already_added_visit_for_today">Visit is already added for today.</string>
+
+    <string name="please_enter_seed_lot_number_label">Please enter seed lot number</string>
+    <string name="pease_enter_dispached_area_label">Please enter dispatched area</string>
+    <string name="please_enter_quantity_msg">Please enter quantity</string>
+    <string name="please_enter_date_label">Please enter date</string>
+    <string name="failed_to_add_seed_issue_details_msg">Failed to add seed issue details</string>
+    <string name="seed_added_successful_msg">Seed issue details added successfully</string>
+    <string name="seed_quantity_label">Seed Quantity</string>
+    <string name="seed_issue_label">Seed Issue</string>
+    <string name="seed_issue_details_label">Seed Issue Details</string>
+
+    <string name="plsease_select_atleast_one_farm">Please add atleast one farm</string>
+    <string name="please_select_a_farmer_msg">Please select a farmer</string>
+    <string name="please_select_a_cluser_msg">Please select a cluster</string>
+    <string name="click_to_add_farm_msg">Farmer must have at least one farm. Please click to add farm</string>
+    <string name="enter_farmer_contact_number_msg">Please enter farmer contact number</string>
+    <string name="enter_farmer_name_msg">Please enter farmer name</string>
+    <string name="select_cluster_label">Select Cluster</string>
+    <string name="please_enter_password_msg">Please enter password</string>
+    <string name="satelite_view_label">Satellite View</string>
+    <string name="average_value_label">Average Value</string>
+    <string name="no_cluster_found_to_add_cluster">There is no cluster to add farm, Please go to web login to add cluster.</string>
+    <string name="invalid_ifsc_code_msg">Invalid IFSC code</string>
+    <string name="please_enter_account_number">Please enter account number</string>
+    <string name="please_enter_account_holder_name">Please enter account holder name</string>
+    <string name="invalid_mobile_number_msg">Invalid mobile number</string>
+    <string name="invalid_aadhar_number_msg">Invalid aadhar number</string>
+    <string name="no_data_available_msg">No data available</string>
+    <string name="loss_date_label">Loss Date</string>
+
+    <string name="invalid_farmer_name_msg">Invalid farmer name</string>
+    <string name="invalid_father_name_msg">Invalid father name</string>
+
+    <string name="area_unit_label">Area Unit</string>
+    <string name="are_you_sure_exit_without_saving">Are you sure you want to exit without saving?</string>
+
+    <string name="update_has_been_just_dowloaded_msg">An update has just been downloaded.</string>
+    <string name="restart_label">Restart</string>
+    <string name="select_loss_damage_reason_prompt">Select Loss/Damage Reason</string>
+    <string name="select_label">Select</string>
+    <string name="high_to_low">High to Low</string>
+    <string name="low_to_high">Low to High</string>
+    <string name="select_atleast_one_bag_to_pick_up">Please select atleast one bag to mark as picked up</string>
+    <string name="net_weight_label">Net weight</string>
+    <string name="pickup_date_label">Pickup date</string>
+    <string name="no_of_bags">No. of bags</string>
+    <string name="total_amount_label">Total Amount</string>
+    <string name="sell_quantity_label">Sell Quantity</string>
+    <string name="sold_on_label">Sold on</string>
+    <string name="rate_label">Rate</string>
+    <string name="per_kg_label">Per Kg</string>
+    <string name="sell_record_updated_success_msg">Sell Record updated successfully</string>
+    <string name="already_added_all_information_about_sell_msg">Already added all information about this record</string>
+
+    <string name="sell_record_label">Sell Record</string>
+    <string name="optional_label">Optional</string>
+    <string name="pickup_label">Pick up</string>
+    <string name="picked_up_label">Picked up</string>
+    <string name="select_bags_label">Select Bags</string>
+    <string name="alredy_all_bags_selected_label">Already selected all bags</string>
+    <string name="mark_bags_tip_msg">Mark bags as picked up and submit</string>
+    <string name="mark_bags_tip_no_remaining_bags_msg">No bag available to mark as picked up in this harvest collection</string>
+    <string name="enter_sell_qty_of_harvest_msg">Please enter selling quantity of harvest</string>
+    <string name="enter_total_selling_amount_msg">Please enter total amount of selling</string>
+    <string name="enter_current_rate_of_crop_msg">Please enter current rate of the crop</string>
+    <string name="enter_selling_date">Please enter date of selling</string>
+    <string name="failed_to_add_sell_record_msg">Failed to add sell record</string>
+    <string name="sell_record_added_msg">Sell record added successfully</string>
+
+    <string name="login_label">Login</string>
+    <string name="biometric_subtitle">Login to your Croptrails account</string>
+    <string name="biometric_description">Place your finger on the device fingerprint sensor to verify your account</string>
+    <string name="biometric_negative_button_text">CANCEL</string>
+
+    <string name="please_login_manually">Please login manually</string>
+    <string name="fingerprint_login_label">Fingerprint login</string>
+    <string name="touch_the_fingerprint_sensor_to_unlock_msg">Touch the fingerprint sensor to unlock</string>
+    <string name="hi_label">Hi!</string>
+    <string name="enable_fingerprint_label">Enable fingerprint</string>
+
+    <!--08/11/19 app Tour-->
+    <string name="tour_menu_how_to_use">How to Use</string>
+    <string name="tour_dashboard_title">DashBoard</string>
+    <string name="tour_dashboard_content">Brief overview of your companies farms</string>
+    <string name="tour_home_title">Home</string>
+    <string name="tour_home_farmer_content">Access and Manage your farms</string>
+    <string name="tour_home_supervisor_content">Access and Manage all farms in your cluster</string>
+    <string name="tour_home_admin_content">Access and Manage all farms in your company</string>
+    <string name="tour_nearest_farm_title">Nearest Farm</string>
+    <string name="tour_nearest_farm_content">Check your nearest Farm</string>
+    <string name="tour_expenses_title">Expenditure</string>
+    <string name="tour_expenses_content">SuperVisor\'s Expenses Details</string>
+    <string name="got_it">GOT IT</string>
+    <string name="tour_skip">Skip</string>
+    <string name="addfarm_tour_clust_sel_title">Cluster Selection</string>
+    <string name="addfarm_tour_clust_sel_content">Select Cluster from the DropDown List</string>
+    <string name="addfarm_tour_farmer_detail_title">Farmer Details</string>
+    <string name="addfarm_tour_farmer_detail_content">Enter Name of Farmer</string>
+    <string name="addfarm_tour_contact_detail_title">Contact Details</string>
+    <string name="addfarm_tour_contact_details_content">Select Country code and enter Phone Number</string>
+    <string name="addfarm_tour_farm_detail_title">Farm Details</string>
+    <string name="addfarm_tour_farm_detail_content">Enter Details like FarmID, Farm Area, Crop Name and Season</string>
+    <string name="addfarm_tour_submit_title">Submit</string>
+    <string name="addfarm_tour_submit_content">Save your farm Detaiils</string>
+
+
+    <string name="testing_tour_filter_title">Filter</string>
+    <string name="testing_tour_filter_content">Easily find what you need</string>
+    <string name="testing_tour_more_option_title">More Option</string>
+    <string name="testing_tour_more_option_content">Get more Functionality to Add Details</string>
+    <string name="testing_tour_cost_title">Cost/Resource</string>
+    <string name="testing_tour_cost_content">Add Expenses and used Resource</string>
+    <string name="testing_tour_damage_title">Damage</string>
+    <string name="testing_tour_damage_content">Add any crop loss and its reason</string>
+    <string name="testing_tour_soil_health_title">Soil Health</string>
+    <string name="testing_tour_soil_health_content">Add Details about Soil Quality and Lab testing result</string>
+    <string name="testing_tour_plant_popl_title">Plant Population</string>
+    <string name="testing_tour_plant_popl_content">Add total number of Plants present in a Unit area</string>
+    <string name="testing_tour_seed_issue_title">Seed Issue</string>
+    <string name="testing_tour_seed_issue_content">Add Information about seed Issues</string>
+    <string name="testing_tour_harvesting_title">Harvesting</string>
+    <string name="testing_tour_harvesting_content">Add harvesting Area and Package weight and quantity details</string>
+    <string name="testing_tour_farm_visit_title">Farm Visit</string>
+    <string name="testing_tour_farm_visit_content">Add Farm Visit,click photo and select crop condition</string>
+    <string name="ok">OK</string>
+    <string name="timeline_ac3_tour_upload_img_title">Upload Images</string>
+    <string name="timeline_ac3_tour_upload_img_content">Click Photos of Farm and with Farmer and upload Photos</string>
+    <string name="timeline_ac3_tour_crop_cond_title">Crop Condition</string>
+    <string name="timeline_ac3_tour_crop_cond_content">Select Crop Physical condition</string>
+    <string name="timeline_ac3_tour_add_more_details_title">Add More Details</string>
+    <string name="timeline_ac3_tour_add_comment_title">Add Comment</string>
+    <string name="timeline_ac3_tour_add_comment_content">Say something about your Visit</string>
+    <string name="timeline_ac3_tour_soil_moisture_record_title">Soil Moisture Record</string>
+    <string name="timeline_ac3_tour_soil_moisture_record_content">Add Soil moisturization level</string>
+    <string name="timeline_ac3_tour_pesticide_record_title">Pesticide Record</string>
+    <string name="timeline_ac3_tour_pesticide_record_content">Add Pesticide Spraying Quantity and date</string>
+    <string name="timeline_ac3_tour_herbicide_record_title">Herbicide Record</string>
+    <string name="timeline_ac3_tour_herbicide_record_content">Add Herbicide Spraying Quantity and date</string>
+    <string name="timeline_ac3_tour_nutrient_record_title">Nutrient Record</string>
+    <string name="timeline_ac3_tour_nutrient_record_content">Add details about any Nutrient used with date and quantity</string>
+    <string name="fingerprint_app_lock_unlock_label">Fingerprint app lock/unlock</string>
+    <string name="don_t_ask_again_label">Don\'t ask me again</string>
+    <string name="lock_unlock_label">Lock/Unlock</string>
+    <string name="enable_fingerprint_to_label">Enable fingerprint to</string>
+
+    <string name="addfarm_tour_farmer_sel_title">Farmer Selection</string>
+    <string name="addfarm_tour_farmer_sel_content">Select Farmer from the DropDown List</string>
+    <string name="addfarm_tour_farmer_farmid_content">Enter farm id</string>
+    <string name="addfarm_tour_farmer_farmarea_content">Enter farm area</string>
+    <string name="addfarm_tour_farmer_selcrop_content">Select crop name</string>
+    <string name="addfarm_tour_farmer_selseason_content">Select crop season</string>
+    <string name="addfarm_tour_farmer_addmore_farm_content">You can add multiple farms</string>
+    <string name="crop_track_label">CropTrace</string>
+    <string name="invalid_qr_code_msg">Invalid QR code</string>
+    <string name="scan_label">Scan</string>
+    <string name="assign_crop_cycle">Assign crop cycle</string>
+    <string name="select_crop_cycle_label">Select Crop Cycle</string>
+    <string name="cycle_name_label">Cycle Name</string>
+    <string name="crop_name">Crop Name</string>
+    <string name="growing_season">Growing season</string>
+    <string name="growing_region">Growing region</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="sure_want_to_add_crop_cycle">Are you sure do you want to assign this crop cycle to the farm?</string>
+    <string name="or_fingerprint_login">Or fingerprint login</string>
+    <string name="date_of_birth_label">Date of birth</string>
+    <string name="cast_category">Cast/Category</string>
+    <string name="estimated_consumer_income">Estimated Consumer Income</string>
+    <string name="male_label">Male</string>
+    <string name="female_label">Female</string>
+    <string name="back_label">Back</string>
+    <string name="seed_label">Seed</string>
+    <string name="expected_label">Expected</string>
+    <string name="actual_label">Actual</string>
+    <string name="company_label">Company</string>
+    <string name="breed">Breed</string>
+    <string name="fertilizer_ors_organic">Fertilizers / Organic</string>
+    <string name="price_label">Price</string>
+    <string name="how_much">How much</string>
+    <string name="pesticides">Pesticides</string>
+    <string name="type">Type</string>
+    <string name="workers">Workers</string>
+    <string name="work_where">Work where</string>
+    <string name="tractor">Tractor</string>
+    <string name="from_where">From where</string>
+    <string name="how_many_hours">How many hours</string>
+    <string name="expenses_incurred">Expenses incurred</string>
+    <string name="harvester">Harvester</string>
+    <string name="pestilence">Pestilence</string>
+    <string name="measures">Measures</string>
+    <string name="product_sales">Product / Sales</string>
+    <string name="dimensions_unit">Dimensions / unit</string>
+    <string name="buyer">Buyer</string>
+    <string name="add_more_crop_label">Add more previous crop details</string>
+    <string name="profit_loss">Profit / loss</string>
+    <string name="satisafactory_1_to_2">Satisfactory 1 to 2</string>
+    <string name="add_crop_details">Add previous crop details</string>
+    <string name="shareholder">Shareholder</string>
+    <string name="is_shareholder">Is shareholder</string>
+    <string name="how_many_certificate">How many certificate</string>
+    <string name="how_much_value">How much value</string>
+    <string name="is_there_a_share_certificate">Is there a share certificate?</string>
+    <string name="cows_cattle_cows_buffalo">Cows / Cattle Cows / Buffalo</string>
+    <string name="count">Count</string>
+    <string name="daily_milk_sale_in_litter">Daily Milk Sale (in liter)</string>
+    <string name="sale_price_approx">Sale price (Approx)</string>
+    <string name="if_there_are_chickens_goats_or_other_animals">If there are chickens, goats, or other animals?</string>
+    <string name="is_using_smart_phone">Is using smart phone?</string>
+    <string name="permission_necessary">Permission necessary</string>
+    <string name="external_storage_permission_is_necessary">External storage permission is necessary</string>
+    <string name="is_owned">Is owned</string>
+    <string name="fpo_msg_if_season_past">In which of the following areas, have you received help through the FPO?</string>
+    <string name="fpo_msg_if_season_present">In the coming season, for which of the following processes do you need help through thr FPO?</string>
+    <string name="app_tour">App Tour</string>
+    <string name="pan">PAN</string>
+
+    <string name="hide_details_label">Hide Details</string>
+    <string name="select_farmer">Select Farmer</string>
+    <string name="system_auto_detect_mode">System auto detect mode</string>
+    <string name="contact_us_label">Contact Us</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="add_query">Add Query</string>
+    <string name="enter_query">Enter query</string>
+    <string name="query_registered_successfully">Your query has been registered successfully</string>
+    <string name="failed_to_submit_query">Failed to submit your query</string>
+    <string name="select_query_type">Select subject</string>
+    <string name="please_select_subject">Please select subject</string>
+    <string name="please_enter_query">Please enter query</string>
+    <string name="query">Query</string>
+    <string name="please_select_at_least_1_farm_to_go_offline">Please select at least 1 farm to go offline</string>
+    <string name="you_can_only_take_10_farms_in_offline_mode_at_a_time">You can only take 10 farms in offline mode at a time</string>
+    <string name="unauthorized_access">Unauthorized access, Please login again</string>
+    <string name="authorization_expired">Authorization token expired, Please login again</string>
+    <string name="change_company">Change company</string>
+    <string name="please_select_a_company">Please select a company</string>
+    <string name="select_company">Select company</string>
+    <string name="no_other_company_available">There is no other company available for you</string>
+    <string name="switch_account">Switch Account</string>
+    <string name="verify_farm_area_label">Verify farm area</string>
+    <string name="pin_drop_mode">Pin Drop Mode</string>
+    <string name="walk_around_mode">Walk Around Mode</string>
+    <string name="easy_mode">Easy Mode</string>
+    <string name="clear_area_to_add_point">Please clear area and add point</string>
+    <string name="title_activity_maps_new">Map</string>
+    <string name="invalid_point_marked_msg">Invalid point selected, Please mark a valid point</string>
+
+    <string name="personal_info">Farmer Personal Information</string>
+    <string name="farmer_social_info">Farmer Social Information</string>
+    <string name="civil_status">Civil Status</string>
+    <string name="spouse">Spouse</string>
+    <string name="benefeciary">Beneficiary</string>
+    <string name="identity">Identity</string>
+    <string name="bank">Bank</string>
+    <string name="upi">UPI</string>
+    <string name="select_civil_status">Select Civil Status</string>
+    <string name="select_land_category">Select Land Category</string>
+    <string name="select_cropping_pattern">Select Cropping Pattern</string>
+    <string name="select_planting_method">Select Planting Method</string>
+    <string name="date_of_transplanting">Date of transplanting</string>
+    <string name="swift_code">Swift Code</string>
+    <string name="farmer_contact_information">Farmer Contact Information</string>
+    <string name="farmer_family_information">Farmer Family Information</string>
+    <string name="farmer_family_members">Family Members Count</string>
+    <string name="adults_count">Adult Count</string>
+    <string name="kids_count">Kids Count</string>
+    <string name="dependent_count">Dependent Count</string>
+    <string name="farmer_financial_information">Farmer Financial Information</string>
+    <string name="select_state">Select State</string>
+    <string name="select_district">Select District</string>
+    <string name="data_sync_success">Data synchronized successfully</string>
+    <string name="refresh">Refresh</string>
+    <string name="vetting_label">Vetting</string>
+
+    <string name="make_it_default">Make It Default</string>
+    <string name="unit_update_success_msg">Area unit updated successfully</string>
+    <string name="unit_update_fail">Failed to change area unit, Please try again</string>
+    <string name="rejected_farms">Rejected</string>
+    <string name="reject">Reject</string>
+    <string name="rejected">Rejected</string>
+    <string name="selected_farms">Approved</string>
+    <string name="approved_farms">Approved farms</string>
+    <string name="delinquent">Delinquent</string>
+    <string name="approve">Approve</string>
+    <string name="data_entry_farms">Edit Requested</string>
+    <string name="data_entry_farms_request">Edit Request</string>
+    <string name="re_entry">Edit Requested</string>
+    <string name="re_entry_fars">Edit requested farms </string>
+    <string name="fresh_farms">Fresh</string>
+    <string name="fresh_farms_label">Fresh farms</string>
+    <string name="none">None </string>
+
+    <string name="farm_selected">Farm selected </string>
+    <string name="farm_rejected">Farm Rejected </string>
+    <string name="farm_re_entry">Farm re-capture request created </string>
+    <string name="toolbarTitle">Android Bluetooth Example</string>
+    <string name="openbt">Open Bluetooth</string>
+    <string name="makeVisible">Make Bluetooth Visible</string>
+    <string name="findDevices">Find Devices</string>
+
+    <!--  BluetoothChat -->
+    <string name="post">Post</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">Connected</string>
+    <string name="title_not_connected">not connected</string>
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <!-- Options Menu -->
+    <string name="connect">Connect</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="soil_sense">SoilSens</string>
+    <string name="soil_sense_go">SoilSens Go</string>
+    <string name="way_point">Mark Way Point</string>
+    <string name="point_name">Point Name</string>
+    <string name="add_point">Add Point</string>
+    <string name="soil_moisture_value">Soil moisture value</string>
+    <string name="delete">Delete</string>
+    <string name="omitance_area">Omittance Area</string>
+    <string name="select_crop_previous_rompt">Select Previous Crop</string>
+    <string name="start_label">Start</string>
+    <string name="stop">Stop</string>
+    <string name="walk_around_mode_auto">Walk Around Automatic Mode</string>
+    <string name="walk_around_mode_pin_drop">Walk Around Pin Drop Mode </string>
+    <string name="enter_input_name">Please enter agri input name</string>
+    <string name="enter_input_used_qty">Please enter used quantity</string>
+    <string name="enter_input_cost">Please enter cost</string>
+    <string name="add_agri_input">Add Agri Input</string>
+    <string name="agri_inputs">Agri Inputs</string>
+    <string name="used_quantity">Used Quantity</string>
+    <string name="cost">Cost</string>
+    <string name="expected_quantity">Expected Quantity</string>
+    <string name="select_reason">Select Reason</string>
+    <string name="reason">Reason </string>
+    <string name="delinquent_report">Delinquency Report</string>
+    <string name="title_activity_farm_navigation">Map</string>
+    <string name="direction">Direction</string>
+
+    <string name="select_caste_category">Select Caste Category</string>
+    <string name="caste_category">Caste Category</string>
+    <string name="select_caste">Select Caste</string>
+    <string name="caste">Caste</string>
+    <string name="select_religion">Select Religion</string>
+    <string name="religion">Religion</string>
+    <string name="select_network">Select Mobile Network Operator</string>
+    <string name="network_operator">Network Operator</string>
+    <string name="select_motor_hp">Select Motor HP</string>
+    <string name="motor_hp">Motor HP</string>
+    <string name="select_mia">Select Micro Irrigation Awareness</string>
+    <string name="mia">Micro Irrigation Awareness</string>
+    <string name="gender">Gender</string>
+    <string name="smartphone_holder">Smartphone holder</string>
+    <string name="photo">Photo</string>
+    <string name="id_proof">ID Proof</string>
+    <string name="adress_proof">Address Proof</string>
+    <string name="farmer_and_farm_update_succes_msg">Farmer and farm updated successfully</string>
+    <string name="choose_farm_image">Upload farm image</string>
+    <string name="choose_ownership_document">Upload ownership document</string>
+    <string name="please_select_a_cluster">Please select a cluster</string>
+
+    <string name="profile_image">Profile Image</string>
+    <string name="address_proof">Address Proof</string>
+    <!--    <string name="id_proof">ID Proof</string>-->
+    <string name="ownership_image">Ownership Image</string>
+    <string name="farm_image">Farm Image</string>
+    <string name="khasra">Address Line 1</string>
+    <string name="chak">Address Line 2</string>
+    <string name="switch_cluster">Switch Cluster</string>
+    <!--    <string name="area_unit">Vetting</string>-->
+
+    <string name="age">Age</string>
+    <string name="spouse_age">Spouse age</string>
+    <string name="spouse_dob">Spouse date of birth</string>
+    <string-array name="filter_array">
+        <item>@string/all</item>
+        <item>@string/farmer</item>
+        <item>@string/mobile</item>
+        <!--        <item>Address Line 1</item>-->
+        <item>@string/lot_no</item>
+    </string-array>
+
+    <string-array name="vetting_array">
+        <item>@string/all</item>
+        <item>@string/delinquent</item>
+        <item>@string/selected_farms</item>
+        <item>@string/fresh_farms</item>
+        <item>@string/data_entry_farms</item>
+        <!--        <item>@string/selected_farms</item>-->
+    </string-array>
+    <string name="chak_leader">Chak leader</string>
+    <string name="chak_leader_mob">Leader Contact</string>
+    <string name="add_chak_leader">Make Chak Leader?</string>
+    <string name="mark">Mark</string>
+    <string name="make">Make</string>
+    <string name="as_chak_leader">as chak leader</string>
+    <string name="total_geofenced_area">Total geofenced area</string>
+    <string name="geofenced_farms">Geofenced farms</string>
+    <string name="non_geofenced_farms">Non Geofenced farms</string>
+    <string name="select_village">Select Village</string>
+    <string name="select_chak">Select Address line 2</string>
+    <string name="select_filter">Select filter</string>
+    <string name="farmer">Farmer</string>
+    <string name="mobile">Mobile</string>
+    <string name="all">All</string>
+    <string name="search_and_filters">Search and filters</string>
+    <string name="sure_to_submit_way_point">Are you sure you want to submit way points ?</string>
+    <string name="way_point_successfully_added">Way point added successfully</string>
+    <string name="way_point_failed">Failed to add way points.</string>
+    <string name="point_can_not_be_outside_farm">You can add way point within farm</string>
+    <string name="continue_lable">Continue</string>
+    <string name="current_crop_details">Current crop details</string>
+    <string name="spouse_age_date_of_birth">Spouse age / date of birth</string>
+    <string name="age_date_of_birth">Age / Date of birth</string>
+
+    <string name="select_supervisor">Select supervisor</string>
+    <string name="please_select_supervisor">Please select supervisor</string>
+    <string name="login_allow_msg">Sorry, currently app login is allowed only for admin,supervisor and farmer</string>
+
+    <string name="forgot_password">Forgot password</string>
+    <string name="enter_user_name">Please enter username</string>
+    <string name="task">Task</string>
+    <string name="task_details">Task Details</string>
+    <string name="instructions">Instructions</string>
+    <string name="assigned_by">Assigned by</string>
+    <string name="assigned_date">Assigned date</string>
+    <string name="fingerprint_login_to">Login with</string>
+    <string name="failed_to_complete_task">Failed to complete task, Please try again</string>
+    <string name="no_task_available">No task available</string>
+    <string name="activities">Activities</string>
+    <string name="task_completed_successfully">Task completed successfully</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="farm">Farm</string>
+    <string name="qr_code">QR Code</string>
+    <string name="register">Register</string>
+    <string name="username_label">User name</string>
+    <string name="crop_cycle_name">Crop cycle name</string>
+    <string name="crop_cycle">Crop cycle</string>
+    <string name="star">*</string>
+    <string name="create_crop_cycle">Create crop cycle</string>
+    <string name="want_remove_ads">Want to remove Ads?</string>
+    <string name="select_crop_star">Select crop*</string>
+    <string name="activity_star">Activity *</string>
+    <string name="select_season_star">Select season*</string>
+    <string name="select_soil_type_star">Select Soil Type*</string>
+    <string name="expected_harvesting_day">Expected Harvesting Day</string>
+    <string name="expected_flowering_day">Expected Flowering Day</string>
+    <string name="company_contact_email">sales@croptrails.farm</string>
+    <string name="login_via_password_or_email">Login with password or OTP</string>
+    <string name="no_active_case_available">No active case available</string>
+    <string name="no_case_available">No case available</string>
+    <string name="no_cluster_available">No cluster available</string>
+    <string name="farm_added">Farm Added</string>
+    <string name="gps_area_not_available">Gps area not available.</string>
+    <string name="vw_confirm">Done</string>
+    <string name="vw_no_video_play_app">No App exists for playing video!</string>
+    <string name="vw_record_audio">Record Audio</string>
+    <string name="vw_rationale_storage">Need Reading Storage Permission for Picking Files</string>
+    <string name="vw_up_to_max">Already up to max</string>
+    <string name="vw_no_photo_app">No photo App in this phone!</string>
+    <string name="vw_no_audio_play_app">No App exists for playing audio!</string>
+    <string name="vw_no_video_app">No video App in this phone!</string>
+    <string name="vw_no_audio_app">No audio App in this phone!</string>
+    <string name="vw_all">All</string>
+    <string name="notice_board">Notice Board</string>
+    <string name="failed_to_load_post">Failed to load post details</string>
+    <string name="notice">Notice</string>
+    <string name="fast_forward">Fast Forward</string>
+    <string name="minimize">Minimize</string>
+    <string name="fast_rewind">Fast Rewind</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+</resources>

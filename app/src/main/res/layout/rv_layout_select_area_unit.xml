@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relNewFarmAnd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:background="@drawable/selected_option_check_area_not"
+    android:paddingLeft="@dimen/_3sdp"
+    android:paddingTop="@dimen/_3sdp"
+    android:paddingRight="@dimen/_3sdp"
+    android:paddingBottom="@dimen/_3sdp">
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/areaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imgNewFarmAnd"
+        android:paddingLeft="@dimen/_3sdp"
+        android:text="Add farmer, farm and assign"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_3sdp"
+        android:id="@+id/conversionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/areaName"
+        android:layout_toLeftOf="@+id/imgNewFarmAnd"
+        android:paddingLeft="@dimen/_5sdp"
+        android:text="Add farmer, farm and assign"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9ssp" />
+
+
+</RelativeLayout>
+

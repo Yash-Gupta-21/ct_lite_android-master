@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/harvest_report_parent_rel_lay"
+    android:layout_height="match_parent"
+    tools:context=".HarvestReport.HarvestReportActivity">
+
+    <include
+        android:id="@+id/toolbar_harvest_activity"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar_harvest_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <!-- <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/harvest_progress"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+
+        <pl.droidsonroids.gif.GifImageView
+          android:src="@drawable/croptrails_loader2"
+            android:id="@+id/harvest_progress"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:id="@+id/harvest_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/no_data_available_harvest"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:alpha=".3"
+                android:id="@+id/no_data_available_image"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/database"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_below="@id/no_data_available_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_no_harvest_data_avaialble"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:visibility="gone"
+        android:text="@string/add_new_harvest_label"
+        android:id="@+id/add_harvest_button"
+        android:textColor="@color/white"
+        android:paddingBottom="@dimen/_7sdp"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:elevation="@dimen/_10sdp"
+        android:gravity="center"
+        android:textSize="@dimen/_11ssp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_floating_textview"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

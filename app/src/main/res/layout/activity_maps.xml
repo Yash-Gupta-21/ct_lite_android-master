@@ -1,0 +1,401 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+   <!-- <include
+        android:id="@+id/toolbar_setting"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:id="@+id/confirm_order_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/new_theme"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="@android:color/background_light"
+                    android:text="My Title"/>
+
+                <ImageView
+                    android:id="@+id/helpImage"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_help_outline_white_24px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@id/toolbar_setting"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:uiRotateGestures="false"
+        map:uiScrollGestures="false"
+        map:uiTiltGestures="true"
+        map:uiZoomGestures="false" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linear_lay_for_map"
+        android:layout_below="@id/toolbar_setting"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_170sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_bg_for_map_area_for_touch"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:background="@color/new_theme"
+        android:layout_below="@+id/toolbar_setting"
+        android:id="@+id/kasraAndFarmerLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/farmerNameLayout"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_2sdp">
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/farmerNameLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".35"
+                android:text="@string/farmer_name_hint"
+                android:textSize="@dimen/_11ssp" />
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/farmerNamrTv"
+                android:layout_width="0dp"
+                android:layout_weight=".65"
+                android:layout_height="wrap_content"
+
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_2sdp"
+            android:id="@+id/khasraLayout"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_2sdp">
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/kasraLabelTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".35"
+                android:text="@string/khasra"
+                android:textSize="@dimen/_11ssp" />
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/khasraTv"
+                android:layout_width="0dp"
+                android:layout_weight=".65"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_below="@id/kasraAndFarmerLayout"
+        android:id="@+id/area_tv"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:layout_width="100dp"
+        android:textColor="#000000"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/area_unit_label"
+        android:layout_below="@id/kasraAndFarmerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acers_label"
+        android:layout_toRightOf="@id/area_tv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/area_unit_label"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@drawable/circle_transparent_strock"
+            android:layout_gravity="center"
+
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/myLocationImg"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@drawable/ic_my_location"
+
+        />
+        </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/mapTypeImage"
+        android:layout_below="@id/myLocationImg"
+        android:background="@drawable/circle_transparent"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/map_type_normal"
+        app:civ_border_width="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:scaleType="centerCrop"
+        app:civ_border_width="1dp"
+        android:id="@+id/accuracyImage"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/ic_signal_0"
+        android:background="@drawable/circle_transparent"
+        android:layout_below="@id/mapTypeImage"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:scaleType="centerCrop"
+        app:civ_border_width="1dp"
+        android:id="@+id/back_to_farm"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/farm_icon_map"
+        android:layout_below="@id/accuracyImage"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/button_background_color"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:id="@+id/submit_butt"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:text="@string/area"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:textColor="@color/button_text_color"
+            android:layout_width="0dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/button_background_color"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:id="@+id/next_butt"
+            android:gravity="center"
+            android:text="@string/submit_area"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/button_text_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/button_background_color"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:id="@+id/wayPoint"
+            android:gravity="center"
+            android:text="@string/way_point"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/button_text_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/button_background_color"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:id="@+id/normal_mode_butt"
+            android:gravity="center"
+            android:text="@string/map_option_easy_mode"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/button_text_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/clear_butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kasraAndFarmerLayout"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:background="@color/button_background_color"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/clear"
+        android:textColor="@color/button_text_color" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:gravity="center"
+        android:drawablePadding="@dimen/_5sdp"
+        android:background="@color/button_background_color"
+        android:layout_below="@id/clear_butt"
+        android:id="@+id/manually_add_standing_area_btn"
+        android:layout_width="wrap_content"
+        android:drawableRight="@drawable/ic_mode_edit_white_24dp"
+        android:textColor="@color/button_text_color"
+        android:layout_height="wrap_content"
+        android:text="@string/add_actual_area_manually"/>
+
+
+    <!--<ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/progressBar_cyclic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />-->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/progressBar_cyclic"
+        android:elevation="@dimen/_30sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/croptrails_loader2"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+
+
+
+
+

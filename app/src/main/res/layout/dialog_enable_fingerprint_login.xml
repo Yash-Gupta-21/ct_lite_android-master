@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/harvestDetailLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/cv_rel_harvest_details"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@drawable/large_edittext_dark_filled_background"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/show_farm_details_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:padding="@dimen/_6sdp"
+            android:text="@string/enable_fingerprint_label"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+
+            android:background="@drawable/large_edittext_background2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/messageTv"
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:padding="@dimen/_6sdp"
+            android:textStyle="bold"
+            android:text="@string/enable_fingerprint_to_label"
+            android:textSize="@dimen/_13ssp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Switch
+                    android:id="@+id/loginSwitch"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:text="login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Switch>
+
+                <Switch
+                    android:id="@+id/lockSwitch"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:text="@string/lock_unlock_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Switch>
+
+            </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkBoxDontAsk"
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_6sdp"
+            android:text="@string/don_t_ask_again_label"
+            />
+
+        <LinearLayout
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingRight="@dimen/_2sdp"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/cancelTv"
+                android:layout_margin="@dimen/_5sdp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_15ssp"
+                android:padding="@dimen/_7sdp"
+                android:text="@string/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/okTv"
+                android:layout_margin="@dimen/_5sdp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_15ssp"
+                android:padding="@dimen/_7sdp"
+                android:text="@string/ok_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

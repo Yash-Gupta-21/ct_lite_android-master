@@ -1,0 +1,1326 @@
+<resources>
+    <string name="app_name">CropTrails</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">ఇమెయిల్</string>
+    <string name="prompt_password">పాస్వర్డ్ (ఐచ్ఛికం)</string>
+    <string name="action_sign_in">సైన్ ఇన్ చేసి నమోదు చేయండి</string>
+    <string name="action_sign_in_short">సైన్ ఇన్ చేయండి</string>
+    <string name="error_invalid_email">ఇమెయిల్ చిరునామా తప్పు.</string>
+    <string name="error_invalid_password">పాస్వర్డ్ చాలా చిన్నది</string>
+    <string name="error_incorrect_password">పాస్వర్డ్ తప్పు</string>
+    <string name="error_field_required">ఫీల్డ్ అవసరం</string>
+    <string name="permission_rationale">ఇమెయిల్ అందించడానికి పరిచయాల అనుమతులు అవసరం
+        completions.">
+    </string>
+    <string name="amount_cant_be_null">మొత్తం సున్నా కాదు</string>
+    <string name="title_activity_maps">మ్యాప్</string>
+    <string name="title_activity_landing">Landidagachtivity</string>
+    <string name="title_home">హోమ్</string>
+    <string name="title_dashboard">డాష్బోర్డ్</string>
+    <string name="title_notifications">ప్రకటనలు</string>
+    <string name="back_press">నిష్క్రమించడానికి మళ్ళీ నొక్కండి.</string>
+
+    <string name="navigation_drawer_open">నావిగేషన్ డ్రాయర్‌ను తెరవండి</string>
+    <string name="navigation_drawer_close">నావిగేషన్ డ్రాయర్‌ను మూసివేయండి</string>
+
+    <string name="internet_not_connected">మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేసి, మళ్లీ ప్రయత్నించండి</string>
+
+    <string name="action_settings">సెట్టింగులు</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">హలో ఖాళీ శకలం</string>
+
+
+    <string name="country_prompt">దేశాన్ని ఎంచుకోండి</string>
+    <string-array name="country_arrays">
+        <item>భారతదేశం</item>
+        <item>మలేషియాలో</item>
+        <item>యునైటెడ్ స్టేట్స్</item>
+        <item>ఇండోనేషియా</item>
+        <item>ఫ్రాన్స్</item>
+        <item>ఇటలీ</item>
+        <item>సింగపూర్</item>
+        <item>న్యూజిలాండ్</item>
+    </string-array>
+
+    <string name="state_prompt">ఒక రాష్ట్రాన్ని ఎంచుకోండి</string>
+    <string-array name="state_arrays">
+        <item>లో. ప్ర</item>
+        <item>యు. పి</item>
+        <item>ఢిల్లీ</item>
+    </string-array>
+
+    <string name="tehsil_prompt">ఒక తహసిల్ ఎంచుకోండి</string>
+    <string-array name="tehsil_arrays">
+        <item>ఇండోర్</item>
+        <item>ఉజ్జయినీ</item>
+        <item>దేవాస్</item>
+    </string-array>
+
+    <string name="city_prompt">నగరాన్ని ఎంచుకోండి</string>
+    <string-array name="city_arrays">
+        <item>ఇండోర్</item>
+        <item>ఉజ్జయినీ</item>
+        <item>దేవాస్</item>
+    </string-array>
+
+    <string name="district_prompt">డిస్ట్రిక్ట్ ఎంచుకోండి</string>
+    <string-array name="district_arrays">
+        <item>ఇండోర్</item>
+        <item>ఉజ్జయినీ</item>
+        <item>దేవాస్</item>
+    </string-array>
+
+
+    <string name="date_prompt">తేదీని ఎంచుకోండి</string>
+    <string-array name="date_arrays">
+        <item>43259</item>
+        <item>43260</item>
+    </string-array>
+
+    <string-array name="irrigation_type_array">
+        <item>ఎంచుకోండి</item>
+        <item>ఉపరితల నీటిపారుదల</item>
+        <item>స్థానికీకరించిన నీటిపారుదల</item>
+        <item>బిందు సేద్యం</item>
+        <item>స్ప్రింక్లర్ ఇరిగేషన్</item>
+        <item>సెంటర్ పివట్ ఇరిగేషన్</item>
+        <item>పార్శ్వ కదలిక నీటిపారుదల</item>
+        <item>సబ్ నీటిపారుదల</item>
+        <item>మాన్యువల్ ఇరిగేషన్</item>
+    </string-array>
+
+
+    <string-array name="previous_crops_array">
+        <item>ఎంచుకోండి</item>
+        <item>సోయాబీన్</item>
+        <item>Naese</item>
+        <item>Sunfalover</item>
+        <item>ఆవాలు</item>
+        <item>గోధుమ</item>
+        <item>బార్లీ</item>
+        <item>కాదు</item>
+    </string-array>
+
+
+    <string-array name="irrigation_source_array">
+        <item>ఎంచుకోండి</item>
+        <item>Cnls</item>
+        <item>వేల్స్</item>
+        <item>ట్యూబ్-బావులు</item>
+        <item>ట్యాంకులు</item>
+    </string-array>
+
+    <string-array name="soil_type_array">
+        <item>ఎంచుకోండి</item>
+        <item>మట్టి నేల</item>
+        <item>లోమ్ నేల</item>
+        <item>ఇసుక నేల</item>
+        <item>సిల్టి నేల</item>
+        <item>పీటీ నేల</item>
+    </string-array>
+
+    <!--<string-array name="irrigation_type_array">
+        <item>ఎంచుకోండి</item>
+        <item>ఉపరితల నీటిపారుదల</item>
+        <item>స్థానిక నీటిపారుదల</item>
+        <item>బిందు సేద్యం</item>
+        <item>స్ప్రింక్లర్ ఇరిగేషన్</item>
+        <item>సెంటర్ పివట్ ఇరిగేషన్</item>
+        <item>పార్శ్వ వేగం నీటిపారుదల</item>
+        <item>సబ్ నీటిపారుదల</item>
+        <item>మాన్యువల్ ఇరిగేషన్</item>
+    </string-array>
+
+    <string-array name="previous_crops_array">
+        <item>ఎంచుకోండి</item>
+        <item>సోయాబీన్</item>
+        <item>కార్న్</item>
+        <item>సన్ఫ్లవర్</item>
+        <item>ఆవాలు</item>
+        <item>గోధుమ</item>
+        <item>బార్లీ</item>
+        <item>కాదు</item>
+    </string-array>
+
+
+    <string-array name="irrigation_source_array">
+        <item>ఎంచుకోండి</item>
+        <item>కాలువలు</item>
+        <item>బావి</item>
+        <item>బాగా ట్యూబ్ చేయండి</item>
+        <item>ట్యాంక్</item>
+    </string-array>
+
+    <string-array name="soil_type_array">
+        <item>ఎంచుకోండి</item>
+        <item>Marl</item>
+        <item>లోమ్ నేల</item>
+        <item>ఇసుక నేల</item>
+        <item>సిల్టి బంకమట్టి</item>
+        <item>Pt బంకమట్టి</item>
+    </string-array>-->
+
+    <string name="moisture_prompt">తేమ స్థాయిని ఎంచుకోండి</string>
+    <string-array name="moisture_level">
+        <item>ఎంచుకోండి</item>
+        <item>తడిగా</item>
+        <item>తేమ లేదు</item>
+        <item>తక్కువ తేమ</item>
+        <item>అధిక తేమ</item>
+    </string-array>
+
+    <string name="grade_prompt">గ్రేడ్ ఎంచుకోండి</string>
+    <string-array name="grade">
+        <item>ఎంచుకోండి</item>
+        <item>రానున్న</item>
+        <item>B</item>
+        <item>G</item>
+        <item>D</item>
+    </string-array>
+
+    <string name="ipm_prompt">మెటీరియల్ ఎంచుకోండి</string>
+    <string-array name="ipm">
+        <item>ఎంచుకోండి</item>
+        <item>Sserajhin</item>
+        <item>Imistr</item>
+    </string-array>
+
+    <string name="unit_prompt">యూనిట్</string>
+    <string-array name="unit">
+        <item>కిలోగ్రాము</item>
+        <item>లీటరు</item>
+        <item>Q</item>
+        <item>టన్ను</item>
+    </string-array>
+
+
+    <string name="iwm_prompt">మెటీరియల్ ఎంచుకోండి</string>
+    <string-array name="iwm">
+        <item>ఎంచుకోండి</item>
+        <item>Atrisen</item>
+        <item>Laudis</item>
+        <item>రౌండప్</item>
+    </string-array>
+
+    <string name="inm_prompt">మెటీరియల్ ఎంచుకోండి</string>
+    <string-array name="inm">
+        <item>ఎంచుకోండి</item>
+        <item>DAP</item>
+        <item>తుడుపుకర్ర</item>
+        <item>యూరియా</item>
+        <item>20-20-0-13</item>
+    </string-array>
+
+    <string name="path_below">M7.41,7.84L12,12.42l4.59, -4.58L18,9.25l-6,6 -6, -6z</string>
+    <string name="search_hint">వినియోగదారుని శోధించండి</string>
+
+
+    <item name="myDynamic1" type="id" />
+    <item name="rt1" type="id" />
+
+    <string name="inm_test_status">పదార్థాన్ని ఎంచుకోండి</string>
+    <string-array name="status_test">
+        <item>ఎంచుకోండి</item>
+        <item>మంచి</item>
+        <item>చెడు</item>
+        <item>మరియు అధ్వాన్నంగా</item>
+    </string-array>
+    <string name="title_activity_harvest_show_single_plan_map">మ్యాప్</string>
+
+
+    <string name="title_activity_welcome">హోమ్ స్క్రీన్</string>
+    <string name="next">తదుపరిది</string>
+    <string name="skip">దాటవేయి</string>
+    <string name="start">అర్థమైంది</string>
+
+
+    <string name="rupee_symbol">\ u20A8</string>
+    <string name="no_response">ఓహ్! ఏదో తప్పు జరిగింది. దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+    <string name="no_response_plz_reload">ఓహ్! ఏదో తప్పు జరిగింది. దయచేసి మళ్లీ లోడ్ చేయండి</string>
+
+    <string name="setting_activity_title">సెట్టింగులు</string>
+    <string name="setting_no_username">పేరు: -</string>
+    <string name="setting_no_fathername">తండ్రి పేరు: -</string>
+    <string name="signout_alert_dialog_message">మీరు లాగ్ అవుట్ చేయాలనుకుంటున్నారా</string>
+    <string name="signout_alert_dialog_yes">అవును</string>
+    <string name="signout_alert_dialog_no">కాదు</string>
+    <string name="offline_mode_logout_error">మీరు ఆఫ్‌లైన్ మోడ్‌లో లాగ్ అవుట్ చేయలేరు</string>
+    <string name="snackbar_ok">సరే</string>
+    <string name="share_title">Share</string>
+
+    <string name="image_select_image_title">ఫోటోను జోడించండి</string>
+    <string name="image_choose_from_library">గ్యాలరీ నుండి ఎంచుకోండి</string>
+    <string name="image_take_photo">ఫోటో క్లిక్ చేయండి</string>
+    <string name="image_cancel">రద్దు</string>
+    <string name="gallery_intent_title">ఫైల్‌ను ఎంచుకోండి</string>
+    <string name="select_from_gallery_error">ఏదో తప్పు జరిగింది! తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="alert_title_label">జాగ్రత్తగా!</string>
+    <string name="profile_alert_dialog_message">మీరు మార్పులను విస్మరించాలనుకుంటున్నారా?</string>
+    <string name="profile_alert_dialog_yes">అవును</string>
+    <string name="profile_alert_dialog_no">కాదు</string>
+    <string name="profile_image_update_failed">ప్రొఫైల్ ఫోటోను నవీకరించడంలో విఫలమైంది. దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+
+    <string name="name_label">పేరు:</string>
+    <string name="father_name_label">తండ్రి పేరు:</string>
+    <string name="dob_label">పుట్టిన తేదీ:</string>
+    <string name="contact_label">సంప్రదించండి:</string>
+    <string name="email_label">E-Mail:</string>
+    <string name="setting_add_farm">ఫారమ్‌ను జోడించండి</string>
+    <string name="setting_reset_password">పాస్వర్డ్ మార్చండి</string>
+    <string name="setting_share">కు భాగస్వామ్యం</string>
+    <string name="setting_rate_us">రేటింగ్ అనుమతించు</string>
+    <string name="setting_signout">సైన్ అవుట్ చేయండి</string>
+    <string name="setting_privacy_policy">గోప్యత</string>
+    <string name="setting_feedback">ప్రతిస్పందన</string>
+    <string name="setting_terms_and_conditions">నిబంధనలు మరియు షరతులు</string>
+    <string name="mayur_nagdev">మయూర్ నాగ్‌దేవ్</string>
+    <string name="harvest_date">హార్వెస్టింగ్ తేదీ:</string>
+    <string name="_10_07_2018">43291</string>
+    <string name="father_s_name">తండ్రి పేరు:</string>
+    <string name="no_old_expnse_data_avaialble_label">గత ఖర్చుల రికార్డు కనుగొనబడలేదు</string>
+    <string name="amount_hint">రాశిచక్రం</string>
+    <string name="date_msg">తేదీ</string>
+    <string name="narration">వివరణ</string>
+    <string name="submit">సమర్పించండి</string>
+    <string name="no_internet_connection">ఇంటర్నెట్ కనెక్షన్ లేదు</string>
+    <string name="cant_add_expense_in_offline_mode">ఆఫ్‌లైన్ మోడ్‌లో ఖర్చును జోడించలేరు</string>
+    <string name="add_new_expenditure">కొత్త ఖర్చును జోడించండి</string>
+    <string name="expenditure_amount">ఖర్చు మొత్తం:</string>
+    <string name="expenditure_hint">ఖర్చు మొత్తం</string>
+    <string name="narration_hint">వివరణ</string>
+    <string name="dd_mm_yyyy">DD / MM / YYYY</string>
+    <string name="add_an_image_of_bill_msg">బిల్ ఫోటోను జోడించండి</string>
+    <string name="add_label">చేర్చు</string>
+    <string name="chemicals">కెమికల్స్</string>
+    <string name="e_g_10_hint">10 లాగా</string>
+    <string name="activity_label">కార్యాచరణ</string>
+    <string name="activity_type_label">కార్యాచరణ రకం</string>
+    <string name="desc_label">వివరణ</string>
+    <string name="more_label">మరింత</string>
+    <string name="view_activity_label">కార్యాచరణను చూడండి</string>
+    <string name="add_todays_activity_label">నేటి కార్యాచరణను జోడించండి</string>
+    <string name="pending_label">అసంపూర్ణ</string>
+    <string name="upcomming_activity_label">రాబోయే కార్యాచరణ</string>
+    <string name="visit_label">పర్యటన</string>
+    <string name="visit_added_for_today_label">నేటి పర్యటన జోడించబడింది</string>
+    <string name="visited_label">సందర్శించిన</string>
+    <string name="view_visit_label">పర్యటన చూడండి</string>
+    <string name="timeline_label">కాలక్రమం</string>
+    <string name="failed_to_load_timeline_msg">కాలక్రమం లోడ్ చేయడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="no_network_available_msg">నెట్‌వర్క్ అందుబాటులో లేదు</string>
+    <string name="there_is_no_standing_area_avilable_to_enter_for_pld_label">పిఎల్‌డిలోకి ప్రవేశించడానికి శాశ్వత ప్రాంతం అందుబాటులో లేదు</string>
+    <string name="ok_label">సరే</string>
+    <string name="date_label">తేదీ</string>
+    <string name="please_enter_integrated_nutrient_management_data_in_the_below_form_label">దయచేసి దిగువ రూపంలో ఇంటిగ్రేటెడ్ పోషక నిర్వహణ డేటాను నమోదు చేయండి</string>
+    <string name="please_enter_integrated_weight_management_data_in_the_below_form_label">దయచేసి దిగువ రూపంలో ఇంటిగ్రేటెడ్ బరువు నిర్వహణ డేటాను నమోదు చేయండి</string>
+    <string name="please_enter_integrated_pest_management_data_in_the_below_form_label">దయచేసి దిగువ రూపంలో ఇంటిగ్రేటెడ్ పెస్ట్ మేనేజ్‌మెంట్ డేటాను నమోదు చేయండి</string>
+    <string name="please_grade_crop_physical_condition_label">పంట శారీరక స్థితిని గ్రేడ్ చేయండి</string>
+    <string name="please_provide_soil_moisture_level_label">దయచేసి నేల తేమ స్థాయిని అందించండి</string>
+
+
+
+    <!--MultiLanguages Strings Starting here-->
+    <string name="add_farm_title">ఫారమ్‌ను జోడించండి</string>
+    <string name="new_farm_added_msg">కొత్త పొలం విజయవంతంగా జోడించబడింది</string>
+    <string name="new_farm_fail_msg">ఫీల్డ్‌ను జోడించడంలో విఫలమైంది. దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి.</string>
+    <string name="add_farmer_name_msg">సాగు పేరు నమోదు చేయండి</string>
+    <string name="farmer_name_cant_null_msg">రైతు పేరు ఖాళీగా ఉండకూడదు</string>
+    <string name="enter_father_name_msg">దయచేసి తండ్రి పేరును నమోదు చేయండి</string>
+    <string name="father_name_cant_null_msg">తండ్రి పేరు ఖాళీగా ఉండకూడదు</string>
+    <string name="farmer_name_hint">రైతు పేరు</string>
+    <string name="farmer_father_name_hint">తండ్రి పేరు</string>
+    <string name="farmer_phone_hint">ఫోన్</string>
+    <string name="farmer_village_or_city_hint">గ్రామం లేదా పట్టణం</string>
+    <string name="farmer_madal_or_tehsil_hint">మండలం లేదా తహసీల్</string>
+    <string name="farmer_district_hint">జిల్లా</string>
+    <string name="farmer_state_hint">రాష్ట్రం</string>
+    <string name="farmer_counrty_hint">దేశం</string>
+    <string name="submit_label">సమర్పించండి</string>
+    <string name="opps_message">అయ్యో !!</string>
+
+    <string name="update_farm_details_title">వ్యవసాయ వివరాలను నవీకరించండి</string>
+    <string name="update_farm_details_sub_msg">రైతు వివరించిన వ్యవసాయ వివరాలను నమోదు చేయండి</string>
+    <string name="select_message_tag">ఎంచుకోండి</string>
+    <string name="select_irrigation_source_msg">దయచేసి నీటిపారుదల మూలాన్ని ఎంచుకోండి</string>
+    <string name="select_previous_crop_msg">దయచేసి చివరి పంటను ఎంచుకోండి</string>
+    <string name="select_irrigation_type_msg">దయచేసి నీటిపారుదల రకాన్ని ఎంచుకోండి</string>
+    <string name="select_soil_type_msg">దయచేసి నేల రకాన్ని ఎంచుకోండి</string>
+    <string name="select_sowing_date_msg">దయచేసి విత్తనాల తేదీని ఎంచుకోండి</string>
+    <string name="farm_detail_update_fail_msg">వ్యవసాయ వివరాలను నవీకరించడంలో విఫలమైంది. దయచేసి మళ్ళీ ప్రయత్నించండి.</string>
+    <string name="farm_details_updated_success">ఫారం వివరాలు విజయవంతంగా నవీకరించబడ్డాయి.</string>
+    <string name="dynamic_bag_act_title">హార్వెస్టింగ్ వివరాలు</string>
+    <string name="irrigation_source_label">నీటిపారుదల మూలం</string>
+    <string name="previous_crop_label">చివరి పంట</string>
+    <string name="irrigation_type">నీటిపారుదల రకం</string>
+    <string name="soil_type_label">నేల రకం</string>
+    <string name="sowing_date_label">విత్తే తేదీ</string>
+    <string name="expected_flowering_date_label">పుష్పించే తేదీ</string>
+    <string name="expected_harvest_date_label">పంట తేదీ</string>
+    <string name="additional_farm_details_label">అదనపు ఫారం వివరణ</string>
+    <string name="capture_farm_area_label">వ్యవసాయ ప్రాంతాన్ని సంగ్రహించండి</string>
+    <string name="mobile_label">మొబైల్</string>
+    <string name="expected_area_label">పంపిన ఫీల్డ్</string>
+    <string name="actual_area_label">ఫీల్డర్ విత్తడం</string>
+    <string name="exp_flowering_date_label">A. పుష్పించే తేదీ</string>
+    <string name="exp_harvest_date">A. హార్వెస్టింగ్ తేదీ</string>
+    <string name="actual_flowering_date_label">అసలు పుష్పించే తేదీ</string>
+    <string name="actual_harvest_date_label">అసలు కోత తేదీ</string>
+
+    <string name="average_pp_spacing_label">సగటు P-P విరామం:</string>
+    <string name="average_rr_spacing_label">సగటు R-R విరామం:</string>
+    <string name="average_germiantion_label">   సగటు మొక్కల జనాభా(%):</string>
+    <string name="average_farm_population_label">సగటు మొత్తం మొక్కల జనాభా:</string>
+
+    <string name="view_samples_label">నమూనాలను చూడండి</string>
+    <string name="add_visit_label">పర్యటనను జోడించండి</string>
+    <string name="harvest_details_label">హార్వెస్టింగ్ వివరాలు</string>
+    <string name="visit_step1_head_label">దశ 1: శాశ్వత పంట ప్రాంతాన్ని నమోదు చేయండి</string>
+    <string name="visit_step2_head_label">దశ 2: రైతు చేసిన కార్యకలాపాలను నమోదు చేయండి</string>
+    <string name="visit_step1_msg_label">పంటను చూడగలిగే పంట ప్రాంతాన్ని నమోదు చేయండి.</string>
+    <string name="visit_step2_msg_label">పర్యటన వివరాలను క్రింది రూపంలో నమోదు చేయండి. మీ సందర్శనలో ఈ వివరాలను రైతు అందిస్తారు</string>
+    <string name="last_standing_area">* చివరి శాశ్వత ప్రాంతం</string>
+    <string name="pld_form_label">పిఎల్‌డి ఫారం</string>
+    <string name="standing_crop_area_label">పంట విస్తీర్ణం</string>
+    <!--<string name="in_acres_msg">(Acres)</string>
+    <string name="in_acres_hint">ఎకరా</string>-->
+    <string name="inm_label">INA M</string>
+    <string name="visit_inm_msg1">ఇంటిగ్రేటెడ్ పోషక నిర్వహణ డేటాను క్రింది రూపంలో నమోదు చేయండి.</string>
+    <string name="visit_select_na_msg">అందుబాటులో లేకపోతే N / A ఎంచుకోండి.</string>
+    <string name="visit_inm_msg3">INM ఫారమ్ నింపి సేవ్ క్లిక్ చేయండి. మీరు బహుళ ఎంట్రీలను సేవ్ చేయవచ్చు.</string>
+    <string name="quantity_hint">పరిమాణం</string>
+    <string name="prescribed_comment_hint">పేర్కొన్న వ్యాఖ్య</string>
+    <string name="iwm_label">నేను ఎం</string>
+    <string name="visit_iwm_msg1">ఇంటిగ్రేటెడ్ బరువు నిర్వహణ డేటాను క్రింది రూపంలో నమోదు చేయండి.</string>
+    <string name="visit_iwm_msg3">IWM ఫారమ్ నింపి సేవ్ క్లిక్ చేయండి. మీరు బహుళ ఎంట్రీలను సేవ్ చేయవచ్చు.</string>
+    <string name="done_date_label">ముగింపు తేదీ:</string>
+    <string name="save_label">సేవ్</string>
+    <string name="ipm_label">ఐపిఎం</string>
+    <string name="visit_ipm_msg1">ఇంటిగ్రేటెడ్ పెస్ట్ మేనేజ్మెంట్ డేటాను క్రింది రూపంలో నమోదు చేయండి.</string>
+    <string name="visit_ipm_msg3">IPM ఫారమ్ నింపి సేవ్ క్లిక్ చేయండి. మీరు బహుళ ఎంట్రీలను సేవ్ చేయవచ్చు.</string>
+    <string name="cpc_label">CPC</string>
+    <string name="visit_cpc_msg">గ్రేడ్ పంట భౌతిక స్థితిని ఎంచుకోండి</string>
+    <string name="grade_label">గ్రేడ్</string>
+    <string name="sml_label">SML</string>
+    <string name="visit_sml_msg">నేల తేమ స్థాయిని అందించండి</string>
+    <string name="mositure_level_label">తేమ స్థాయి</string>
+    <string name="other_label">ఇతర</string>
+    <string name="visit_other_msg">ఏదైనా ప్రత్యేక వ్యాఖ్య లేదా పని ఉంటే దయచేసి ఇక్కడ పేర్కొనండి</string>
+    <string name="comment_label">వ్యాఖ్య</string>
+    <string name="visit_farm_image1_msg">* ఫారం చిత్రం 1</string>
+    <string name="visit_farm_image2_msg">* ఫారం చిత్రం 2</string>
+    <string name="visit_farm_and_farmer_image_msg">* వ్యవసాయ మరియు రైతు</string>
+    <string name="visit_selfie_famer_image_msg">* వ్యవసాయ, రైతుతో సెల్ఫీ</string>
+    <string name="add_new_harvest_label">క్రొత్త వివరణను జోడించండి</string>
+    <string name="flowering_date_updated_success_msg">ఫ్లోరిడ్ తేదీ నవీకరణ విజయవంతంగా</string>
+    <string name="flowering_date_update_fail_msg">పుష్పించే తేదీని నవీకరించడంలో విఫలమైంది. దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి.</string>
+    <string name="harvest_date_updated_success_msg">హార్వెస్ట్ తేదీ విజయవంతంగా నవీకరించబడింది</string>
+    <string name="harvest_date_update_fail_msg">పంట తేదీని నవీకరించడంలో విఫలమైంది. దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి.</string>
+    <string name="no_standing_area_for_harvest_msg">పంటకోతకు శాశ్వత ప్రాంతం లేదు.</string>
+    <string name="farm_detail_label">వ్యవసాయ వివరణ</string>
+    <string name="germination_and_spacing_form_label">అంకురోత్పత్తి మరియు అంతరం</string>
+    <string name="select_dropdown">ఎంచుకోండి</string>
+    <string name="unit_dropdown">యూనిట్</string>
+
+    <string name="please_select_inm_msg">దయచేసి INM కంటెంట్‌ను ఎంచుకోండి.</string>
+    <string name="please_select_iwm_msg">దయచేసి IWM మెటీరియల్‌ని ఎంచుకోండి.</string>
+    <string name="please_select_ipm_msg">దయచేసి IPM కంటెంట్‌ను ఎంచుకోండి.</string>
+
+    <string name="please_enter_material_quantity">దయచేసి కంటెంట్ పరిమాణాన్ని నమోదు చేయండి.</string>
+    <string name="please_select_quantity_unit_msg">దయచేసి కంటెంట్ పరిమాణంలోని ఏదైనా యూనిట్‌ను ఎంచుకోండి.</string>
+    <string name="please_choose_done_date_msg">దయచేసి తేదీని ఎంచుకోండి.</string>
+    <string name="please_fill_validation_text">దయచేసి మరిన్ని ఫీల్డ్‌లను జోడించడానికి పైన పేర్కొన్న అన్ని ఫీల్డ్‌లను పూరించండి.</string>
+    <string name="please_fill_in_field">దయచేసి ఈ ఫీల్డ్‌ను పూరించండి</string>
+    <string name="correct_harvest_area">దయచేసి సరైన పంట ప్రాంతాన్ని నమోదు చేయండి</string>
+    <string name="capture_first_image_msg">దయచేసి మొదట 1 చిత్రాన్ని తీయండి</string>
+    <string name="capure_secong_image_msg">దయచేసి మొదటి 2 చిత్రాలను సంగ్రహించండి</string>
+    <string name="capture_third_image_msg">దయచేసి మొదటి 3 చిత్రాలను తీయండి</string>
+    <string name="capture_fourth_image_msg">దయచేసి మొదటి 4 చిత్రాలను తీయండి</string>
+    <string name="capture_fifth_image_msg">P దయచేసి మొదటి 5 చిత్రాలను తీయండి</string>
+    <string name="capture_all_image_msg">మరిన్ని చిత్రాలను జోడించడానికి దయచేసి అన్ని చిత్రాలను సంగ్రహించండి.</string>
+    <string name="standing_area_cant_null_msg">శాశ్వత రికార్డు ఖాళీగా ఉండకూడదు</string>
+    <string name="enter_standing_crop_area_msg">దయచేసి శాశ్వత పంట ప్రాంతాన్ని నమోదు చేయండి.</string>
+    <string name="enter_appropriate_area_msg">దయచేసి పంట నిలబడటానికి తగిన ఫీల్డ్ నింపండి</string>
+    <string name="enter_coorect_standing_area_msg">దయచేసి శాశ్వత ఫీల్డ్ యొక్క సరైన విలువను నమోదు చేయండి.</string>
+    <string name="add_chemical_or_na_msg">దయచేసి ఏదైనా రసాయనాలను జోడించండి లేదా INM లో N / A ఎంచుకోండి.</string>
+    <string name="add_chemical_na_iwm_msg">దయచేసి ఏదైనా రసాయనాలను జోడించండి లేదా IWM లో N / A ని ఎంచుకోండి.</string>
+    <string name="add_chemical_or_na_ipm_msg">దయచేసి ఏదైనా రసాయనాలను జోడించండి లేదా IPM లో N / A ని ఎంచుకోండి.</string>
+    <string name="select_cpc_msg">దయచేసి cpc ని ఎంచుకోండి</string>
+    <string name="select_sml_msg">దయచేసి sml ఎంచుకోండి</string>
+    <string name="uploading_visit_msg">అప్‌లోడ్ చేస్తోంది ...</string>
+    <string name="visit_submit_success_msg">విజయవంతంగా అప్‌లోడ్ చేయబడింది.</string>
+    <string name="visit_submit_fail_msg">ఈ యాత్రను జోడించడంలో విఫలమైంది. దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+    <string name="fail_to_connect_msg">కనెక్ట్ చేయడంలో విఫలమైంది!</string>
+    <string name="check_internet_connection_msg">దయచేసి మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేయండి.</string>
+    <string name="visit_data_saved_msg">మీ డేటా సేవ్ చేయబడింది.</string>
+    <string name="cant_view_farm_in_offline_msg">మీరు పొలాన్ని ఆఫ్‌లైన్ మోడ్‌లో చూడలేరు.</string>
+    <string name="no_standing_area_for_visit">ప్రయాణానికి శాశ్వత ప్రాంతం లేదు.</string>
+    <string name="error_message">లోపం!</string>
+    <string name="verify_farm_area_first_msg">దయచేసి మొదట ఫీల్డ్ యొక్క వైశాల్యాన్ని ధృవీకరించండి.</string>
+    <string name="no_previous_visit_available_msg">ఈ ఫారం కోసం మునుపటి ప్రయాణం అందుబాటులో లేదు.</string>
+    <string name="failed_to_load_visits_msg">సందర్శన డేటాను లోడ్ చేయడంలో విఫలమైంది. దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+    <string name="failed_to_load_previous_harvest_msg">మునుపటి పంట యొక్క డేటాను లోడ్ చేయడంలో విఫలమైంది. దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+    <string name="need_to_mark_gps_coordinates">ఫీల్డ్ ప్రాంతాన్ని చూడటానికి మీరు మొదట Gps కోఆర్డినేట్‌లను గుర్తించాలి.</string>
+    <string name="failed_to_get_farm_location_msg">వ్యవసాయ స్థానం పొందడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="timeline_activity_title">కాలక్రమం</string>
+    <string name="failed_to_load_timeline">కాలక్రమం లోడ్ చేయడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="moisture_level_label">తేమ స్థాయి</string>
+    <string name="add_visit_activity_title">సందర్శనను జోడించండి</string>
+    <string name="choose_other_image_to_upload_msg">దయచేసి అప్‌లోడ్ చేయడానికి మరొక చిత్రాన్ని ఎంచుకోండి.</string>
+    <string name="please_wait_msg">దయచేసి వేచి ఉండండి ...</string>
+    <string name="fill_date_msg">డేటాను పూరించండి</string>
+    <string name="select_chemical_label">రసాయనాన్ని ఎంచుకోండి</string>
+    <string name="please_fill_date_msg">దయచేసి డేటాను నమోదు చేయండి</string>
+    <string name="farmer_reply_must_entered_msg">రైతు ప్రత్యుత్తరం నమోదు చేయాలి</string>
+    <string name="ok_msg">సరే</string>
+    <string name="fill_data_properly_msg">దయచేసి డేటాను సరిగ్గా పూరించండి</string>
+    <string name="select_file_msg">ఫైల్‌ను ఎంచుకోండి</string>
+    <string name="activity_submitted_success_msg">కార్యాచరణ విజయవంతంగా ప్రదర్శించబడింది.</string>
+    <string name="activity_submit_fail_msg">టైమ్‌లైన్‌కు డేటాను అప్‌లోడ్ చేయడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="error_occurred_try_again_msg">లోపం సంభవించింది. మళ్ళీ ప్రయత్నించండి</string>
+    <string name="retry_msg">మళ్ళీ ప్రయత్నించండి</string>
+    <string name="something_went_wrong_msg">కొంత లోపం సంభవించింది</string>
+    <string name="visit_report_activity_title">వ్యవసాయ సందర్శన నివేదిక</string>
+    <string name="farm_visit_details_label">వ్యవసాయ సందర్శన వివరాలు</string>
+    <string name="visit_number_label">సందర్శన సంఖ్య:</string>
+    <string name="visited_on_label">పర్యటన తేదీ:</string>
+
+    <string name="farmer_name_label">రైతు పేరు:</string>
+    <string name="click_to_view_images_label">చిత్రాన్ని చూడటానికి క్లిక్ చేయండి</string>
+    <string name="downloading_is_pending">కొన్ని చిత్ర డౌన్‌లోడ్ పెండింగ్‌లో ఉంది.</string>
+    <string name="no_image_for_this_visit">ఈ పర్యటన కోసం చిత్రాలు లేవు</string>
+    <string name="image_activity_title">ఫోటోలు</string>
+    <string name="enter_pld_details_label">Pld వివరాలను నమోదు చేయండి</string>
+    <string name="please_enter_pld_area_and_its_reason_in_the_fields_mentioned_below_label">దయచేసి దిగువ పేర్కొన్న ప్రాంతాలలో పంట నష్టం / నష్టం జోన్‌ను నమోదు చేయండి మరియు దీనికి కారణం.</string>
+    <string name="effective_farm_area_label">సమర్థవంతమైన వ్యవసాయ రంగం</string>
+    <string name="pld_acres_label">నష్టం జోన్</string>
+    <string name="reason_for_pld_label">నష్టానికి కారణం</string>
+    <string name="pld_already_submitted_for_this_farm_label">* ఈ ఫారం కోసం పంట నష్టం / నష్టం ప్రాంతం ఇప్పటికే సమర్పించబడింది</string>
+    <string name="pld_form_title">పంట నష్టం / నష్టం ప్రాంతం వ్యవసాయ క్షేత్రం</string>
+    <string name="already_pld_added">పంట నష్టం / నష్టం ప్రాంతం ఇప్పటికే జోడించబడింది.</string>
+    <string name="invalid_entry_error">ఫీల్డ్‌లో చెల్లని ప్రవేశం</string>
+    <string name="invalid_entry_in_pld">పంట నష్టం / నష్టం ప్రాంతంలో చెల్లని ప్రవేశం</string>
+    <string name="your_pld_data_update">మీ పంట నష్టం / నష్టం ప్రాంతం డేటా నవీకరించబడింది</string>
+    <string name="failure_upload_msg">పంట నష్టం / నష్ట ప్రాంత డేటాను అప్‌లోడ్ చేయడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="enter_pld_hint">పంట నష్టం / నష్ట క్షేత్రాన్ని ఇక్కడ నమోదు చేయండి.</string>
+    <string name="enter_reason_for_pld_hint">పంట నష్టం / నష్టం ప్రాంతానికి కారణాన్ని నమోదు చేయండి</string>
+    <string name="enter_pld_here_hint">పంట నష్టం / నష్ట క్షేత్రాన్ని ఇక్కడ నమోదు చేయండి.</string>
+    <string name="make_offline_label">ఆఫ్‌లైన్‌లోకి వెళ్లండి</string>
+    <string name="lot_no">వ్యవసాయ ఐడి</string>
+    <string name="fathers_name">తండ్రి పేరు:</string>
+    <string name="offline_mode_title">ఆఫ్‌లైన్ మోడ్</string>
+    <string name="preparing_your_data_for_offline_mode">ఆఫ్‌లైన్ మోడ్ కోసం మీ డేటాను సిద్ధం చేస్తోంది. దీనికి కొన్ని నిమిషాలు పట్టవచ్చు</string>
+    <string name="stay_connected">కనెక్ట్ అయి ఉండండి</string>
+    <string name="please_select_at_least_one_farm">ఆఫ్‌లైన్‌లోకి వెళ్లడానికి దయచేసి కనీసం ఒక ఫీల్డ్‌ను ఎంచుకోండి</string>
+    <string name="please_check_your_internet">దయచేసి మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేయండి.</string>
+    <string name="fail_to_load_offline_mode">ఆఫ్‌లైన్ మోడ్ కోసం ఫారమ్‌ను లోడ్ చేయడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="oops_messsage_label">ఓహ్! ఏదో తప్పు జరిగింది. దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+    <string name="failed_to_make_data_offline">డేటాను ఆఫ్‌లైన్ చేయడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="please_allow_storage_permission">దయచేసి ఆఫ్‌లైన్ మోడ్ కోసం నిల్వను అనుమతించండి.</string>
+    <string name="click_on_storage"><![CDATA[Permissions-> Click on storage]]></string>
+    <string name="yes">అవును</string>
+    <string name="go_offline">ఆఫ్‌లైన్‌లోకి వెళ్లండి</string>
+    <string name="check_area_title">ప్రాంతాన్ని తనిఖీ చేయండి</string>
+    <string name="area">ప్రాంతం</string>
+    <string name="clear">ప్రశాంతంగా</string>
+    <string name="acers_label">ఎకరా</string>
+    <string name="please_submit_at_least_3_points">దయచేసి కనీసం 3 పాయింట్లను సమర్పించండి</string>
+    <string name="outside_circle_radius">వృత్తం వెలుపల</string>
+    <string name="this_app_needs_location_permisssion">ఈ అనువర్తనం స్థానాన్ని ఉపయోగించాల్సిన అవసరం ఉంది, స్థాన కార్యాచరణను ఉపయోగించడానికి అనువర్తనాన్ని అనుమతించండి</string>
+    <string name="permission_denied">అనుమతి ఇవ్వబడలేదు</string>
+    <string name="please_clear_then_add">దయచేసి తొలగించండి, ఆపై మరిన్ని జోడించండి</string>
+    <string name="response_error">ప్రతిస్పందన లోపం తరువాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="farm_area_title">వ్యవసాయ రంగం</string>
+    <string name="this_app_needs_location_permission">ఈ అనువర్తనానికి స్థాన అనుమతి అవసరం, దయచేసి స్థాన కార్యాచరణను ఉపయోగించడానికి అంగీకరించండి</string>
+    <string name="please_clear_then_add_more">దయచేసి తొలగించండి, ఆపై మరిన్ని జోడించండి</string>
+    <string name="should_have_at_least_two_points_to_display">ప్రదర్శించడానికి కనీసం 2 పాయింట్లు ఉండాలి</string>
+    <string name="capture_farm_area_maps_activity_title">క్యాప్చర్ ఫీల్డ్</string>
+    <string name="sure_to_submit_area">మీరు ఫీల్డ్‌ను సమర్పించాలనుకుంటున్నారా?</string>
+    <string name="area_is_too_short_for_capture">పొలం పొలం చాలా చిన్నది. దయచేసి ఫారమ్ ఫీల్డ్‌ను మళ్లీ పట్టుకోండి</string>
+    <string name="no">కాదు</string>
+    <string name="please_enter_valid_area">దయచేసి చెల్లుబాటు అయ్యే ఫీల్డ్‌ను నమోదు చేయండి</string>
+    <string name="actual_area_update_successfully">విత్తనాల ప్రాంతం విజయవంతంగా నవీకరించబడింది.</string>
+    <string name="failed_to_update_actual_area">విత్తనాల ప్రాంతాన్ని నవీకరించడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="please_click_inside_circle_to_mark">ప్రాంతాన్ని గుర్తించడానికి దయచేసి సర్కిల్ లోపల క్లిక్ చేయండి</string>
+    <string name="location_permission_needed">స్థాన అనుమతి అవసరం</string>
+    <string name="this_apps_needs_location_permission">ఈ అనువర్తనానికి స్థాన అనుమతి అవసరం, దయచేసి స్థాన కార్యాచరణను ఉపయోగించడానికి అంగీకరించండి</string>
+    <string name="cant_add_more_points">మరిన్ని పాయింట్లను జోడించలేరు</string>
+    <string name="failed_to_get_farm_ocation_please_try_again_later">వ్యవసాయ ప్రదేశాలను పొందడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="area_successfully_added">ప్రాంతం విజయవంతంగా జోడించబడింది ...</string>
+    <string name="failed_to_verify_farm_area">ఫీల్డ్‌ను ధృవీకరించడానికి</string>
+    <string name="add_actual_area_manually">విత్తనాల ప్రాంతాన్ని మానవీయంగా జోడించండి</string>
+    <string name="old_password">పాత పాస్‌వర్డ్</string>
+    <string name="new_password">క్రొత్త పాస్‌వర్డ్</string>
+    <string name="confirm_new_password">క్రొత్త పాస్‌వర్డ్‌ను నిర్ధారించండి</string>
+    <string name="username">యూజర్ పేరు</string>
+    <string name="log_in">లాగిన్</string>
+    <string name="username_cant_be_null">వినియోగదారు పేరు ఖాళీగా ఉండకూడదు</string>
+    <string name="password_cant_be_empty">పాస్వర్డ్ ఖాళీగా ఉండకూడదు</string>
+    <string name="failed_to_connect">కనెక్ట్ చేయడంలో విఫలమైంది!</string>
+    <string name="invalid_username_password">చెల్లని వినియోగదారు పేరు లేదా పాస్‌వర్డ్. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="failed_to_login">లాగిన్ అవ్వడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="plan">పథకం -</string>
+    <string name="location_not_available">ప్రస్తుత స్థానం అందుబాటులో లేదు దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="server_error">లోపం సంభవించింది. దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+    <string name="bags">సంచులు:</string>
+    <string name="harvest_plan">హార్వెస్టింగ్ ప్లాన్</string>
+    <string name="failed_to_load_harvest_data">హార్వెస్టింగ్ డేటాను లోడ్ చేయడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+
+    <string name="profile_activity_title">ప్రొఫైల్</string>
+    <string name="old_expense_data_unavaialble">గత వ్యయంపై డేటా అందుబాటులో లేదు</string>
+    <string name="hint_amount">రాశిచక్రం</string>
+    <string name="txt_date">తేదీ</string>
+    <string name="hint_narration">వివరణ</string>
+    <string name="hint_submit">సమర్పించండి</string>
+    <string name="txt_no_internet">ఇంటర్నెట్ కనెక్షన్ లేదు</string>
+    <string name="txt_can_not_add_expense_offline_mode">ఆఫ్‌లైన్ మోడ్‌లో ఖర్చును జోడించలేరు</string>
+    <string name="txt_no_farm_data_avaialble">ఫారమ్ డేటా అందుబాటులో లేదు</string>
+    <string name="txt_total_farms">మొత్తం వ్యవసాయం</string>
+    <string name="txt_total_standing_area">మొత్తం శాశ్వత ప్రాంతం</string>
+    <string name="txt_in_acres">(ఎకరాల్లో)</string>
+    <string name="txt_total_expected_area">అవసరమైన మొత్తం ప్రాంతం</string>
+    <string name="txt_last_visited_farm">చివరిగా చూసిన పొలం</string>
+    <string name="txt_max_standing_area">మాక్స్. శాశ్వత ప్రాంతం</string>
+    <string name="txt_max_population">మాక్స్. జనాభా</string>
+    <string name="txt_grade_wise_distribution">గ్రేడ్ వారీగా పంపిణీ</string>
+    <string name="drawer_check_area">ప్రాంతాన్ని తనిఖీ చేయండి</string>
+    <string name="drawer_offline_mode">ఆఫ్‌లైన్ మోడ్</string>
+    <string name="drawer_plan_harvest">పంట కోత</string>
+    <string name="drawer_planned_harvest">ప్రణాళిక పంట</string>
+    <string name="drawer_back_to_online">ఆన్‌లైన్‌లోకి తిరిగి రండి</string>
+    <string name="drawer_settings">సెట్టింగులు</string>
+    <string name="main_menu_search">శోధన</string>
+    <string name="harvest_plan_submit">సమర్పించండి</string>
+    <string name="bottom_nav_dashboard">డాష్బోర్డ్</string>
+    <string name="bottom_nav_home">హోమ్</string>
+    <string name="bottom_nav_expenditure">ఖర్చులు</string>
+    <string name="landing_search">శోధన</string>
+    <string name="update_farm_failure">వ్యవసాయ డేటాను నవీకరించడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="txt_data_uploaded_to_server">డేటా సర్వర్‌కు అప్‌లోడ్ చేయబడింది</string>
+    <string name="txt_germination_data_upload_failed">అంకురోత్పత్తి మరియు నమూనా డేటాను అప్‌లోడ్ చేయడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="txt_harvest_data_upload_failed">హార్వెస్టింగ్ డేటాను అప్‌లోడ్ చేయడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="txt_visit_data_upload_failed">టూర్ డేటాను అప్‌లోడ్ చేయడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="online_now_no_offline_upload">మీరు ప్రస్తుతం ఆన్‌లైన్‌లో ఉన్నారు ... అప్‌లోడ్ చేయడానికి ఆఫ్‌లైన్ డేటా కనుగొనబడలేదు</string>
+    <string name="txt_uploading_data">డేటాను అప్‌లోడ్ చేస్తోంది ...</string>
+    <string name="txt_server_error">సర్వర్ లోపం. దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+    <string name="dialog_heading_unable_to_connect">కనెక్ట్ చేయడం సాధ్యం కాలేదు!</string>
+    <string name="connect_to_3g_or_4g">డేటాను అప్‌లోడ్ చేయడానికి మీరు 3G లేదా 4G నెట్‌వర్క్‌కు కనెక్ట్ అయ్యారని నిర్ధారించుకోండి.</string>
+    <string name="go_online_upload_offline_data">మీరు ఆన్‌లైన్‌లోకి తిరిగి వెళ్లి డేటాను ఆఫ్‌లైన్‌లో అప్‌లోడ్ చేయాలనుకుంటున్నారా?</string>
+
+    <string name="validation_amount_null">మొత్తం ఖాళీగా ఉండకూడదు</string>
+    <string name="validation_comment_null">వ్యాఖ్య ఖాళీగా ఉండకూడదు</string>
+    <string name="validation_date_null">దయచేసి తేదీని ఎంచుకోండి</string>
+    <string name="validation_image_null">దయచేసి ఖర్చు చేసే చిత్రాన్ని అప్‌లోడ్ చేయండి</string>
+
+    <string name="expense_data_upload_failed">ఖర్చు డేటాను లోడ్ చేయడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="expense_added">ఖర్చు విజయవంతంగా జోడించబడింది</string>
+    <string name="expense_error_occured">లోపం సంభవించింది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="pick_up_date">(బాగ్ లిఫ్టింగ్ తేదీ:</string>
+    <string name="select_all">అన్నీ ఎంచుకోండి</string>
+    <string name="bag">బ్యాగ్</string>
+    <string name="please_enter_valid_vehicle_no">దయచేసి చెల్లుబాటు అయ్యే వాహనం నం. ఎంటర్</string>
+    <string name="please_enter_valid_vehicle_weight">దయచేసి చెల్లుబాటు అయ్యే వాహన బరువును నమోదు చేయండి</string>
+    <string name="please_enter_valid_remark">దయచేసి చెల్లుబాటు అయ్యే వ్యాఖ్యను నమోదు చేయండి</string>
+    <string name="please_choose_valid_date">దయచేసి చెల్లుబాటు అయ్యే తేదీని ఎంచుకోండి</string>
+    <string name="harvest_collection_planned_successfully">హార్వెస్ట్ కలెక్షన్ విజయవంతంగా ప్లాన్ చేయబడింది</string>
+    <string name="failed_to_plan_harvest_collection">పంట సేకరణను ప్లాన్ చేయడంలో విఫలమైంది. దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+    <string name="please_select">దయచేసి ఎంచుకోండి</string>
+    <string name="harvest_plan_activity_title">పంట సేకరణ</string>
+    <string name="no_data_available_to_plan_harvest">పంట ప్రణాళిక కోసం డేటా అందుబాటులో లేదు. దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+    <string name="failed_to_load_plan_harvest">పంట ప్రణాళిక కోసం పొలాలను లోడ్ చేయడంలో విఫలమైంది. దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+    <string name="farm_details">ఫారం వివరణ</string>
+    <string name="harvest_done_date">హార్వెస్ట్ తేదీ</string>
+    <string name="bag_details">బాగ్ వివరణ</string>
+    <string name="you_must_fill_this_field_first">మీరు మొదట ఈ ఫీల్డ్‌ను నింపాలి</string>
+    <string name="harvest_data">హార్వెస్ట్ డేటా</string>
+    <string name="do_you_want_to_submit_this_data">మీరు ఈ డేటాను సమర్పించాలనుకుంటున్నారా?</string>
+    <string name="cancel">రద్దు</string>
+    <string name="please_fill_out_this_field">దయచేసి ఈ ఫీల్డ్‌ను పూరించండి</string>
+    <string name="are_you_want_to_submit_this_data">మీరు ఖచ్చితంగా ఈ డేటాను సమర్పించాలనుకుంటున్నారా?</string>
+    <string name="failed_to_add_harvest_data">హార్వెస్టింగ్ డేటాను జోడించడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="your_data_saved">మీ డేటా సేవ్ చేయబడింది.</string>
+    <string name="bags_no">బాగ్ నం</string>
+    <string name="weight_in_kgs">బరువు (కేజీలో)</string>
+    <string name="step_2_enter_bag_details">దశ 2: బ్యాగ్ వివరాలను నమోదు చేయండి</string>
+    <string name="enter_bag_no_and_weights_in_which_crop_can_be_seen">పంటను చూడగలిగే బ్యాగ్ నంబర్ మరియు బరువును నమోదు చేయండి</string>
+    <string name="step_1_enter_farmer_details">దశ 1: రైతు వివరాలను నమోదు చేయండి</string>
+    <string name="enter_crop_area_in_which_crop_can_be_seen">పంటను చూడగలిగే పంట ప్రాంతాన్ని నమోదు చేయండి</string>
+
+    <string name="framer_lot_no">Lot_no</string>
+    <string name="farmer_no_of_farms">క్షేత్రాల సంఖ్య</string>
+    <string name="location_permission_title">స్థాన అనుమతి అవసరం</string>
+    <string name="location_permission_message">ఈ అనువర్తనానికి స్థాన అనుమతి అవసరం, దయచేసి స్థాన కార్యాచరణను ఉపయోగించడానికి అంగీకరించండి</string>
+    <string name="toast_permission_denied">అనుమతి ఇవ్వబడలేదు</string>
+    <string name="farm_fragment_toast_selected">ఎంచుకున్న</string>
+    <string name="farm_fragment_dates_not_equal">తేదీలు ఉనికిలో లేవు, చొప్పించండి ...</string>
+    <string name="farm_fragment_in_expecption">మినహాయింపులో, చొప్పించు ...</string>
+    <string name="frm_fragment_no_previous_date">మునుపటి తేదీ చేర్చబడలేదు ...</string>
+    <string name="failed_load_farm">ఫీల్డ్‌లను లోడ్ చేయడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+
+    <string name="enter_germination_heading">మొక్కల జనాభా మరియు అంతరాల వివరాలను నమోదు చేయండి</string>
+    <string name="germination_desc_msg">దయచేసి నమూనా వారీగా దిగువ ప్రాంతాలలో కొలిచిన ప్రాంతాన్ని నమోదు చేయండి. మీరు కనీసం 3 నమూనాలను నమోదు చేయాలి.</string>
+    <string name="sample1_msg">* నమూనా 1</string>
+    <string name="configured_area_hint">కాన్ఫిగర్ చేసిన ప్రాంతం (చదరపు అడుగులలో)</string>
+    <string name="p_p_spacing_in_inches_hint">పి-పి విరామం (అంగుళాలలో)</string>
+    <string name="r_r_spacing_in_inches_hint">R-R విరామం (అంగుళాలలో)</string>
+    <string name="ideal_population_label">ఆదర్శ జనాభా</string>
+    <string name="actual_population_hint">వాస్తవ జనాభా</string>
+    <string name="germination_label">మొక్కల జనాభా</string>
+    <string name="total_farm_population_label">మొత్తం మొక్కల జనాభా</string>
+    <string name="sample2_label">* నమూనా 2</string>
+    <string name="sample3_label">* నమూనా 3</string>
+    <string name="average_p_p_spacing_label">సగటు P-P విరామం:</string>
+    <string name="average_r_r_spacing_label">సగటు R-R విరామం:</string>
+    <string name="average_germination_label">సగటు అంకురోత్పత్తి:</string>
+    <string name="germination_sapcing_activity_title">అంకురోత్పత్తి మరియు అంతరం</string>
+    <string name="enter_configured_of_sample1_msg">దయచేసి నమూనా 1 యొక్క కాన్ఫిగర్ ఫీల్డ్‌ను నమోదు చేయండి</string>
+    <string name="enter_pp_spacing_of_sample1_msg">విరామం ప్లాన్ చేయడానికి దయచేసి నమూనా 1 మొక్కను నమోదు చేయండి</string>
+    <string name="enter_rr_spacing_of_sample1_msg">దయచేసి నమూనా 1 యొక్క పంక్తి విరామాన్ని నమోదు చేయండి</string>
+    <string name="enter_actual_pop_of_sample1_msg">దయచేసి నమూనా 1 యొక్క వాస్తవ జనాభాను నమోదు చేయండి</string>
+    <string name="invalid_area_msg">చెల్లని ఫీల్డ్</string>
+    <string name="invalid_pp_spacing_msg">చెల్లని P-P విరామం</string>
+    <string name="invalid_rr_spacing_msg">చెల్లని R-R విరామం</string>
+    <string name="invalid_population_msg">చెల్లని జనాభా</string>
+    <string name="enter_configured_of_sample2_msg">దయచేసి నమూనా 2 యొక్క కాన్ఫిగర్ ఫీల్డ్‌ను నమోదు చేయండి</string>
+    <string name="enter_pp_spacing_of_sample2_msg">విరామం ప్లాన్ చేయడానికి దయచేసి నమూనా 2 మొక్కను నమోదు చేయండి</string>
+    <string name="enter_rr_spacing_of_sample2_msg">దయచేసి నమూనా 2 యొక్క పంక్తి విరామాన్ని నమోదు చేయండి</string>
+    <string name="enter_actual_pop_of_sample2_msg">దయచేసి నమూనా 2 యొక్క వాస్తవ జనాభాను నమోదు చేయండి</string>
+
+    <string name="enter_configured_of_sample3_msg">దయచేసి నమూనా 3 యొక్క కాన్ఫిగర్ ప్రాంతాన్ని నమోదు చేయండి</string>
+    <string name="enter_pp_spacing_of_sample3_msg">విరామం ప్లాన్ చేయడానికి దయచేసి నమూనా 3 మొక్కను నమోదు చేయండి</string>
+    <string name="enter_rr_spacing_of_sample3_msg">దయచేసి నమూనా 3 యొక్క వరుస విరామాన్ని నమోదు చేయండి</string>
+    <string name="enter_actual_pop_of_sample3_msg">దయచేసి నమూనా 3 యొక్క వాస్తవ జనాభాను నమోదు చేయండి</string>
+    <string name="fill_fourth_sample_msg">మొదటి 4 నమూనాలను పూరించండి</string>
+    <string name="fill_all_field_of_sample4">అన్ని నమూనాలను 4 ఫీల్డ్లను పూరించండి</string>
+    <string name="fill_all_field_of_sample5">అన్ని నమూనాలను 5 ఫీల్డ్లను పూరించండి</string>
+    <string name="germination_submitted_success_msg">మొక్కల జనాభా రికార్డు విజయవంతంగా జోడించబడింది</string>
+    <string name="germination_update_fail_msg">అంకురోత్పత్తి విరామాన్ని నవీకరించడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="harvest_done_date_label">హార్వెస్ట్ తేదీ</string>
+    <string name="weighment_date_label">బరువు తేదీ</string>
+    <string name="harvested_area_label">పంట క్షేత్రం</string>
+    <string name="standing_area_label">శాశ్వత ప్రాంతం</string>
+    <!--<string name="bag_details_label">బాగ్ వివరాలు</string>
+    <string name="bags_no_label">బ్యాగ్స్ నం.</string>-->
+    <string name="weight_in_kgs_label">బరువు (కేజీలో)</string>
+    <string name="harvest_report_activity_title">హార్వెస్ట్ రిపోర్ట్</string>
+    <string name="bags_no_label">బాగ్ నం</string>
+
+    <string name="stock_weight_label">స్టాక్ బరువు:</string>
+    <string name="bags_blk_label">బాగ్ (Blk):</string>
+    <string name="remark_label">వ్యాఖ్య:</string>
+    <string name="vehicle_weight_label">వాహన బరువు:</string>
+    <string name="total_bags_label">మొత్తం సంచులు:</string>
+
+    <string name="acre_msg"> ఎకరా</string>
+    <string name="growing_area_msg">నాటిన ప్రాంతం</string>
+    <string name="farm_area_label">క్షేత్ర ప్రాంతం</string>
+    <string name="address_label">చిరునామా:</string>
+    <string name="profile_btn_update">నవీకరణ</string>
+    <string name="password_label">పాస్వర్డ్</string>
+
+    <string name="login_hint_password">పాస్వర్డ్</string>
+    <string name="add_expense_title">చిత్రాన్ని జోడించండి!</string>
+    <string name="add_expense_take_photo">చిత్రం క్లిక్ చేయండి</string>
+    <string name="add_expense_choose_from_library">లైబ్రరీ నుండి ఎంచుకోండి</string>
+    <string name="add_expense_cancel">రద్దు</string>
+    <string name="expense_content_amount">మొత్తం:</string>
+    <string name="txt_select_a_language">భాషను ఎంచుకోండి</string>
+    <string name="vehicle_number">వాహన సంఖ్య</string>
+    <string name="vehicle_net_weight">వాహనం యొక్క నికర బరువు</string>
+    <string name="remark">వ్యాఖ్య</string>
+
+    <string name="total_planned_weight">మొత్తం ప్రణాళిక బరువు</string>
+    <string name="farm_details_view_area">ఫీల్డ్ వ్యూ</string>
+    <string name="farm_details_edit_details">వివరాలను సవరించండి</string>
+    <string name="previous_visits_label">చివరి సందర్శన</string>
+    <string name="forget_password_activity_title">పాస్వర్డ్ రీసెట్</string>
+    <string name="show_sample_germination_activity_title">నమూనా అంకురోత్పత్తి మరియు అంతరం</string>
+
+
+    <!-- <string name="login_hint_password">పాస్వర్డ్</string>
+     <string name="add_expense_title">చిత్రాన్ని జోడించండి!</string>
+     <string name="add_expense_take_photo">చిత్రం క్లిక్ చేయండి</string>
+     <string name="add_expense_choose_from_library">లైబ్రరీ నుండి ఎంచుకోండి</string>
+     <string name="add_expense_cancel">రద్దు</string>
+     <string name="expense_content_amount">మొత్తం:</string>
+     <string name="txt_select_a_language">భాషను ఎంచుకోండి</string>-->
+
+
+    <string name="visit_button_label">పర్యటన</string>
+    <string name="harvest_button_label">నూర్పిళ్ళు</string>
+    <string name="flowering_date_hint">పుష్పించే తేదీ</string>
+    <string name="harvesting_date_hint">హార్వెస్టింగ్ తేదీ</string>
+    <string name="bag_added_harvest">బాగ్ విజయవంతంగా జోడించబడింది</string>
+    <string name="setting_change_language">భాష మార్చండి</string>
+
+    <!-- <string name="login_hint_password">పాస్వర్డ్</string>
+     <string name="add_expense_title">చిత్రాన్ని జోడించండి!</string>
+     <string name="add_expense_take_photo">చిత్రం క్లిక్ చేయండి</string>
+     <string name="add_expense_choose_from_library">లైబ్రరీ నుండి ఎంచుకోండి</string>
+     <string name="add_expense_cancel">రద్దు</string>
+     <string name="expense_content_amount">మొత్తం:</string>
+     <string name="txt_select_a_language">భాషను ఎంచుకోండి</string>-->
+
+    <!--18/1/19-->
+    <string name="configured_area_in_sqm_label">కాన్ఫిగర్ చేసిన ప్రాంతం (సెం.మీ.లో)</string>
+    <string name="plant_to_plant_spacing_label">మొక్కల విరామానికి మొక్క:</string>
+    <string name="row_to_row_spacing_label">రో టు రో ఇంటర్వెల్:</string>
+    <string name="activity_details_label">కార్యాచరణ వివరణ</string>
+    <string name="description_label">వివరాలు:</string>
+    <string name="chemical_label">కెమికల్</string>
+    <string name="quantity_label">మొత్తము:</string>
+    <string name="i_have_completed_the_activity_label">నేను కార్యాచరణను పూర్తి చేసాను.</string>
+    <string name="activity_inputs_label">ఇన్‌పుట్ ఇన్‌పుట్</string>
+    <string name="number_of_labour_hint">కూలీల సంఖ్య</string>
+    <string name="labour_total_cost_hint">కూలీలు</string>
+    <string name="number_of_machines_hint">యంత్రాల సంఖ్య</string>
+    <string name="machine_total_cost_hint">యంత్రాల మొత్తం ఖర్చు</string>
+    <string name="chemical_quantity_hint">రసాయన మొత్తం</string>
+    <string name="total_cost_of_chemical_hint">రసాయన మొత్తం ఖర్చు</string>
+    <string name="chemicals_added_label">రసాయన జోడించబడింది</string>
+    <string name="chemicals_label">రసాయన: -</string>
+    <string name="chemical_name_label">రసాయన పేరు</string>
+    <string name="upload_images_label">చిత్రాన్ని అప్‌లోడ్ చేయండి</string>
+    <string name="farmer_reply_hint">రైతు సమాధానం</string>
+    >
+    <!--19/1/19-->
+    <string name="capture_all_images_msg">దయచేసి అన్ని చిత్రాలను సంగ్రహించండి.</string>
+    <string name="cannot_view_farm_in_offline_msg">మీరు వ్యవసాయ ప్రాంతాన్ని ఆఫ్‌లైన్ మోడ్‌లో చూడలేరు.</string>
+    <string name="no_data_for_this_visit_msg">ఈ ట్రిప్ కోసం డేటా అందుబాటులో లేదు.</string>
+    <!--<string name="view_germination_label">అంకురోత్పత్తి చూడండి</string>
+    <string name="add_germination_label">అంకురోత్పత్తి జోడించండి</string>-->
+    <string name="fail_to_load_farm_data">వ్యవసాయ డేటాను లోడ్ చేయడంలో విఫలమైంది. తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="no_chart_data_msg">చార్ట్ కోసం డేటా అందుబాటులో లేదు</string>
+    <string name="location_unavailable">అందుబాటులో</string>
+    <string name="probability">అవకాశం</string>
+    <string name="rain">వర్షం</string>
+    <string name="wind">గాలి</string>
+    <string name="humidity">తేమ</string>
+    <string name="cloud_cover">క్లౌడ్ షట్</string>
+    <string name="city">నగరం</string>
+    <string name="region">ప్రాంతం</string>
+    <string name="weather">వాతావరణం</string>
+    <string name="today_s_weather_report">నేటి వాతావరణ నివేదిక</string>
+    <string name="max">చాలా</string>
+    <string name="min">కనిష్ట</string>
+    <string name="sort_by">క్రమీకరించు</string>
+    <string name="harvest_date_high_to_low">హార్వెస్ట్ తేదీ - అత్యధిక నుండి తక్కువ</string>
+    <string name="standing_area_high_to_low">శాశ్వత జోన్ - అత్యధిక నుండి తక్కువ వరకు</string>
+    <string name="standing_area_low_to_high">శాశ్వత ప్రాంతం - అత్యల్ప నుండి అత్యధికం</string>
+
+    <string name="open">ఓపెన్</string>
+    <string name="close">Close</string>
+    <string name="otp_message">Otp ని నమోదు చేయండి</string>
+    <string name="loading">లోడ్ అవుతోంది ...</string>
+    <string name="invalid_code_message_label">చెల్లని కోడ్</string>
+    <string name="invalid_number_message_label">చెల్లని ఫోన్ నంబర్</string>
+    <string name="message_quota_finished_message_label">మీరు లాగిన్ హాజరైన పరిమితిని మించిపోయారు</string>
+    <string name="title_activity_check_area_map">మ్యాప్</string>
+    <string name="title_activity_show_area_on_map">మ్యాప్</string>
+    <string name="season_label">సీజన్</string>
+    <string name="default_notification_channel_id" translatable="false">Farchm_difaolt_canl</string>
+    <string name="msg_token_fmt">టోకెన్</string>
+    <string name="input_cost_head_label">దశ 1: ఇన్‌పుట్ ఖర్చును జోడించండి</string>
+    <string name="resource_cost_head_label">దశ 2: ఉపయోగించిన వనరులను జోడించండి</string>
+    <string name="resource_name_hint">వనరు పేరు</string>
+    <string name="txt_no_cost_and_resource_data_avaialble">ఇన్పుట్ ఖర్చు మరియు వనరుల డేటా అందుబాటులో లేదు</string>
+    <string name="enter_area_hint">ప్రాంతాన్ని నమోదు చేయండి</string>
+    <string name="no_of_days_offline_exceeded">దయచేసి ప్రతిరోజూ సర్వర్‌కు సమకాలీకరించండి, మీరు గరిష్టంగా 3 రోజులు ఆఫ్‌లైన్ మోడ్‌లో ఉండవచ్చు</string>
+    <string name="map_option_bottom_sheet">స్థానం ఎంచుకోండి</string>
+    <string name="map_option_easy_mode">సులభమైన స్థానం</string>
+    <string name="map_option_normal_mode">సాధారణ స్థితి</string>
+    <string name="area_entere_manually_msg">ప్రాంతం మానవీయంగా జోడించబడుతుంది</string>
+    <string name="nutrient_management_label">పోషక రికార్డు</string>
+    <string name="weight_management_label">హెర్బిసైడ్లను రికార్డు</string>
+    <string name="pest_management_label">పురుగుమందుల రికార్డు</string>
+    <string name="soil_moisture_level_label">నేల తేమ స్థాయి రికార్డు</string>
+    <string name="add_comment_label">వ్యాఖ్యను జోడించండి</string>
+    <string name="update_standing_area">నిలబడి ఉన్న ప్రాంతాన్ని నవీకరించండి</string>
+    <string name="add_photo_msg">ఫోటోను జోడించండి</string>
+    <string name="farms_label">పొలం</string>
+    <string name="farmers_label">రైతు</string>
+    <string name="add_more_details_label">మరిన్ని వివరాలను జోడించండి</string>
+    <string name="remove_details_label">వివరాలను తొలగించండి</string>
+    <string name="no_germination_available_msg">అంకురోత్పత్తి ఇంకా జోడించబడలేదు</string>
+    <string name="enter_weight_label">బరువును నమోదు చేయండి:</string>
+    <string name="invalid_input_msg">చెల్లని పెట్టుబడి</string>
+    <string name="standing_area_not_available_harvest_msg">పంటకోతకు శాశ్వత క్షేత్రం అందుబాటులో లేదు</string>
+    <string name="bags_qty_label">ప్యాకింగ్ కౌంట్</string>
+    <string name="enter_total_weghts_of_packing_count_msg">దయచేసి ప్యాకింగ్ గణన యొక్క మొత్తం బరువును నమోదు చేయండి</string>
+    <string name="enter_packing_count_msg">దయచేసి ప్యాకింగ్ గణనను నమోదు చేయండి</string>
+    <string name="select_harvest_done_date_msg">దయచేసి పండించిన తేదీని నమోదు చేయండి</string>
+    <string name="enter_weighment_date_msg">దయచేసి బరువు తేదీని నమోదు చేయండి</string>
+    <string name="enter_harvested_area_msg">దయచేసి పంట కోత ప్రాంతాన్ని నమోదు చేయండి</string>
+    <string name="add_farm_label">ఫారమ్‌ను జోడించండి</string>
+    <string name="add_more_farm_label">మరింత ఫారమ్‌ను జోడించండి</string>
+    <string name="help_label">సహాయం</string>
+    <string name="crop_loss_damage_labe">పంట నష్టం</string>
+    <string name="version_label">అప్లికేషన్ వెర్షన్:</string>
+    <string name="near_me_label">నాకు ఉంది</string>
+    <string name="submit_area">ప్రాంతాన్ని సమర్పించండి</string>
+    <string name="add_more_label">మరిన్ని జోడించండి</string>
+    <string name="no_actual_area_available_go_to_capture">నిజమైన ఫీల్డ్ అందుబాటులో లేదు, దయచేసి క్యాప్చర్ ఫీల్డ్‌కు వెళ్లండి</string>
+    <string name="add_existing_farm_title">ఉన్న రైతుకు పొలం జోడించండి</string>
+    <string name="dash"> -</string>
+    <string name="farm_id_label">ఫారం ID:</string>
+    <string name="farm_name_label">వ్యవసాయ పేరు</string>
+    <string name="acres_msg_brkt">(Acres)</string>
+    <string name="hectare_msg_brkt">(హా)</string>
+    <string name="please_try_again_later_msg">తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="account_deactivated_contact_admin_msg">ప్రొఫైల్ నిలిపివేయబడింది. తిరిగి సక్రియం చేయడానికి దయచేసి మీ నిర్వాహకుడిని సంప్రదించండి.</string>
+    <string name="notification_label">ప్రకటనలు</string>
+    <string name="txt_no_timeline_data_avaialble">కాలక్రమం డేటా అందుబాటులో లేదు</string>
+    <string name="txt_no_notification_available">నోటిఫికేషన్ అందుబాటులో లేదు</string>
+    <string name="txt_no_harvest_data_avaialble">పంట డేటా అందుబాటులో లేదు</string>
+    <string name="landing_filter">వడపోత</string>
+    <string name="password_updated">నవీకరణ విజయవంతమైంది</string>
+    <string name="enter_bag_no_and_weights_in_which_crop_can_be_seen_easy">పంటను చూడగలిగే మొత్తం బరువు మరియు ప్యాక్‌ల సంఖ్యను నమోదు చేయండి</string>
+    <string name="invalid_number_please_check">చెల్లని సంఖ్య, దయచేసి తనిఖీ చేయండి</string>
+    <string name="submit_label_login">సమర్పించండి</string>
+    <string name="bigha_msg_brkt">(Acres)</string>
+    <string name="please_select_chemical_msg">దయచేసి రసాయనాన్ని ఎంచుకోండి</string>
+    <string name="please_select_chemical_unit_msg">దయచేసి రసాయన యూనిట్‌ను ఎంచుకోండి</string>
+    <string name="no_harvest_paln_data_avaialble_label">ప్రణాళికాబద్ధమైన పంటకు రికార్డులు కనుగొనబడలేదు</string>
+    <string name="no_harvest_data_available">పంట సేకరణ కోసం రికార్డులు కనుగొనబడలేదు</string>
+    <string name="expense_type_hint">ఖర్చు రకాన్ని నమోదు చేయండి</string>
+    <string name="harvest_date_exp_label_act">పంట తేదీ (వాస్తవ)</string>
+    <string name="harvest_date_exp_label_exp">పంట తేదీ (అవసరం)</string>
+    <string name="adhaar_label">బేస్</string>
+    <string name="address_line_1_label">చిరునామా పంక్తి సంఖ్య. 1</string>
+    <string name="address_line_2_label">చిరునామా పంక్తి సంఖ్య. 2</string>
+    <string name="india_label">భారతదేశం</string>
+    <string name="bank_name_label">బ్యాంక్ పేరు</string>
+    <string name="account_number_label">ఖాతా సంఖ్య</string>
+    <string name="account_holder_name_label">ఖాతా హోల్డర్ పేరు</string>
+    <string name="ifsc_code_label">Ifsc కోడ్</string>
+    <string name="branch_label">బ్రాంచ్</string>
+    <string name="current_crop_label">ప్రస్తుత పంట</string>
+    <string name="submit_area_label">ప్రాంతాన్ని సమర్పించండి</string>
+    <string name="area_label">ప్రాంతం</string>
+    <string name="multiple_login_msg">క్రాప్‌ట్రెయిల్స్ మరొక ఫోన్‌లో తెరిచి ఉన్నాయి. దయచేసి ఈ ఫోన్‌ను ఉపయోగించడానికి మళ్ళీ లాగిన్ అవ్వండి.</string>
+    <string name="farmer_and_farm_added_succes_msg">రైతులు, పొలాలు విజయవంతంగా చేరారు</string>
+    <string name="already_registered_mobile_msg">ఇప్పటికే నమోదు చేసిన మొబైల్ నంబర్</string>
+    <string name="failed_add_farm_and_farmer_msg">రైతు, పొలం కనెక్ట్ చేయడంలో విఫలమైంది</string>
+    <string name="login_again_label">మళ్ళీ లాగిన్ అవ్వండి</string>
+    <string name="select_irri_source_prompt">నీటిపారుదల మూలాన్ని ఎంచుకోండి</string>
+    <string name="select_irri_type_prompt">నీటిపారుదల రకాన్ని ఎంచుకోండి</string>
+    <string name="select_soil_type_prompt">నేల రకాన్ని ఎంచుకోండి</string>
+    <string name="select_season_prompt">సీజన్ ఎంచుకోండి</string>
+    <string name="failed_to_load_data_msg">డేటాను లోడ్ చేయడంలో విఫలమైంది, దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="enter_farm_id_msg">దయచేసి ఫారమ్ ఐడిని నమోదు చేయండి</string>
+    <string name="enter_farm_area_msg">దయచేసి ఫీల్డ్‌ను నమోదు చేయండి</string>
+    <string name="select_season_msg">దయచేసి వాతావరణాన్ని ఎంచుకోండి</string>
+    <string name="farm_added_success_msg">ఫారం విజయవంతంగా జోడించబడింది</string>
+    <string name="failed_add_farm_msg">ఫీల్డ్‌ను జోడించడంలో విఫలమైంది, దయచేసి మళ్లీ ప్రయత్నించండి</string>
+    <string name="enter_sowing_date_hint">విత్తనాల తేదీని నమోదు చేయండి</string>
+    <string name="enter_expected_flowering_date_hint">పుష్పించే తేదీని నమోదు చేయండి</string>
+    <string name="enter_expected_harvesting_date_hint">కోత తేదీని నమోదు చేయండి</string>
+    <string name="total_expense_labe">మొత్తం ఖర్చు:</string>
+    <string name="sure_want_to_enter_actual_flowering_mg">మీరు ఖచ్చితంగా పుష్పించే తేదీని నమోదు చేయాలనుకుంటున్నారా?</string>
+    <string name="sure_want_to_enter_actual_harvest_mg">మీరు అసలు పంట తేదీని నమోదు చేయాలనుకుంటున్నారా?</string>
+    <string name="view_more_label">మరియు చూడండి</string>
+    <string name="now_not_allowed_to_add_activity_msg">కార్యాచరణను జోడించడానికి మీకు ఇకపై అనుమతి లేదు</string>
+    <string name="add_input_cost_label">ఇన్‌పుట్ ఖర్చును జోడించండి</string>
+    <string name="you_can_add_upto_10_visit_in_offline">మీరు ఆఫ్‌లైన్ మోడ్‌లో వ్యవసాయానికి 10 సందర్శనలను మాత్రమే జోడించగలరు</string>
+    <string name="timeline_activity_label">కాలక్రమం కార్యాచరణ</string>
+    <string name="no_data_found_for_activity_msg">ఈ కార్యాచరణ కోసం డేటా కనుగొనబడలేదు</string>
+    <string name="error_occurred_msg">లోపం సంభవించింది.</string>
+    <string name="no_image_found_for_activity_msg">ఈ కార్యాచరణ కోసం చిత్రం కనుగొనబడలేదు</string>
+    <string name="soil_moisture">నేల తేమ</string>
+    <string name="material_label">పదార్థం</string>
+    <string name="days_label">రోజు</string>
+    <string name="seed_provided_on_label">విత్తనం అందించారు</string>
+    <string name="qty_seed_provided_label">పరిమాణం (విత్తనం అందించబడింది)</string>
+    <string name="grade_d">గ్రేడ్ డి</string>
+    <string name="grade_c">గ్రేడ్ సి</string>
+    <string name="grade_b">గ్రేడ్ b</string>
+    <string name="grade_a">గ్రేడ్ a</string>
+    <string name="farmer_not_allowed_to_add_area_msg">పొలాన్ని జోడించడానికి రైతుకు అనుమతి లేదు</string>
+    <string name="details_label">వివరణ</string>
+    <string name="sample_label">నమూనా</string>
+    <string name="sample_data_stored_msg">నమూనా డేటా విజయవంతంగా సేకరించబడింది</string>
+    <string name="weight_label">బరువు</string>
+    <string name="kg_label">కిలోగ్రాము</string>
+    <string name="total_expenses_label">మొత్తం ఖర్చు</string>
+    <string name="monthly_expenses_expense">నెలవారీ ఖర్చులు</string>
+    <string name="remove_label">తొలగించడానికి</string>
+    <string name="calendar_activity_details_label">క్యాలెండర్ కార్యాచరణ వివరణ</string>
+    <string name="farmer_cost_title">రైతు ఖర్చు</string>
+    <string name="fail_to_load_cost_msg">ఖర్చు డేటాను లోడ్ చేయడంలో విఫలమైంది, దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="input_cost_and_resource_title">ఇన్పుట్ ఖర్చు మరియు వనరు</string>
+    <string name="enter_expense_ammount_msg">దయచేసి ఖర్చు చేసిన మొత్తాన్ని నమోదు చేయండి</string>
+    <string name="enter_date_of_expense_msg">దయచేసి ఖర్చు తేదీని నమోదు చేయండి</string>
+    <string name="enter_expense_reson_msg">దయచేసి ఖర్చుకు కారణాన్ని నమోదు చేయండి</string>
+    <string name="cost_added_sussessful_msg">రైతు ఖర్చు విజయవంతంగా జోడించబడింది</string>
+    <string name="failed_to_add_farmer_expense">వ్యయాన్ని జోడించడంలో విఫలమైంది, దయచేసి తరువాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="select_cost_type_promt">ఇన్‌పుట్ ఖర్చు రకాన్ని ఎంచుకోండి</string>
+    <string name="select_resource_type_prompt">వనరు రకాన్ని ఎంచుకోండి</string>
+    <string name="other_labe">ఇతర</string>
+    <string name="select_cost_type_msg">దయచేసి ఏ రకమైన ఖర్చునైనా ఎంచుకోండి</string>
+    <string name="enter_cost_ammount_msg">దయచేసి ఖర్చు మొత్తాన్ని నమోదు చేయండి</string>
+    <string name="enter_cost_date_msg">దయచేసి ఖర్చు తేదీని నమోదు చేయండి</string>
+    <string name="enter_expense_type_msg">దయచేసి ఖర్చు రకాన్ని నమోదు చేయండి</string>
+    <string name="select_resource_type_msg">దయచేసి ఏదైనా వనరు రకాన్ని ఎంచుకోండి</string>
+    <string name="please_enter_resource_qty_msg">దయచేసి ప్రాసెసింగ్ పరిమాణాన్ని నమోదు చేయండి</string>
+    <string name="enter_resource_name_msg">దయచేసి వనరు పేరును నమోదు చేయండి</string>
+    <string name="enter_resource_unit_msg">దయచేసి వనరుల యూనిట్‌ను నమోదు చేయండి</string>
+    <string name="select_date_msg">ఏదైనా తేదీని ఎంచుకోండి</string>
+    <string name="select_resource_use_date_msg">దయచేసి వనరు ఉపయోగించిన తేదీని నమోదు చేయండి</string>
+    <string name="data_submit_success_msg">డేటా విజయవంతంగా సమర్పించబడింది</string>
+    <string name="failed_to_submit_resource_and_cost_msg">ఇన్‌పుట్ ఖర్చు మరియు వనరుల డేటాను సమర్పించడంలో విఫలమైంది, దయచేసి తరువాత మళ్లీ ప్రయత్నించండి</string>
+    <string name="need_to_fill_input_or_resorce_msg">సమర్పించడానికి మీకు ఇన్పుట్ ఖర్చు రూపం లేదా వనరు ఉపయోగించిన ఫారం అవసరం</string>
+    <string name="enable_location_msg">దయచేసి మీ స్థాన సేవను ప్రారంభించండి</string>
+    <string name="no_far_found_near_you">మీ దగ్గర పొలాలు లేవు</string>
+    <string name="input_cost_label">ఇన్‌పుట్ ఖర్చు</string>
+    <string name="farmer_details_label">రైతు వివరాలు</string>
+    <string name="farm_details_label">వ్యవసాయ వివరణ</string>
+    <string name="uploaded_images_label">అప్‌లోడ్ చేసిన చిత్రాలు</string>
+    <string name="expense_remove_success_msg">ఖర్చు విజయవంతంగా తొలగించబడింది</string>
+    <string name="expense_remove_fail_msg">వ్యయాన్ని క్లియర్ చేయడంలో విఫలమైంది</string>
+    <string name="confirm_remove_ecpense_msg">మీరు ఖచ్చితంగా ఈ ఖర్చును తొలగించాలా?</string>
+
+    <string name="enter_health_card_number_msg">దయచేసి నేల ఆరోగ్య కార్డు సంఖ్యను నమోదు చేయండి</string>
+    <string name="enter_health_card_validity_date_start_msg">దయచేసి కార్డ్ చెల్లుబాటు ప్రారంభ తేదీని నమోదు చేయండి</string>
+    <string name="enter_health_card_validity_date_end_msg">దయచేసి కార్డు యొక్క చెల్లుబాటు యొక్క చివరి తేదీని నమోదు చేయండి</string>
+    <string name="add_atleast_one_param_health_card">దయచేసి కనీసం ఒక పరామితిని జోడించండి</string>
+    <string name="required_label">ఎసెన్షియల్</string>
+    <string name="capure_1_image_msg">దయచేసి మొదటి చిత్రాన్ని తీయండి</string>
+    <string name="capure_2_image_msg">దయచేసి రెండవ చిత్రాన్ని తీయండి</string>
+    <string name="capure_3_image_msg">దయచేసి మూడవ చిత్రాన్ని తీయండి</string>
+    <string name="activity_added_success_msg">Gtivi</string>
+    <string name="enter_health_card_sample_number_msg">దయచేసి నేల నమూనా సంఖ్యను నమోదు చేయండి</string>
+    <string name="enter_health_card_sample_collect_date_msg">దయచేసి నమూనా సేకరణ తేదీని నమోదు చేయండి</string>
+    <string name="card_please_enter_value_msg">దయచేసి విలువను నమోదు చేయండి</string>
+    <string name="card_please_enter_unit_msg">దయచేసి యూనిట్‌ను నమోదు చేయండి</string>
+    <string name="enter_crop_id_msg">దయచేసి ఫారమ్ ఐడిని నమోదు చేయండి</string>
+    <string name="select_crop_for_farm_msg">పొలం కోసం పంటను ఎంచుకోండి</string>
+    <string name="select_crop_rompt">పంటను ఎంచుకోండి</string>
+    <string name="soil_health_card_no_label">నేల ఆరోగ్య కార్డు నం.</string>
+    <string name="health_card_no_hint">* హెల్త్ కార్డ్ నం.</string>
+    <string name="validity_label">న్యాయసమ్మతం</string>
+    <string name="from_date_hint">నుండి *</string>
+    <string name="to_date_hint">* వరకు *</string>
+    <string name="parameters_label">పరామితి</string>
+    <string name="soil_sample_details_label">నేల నమూనా వివరణ</string>
+    <string name="soil_sample_number_hint">* నేల నమూనా సంఖ్య</string>
+    <string name="sample_collected_on_hint">* నమూనా సేకరణ తేదీ</string>
+    <string name="mobile_number_not_availbale_msg">మొబైల్ నంబర్ అందుబాటులో లేదు</string>
+    <string name="arrow_symbol">\ u2BC8</string>
+    <string name="sowing_date_not_available_label">విత్తే తేదీ అందుబాటులో లేదు</string>
+    <string name="sure_want_to_enter_sowing_date_mg">మీరు విత్తనాల తేదీని నమోదు చేయాలనుకుంటున్నారా?</string>
+    <string name="add_sowing_date_msg">విత్తనాల తేదీ అందుబాటులో లేదు, దయచేసి విత్తనాల తేదీని జోడించండి</string>
+    <string name="sowing_date_updated_success_msg">నాటడం తేదీ విజయవంతంగా</string>
+    <string name="soil_health_card_label">నేల ఆరోగ్య కార్డు</string>
+    <string name="no_soil_health_card_data_added_yet_msg">మట్టి ఆరోగ్య కార్డు డేటా ఇంకా జోడించబడలేదు!</string>
+    <string name="add_new_sample_health_card_label">క్రొత్త నమూనాను జోడించండి</string>
+    <string name="soil_health_card_seen_and_addded_in_online_mode_msg">ప్రస్తుతం నేల ఆరోగ్య కార్డు డేటాను ఆన్‌లైన్ మోడ్‌లో చూడలేరు / జోడించలేరు</string>
+    <string name="no_parameter_values_found_for_adding_soil_health_card">మట్టి ఆరోగ్య కార్డు పారామితులు కనుగొనబడలేదు, దయచేసి పరామితిని జోడించడానికి మీ కంపెనీని సంప్రదించండి</string>
+    <string name="health_card_added_success_msg">నేల ఆరోగ్య కార్డు విజయవంతంగా జోడించబడింది</string>
+    <string name="laboratory_name">ల్యాబ్ పేరు</string>
+    <string name="select_parameter_prompt">పరామితిని ఎంచుకోండి</string>
+    <string name="test_value_hint">* పరీక్ష విలువ</string>
+    <string name="unit_hint_star">* యూనిట్</string>
+    <string name="add_health_card_title">ఆరోగ్య కార్డును జోడించండి</string>
+    <string name="rainfall_label">వర్షం</string>
+    <string name="mm_unit">mm</string>
+    <string name="farm_coordinates_not_availabe_showing_weather_data_of_your_current_location">వ్యవసాయ భౌగోళిక స్థానం అందుబాటులో లేనందున మీ ప్రస్తుత స్థానం యొక్క వాతావరణ డేటాను చూపుతోంది</string>
+    <string name="showing_weather_data_of_your_farm_location">వ్యవసాయ స్థానం కోసం వాతావరణ డేటాను చూపుతోంది</string>
+    <string name="please_zoom_map_msg_easy_mode">దయచేసి మ్యాప్‌ను జూమ్ చేసి, ప్రాంతాన్ని కొలవడానికి మళ్లీ నొక్కండి</string>
+    <string name="try_again_msg">మళ్ళీ ప్రయత్నించండి</string>
+    <string name="failed_to_measure_area_msg">ప్రాంతాన్ని కొలవడంలో విఫలమైంది</string>
+    <string name="enter_laboratory_name_msg">దయచేసి ప్రయోగశాల పేరును నమోదు చేయండి</string>
+    <string name="resources_used_label">వాడిన వనరు</string>
+    <string name="sample_number_label">నమూనా సంఖ్య</string>
+    <string name="sample_collected_on_label">నమూనా సేకరించబడింది</string>
+    <string name="input_cost_type_label">ఇన్‌పుట్ ఖర్చు రకం</string>
+    <string name="added_by_label">ద్వారా జోడించబడింది</string>
+    <string name="pick_expense_date_hint">ఖర్చు తేదీని ఎంచుకోండి</string>
+    <string name="pick_used_date_hint">ఉపయోగించిన తేదీని ఎంచుకోండి</string>
+    <string name="expense_date_label">ఖర్చు తేదీ</string>
+    <string name="resource_used_date_label">వనరు ఉపయోగించిన తేదీ</string>
+    <string name="resource_type_label">వనరుల రకం</string>
+    <string name="filter_by_label">ద్వారా వడపోత</string>
+    <string name="harvest_label">హార్వెస్ట్</string>
+    <string name="weather_data_not_available_right_now_msg">వాతావరణ డేటా ప్రస్తుతం అందుబాటులో లేదు.</string>
+    <string name="plant_population_label">మొక్కల జనాభా</string>
+    <string name="input_cost_and_resource_label">ఇన్పుట్ ఖర్చు మరియు వనరు</string>
+    <string name="already_added_visit_for_today">ఈ రోజు పర్యటన ఇప్పటికే జోడించబడింది.।</string>
+    <string name="please_enter_seed_lot_number_label">దయచేసి సీడ్ లాట్ నంబర్‌ను నమోదు చేయండి</string>
+    <string name="pease_enter_dispached_area_label">పంపిన ప్రాంతాన్ని నమోదు చేయండి</string>
+    <string name="please_enter_quantity_msg">దయచేసి పరిమాణాన్ని నమోదు చేయండి</string>
+    <string name="please_enter_date_label">దయచేసి తేదీని నమోదు చేయండి</string>
+    <string name="failed_to_add_seed_issue_details_msg">విత్తన సమస్య వివరాలను జోడించడంలో విఫలమైంది</string>
+    <string name="seed_added_successful_msg">విత్తన సమస్య వివరాలు విజయవంతంగా జోడించబడ్డాయి</string>
+    <string name="seed_quantity_label">విత్తనాల పరిమాణం</string>
+    <string name="seed_issue_label">విత్తనం జారీ చేయబడింది</string>
+    <string name="seed_issue_details_label">సీడ్ జారీ చేసిన వివరాలు</string>
+
+    <string name="plsease_select_atleast_one_farm">దయచేసి కనీసం ఒక వ్యవసాయ క్షేత్రాన్ని జోడించండి</string>
+    <string name="please_select_a_farmer_msg">దయచేసి రైతును ఎంచుకోండి.</string>
+    <string name="please_select_a_cluser_msg">దయచేసి క్లస్టర్‌ని ఎంచుకోండి.</string>
+    <string name="click_to_add_farm_msg">రైతుకు కనీసం ఒక పొలం ఉండాలి. వ్యవసాయాన్ని జోడించడానికి దయచేసి క్లిక్ చేయండి.</string>
+    <string name="enter_farmer_contact_number_msg">దయచేసి రైతు సంప్రదింపు సంఖ్యను నమోదు చేయండి.</string>
+    <string name="enter_farmer_name_msg">దయచేసి రైతు పేరును నమోదు చేయండి.</string>
+    <string name="select_cluster_label">క్లస్టర్ ఎంచుకోండి</string>
+    <string name="please_enter_password_msg">దయచేసి పాస్వర్డ్ను నమోదు చేయండి</string>
+    <string name="satelite_view_label">ఉపగ్రహ వీక్షణ</string>
+    <string name="average_value_label">సగటు ಅಳತೆ</string>
+    <string name="no_cluster_found_to_add_cluster">వ్యవసాయాన్ని జోడించడానికి క్లస్టర్ లేదు, దయచేసి క్లస్టర్‌ను జోడించడానికి వెబ్ లాగిన్‌కు వెళ్లండి.</string>
+    <string name="invalid_ifsc_code_msg">చెల్లని IFSC కోడ్</string>
+    <string name="please_enter_account_number">దయచేసి ఖాతా సంఖ్యను నమోదు చేయండి</string>
+    <string name="please_enter_account_holder_name">దయచేసి ఖాతాదారుడి పేరును నమోదు చేయండి</string>
+    <string name="invalid_mobile_number_msg">చెల్లని మొబైల్ సంఖ్య</string>
+    <string name="invalid_aadhar_number_msg">చెల్లని ఆధార్ సంఖ్య</string>
+    <string name="no_data_available_msg">సమాచారం అందుబాటులో లేదు.</string>
+    <string name="loss_date_label">నష్టం తేదీ</string>
+    <string name="invalid_farmer_name_msg">చెల్లని రైతు పేరు</string>
+    <string name="invalid_father_name_msg">చెల్లని తండ్రి పేరు</string>
+    <string name="area_unit_label">ఏరియా యూనిట్</string>
+    <string name="are_you_sure_exit_without_saving">మీరు డేటాను సేవ్ చేయకుండా నిష్క్రమించాలనుకుంటున్నారా?</string>
+
+    <string name="update_has_been_just_dowloaded_msg">నవీకరణ ఇప్పుడే డౌన్‌లోడ్ చేయబడింది.</string>
+    <string name="restart_label">పునఃప్రారంభించు</string>
+    <string name="select_loss_damage_reason_prompt">నష్టం / నష్టం కారణాన్ని ఎంచుకోండి</string>
+    <string name="select_label">ఎంచుకోండి</string>
+    <string name="high_to_low">అత్యధిక నుండి తక్కువ</string>
+    <string name="low_to_high">అత్యధిక నుండి తక్కువ వరకు</string>
+
+    <string name="select_atleast_one_bag_to_pick_up">ఎంచుకున్నట్లు గుర్తించడానికి దయచేసి కనీసం ఒక బ్యాగ్‌ను ఎంచుకోండి</string>
+    <string name="net_weight_label">నికర బరువు</string>
+    <string name="pickup_date_label">తీసుకోవడం తేదీ</string>
+    <string name="no_of_bags">సంచుల సంఖ్య</string>
+    <string name="total_amount_label">మొత్తం మొత్తం</string>
+    <string name="sell_quantity_label">అమ్మకం పరిమాణం</string>
+    <string name="sold_on_label">అమ్మకం తేదీ</string>
+    <string name="rate_label">రేటు</string>
+    <string name="per_kg_label">ప్రతి కిలో</string>
+    <string name="sell_record_updated_success_msg">రికార్డ్ విజయవంతంగా నవీకరించబడింది</string>
+    <string name="already_added_all_information_about_sell_msg">ఇప్పటికే ఈ రికార్డ్ గురించి మొత్తం సమాచారాన్ని జోడించారు</string>
+
+
+
+    <string name="sell_record_label">రికార్డ్ అమ్మండి</string>
+    <string name="optional_label">ఐచ్ఛికము</string>
+    <string name="pickup_label">తీసుకోవడం</string>
+    <string name="picked_up_label">తీయబడింది</string>
+    <string name="select_bags_label">సంచులు ఎంచుకోండి</string>
+    <string name="alredy_all_bags_selected_label">ఇప్పటికే అన్ని సంచులను ఎంచుకున్నారు</string>
+    <string name="mark_bags_tip_msg">సంచులను తీసినట్లు గుర్తించి సమర్పించండి</string>
+    <string name="mark_bags_tip_no_remaining_bags_msg">ఈ పంట సేకరణలో ఎంచుకున్నట్లు గుర్తించడానికి బ్యాగ్ అందుబాటులో లేదు</string>
+    <string name="enter_sell_qty_of_harvest_msg">దయచేసి పంట అమ్మకం పరిమాణాన్ని నమోదు చేయండి</string>
+    <string name="enter_total_selling_amount_msg">దయచేసి మొత్తం అమ్మకం మొత్తాన్ని నమోదు చేయండి</string>
+    <string name="enter_current_rate_of_crop_msg">పంట యొక్క ప్రస్తుత రేటును నమోదు చేయండి</string>
+    <string name="enter_selling_date">దయచేసి అమ్మిన తేదీని నమోదు చేయండి</string>
+    <string name="failed_to_add_sell_record_msg">అమ్మకపు రికార్డును జోడించడంలో విఫలమైంది</string>
+    <string name="sell_record_added_msg">అమ్మకం రికార్డ్ విజయవంతంగా జోడించబడింది</string>
+
+
+    <!--08/11/19 app Tour-->
+    <string name="tour_menu_how_to_use">ఎలా ఉపయోగించాలి</string>
+    <string name="tour_dashboard_title">డాష్బోర్డ్</string>
+    <string name="tour_dashboard_content">క్లస్టర్ మరియు వాటి పొలాల గ్రాఫికల్ ప్రాతినిధ్యం మరియు విశ్లేషణ పొందడానికి ఇది మీకు సహాయపడుతుంది</string>
+    <string name="tour_home_title">హోమ్</string>
+    <string name="tour_home_farmer_content">మీ పొలాలను యాక్సెస్ చేయండి మరియు నిర్వహించండి</string>
+    <string name="tour_home_supervisor_content">మీ క్లస్టర్‌లోని అన్ని పొలాలను యాక్సెస్ చేయండి మరియు నిర్వహించండి</string>
+    <string name="tour_home_admin_content">మీ కంపెనీలోని అన్ని పొలాలను యాక్సెస్ చేయండి మరియు నిర్వహించండి</string>
+    <string name="tour_nearest_farm_title">సమీప పొలం</string>
+    <string name="tour_nearest_farm_content">మీ సమీప పొలాన్ని తనిఖీ చేయండి</string>
+    <string name="tour_expenses_title">వ్యయం</string>
+    <string name="tour_expenses_content">సూపర్వైజర్ ఖర్చుల వివరాలు</string>
+    <string name="got_it">దొరికింది</string>
+    <string name="tour_skip">స్కిప్</string>
+
+    <string name="addfarm_tour_clust_sel_title">క్లస్టర్ ఎంపిక</string>
+    <string name="addfarm_tour_clust_sel_content">డ్రాప్‌డౌన్ జాబితా నుండి క్లస్టర్‌ను ఎంచుకోండి</string>
+    <string name="addfarm_tour_farmer_detail_title">రైతు వివరాలు</string>
+    <string name="addfarm_tour_farmer_detail_content">రైతు పేరు నమోదు చేయండి</string>
+    <string name="addfarm_tour_contact_detail_title">సంప్రదింపు వివరాలు</string>
+    <string name="addfarm_tour_contact_details_content">దేశం కోడ్‌ను ఎంచుకుని, ఫోన్ నంబర్‌ను నమోదు చేయండి</string>
+    <string name="addfarm_tour_farm_detail_title">వ్యవసాయ వివరాలు</string>
+    <string name="addfarm_tour_farm_detail_content">ఫార్మిడ్, ఫార్మ్ ఏరియా, పంట పేరు మరియు సీజన్ వంటి వివరాలను నమోదు చేయండి</string>
+    <string name="addfarm_tour_submit_title">సమర్పించండి</string>
+    <string name="addfarm_tour_submit_content">మీ వ్యవసాయ వివరాలను సేవ్ చేయండి</string>
+
+    <string name="testing_tour_filter_title">వడపోత</string>
+    <string name="testing_tour_filter_content">మీకు కావాల్సిన వాటిని సులభంగా కనుగొనండి</string>
+    <string name="testing_tour_more_option_title">మరిన్ని ఎంపిక</string>
+    <string name="testing_tour_more_option_content">వివరాలను జోడించడానికి మరింత కార్యాచరణను పొందండి</string>
+    <string name="testing_tour_cost_title">ధర / రిసోర్స్</string>
+    <string name="testing_tour_cost_content">ఖర్చులు మరియు ఉపయోగించిన వనరులను జోడించండి</string>
+    <string name="testing_tour_damage_title">నష్టం</string>
+    <string name="testing_tour_damage_content">ఏదైనా పంట నష్టం మరియు దాని కారణాన్ని జోడించండి</string>
+    <string name="testing_tour_soil_health_title">నేల ఆరోగ్యం</string>
+    <string name="testing_tour_soil_health_content">నేల నాణ్యత మరియు ప్రయోగశాల పరీక్ష ఫలితం గురించి వివరాలను జోడించండి</string>
+    <string name="testing_tour_plant_popl_title">మొక్కల జనాభా</string>
+    <string name="testing_tour_plant_popl_content">యూనిట్ ప్రాంతంలో ఉన్న మొత్తం మొక్కల సంఖ్యను జోడించండి</string>
+    <string name="testing_tour_seed_issue_title">విత్తన సమస్య</string>
+    <string name="testing_tour_seed_issue_content">విత్తన సమస్యల గురించి సమాచారాన్ని జోడించండి</string>
+    <string name="testing_tour_harvesting_title">నూర్పిళ్ళు</string>
+    <string name="testing_tour_harvesting_content">హార్వెస్టింగ్ ఏరియా మరియు ప్యాకేజీ బరువు మరియు పరిమాణ వివరాలను జోడించండి</string>
+    <string name="testing_tour_farm_visit_title">వ్యవసాయ సందర్శన</string>
+    <string name="testing_tour_farm_visit_content">ఫార్మ్ విజిట్ జోడించండి, ఫోటో క్లిక్ చేసి పంట పరిస్థితిని ఎంచుకోండి</string>
+    <string name="ok">అలాగే</string>
+
+    <string name="timeline_ac3_tour_upload_img_title">చిత్రాలను అప్‌లోడ్ చేయండి</string>
+    <string name="timeline_ac3_tour_upload_img_content">వ్యవసాయ మరియు రైతుతో ఉన్న ఫోటోలను క్లిక్ చేసి, ఫోటోలను అప్‌లోడ్ చేయండి</string>
+    <string name="timeline_ac3_tour_crop_cond_title">పంట పరిస్థితి</string>
+    <string name="timeline_ac3_tour_crop_cond_content">పంట శారీరక స్థితిని ఎంచుకోండి</string>
+    <string name="timeline_ac3_tour_add_more_details_title">మరిన్ని వివరాలను జోడించండి</string>
+    <string name="timeline_ac3_tour_add_comment_title">వ్యాఖ్యను జోడించండి</string>
+    <string name="timeline_ac3_tour_add_comment_content">మీ సందర్శన గురించి ఏదైనా చెప్పండి</string>
+    <string name="timeline_ac3_tour_soil_moisture_record_title">నేల తేమ రికార్డు</string>
+    <string name="timeline_ac3_tour_soil_moisture_record_content">నేల తేమ స్థాయిని జోడించండి</string>
+    <string name="timeline_ac3_tour_pesticide_record_title">పురుగుమందుల రికార్డు</string>
+    <string name="timeline_ac3_tour_pesticide_record_content">పురుగుమందుల పిచికారీ పరిమాణం మరియు తేదీని జోడించండి</string>
+    <string name="timeline_ac3_tour_herbicide_record_title">హెర్బిసైడ్ రికార్డ్</string>
+    <string name="timeline_ac3_tour_herbicide_record_content">హెర్బిసైడ్ స్ప్రేయింగ్ పరిమాణం మరియు తేదీని జోడించండి</string>
+    <string name="timeline_ac3_tour_nutrient_record_title">పోషక రికార్డు</string>
+    <string name="timeline_ac3_tour_nutrient_record_content">తేదీ మరియు పరిమాణంతో ఉపయోగించిన ఏదైనా పోషకం గురించి వివరాలను జోడించండి</string>
+
+    <string name="login_label">లాగిన్</string>
+    <string name="biometric_subtitle">మీ క్రాప్‌ట్రెయిల్స్ ఖాతాకు లాగిన్ అవ్వండి</string>
+    <string name="biometric_description">మీ ఖాతాను ధృవీకరించడానికి వేలిముద్ర సెన్సార్‌పై మీ వేలు ఉంచండి</string>
+    <string name="biometric_negative_button_text">రద్దు చేయండి</string>
+    <string name="please_login_manually">దయచేసి మానవీయంగా లాగిన్ అవ్వండి</string>
+    <string name="fingerprint_login_label">వేలిముద్ర లాగిన్</string>
+    <string name="touch_the_fingerprint_sensor_to_unlock_msg">అన్‌లాక్ చేయడానికి వేలిముద్ర సెన్సార్‌ను తాకండి</string>
+    <string name="hi_label">Hi!</string>
+    <string name="enable_fingerprint_label">వేలిముద్రను ప్రారంభించండి</string>
+
+
+    <string name="fingerprint_app_lock_unlock_label">వేలిముద్ర అనువర్తనం లాక్ / అన్‌లాక్</string>
+    <string name="don_t_ask_again_label">మళ్ళీ అడగవద్దు</string>
+    <string name="lock_unlock_label">లాక్ / అన్లాక్</string>
+    <string name="enable_fingerprint_to_label">దీనికి వేలిముద్రను ప్రారంభించండి</string>
+
+
+    <string name="addfarm_tour_farmer_sel_title">రైతు ఎంపిక</string>
+    <string name="addfarm_tour_farmer_sel_content">డౌన్ జాబితా నుండి కాపు ఎంచుకోండి</string>
+    <string name="addfarm_tour_farmer_farmid_content">వ్యవసాయ ఐడి ఎంటర్</string>
+    <string name="addfarm_tour_farmer_farmarea_content">వ్యవసాయ ప్రాంతాన్ని నమోదు</string>
+    <string name="addfarm_tour_farmer_selcrop_content">పంట పేరును ఎంచుకోండి</string>
+    <string name="addfarm_tour_farmer_selseason_content">పంట సీజన్ ఎంచుకోండి</string>
+    <string name="addfarm_tour_farmer_addmore_farm_content">మీరు బహుళ పొలాలు జోడించవచ్చు</string>
+    <string name="crop_track_label">ట్రాక్ క్రాప్</string>
+    <string name="invalid_qr_code_msg">చెల్లని QR కోడ్</string>
+    <string name="scan_label">స్కాన్</string>
+    <string name="assign_crop_cycle">అప్పగించుము పంట చక్రం</string>
+    <string name="select_crop_cycle_label">పంట సైకిల్ ఎంచుకోండి</string>
+    <string name="cycle_name_label">సైకిల్ పేరు</string>
+    <string name="crop_name">పంట పేరు</string>
+    <string name="growing_season">పెరుగుతున్న సీజన్</string>
+    <string name="growing_region">పెరుగుతున్న ప్రాంతంలో</string>
+    <string name="confirmation">నిర్ధారణ</string>
+    <string name="sure_want_to_add_crop_cycle">మీరు ఖచ్చితంగా వ్యవసాయ ఈ పంట చక్రం పెట్టేందుకు కావలసిన చెయ్యాలి?</string>
+    <string name="or_fingerprint_login">లేదా వేలిముద్ర లాగిన్</string>
+    <string name="date_of_birth_label">పుట్టిన తేది</string>
+    <string name="cast_category">తారాగణం / వర్గం</string>
+    <string name="estimated_consumer_income">అంచనా కన్స్యూమర్ ఆదాయం</string>
+    <string name="male_label">మగ</string>
+    <string name="female_label">మహిళ</string>
+    <string name="back_label">తిరిగి</string>
+    <string name="seed_label">సీడ్</string>
+    <string name="expected_label">ఊహించినది</string>
+    <string name="actual_label">అసలు</string>
+    <string name="company_label">కంపెనీ</string>
+    <string name="breed">బ్రీడ్</string>
+    <string name="fertilizer_ors_organic">ఎరువులు / ఆర్గానిక్</string>
+    <string name="price_label">ధర</string>
+    <string name="how_much">ఎంత</string>
+    <string name="pesticides">పురుగుమందులు</string>
+    <string name="type">రకం</string>
+    <string name="workers">వర్కర్స్</string>
+    <string name="work_where">కార్యాలయం ఎక్కడ</string>
+    <string name="tractor">ట్రాక్టర్</string>
+    <string name="from_where">ఎక్కడి నుండి</string>
+    <string name="how_many_hours">ఎన్ని గంటలు</string>
+    <string name="expenses_incurred">ఖర్చులు అయ్యే</string>
+    <string name="harvester">హార్వెస్టర్</string>
+    <string name="pestilence">అంటురోగం</string>
+    <string name="measures">కొలమానాలను</string>
+    <string name="product_sales">ఉత్పత్తి / సేల్స్</string>
+    <string name="dimensions_unit">కొలతలు / యూనిట్</string>
+    <string name="buyer">కొనుగోలుదారు</string>
+    <string name="add_more_crop_label">మరింత పంట వివరాలను జోడించండి</string>
+    <string name="profit_loss">లాభం / నష్టం</string>
+    <string name="satisafactory_1_to_2">సంతృప్తికరమైన 1 2</string>
+    <string name="add_crop_details">పంట వివరాలను జోడించండి</string>
+    <string name="shareholder">వాటాదారు</string>
+    <string name="is_shareholder">వాటాదారు</string>
+    <string name="how_many_certificate">ఎన్ని సర్టిఫికేట్</string>
+    <string name="how_much_value">ఎంత విలువ</string>
+    <string name="is_there_a_share_certificate">షేర్ సర్టిఫికేట్ ఉంది?</string>
+    <string name="cows_cattle_cows_buffalo">ఆవులు / పశువుల ఆవులు / బఫెలో</string>
+    <string name="count">కౌంట్</string>
+    <string name="daily_milk_sale_in_litter">డైలీ మిల్క్ అమ్మకానికి (లీటరు)</string>
+    <string name="sale_price_approx">అమ్మకానికి ధర (సుమారుగా)</string>
+    <string name="if_there_are_chickens_goats_or_other_animals">కోళ్లు, మేకలు, లేదా ఇతర జంతువులు ఉన్నాయి ఉంటే?</string>
+    <string name="is_using_smart_phone">స్మార్ట్ ఫోన్ ఉపయోగిస్తోంది?</string>
+    <string name="permission_necessary">అవసరమైన అనుమతి</string>
+    <string name="external_storage_permission_is_necessary">బాహ్య నిల్వ అనుమతి అవసరం</string>
+    <string name="is_owned">స్వంతం</string>
+
+    <string name="fpo_msg_if_season_past">క్రింది ప్రాంతాలలో దీనిలో, మీరు FPO ద్వారా సహాయం పొందారు ఉందా?</string>
+    <string name="fpo_msg_if_season_present">వచ్చే సీజన్లో, క్రింది ప్రక్రియల ఇది కోసం మీరు FPO ద్వారా సహాయం అవసరం?</string>
+    <string name="app_tour">App టూర్</string>
+    <string name="hide_details_label">వివరాలను దాచండి</string>
+    <string name="pan">పాన్</string>
+    <string name="select_farmer">రైతును ఎంచుకోండి</string>
+    <string name="system_auto_detect_mode">సిస్టమ్ ఆటో డిటెక్ట్ మోడ్</string>
+
+    <string name="contact_us_label">మమ్మల్ని సంప్రదించండి</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="add_query">ప్రశ్న చేర్చు</string>
+    <string name="enter_query">Entery ప్రశ్నా</string>
+    <string name="query_registered_successfully">మీరు ప్రశ్న విజయవంతంగా నమోదు చెయ్యబడింది</string>
+    <string name="failed_to_submit_query">మీ ప్రశ్న సమర్పించడం విఫలమైంది</string>
+    <string name="select_query_type">Subject ఎంచుకోండి</string>
+    <string name="please_select_subject">దయచేసి విషయాన్ని ఎంచుకోండి</string>
+    <string name="please_enter_query">ప్రశ్నను ఎంటర్ చెయ్యండి</string>
+    <string name="query">ప్రశ్న</string>
+    <string name="please_select_at_least_1_farm_to_go_offline">దయచేసి ఆఫ్లైన్లో వెళ్ళడానికి కనీసం 1 వ్యవసాయ ఎంచుకోండి</string>
+    <string name="you_can_only_take_10_farms_in_offline_mode_at_a_time">మీరు ఒక సమయంలో ఆఫ్లైన్ మోడ్ లో 10 పొలాలు పట్టవచ్చు</string>
+    <string name="unauthorized_access">అనధికార యాక్సెస్, దయచేసి మళ్ళీ లాగిన్</string>
+    <string name="authorization_expired">అధీకృత టోకెన్, దయచేసి లాగిన్ మళ్ళీ గడువు</string>
+    <string name="change_company">మార్చు కంపెనీ</string>
+    <string name="please_select_a_company">దయచేసి ఒక సంస్థ ఎంచుకోండి</string>
+    <string name="select_company">కంపెనీ ఎంచుకోండి</string>
+    <string name="no_other_company_available">మీరు అందుబాటులో ఏ ఇతర సంస్థ ఉంది</string>
+    <string name="switch_account">ఖాతా మార్చండి</string>
+    <string name="verify_farm_area_label">వ్యవసాయ ప్రాంతంలో నిర్ధారించండి</string>
+    <string name="pin_drop_mode">పిన్ డ్రాప్ మోడ్</string>
+    <string name="walk_around_mode">మోడ్ చుట్టూ వల్క్</string>
+    <string name="easy_mode">ఈజీ మోడ్</string>
+    <string name="clear_area_to_add_point">ప్రాంతం క్లియర్ మరియు పాయింట్ జోడించడానికి దయచేసి</string>
+    <string name="title_activity_maps_new">మ్యాప్</string>
+    <string name="invalid_point_marked_msg">చెల్లని పాయింట్ ఎంపిక, దయచేసి చెల్లుబాటు అయ్యే పాయింట్ గుర్తు</string>
+
+    <string name="personal_info">రైతు వ్యక్తిగత సమాచారం</string>
+    <string name="farmer_social_info">రైతు సామాజిక ఇన్ఫర్మేషన్</string>
+    <string name="civil_status">పౌర హోదా</string>
+    <string name="spouse">జీవిత భాగస్వామి పేరు</string>
+    <string name="benefeciary">లబ్ధిదారులు</string>
+    <string name="identity">గుర్తింపు</string>
+    <string name="bank">బ్యాంక్</string>
+    <string name="upi">UPI</string>
+    <string name="select_civil_status">సివిల్ స్థితి ఎంచుకోండి</string>
+    <string name="select_land_category">భూమి Select Category</string>
+    <string name="select_cropping_pattern">కత్తిరించడం ఎంచుకోండి సరళి</string>
+    <string name="select_planting_method">నాటడం ఎంచుకోండి విధానం</string>
+    <string name="date_of_transplanting">transplanting తేదీ</string>
+    <string name="swift_code">SWIFT కోడ్</string>
+    <string name="farmer_contact_information">రైతు సంప్రదింపు సమాచారం</string>
+    <string name="farmer_family_information">రైతు కుటుంబ సమాచారం</string>
+    <string name="farmer_family_members">కుటుంబ సభ్యులు కౌంట్</string>
+    <string name="adults_count">అడల్ట్ కౌంట్</string>
+    <string name="kids_count">కిడ్స్ కౌంట్</string>
+    <string name="dependent_count">ఆధారిత కౌంట్</string>
+    <string name="farmer_financial_information">రైతు ఫైనాన్షియల్ సమాచారం</string>
+    <string name="select_state">రాష్ట్రం ఎంచుకోండి</string>
+    <string name="select_district">ఎంచుకోండి జిల్లా</string>
+    <string name="data_sync_success">డేటా విజయ</string>
+    <string name="refresh">రిఫ్రెష్ డేటా</string>
+</resources>
+

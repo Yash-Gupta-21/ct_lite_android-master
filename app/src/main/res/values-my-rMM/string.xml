@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CropTrails</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">E-mail ကို</string>
+    <string name="prompt_password">Password ကို (optional)</string>
+    <string name="action_sign_in">အတွက် Sign နှင့်မှတ်ပုံတင်</string>
+    <string name="action_sign_in_short">ဆိုင်းအင်လုပ်ခြင်း</string>
+    <string name="error_invalid_email">အီးမေးလ်ပို့ရန်လိပ်စာမမှန်ကန်ပါ။</string>
+    <string name="error_invalid_password">စကားဝှက်တိုလွန်း၏</string>
+    <string name="error_incorrect_password">စကားဝှက်မမှန်ကန်</string>
+    <string name="error_field_required">field လိုအပ်ပါသည်</string>
+    <string name="permission_rationale">ဆက်သွယ်ရန်ခွင့်ပြုချက်ကိုအီးမေးလ်ပေးဘို့လိုအပ်နေပါသည် completions."></string>
+    <string name="amount_cant_be_null">ငွေပမာဏသုညမဖွစျနိုငျ</string>
+    <string name="title_activity_maps">မြေပုံ</string>
+    <string name="title_activity_landing">LandingActivity</string>
+    <string name="title_home">နေအိမ်</string>
+    <string name="title_dashboard">dashboard ကို</string>
+    <string name="title_notifications">အသိပေးချက်များ</string>
+    <string name="back_press">ထွက်ပေါက်မှတဖန်နှိပ်ပါ။</string>
+
+    <string name="navigation_drawer_open">ပွင့်လင်း navigation အံဆွဲ</string>
+    <string name="navigation_drawer_close">အနီးကပ် navigation အံဆွဲ</string>
+
+    <string name="internet_not_connected">သင့်ရဲ့အင်တာနက်ဆက်သွယ်မှုများနှင့်ပါနောက်တဖန်စစ်ဆေးပါ</string>
+
+    <string name="action_settings">Settings များ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">မင်္ဂလာပါအလွတ်အပိုင်းအစ</string>
+
+
+    <string name="country_prompt">နိုင်ငံကိုရွေးချယ်ပါ</string>
+    <string-array name="country_arrays">
+        <item>အိန္ဒိယ</item>
+        <item>မလေးရှား</item>
+        <item>ယူနိုက်တက်စတိတ်</item>
+        <item>အင်ဒိုနီးရှား</item>
+        <item>ပြင်သစ်</item>
+        <item>အီတလီ</item>
+        <item>စင်္ကာပူ</item>
+        <item>နယူးဇီလန်</item>
+    </string-array>
+
+    <string name="state_prompt">တစ်ပြည်နယ်ကိုရွေးချယ်ပါ</string>
+    <string-array name="state_arrays">
+        <item>M ကမည်သို့</item>
+        <item>U. P.</item>
+        <item>ဒေလီ</item>
+    </string-array>
+
+    <string name="tehsil_prompt">တစ်ဦး tehsil Choose</string>
+    <string-array name="tehsil_arrays">
+        <item>Indore</item>
+        <item>Ujjain</item>
+        <item>Dewas</item>
+    </string-array>
+
+    <string name="city_prompt">တစ်စီးတီးကိုရွေးချယ်ပါ</string>
+    <string-array name="city_arrays">
+        <item>Indore</item>
+        <item>Ujjain</item>
+        <item>Dewas</item>
+    </string-array>
+
+    <string name="district_prompt">တစ်ဦး Destrict Choose</string>
+    <string-array name="district_arrays">
+        <item>Indore</item>
+        <item>Ujjain</item>
+        <item>Dewas</item>
+    </string-array>
+
+
+    <string name="date_prompt">တစ်နေ့စွဲကိုရွေးချယ်ပါ</string>
+    <string-array name="date_arrays">
+        <item>#########</item>
+        <item>#########</item>
+    </string-array>
+
+    <string-array name="irrigation_type_array">
+        <item>ကို Select လုပ်ပါ</item>
+        <item>Surface ကဆည်မြောင်း</item>
+        <item>ဒေသတွင်းဆည်မြောင်း</item>
+        <item>ယိုဆည်မြောင်း</item>
+        <item>ရေပန်းဆည်မြောင်း</item>
+        <item>Center ကိုမဏ္ဍိုင်ဆည်မြောင်း</item>
+        <item>lateral ပြောင်းရွှေ့ဆည်မြောင်း</item>
+        <item>sub-ဆည်မြောင်း</item>
+        <item>manual ဆည်မြောင်း</item>
+    </string-array>
+
+
+    <string-array name="previous_crops_array">
+        <item>ကို Select လုပ်ပါ</item>
+        <item>ပဲပုပ်</item>
+        <item>ပြောင်းဖူး</item>
+        <item>နေကြာ</item>
+        <item>မုန်ညင်း</item>
+        <item>ဂြုံ</item>
+        <item>မုယောစပါး</item>
+        <item>NA</item>
+    </string-array>
+
+    <string-array name="irrigation_source_array">
+        <item>ကို Select လုပ်ပါ</item>
+        <item>အဆိုပါတူးမြောင်း</item>
+        <item>ကောင်းစွာ</item>
+        <item>ပြွန်ကောင်းစွာ</item>
+        <item>အဆိုပါတင့်ကား</item>
+    </string-array>
+
+    <string-array name="soil_type_array">
+        <item>ကို Select လုပ်ပါ</item>
+        <item>ရွှံ့စေးမြေဆီလွှာများ</item>
+        <item>Loam မြေဆီလွှာများ</item>
+        <item>စန္ဒီသည်မြေဆီလွှာ</item>
+        <item>Silty ရွှံ့</item>
+        <item>PT ရွှံ့</item>
+    </string-array>
+    -
+
+    <string name="moisture_prompt">စိုထိုင်းဆအဆင့်ကိုရှေးခယျြပါ</string>
+    <string-array name="moisture_level">
+        <item>ကို Select လုပ်ပါ</item>
+        <item>စိုထိုင်းသော</item>
+        <item>မရစိုထိုင်းသော</item>
+        <item>ဒီထက်စိုထိုင်းသော</item>
+        <item>မြင့်မားသောစိုထိုင်းဆ</item>
+    </string-array>
+
+    <string name="grade_prompt">တန်းကို Select လုပ်ပါ</string>
+    <string-array name="grade">
+        <item>ကို Select လုပ်ပါ</item>
+        <item>တစ်ဦးက</item>
+        <item>B က</item>
+        <item>ကို C</item>
+        <item>: D</item>
+    </string-array>
+
+    <string name="ipm_prompt">Select လုပ်ပစ္စည်း</string>
+    <string-array name="ipm">
+        <item>ကို Select လုပ်ပါ</item>
+        <item>Serrazine</item>
+        <item>Imister</item>
+    </string-array>
+
+    <string name="unit_prompt">ယူနစ်</string>
+    <string-array name="unit">
+        <item>ကီလိုဂရမ်</item>
+        <item>လီတာ</item>
+        <item>Quintal</item>
+        <item>တန်ချိန်</item>
+    </string-array>
+
+
+    <string name="iwm_prompt">Select လုပ်ပစ္စည်း</string>
+    <string-array name="iwm">
+        <item>ကို Select လုပ်ပါ</item>
+        <item>Atrizen</item>
+        <item>Laudis</item>
+        <item>စုသည်</item>
+    </string-array>
+
+    <string name="inm_prompt">Select လုပ်ပစ္စည်း</string>
+    <string-array name="inm">
+        <item>ကို Select လုပ်ပါ</item>
+        <item>DAP</item>
+        <item>ကြမ်းတိုက်အဝတ်စုတ်</item>
+        <item>ယူရီးယား</item>
+        <item>20-20-0-13</item>
+    </string-array>
+
+    <string name="path_below">M7.41,7.84L12,12.42l4.59, -4.58L18,9.25l-6,6 -6, -6z</string>
+    <string name="search_hint">Search ကိုအသုံးပြုသူ</string>
+
+
+    <item name="myDynamic1" type="id" />
+    <item name="rt1" type="id" />
+
+    <string name="inm_test_status">ပစ္စည်းကိုရွေးချယ်ပါ</string>
+    <string-array name="status_test">
+        <item>ကို Select လုပ်ပါ</item>
+        <item>ကောင်းသော</item>
+        <item>ဆိုးသော</item>
+        <item>ပိုဆိုးတာက</item>
+    </string-array>
+    <string name="title_activity_harvest_show_single_plan_map">မြေပုံ</string>
+
+
+    <string name="title_activity_welcome">ပင်မမျက်နှာပြင်</string>
+    <string name="next">နောက်တစ်ခု</string>
+    <string name="skip">Skip</string>
+    <string name="start">နားလည်သဘောပေါက်</string>
+
+
+    <string name="rupee_symbol">\ u20A8</string>
+    <string name="no_response">အိုးနိုင်အောင်ပါ! တစ်စုံတစ်ခုမှားယွင်းခဲ့သည်။ ထပ်ကြိုးစားပါ</string>
+    <string name="no_response_plz_reload">အိုးနိုင်အောင်ပါ! တစ်စုံတစ်ခုမှားယွင်းခဲ့သည်။ ကျေးဇူးပြုပြီးပြန်ဖွင့်</string>
+
+    <string name="setting_activity_title">Settings များ</string>
+    <string name="setting_no_username">အမည်: -</string>
+    <string name="setting_no_fathername">အဖအမည် : -</string>
+    <string name="signout_alert_dialog_message">သငျသညျ logout ချင်ပါနဲ့</string>
+    <string name="signout_alert_dialog_yes">ဟုတ်ကဲ့</string>
+    <string name="signout_alert_dialog_no">အဘယ်သူမျှမ</string>
+    <string name="offline_mode_logout_error">သငျသညျအော့ဖ်လိုင်း mode မှာထွက်ပြီးမနိုင်</string>
+    <string name="snackbar_ok">ကောင်းသော</string>
+    <string name="share_title">င်းကိုမျှဝေမည်</string>
+
+    <string name="image_select_image_title">add ဓာတ်ပုံကို</string>
+    <string name="image_choose_from_library">ပြခန်းကနေကို Select လုပ်ပါ</string>
+    <string name="image_take_photo">ဓာတ်ပုံကိုကလစ်နှိပ်ပါ</string>
+    <string name="image_cancel">cancel</string>
+    <string name="gallery_intent_title">ဖိုင်ကို Select လုပ်ပါ</string>
+    <string name="select_from_gallery_error">တစ်ခုခုမှားသွားတယ်! နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="alert_title_label">သတိထား!</string>
+    <string name="profile_alert_dialog_message">သင်ဟာပြောင်းလဲမှုများကိုစှနျ့ချင်ပါသလား</string>
+    <string name="profile_alert_dialog_yes">ဟုတ်ကဲ့</string>
+    <string name="profile_alert_dialog_no">အဘယ်သူမျှမ</string>
+    <string name="profile_image_update_failed">update ကိုပရိုဖိုင်းဓာတ်ပုံကိုရန်မအောင်မြင်ခဲ့ပါ။ ထပ်ကြိုးစားပါ</string>
+
+    <string name="name_label">အမည်:</string>
+    <string name="father_name_label">အဖအမည် :</string>
+    <string name="dob_label">မွေးရက်:</string>
+    <string name="contact_label">ဆက်သွယ်ရန်:</string>
+    <string name="email_label">E-mail ကို:</string>
+    <string name="setting_add_farm">ပုံစံ Add</string>
+    <string name="setting_reset_password">စကားဝှက်ကိုပြောင်းလဲရန်</string>
+    <string name="setting_share">င်းကိုမျှဝေမည်</string>
+    <string name="setting_rate_us">rate</string>
+    <string name="setting_signout">ဆိုင်းအောက်</string>
+    <string name="setting_privacy_policy">privacy</string>
+    <string name="setting_feedback">တုံ့ပြန်မှု</string>
+    <string name="setting_terms_and_conditions">စည်းကမ်းနှင့်သတ်မှတ်ချက်များ</string>
+    <string name="mayur_nagdev">Mayur Nagdev</string>
+    <string name="harvest_date">ရိတ်သိမ်းနေ့စွဲ:</string>
+    <string name="_10_07_2018">#########</string>
+    <string name="father_s_name">အဖအမည် :</string>
+    <string name="no_old_expnse_data_avaialble_label">အတိတ်ကုန်ကျစရိတ်၏စံချိန်များမတွေ့ပါ</string>
+    <string name="amount_hint">ရာသီခွင်</string>
+    <string name="date_msg">နေ့စွဲ</string>
+    <string name="narration">အဆိုပါဖော်ပြချက်</string>
+    <string name="submit">Submit</string>
+    <string name="no_internet_connection">အဘယ်သူမျှမအင်တာနက်ဆက်သွယ်မှု</string>
+    <string name="cant_add_expense_in_offline_mode">အော့ဖ်လိုင်း mode မှာစရိတ်မထည့်နိုင်ပါ</string>
+    <string name="add_new_expenditure">အသစ်သောစရိတ် Add</string>
+    <string name="expenditure_amount">အသုံးစရိတ်ငွေပမာဏ:</string>
+    <string name="expenditure_hint">အသုံးစရိတ်ငွေပမာဏ</string>
+    <string name="narration_hint">အဆိုပါဖော်ပြချက်</string>
+    <string name="dd_mm_yyyy">DD / MM / YYYY</string>
+    <string name="add_an_image_of_bill_msg">add ဥပဒေကြမ်းဓာတ်ပုံကို</string>
+    <string name="add_label">add</string>
+    <string name="chemicals">ဓာတုပစ္စည်းများ</string>
+    <string name="e_g_10_hint">10 လိုပဲ</string>
+    <string name="activity_label">အဆိုပါလှုပ်ရှားမှု</string>
+    <string name="activity_type_label">activity ကို type ကို</string>
+    <string name="desc_label">အဆိုပါဖော်ပြချက်</string>
+    <string name="more_label">နောက်ထပ်</string>
+    <string name="view_activity_label">ကြည့်ရန်လှုပ်ရှားမှု</string>
+    <string name="add_todays_activity_label">ဒီနေ့ရဲ့လှုပ်ရှားမှု Add</string>
+    <string name="pending_label">မစုံလင်သော</string>
+    <string name="upcomming_activity_label">လာမည့်လှုပ်ရှားမှုများ</string>
+    <string name="visit_label">အဆိုပါခရီးစဉ်</string>
+    <string name="visit_added_for_today_label">ယနေ့ခရီးစဉ်ကိုပေါင်းထည့်ပြီးပါပြီ</string>
+    <string name="visited_label">Visited</string>
+    <string name="view_visit_label">ကြည့်ရှုခရီးစဉ်</string>
+    <string name="timeline_label">အဆိုပါအချိန်ဇယား</string>
+    <string name="failed_to_load_timeline_msg">ဝန်အချိန်ဇယားရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="no_network_available_msg">ရရှိနိုင်ကွန်ယက်ကိုအဘယ်သူမျှမ</string>
+    <string name="there_is_no_standing_area_avilable_to_enter_for_pld_label">အဘယ်သူမျှမအမြဲတမ်းဧရိယာထဲဝငျဖို့ရရှိနိုင် PLD</string>
+    <string name="ok_label">ကောင်းသော</string>
+    <string name="date_label">နေ့စှဲ</string>
+    <string name="please_enter_integrated_nutrient_management_data_in_the_below_form_label">အောက်က form မှာပေါင်းစည်းအာဟာရစီမံခန့်ခွဲမှု data ကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="please_enter_integrated_weight_management_data_in_the_below_form_label">အောက်က form မှာပေါင်းစည်းအလေးချိန်စီမံခန့်ခွဲမှု data ကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="please_enter_integrated_pest_management_data_in_the_below_form_label">အောက်က form မှာပေါင်းစည်းပိုးမွှားစီမံခန့်ခွဲမှု data ကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="please_grade_crop_physical_condition_label">ကျေးဇူးပြု. တန်းသီးနှံရုပ်ပိုင်းဆိုင်ရာအခွအေနေ</string>
+    <string name="please_provide_soil_moisture_level_label">မြေဆီလွှာတွင်အစိုဓာတ်အဆင့်ကိုပေး ကျေးဇူးပြု.</string>
+
+
+    <!--MultiLanguages Strings Starting here-->
+    <string name="add_farm_title">ပုံစံ Add</string>
+    <string name="new_farm_added_msg">နယူးလယ်ယာအောင်မြင်စွာကဆက်ပြောသည်</string>
+    <string name="new_farm_fail_msg">လယ်ပြင် add ရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ။</string>
+    <string name="add_farmer_name_msg">ဘိန်းစိုက်ပျိုးမှု name ကိုရိုက်ထည့်ပါ</string>
+    <string name="farmer_name_cant_null_msg">လယ်သမားရဲ့နာမညျကိုအလွတ်မဖွစျနိုငျ</string>
+    <string name="enter_father_name_msg">အဖေရဲ့နာမည်ထည့်ပေးပါ</string>
+    <string name="father_name_cant_null_msg">ခမညျးတျော၏နာမတျောအချည်းနှီးမဖွစျနိုငျ</string>
+    <string name="farmer_name_hint">လယ်သမား name ကို</string>
+    <string name="farmer_father_name_hint">အဖအမည်</string>
+    <string name="farmer_phone_hint">ဖုန်း</string>
+    <string name="farmer_village_or_city_hint">ကျေးရွာသို့မဟုတ်မြို့တွင်း</string>
+    <string name="farmer_madal_or_tehsil_hint">Mandal သို့မဟုတ် Tehsil</string>
+    <string name="farmer_district_hint">နယ်</string>
+    <string name="farmer_state_hint">ပြည်နယ်</string>
+    <string name="farmer_counrty_hint">ပြည်</string>
+    <string name="submit_label">Submit</string>
+    <string name="opps_message">သည်းခံပါ !!</string>
+
+    <string name="update_farm_details_title">Update ကိုလယ်ယာအသေးစိတ်ကို</string>
+    <string name="update_farm_details_sub_msg">လယ်သမားအားဖြင့်ဖော်ပြထားသောလယ်ယာအသေးစိတ် Enter</string>
+    <string name="select_message_tag">ကို Select လုပ်ပါ</string>
+    <string name="select_irrigation_source_msg">တစ်ဦးဆည်မြောင်းအရင်းအမြစ်ကို select ပေးပါ</string>
+    <string name="select_previous_crop_msg">ပြီးခဲ့သည့်သီးနှံကို select ပေးပါ</string>
+    <string name="select_irrigation_type_msg">ဆည်မြောင်းအမျိုးအစားကိုရွေးချယ်ပါ ကျေးဇူးပြု.</string>
+    <string name="select_soil_type_msg">မြေဆီလွှာ၏အမျိုးအစားကိုရွေးပါ ကျေးဇူးပြု.</string>
+    <string name="select_sowing_date_msg">မျိုးစေ့ကြဲရာရက်စွဲကို select လုပ်ပါ ကျေးဇူးပြု.</string>
+    <string name="farm_detail_update_fail_msg">update ကိုလယ်ယာအသေးစိတ်ကိုရန်မအောင်မြင်ခဲ့ပါ။ ထပ်ကြိုးစားပါ။</string>
+    <string name="farm_details_updated_success">Form ကိုအသေးစိတျကိုအောင်မြင်စွာ updated ။</string>
+    <string name="dynamic_bag_act_title">ရိတ်သိမ်းအသေးစိတ်ကို</string>
+    <string name="irrigation_source_label">ဆည်မြောင်းအရင်းအမြစ်</string>
+    <string name="previous_crop_label">နောက်ဆုံးသီးနှံ</string>
+    <string name="irrigation_type">ဆည်မြောင်းအမျိုးအစား</string>
+    <string name="soil_type_label">မြေဆီလွှာတွင်အမျိုးအစား</string>
+    <string name="sowing_date_label">ရက်စွဲသည်မျိုးစေ့ကြဲ</string>
+    <string name="expected_flowering_date_label">မျှော်လင့်ထားသည့်ပန်းပွင့်သည့်ရက်စွဲ</string>
+    <string name="expected_harvest_date_label">မျှော်လင့်ထားသည့်စပါးရိတ်ရာကာလနေ့စွဲ</string>
+    <string name="additional_farm_details_label">အပိုဆောင်း Form ကိုဖျေါပွခကျြ</string>
+    <string name="capture_farm_area_label">capture လယ်ယာဧရိယာ</string>
+    <string name="mobile_label">မိုဘိုင်း</string>
+    <string name="expected_area_label">Sent လယ်ပြင်</string>
+    <string name="actual_area_label">မျိုးစေ့ကြဲရာ Fielder</string>
+    <string name="exp_flowering_date_label">တစ်ဦး။ ပန်းပွင့်တွေရဲ့နေ့စွဲ</string>
+    <string name="exp_harvest_date">တစ်ဦး။ ရိတ်သိမ်းသည့်ရက်စွဲ</string>
+    <string name="actual_flowering_date_label">အမှန်တကယ်ပန်းပွင့်သည့်ရက်စွဲ</string>
+    <string name="actual_harvest_date_label">အမှန်တကယ်ရိတ်သိမ်းသည့်ရက်စွဲ</string>
+    <string name="average_pp_spacing_label">ပျမ်းမျှ P-P ကို ​​Interval သည်:</string>
+    <string name="average_rr_spacing_label">ပျမ်းမျှ R-R ကို Interval သည်:</string>
+    <string name="average_germiantion_label">ပျမ်းမျှအပင်ပေါက်ရန်အတွက်:</string>
+    <string name="average_farm_population_label">ပျမ်းမျှလယ်ယာလူဦးရေ:</string>
+    <string name="view_samples_label">နမူနာကိုကြည့်ပါ</string>
+    <string name="add_visit_label">ခရီးစဉ် Add</string>
+    <string name="harvest_details_label">ရိတ်သိမ်းအသေးစိတ်ကို</string>
+    <string name="visit_step1_head_label">အဆင့် 1: အမြဲတမ်းသီးနှံဧရိယာ Enter</string>
+    <string name="visit_step2_head_label">အဆင့် 2: လယ်သမားပြု Enter လှုပ်ရှားမှုများကို</string>
+    <string name="visit_step1_msg_label">သီးနှံကြည့်ရှုနိုင်ပါသည်ရသောသီးနှံဧရိယာရိုက်ထည့်ပါ။</string>
+    <string name="visit_step2_msg_label">အောက်ကပုံစံအတွက်ခရီးစဉ်အသေးစိတ်ကိုထည့်သွင်းပါ။ ဤရွေ့ကားအသေးစိတ်ကိုသင့်ရဲ့ခရီးစဉ်အပေါ်လယ်သမားများကထောက်ပံ့ပေးလိမ့်မည်</string>
+    <string name="last_standing_area">* နောက်ဆုံးအမြဲတမ်းဧရိယာ</string>
+    <string name="pld_form_label">PLD Form ကို</string>
+    <string name="standing_crop_area_label">မတ်တပ်ရပ်သီးနှံဧရိယာ</string>
+    <string name="in_acres_msg">(ဧက)</string>
+    <string name="in_acres_hint">ဧက</string>
+    <string name="inm_label">INM</string>
+    <string name="visit_inm_msg1">အောက်ကပုံစံအတွက်ပေါင်းစည်းအာဟာရစီမံခန့်ခွဲမှုဒေတာကိုထည့်သွင်းပါ။</string>
+    <string name="visit_select_na_msg">ကိုမရရှိနိုင်လျှင် N / A ကိုရွေးပါ။</string>
+    <string name="visit_inm_msg3">အဆိုပါ INM ပုံစံဖြည့်ပါနှင့်မှတပါးကိုကလစ်နှိပ်ပါ။ သငျသညျမျိုးစုံ entries တွေကိုကယ်တင်နိုင်ပါ။</string>
+    <string name="quantity_hint">အဆိုပါအရေအတွက်</string>
+    <string name="prescribed_comment_hint">ဖော်ပြထားမှတ်ချက်</string>
+    <string name="iwm_label">IWM</string>
+    <string name="visit_iwm_msg1">အောက်ကပုံစံအတွက်ဘက်ပေါင်းစုံအလေးချိန်စီမံခန့်ခွဲမှုဒေတာကိုထည့်သွင်းပါ။</string>
+    <string name="visit_iwm_msg3">အဆိုပါ IWM ပုံစံဖြည့်ပါနှင့်မှတပါးကိုကလစ်နှိပ်ပါ။ သငျသညျမျိုးစုံ entries တွေကိုကယ်တင်နိုင်ပါ။</string>
+    <string name="done_date_label">Completed နေ့စွဲ:</string>
+    <string name="save_label">ကြော်ငြာကို Save လုပ်ရန်</string>
+    <string name="ipm_label">IPM</string>
+    <string name="visit_ipm_msg1">အောက်ကပုံစံအတွက်ပေါင်းစည်းပိုးမွှားစီမံခန့်ခွဲမှုဒေတာကိုထည့်သွင်းပါ။</string>
+    <string name="visit_ipm_msg3">အဆိုပါ IPM ပုံစံဖြည့်စွက်ခြင်းနှင့်မှတပါးကိုကလစ်နှိပ်ပါ။ သငျသညျမျိုးစုံ entries တွေကိုကယ်တင်နိုင်ပါ။</string>
+    <string name="cpc_label">CPC</string>
+    <string name="visit_cpc_msg">တန်းသီးနှံရုပ်ပိုင်းဆိုင်ရာအခွအေနေကို Select လုပ်ပါ</string>
+    <string name="grade_label">grade</string>
+    <string name="sml_label">SML</string>
+    <string name="visit_sml_msg">မြေဆီလွှာတွင်အစိုဓာတ်အဆင့်ကိုပေး</string>
+    <string name="mositure_level_label">အစိုဓာတ်အဆင့်ကို</string>
+    <string name="other_label">အခြား</string>
+    <string name="visit_other_msg">မဆိုအထူးမှတ်ချက်သို့မဟုတ်အလုပ်ကဒီမှာသတ်မှတ်ကျေးဇူးပြုပြီး အကယ်.</string>
+    <string name="comment_label">မှတ်ချက်</string>
+    <string name="visit_farm_image1_msg">* Form ကို Image ကို 1</string>
+    <string name="visit_farm_image2_msg">* Form ကို Image ကို 2</string>
+    <string name="visit_farm_and_farmer_image_msg">* လယ်ယာနှင့်လယ်သမား</string>
+    <string name="visit_selfie_famer_image_msg">လယ်ယာနှင့်လယ်သမားနှင့်အတူ * Selfie</string>
+    <string name="add_new_harvest_label">အသစ်သောဖော်ပြချက် Add</string>
+    <string name="flowering_date_updated_success_msg">Floris နေ့စွဲကိုအောင်မြင်စွာ updated</string>
+    <string name="flowering_date_update_fail_msg">ပန်းပွင့်ရက်စွဲကိုအပ်ဒိတ်လုပ်ရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ။</string>
+    <string name="harvest_date_updated_success_msg">စပါးရိတ်ရာကာလနေ့စွဲကိုအောင်မြင်စွာ updated</string>
+    <string name="harvest_date_update_fail_msg">update ကိုရိတ်သိမ်းနေ့စွဲရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ။</string>
+    <string name="no_standing_area_for_harvest_msg">ရိတ်သိမ်းအဘို့မကျန်အမြဲတမ်းဧရိယာရှိပါသည်။</string>
+    <string name="farm_detail_label">လယ်ယာ၏ဖော်ပြချက်</string>
+    <string name="germination_and_spacing_form_label">အပင်ပေါက်ရန်အတွက်နှင့်အကွာ</string>
+    <string name="select_dropdown">ကို Select လုပ်ပါ</string>
+    <string name="unit_dropdown">ယူနစ်</string>
+
+    <string name="please_select_inm_msg">INM အကြောင်းအရာရွေးချယ်ပါ။</string>
+    <string name="please_select_iwm_msg">IWM ပစ္စည်းရွေးပါ။</string>
+    <string name="please_select_ipm_msg">IPM အကြောင်းအရာရွေးချယ်ပါ။</string>
+
+    <string name="please_enter_material_quantity">အကြောင်းအရာအရေအတွက်ရိုက်ထည့်ပေးပါ။</string>
+    <string name="please_select_quantity_unit_msg">အကြောင်းအရာအရေအတွက်မဆိုယူနစ်ရွေးချယ်ပါ။</string>
+    <string name="please_choose_done_date_msg">ရက်စွဲတစ်ခုရွေးချယ်ပါ။</string>
+    <string name="please_fill_validation_text">ပိုပြီးလယ်ကွင်းကိုထည့်သွင်းဖို့အားလုံးအထက်ပါလယ်ကွင်းဖြည့်ပေးပါ။</string>
+    <string name="please_fill_in_field">ဒီလယ်ကိုဖြည့်ပါကျေးဇူးပြုပြီး</string>
+    <string name="correct_harvest_area">မှန်ကန်သောသီးနှံဧရိယာရိုက်ထည့်ပေးပါ</string>
+    <string name="capture_first_image_msg">ပထမဦးဆုံး 1 ပုံရိပ်ကိုဖမ်းယူပေးပါ</string>
+    <string name="capure_secong_image_msg">ပထမဦးဆုံး 2 ပုံရိပ်တွေကိုဖမ်းယူပေးပါ</string>
+    <string name="capture_third_image_msg">ပထမဦးဆုံး 3 ပုံရိပ်တွေကိုဖမ်းယူပေးပါ</string>
+    <string name="capture_fourth_image_msg">ပထမဦးဆုံး 4 ပုံရိပ်တွေကိုဖမ်းယူပေးပါ</string>
+    <string name="capture_fifth_image_msg">P ကိုပထမဦးဆုံး 5 ပုံရိပ်တွေကိုဖမ်းယူပေးပါ</string>
+    <string name="capture_all_image_msg">ပိုပြီးပုံရိပ်တွေကိုထည့်သွင်းဖို့အားလုံးပုံရိပ်တွေကိုဖမ်းယူပေးပါ။</string>
+    <string name="standing_area_cant_null_msg">အမြဲတမ်းစံချိန်ဗလာမဖွစျနိုငျ</string>
+    <string name="enter_standing_crop_area_msg">အမြဲတမ်းသီးနှံဧရိယာရိုက်ထည့်ပေးပါ။</string>
+    <string name="enter_appropriate_area_msg">မတ်တပ်ရပ်သီးနှံ၏သင့်လျော်သောလယ်ပြင်၌ဖြည့်ပါကျေးဇူးပြုပြီး</string>
+    <string name="enter_coorect_standing_area_msg">အမြဲတမ်း field ရဲ့မှန်ကန်တဲ့တန်ဖိုးကိုရိုက်ထည့်ပေးပါ။</string>
+    <string name="add_chemical_or_na_msg">မည်သည့်ဓာတုပစ္စည်း add သို့မဟုတ် INM အတွက် N / A ကိုရွေးချယ်ပါ။</string>
+    <string name="add_chemical_na_iwm_msg">မည်သည့်ဓာတုပစ္စည်း add သို့မဟုတ် IWM အတွက် N / A ကိုရွေးချယ်ပါ။</string>
+    <string name="add_chemical_or_na_ipm_msg">မည်သည့်ဓာတုပစ္စည်း add သို့မဟုတ် IPM အတွက် N / A ကိုရွေးချယ်ပါ။</string>
+    <string name="select_cpc_msg">CPC ကိုရှေးခယျြ ကျေးဇူးပြု.</string>
+    <string name="select_sml_msg">sml ကျေးဇူးပြု. ရွေးချယ်ပါ</string>
+    <string name="uploading_visit_msg">uploading ...</string>
+    <string name="visit_submit_success_msg">အောင်မြင်စွာ Uploaded ။</string>
+    <string name="visit_submit_fail_msg">ဒီခရီးစဉ်ကိုထည့်သွင်းရန်မအောင်မြင်ခဲ့ပါ။ ထပ်ကြိုးစားပါ</string>
+    <string name="fail_to_connect_msg">ချိတ်ဆက်ဖို့ပျက်ကွက်!</string>
+    <string name="check_internet_connection_msg">သင်၏အင်တာနက်ချိတ်ဆက်မှုကိုစစ်ဆေးပါ။</string>
+    <string name="visit_data_saved_msg">သင့်ရဲ့ဒေတာတွေကိုသိမ်းဆည်းလိုက်ပြီဖြစ်သည်။</string>
+    <string name="cant_view_farm_in_offline_msg">သငျသညျအော့ဖ်လိုင်း mode မှာလယ်မြေမရှုမွငျနိုငျသညျ။</string>
+    <string name="no_standing_area_for_visit">ခရီးသွားအဘို့အဘယ်သူမျှမအမြဲတမ်းဧရိယာရှိပါသည်။</string>
+    <string name="error_message">မှားယွင်းနေသည်,</string>
+    <string name="verify_farm_area_first_msg">ပထမဦးဆုံးလယ်၌ဖြစ်သောဧရိယာအတည်ပြုရန်ပေးပါ။</string>
+    <string name="no_previous_visit_available_msg">အဘယ်သူမျှမကယခင်ခရီးသွားဤပုံစံများအတွက်ရရှိနိုင်ပါသည်။</string>
+    <string name="failed_to_load_visits_msg">ဝန်အလည်အပတ်ခရီးဒေတာရန်မအောင်မြင်ခဲ့ပါ။ ထပ်ကြိုးစားပါ</string>
+    <string name="failed_to_load_previous_harvest_msg">ယခင်သီးနှံများ၏ဝန်ဒေတာရန်မအောင်မြင်ခဲ့ပါ။ ထပ်ကြိုးစားပါ</string>
+    <string name="need_to_mark_gps_coordinates">အဆိုပါ GPS ကိုသြဒီနိတ်အထိမ်းအမှတ်ကိုလယ်ဧရိယာသင်မြင်မှပထမဦးဆုံးလိုအပ်ပါဘူး။</string>
+    <string name="failed_to_get_farm_location_msg">လယ်ယာတည်နေရာရရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="timeline_activity_title">အဆိုပါအချိန်ဇယား</string>
+    <string name="failed_to_load_timeline">ဝန်အချိန်ဇယားရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="moisture_level_label">အစိုဓာတ်အဆင့်ကို</string>
+    <string name="add_visit_activity_title">ခရီးစဉ်ကိုပေါင်းထည့်ပါ</string>
+    <string name="choose_other_image_to_upload_msg">upload ရန်နောက်ထပ် image ကိုရွေးချယ်ပါ။</string>
+    <string name="please_wait_msg">ကျေးဇူးပြုပြီးခဏစောင့်ပါ...</string>
+    <string name="fill_date_msg">ဒေတာဖြည့်ပါ</string>
+    <string name="select_chemical_label">ကို Select လုပ်ပါဓါတုဗေဒ</string>
+    <string name="please_fill_date_msg">ဒေတာရိုက်ထည့်ပေးပါ</string>
+    <string name="farmer_reply_must_entered_msg">လယ်သမားပြန်ကြားချက်မှတ်တမ်းတင်ထားသင့်တယ်</string>
+    <string name="ok_msg">ကောင်းသော</string>
+    <string name="fill_data_properly_msg">ဒေတာမှန်မှန်ကန်ကန်ဖြည့်ပါကျေးဇူးပြုပြီး</string>
+    <string name="select_file_msg">ဖိုင်ကို Select လုပ်ပါ</string>
+    <string name="activity_submitted_success_msg">အဆိုပါလှုပ်ရှားမှုကိုအောင်မြင်စွာတင်ဆက်ခဲ့ပါတယ်။</string>
+    <string name="activity_submit_fail_msg">အချိန်ဇယားမှဒေတာများ upload တင်ရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="error_occurred_try_again_msg">မှားယွင်းမှုတစ်ခုဖြစ်ပွားခဲ့သည်။ ထပ်ကြိုးစားပါ</string>
+    <string name="retry_msg">ထပ်ကြိုးစားပါ</string>
+    <string name="something_went_wrong_msg">တချို့ကအမှားဖြစ်ပွားခဲ့သည်</string>
+    <string name="visit_report_activity_title">လယ်ယာခရီးစဉ်အစီရင်ခံစာ</string>
+    <string name="farm_visit_details_label">လယ်ယာခရီးစဉ်အသေးစိတ်</string>
+    <string name="visit_number_label">အလည်အပတ်အရေအတွက်:</string>
+    <string name="visited_on_label">tour နေ့စွဲ:</string>
+
+    <string name="farmer_name_label">လယ်သမားအမည်:</string>
+    <string name="click_to_view_images_label">ရုပ်ပုံကိုမြင်ရဖို့ကိုနှိပ်ပါ</string>
+    <string name="downloading_is_pending">တချို့က image ကို download လုပ်ဆိုင်းငံ့ထားသည်။</string>
+    <string name="no_image_for_this_visit">ဒီခရီးစဉ်များအတွက်အဘယ်သူမျှမရုပ်ပုံများ</string>
+    <string name="image_activity_title">အဆိုပါဓါတ်ပုံ</string>
+    <string name="enter_pld_details_label">pld အသေးစိတ်ကို Enter</string>
+    <string name="please_enter_pld_area_and_its_reason_in_the_fields_mentioned_below_label">အောက်တွင်ဖော်ပြထားသောဖော်ပြထားသောဒေသများနှင့်ဤများအတွက်အကြောင်းပြချက်အတွက်သီးနှံဆုံးရှုံးမှု / အရှုံးဇုန်ရိုက်ထည့်ပေးပါ။</string>
+    <string name="effective_farm_area_label">ထိရောက်သောစိုက်ပျိုးရေးကဏ္ဍ</string>
+    <string name="pld_acres_label">အရှုံးဇုန်</string>
+    <string name="reason_for_pld_label">ဆုံးရှုံးမှုအကြောင်းမရှိ</string>
+    <string name="pld_already_submitted_for_this_farm_label">* သီးနှံဆုံးရှုံးမှု / အရှုံးဧရိယာပြီးသားဤပုံစံများအတွက်တင်ပြပြီးပါပြီ</string>
+    <string name="pld_form_title">သီးနှံဆုံးရှုံးမှု / ဆုံးရှုံးမှုဧရိယာလယ်ယာ</string>
+    <string name="already_pld_added">သီးနှံဆုံးရှုံးမှု / အရှုံးဧရိယာပြီးသားကဆက်ပြောသည်။</string>
+    <string name="invalid_entry_error">လယ်ပြင်၌မှားနေသော entry ကို</string>
+    <string name="invalid_entry_in_pld">သီးနှံဆုံးရှုံးမှု / ဆုံးရှုံးမှုဧရိယာအကြောင်းရင်းထဲမှာမှားနေသော entry ကို</string>
+    <string name="your_pld_data_update">သင့်ရဲ့သီးနှံဆုံးရှုံးမှု / အရှုံးဧရိယာဒေတာ updated ထားပြီး</string>
+    <string name="failure_upload_msg">သီးနှံဆုံးရှုံးမှု / အရှုံးဧရိယာ data တွေကို upload တင်ရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="enter_pld_hint">ဤနေရာတွင်သီးနှံဆုံးရှုံးမှု / အရှုံးလယ်ပြင်ရိုက်ထည့်ပါ။</string>
+    <string name="enter_reason_for_pld_hint">သီးနှံဆုံးရှုံးမှု / အရှုံးဧရိယာများအတွက်အကြောင်းပြချက် Enter</string>
+    <string name="enter_pld_here_hint">ဤနေရာတွင်သီးနှံဆုံးရှုံးမှု / အရှုံးလယ်ပြင်ရိုက်ထည့်ပါ။</string>
+    <string name="make_offline_label">Go ကိုအော့ဖ်လိုင်း</string>
+    <string name="lot_no">လယ်ယာအိုင်ဒီ</string>
+    <string name="fathers_name">အဖအမည်:</string>
+    <string name="offline_mode_title">အော့ဖ်လိုင်း mode ကို</string>
+    <string name="preparing_your_data_for_offline_mode">အော့ဖ်လိုင်း mode ကိုများအတွက်သင့်ရဲ့ဒေတာပြင်ဆင်နေသည်။ ဒါဟာမိနစ်အနည်းငယ်ကြာနိုင်ပါသည်</string>
+    <string name="stay_connected">Stay ချိတ်ဆက်ထားပြီး</string>
+    <string name="please_select_at_least_one_farm">အော့ဖ်လိုင်းသွားကြဖို့အနည်းဆုံးတစ်ဦးကိုလယ်ကို select ပေးပါ</string>
+    <string name="please_check_your_internet">သင်၏အင်တာနက်ချိတ်ဆက်မှုကိုစစ်ဆေးပါ။</string>
+    <string name="fail_to_load_offline_mode">အော့ဖ်လိုင်း mode ကိုများအတွက်ဝန်ပုံစံကိုရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="oops_messsage_label">အိုးနိုင်အောင်ပါ! တစ်စုံတစ်ခုမှားယွင်းခဲ့သည်။ ထပ်ကြိုးစားပါ</string>
+    <string name="failed_to_make_data_offline">အော့ဖ်လိုင်းဒေတာရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="please_allow_storage_permission">အော့ဖ်လိုင်း mode ကိုများအတွက်သိုလှောင်မှုကိုခွင့်ပြုပေးပါ။</string>
+    <string name="click_on_storage"><![CDATA[Permissions-> Click on storage]]></string>
+    <string name="yes">ဟုတ်ကဲ့</string>
+    <string name="go_offline">Go ကိုအော့ဖ်လိုင်း</string>
+    <string name="check_area_title">check ဧရိယာ</string>
+    <string name="area">ဧရိယာ</string>
+    <string name="clear">ဖယ်ရှား</string>
+    <string name="acers_label">ဧက</string>
+    <string name="please_submit_at_least_3_points">အနည်းဆုံး 3 မှတ်တင်ပြရန် ကျေးဇူးပြု.</string>
+    <string name="outside_circle_radius">စက်ဝိုင်းအပြင်ဘက်တွင်</string>
+    <string name="this_app_needs_location_permisssion">ဤလျှောက်လွှာကိုအသုံးပြုမှုကိုတည်နေရာရန်လိုအပ်သည်, အသုံးပြုမှုတည်နေရာလုပ်ဆောင်နိုင်စွမ်းကိုမှလျှောက်လွှာကိုခွင့်ပြု</string>
+    <string name="permission_denied">ခွင့်တောင်းမှုငြင်းဆိုခြင်း</string>
+    <string name="please_clear_then_add">ပိုပြီး add ပြီးတော့ delete ကျေးဇူးပြု.</string>
+    <string name="response_error">တုန့်ပြန်အမှားအကြာတွင်နောက်တစ်ကြိမ်ကြိုးစားပါ</string>
+    <string name="farm_area_title">စိုက်ပျိုးရေးကဏ္ဍ</string>
+    <string name="this_app_needs_location_permission">ဤလျှောက်လွှာကိုတည်နေရာခွင့်ပြုချက်လိုအပ်သည်, တည်နေရာလုပ်ဆောင်နိုင်စွမ်းကိုသုံးစွဲဖို့ကိုလက်မခံကျေးဇူးပြုပြီး</string>
+    <string name="please_clear_then_add_more">ပိုပြီး add ပြီးတော့ delete ကျေးဇူးပြု.</string>
+    <string name="should_have_at_least_two_points_to_display">Display ကိုမှအနည်းဆုံး 2 မှတ်ရှိရမည်</string>
+    <string name="capture_farm_area_maps_activity_title">capture အလယ်ပြင်</string>
+    <string name="sure_to_submit_area">သင်တစ်ဦးကိုလယ်တင်ပြချင်ပါသလား?</string>
+    <string name="area_is_too_short_for_capture">အဆိုပါလယ်ယာလယ်သေးငယ်လွန်းသည်။ နောက်တဖန်ပုံစံအကွက်ကိုဖမ်းယူပေးပါ</string>
+    <string name="no">အဘယ်သူမျှမ</string>
+    <string name="please_enter_valid_area">ခိုင်လုံသောလယ်ကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="actual_area_update_successfully">အောင်မြင်စွာမျိုးစေ့ကြဲရာဧရိယာ updated ။</string>
+    <string name="failed_to_update_actual_area">update ကိုမျိုးစေ့ကြဲရာဧရိယာရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="please_click_inside_circle_to_mark">ထိုဒေသတွင်အထိမ်းအမှတ်စက်ဝိုင်းအတွင်း၌ click နှိပ်ပေးပါ</string>
+    <string name="location_permission_needed">တည်နေရာခွင့်ပြုချက်လိုအပ်ပါသည်</string>
+    <string name="this_apps_needs_location_permission">ဤလျှောက်လွှာကိုတည်နေရာခွင့်ပြုချက်လိုအပ်သည်, တည်နေရာလုပ်ဆောင်နိုင်စွမ်းကိုသုံးစွဲဖို့ကိုလက်မခံကျေးဇူးပြုပြီး</string>
+    <string name="cant_add_more_points">ပိုပြီးမှတ်မထည့်နိုင်ပါ</string>
+    <string name="failed_to_get_farm_ocation_please_try_again_later">လယ်ယာတည်နေရာရရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="area_successfully_added">ဧရိယာအားအောင်မြင်စွာထည့်ပြီးပါပြီ ...</string>
+    <string name="failed_to_verify_farm_area">လယ်ပြင်အတည်ပြုရန်</string>
+    <string name="add_actual_area_manually">ကိုယ်တိုင်မျိုးစေ့ကြဲရာဧရိယာ add</string>
+    <string name="old_password">စကားဝှက်အဟောင်း</string>
+    <string name="new_password">စကားဝှကိအသစ်</string>
+    <string name="confirm_new_password">Confirm အသစ်က Password ကို</string>
+    <string name="username">user name</string>
+    <string name="log_in">လော့ဂ်အင်</string>
+    <string name="username_cant_be_null">username ဗလာမဖွစျနိုငျ</string>
+    <string name="password_cant_be_empty">Password ကိုအချည်းနှီးမဖွစျနိုငျ</string>
+    <string name="failed_to_connect">ချိတ်ဆက်ဖို့ပျက်ကွက်!</string>
+    <string name="invalid_username_password">မှားနေသောအသုံးပြုသူအမည်သို့မဟုတ်စကားဝှက်ကို။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="failed_to_login">ရဲ့ login မှမအောင်မြင်ခဲ့ပေ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="plan">အစီအစဉ် -</string>
+    <string name="location_not_available">လက်ရှိတည်နေရာ ကျေးဇူးပြု. နောက်မှထပ်ကြိုးစားမရရှိနိုင်</string>
+    <string name="server_error">မှားယွင်းမှုတစ်ခုဖြစ်ပွားခဲ့သည်။ ထပ်ကြိုးစားပါ</string>
+    <string name="bags">အိတ်:</string>
+    <string name="harvest_plan">ရိတ်သိမ်းမည့်အစီအစဉ်</string>
+    <string name="failed_to_load_harvest_data">ဝန်ရိတ်သိမ်းဒေတာရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+
+    <string name="profile_activity_title">ပရိုဖိုင်းကို</string>
+    <string name="old_expense_data_unavaialble">အတိတ်အသုံးစရိတ်မရှိပါဒေတာရရှိနိုင်ပါသည်</string>
+    <string name="hint_amount">ရာသီခွင်</string>
+    <string name="txt_date">နေ့စွဲ</string>
+    <string name="hint_narration">အဆိုပါဖော်ပြချက်</string>
+    <string name="hint_submit">Submit</string>
+    <string name="txt_no_internet">အဘယ်သူမျှမအင်တာနက်ဆက်သွယ်မှု</string>
+    <string name="txt_can_not_add_expense_offline_mode">အော့ဖ်လိုင်း mode မှာစရိတ်မထည့်နိုင်ပါ</string>
+    <string name="txt_no_farm_data_avaialble">မရှိနိုင်ပါပုံစံဒေတာ</string>
+    <string name="txt_total_farms">စုစုပေါင်းလယ်ယာ</string>
+    <string name="txt_total_standing_area">စုစုပေါင်းအမြဲတမ်းဧရိယာ</string>
+    <string name="txt_in_acres">(ဧကခုနှစ်တွင်)</string>
+    <string name="txt_total_expected_area">စုစုပေါင်းလိုအပ်သည့်ဧရိယာ</string>
+    <string name="txt_last_visited_farm">နောက်ဆုံးမြင်ကြလယ်ယာ</string>
+    <string name="txt_max_standing_area">မက်စ်အမြဲတမ်းဧရိယာ</string>
+    <string name="txt_max_population">မက်စ်လူဦးရေ</string>
+    <string name="txt_grade_wise_distribution">grade ပညာရှိသဖြန့်ဖြူး</string>
+    <string name="drawer_check_area">check ဧရိယာ</string>
+    <string name="drawer_offline_mode">အော့ဖ်လိုင်း mode ကို</string>
+    <string name="drawer_plan_harvest">plan ကိုရိတ်သိမ်း</string>
+    <string name="drawer_planned_harvest">စီစဉ်ထားရိတ်သိမ်း</string>
+    <string name="drawer_back_to_online">အွန်လိုင်းပြန်လာ</string>
+    <string name="drawer_settings">Settings များ</string>
+    <string name="main_menu_search">ရှာဖှေ</string>
+    <string name="harvest_plan_submit">Submit</string>
+    <string name="bottom_nav_dashboard">dashboard ကို</string>
+    <string name="bottom_nav_home">နေအိမ်</string>
+    <string name="bottom_nav_expenditure">သုံးငှေ</string>
+    <string name="landing_search">ရှာဖှေ</string>
+    <string name="update_farm_failure">update ကိုလယ်ယာဒေတာရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="txt_data_uploaded_to_server">ဒေတာကိုဆာဗာအပ်လုဒ်လုပ်ထား</string>
+    <string name="txt_germination_data_upload_failed">အပ်လုဒ်ကိုအပင်ပေါက်ရန်အတွက်နှင့်နမူနာဒေတာရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="txt_harvest_data_upload_failed">ရိတ်သိမ်း data တွေကို upload တင်ရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="txt_visit_data_upload_failed">ခရီးစဉ် data တွေကို upload တင်ရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="online_now_no_offline_upload">သင်အွန်လိုင်းလက်ရှိ ... No အော့ဖ်လိုင်းဒေတာအပ်လုဒ်ကိုတွေ့ရှိ</string>
+    <string name="txt_uploading_data">အပ်လုဒ်လုပ်နေသည်ဒေတာ ...</string>
+    <string name="txt_server_error">ဆာဗာမှားယွင်းနေသည်။ ထပ်ကြိုးစားပါ</string>
+    <string name="dialog_heading_unable_to_connect">ချိတ်ဆက်နိုင်ခြင်း,</string>
+    <string name="connect_to_3g_or_4g">သေချာသင် data တွေကို upload တင်မယ့် 3G သို့မဟုတ် 4G ကွန်ယက်ကိုချိတ်ဆက်ထားပါ။</string>
+    <string name="go_online_upload_offline_data">သင်အွန်လိုင်းပြန်မသွားချင်နဲ့ upload ဒေတာအော့ဖ်လိုင်းသလား?</string>
+
+    <string name="validation_amount_null">ငွေပမာဏဗလာမဖွစျနိုငျ</string>
+    <string name="validation_comment_null">မှတ်ချက်ဗလာမဖွစျနိုငျ</string>
+    <string name="validation_date_null">ရက်စွဲတစ်ခုကို ကျေးဇူးပြု. ရွေးချယ်ပါ</string>
+    <string name="validation_image_null">တစ်အသုံးစရိတ် image ကို upload ကျေးဇူးပြု.</string>
+
+    <string name="expense_data_upload_failed">ဝန်စရိတ်ဒေတာရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="expense_added">ကုန်ကျစရိတ်ကိုအောင်မြင်စွာကဆက်ပြောသည်</string>
+    <string name="expense_error_occured">မှားယွင်းမှုတစ်ခုဖြစ်ပွားခဲ့သည်။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="pick_up_date">(အိတ်ရုတ်သိမ်းနေ့စွဲ:</string>
+    <string name="select_all">အားလုံးကို Select လုပ်ပါ</string>
+    <string name="bag">အိတ်</string>
+    <string name="please_enter_valid_vehicle_no">အဘယ်သူမျှမခိုင်လုံသောမော်တော်ယာဉ်ပေးပါ။ အဆိုပါရိုက်ထည့်ပါ</string>
+    <string name="please_enter_valid_vehicle_weight">ခိုင်လုံသောမော်တော်ယာဉ်အလေးချိန်ရိုက်ထည့်ပေးပါ</string>
+    <string name="please_enter_valid_remark">ခိုင်လုံသောမှတ်ချက်ရိုက်ထည့်ပေးပါ</string>
+    <string name="please_choose_valid_date">မှန်ကန်သောရက်စွဲတစ်ခုကို select ပေးပါ</string>
+    <string name="harvest_collection_planned_successfully">စပါးရိတ်ရာကာလငွေကောက်ခံစီစဉ်ထားအောင်မြင်စွာ</string>
+    <string name="failed_to_plan_harvest_collection">အစီအစဉ်သီးနှံစုဆောင်းမှုရန်မအောင်မြင်ခဲ့ပါ။ ထပ်ကြိုးစားပါ</string>
+    <string name="please_select">ကို select ပေးပါ</string>
+    <string name="harvest_plan_activity_title">သီးနှံစုဆောင်းမှု</string>
+    <string name="no_data_available_to_plan_harvest">သီးနှံစီမံကိန်းရေးဆွဲခြင်းများအတွက်ရရှိနိုင်မပါဒေတာရှိပါတယ်။ ထပ်ကြိုးစားပါ</string>
+    <string name="failed_to_load_plan_harvest">သီးနှံစီမံကိန်းရေးဆွဲခြင်းဘို့ဝန်လယ်ကွင်းရန်မအောင်မြင်ခဲ့ပါ။ ထပ်ကြိုးစားပါ</string>
+    <string name="farm_details">form ကိုဖျေါပွခကျြ</string>
+    <string name="harvest_done_date">စပါးရိတ်ရာကာလနေ့စွဲ</string>
+    <string name="bag_details">အိတ်ဖျေါပွခကျြ</string>
+    <string name="you_must_fill_this_field_first">သင်ပထမဦးဆုံးဒီလယ်ကိုဖြည့်ပါရှိရမည်</string>
+    <string name="harvest_data">စပါးရိတ်ရာကာလဒေတာ</string>
+    <string name="do_you_want_to_submit_this_data">သင်ဤဒေတာကိုတင်ပြချင်ပါသလား?</string>
+    <string name="cancel">cancel</string>
+    <string name="please_fill_out_this_field">ဒီလယ်ကိုဖြည့်စွက်ပေးပါ</string>
+    <string name="are_you_want_to_submit_this_data">သင်ကဒီဒေတာကိုတင်ပြချင်သည်မှာသေချာသလား?</string>
+    <string name="failed_to_add_harvest_data">ရိတ်သိမ်း data တွေကို add ရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="your_data_saved">သင့်ရဲ့ဒေတာတွေကိုသိမ်းဆည်းလိုက်ပြီဖြစ်သည်။</string>
+    <string name="bags_no">အိတ်မပါ</string>
+    <string name="weight_in_kgs">အလေးချိန် (ကီလိုဂရမ်အတွက်)</string>
+    <string name="step_2_enter_bag_details">အဆင့် 2: အိတ်အသေးစိတ်များထည့်ရန်</string>
+    <string name="enter_bag_no_and_weights_in_which_crop_can_be_seen">သီးနှံကြည့်ရှုနိုင်ပါသည်သောအလေးအိတ်နံပါတ်နှင့်အလေးချိန် Enter</string>
+    <string name="step_1_enter_farmer_details">အဆင့် 1: Enter လယ်သမားအသေးစိတျ</string>
+    <string name="enter_crop_area_in_which_crop_can_be_seen">သီးနှံကြည့်ရှုနိုင်ပါသည်ရသောသီးနှံဧရိယာ Enter</string>
+
+    <string name="framer_lot_no">lot_no</string>
+    <string name="farmer_no_of_farms">လယ်ကွင်းအရေအတွက်</string>
+    <string name="location_permission_title">တည်နေရာခွင့်ပြုချက်လိုအပ်</string>
+    <string name="location_permission_message">ဤလျှောက်လွှာကိုတည်နေရာခွင့်ပြုချက်လိုအပ်သည်, တည်နေရာလုပ်ဆောင်နိုင်စွမ်းကိုသုံးစွဲဖို့ကိုလက်မခံကျေးဇူးပြုပြီး</string>
+    <string name="toast_permission_denied">ခွင့်တောင်းမှုငြင်းဆိုခြင်း</string>
+    <string name="farm_fragment_toast_selected">Selected</string>
+    <string name="farm_fragment_dates_not_equal">ရက်စွဲများ Non-မရှိခဲ့, ထည့်သွင်းနေကြသည် ...</string>
+    <string name="farm_fragment_in_expecption">ချွင်းချက်များတွင်ထည့်သွင်း ...</string>
+    <string name="frm_fragment_no_previous_date">အဘယ်သူမျှမကယခင်နေ့စွဲဖြည့်စွက်ပေးနေ ...</string>
+    <string name="failed_load_farm">ဝန်လယ်ကွင်းရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+
+    <string name="enter_germination_heading">အပင်ပေါက်ရန်အတွက်နှင့်လွတ်အသေးစိတ်ကို Enter</string>
+    <string name="germination_desc_msg">ငါသည်ပညာရှိ၏ဟုနမူနာအောက်ကဒေသများရှိတိုင်းတာသည့်ဧရိယာရိုက်ထည့်ပေးပါ။ သငျသညျအနညျးဆုံး 3 နမူနာရိုက်ထည့်ရမည်ဖြစ်သည်။</string>
+    <string name="sample1_msg">* နမူနာ 1</string>
+    <string name="configured_area_hint">(စတုရန်းပေအတွက်) Not Configured ကိုဧရိယာ</string>
+    <string name="p_p_spacing_in_inches_hint">(လက်မအတွင်း), P-P ကိုကြားကာလ</string>
+    <string name="r_r_spacing_in_inches_hint">(လက်မအတွင်း) R-R ကိုကြားကာလ</string>
+    <string name="ideal_population_label">စံပြလူဦးရေ</string>
+    <string name="actual_population_hint">အမှန်တကယ်လူဦးရေ</string>
+    <string name="germination_label">အပင်ပေါက်ရန်အတွက်</string>
+    <string name="total_farm_population_label">စုစုပေါင်းစိုက်ပျိုးရေးလူဦးရေ</string>
+    <string name="sample2_label">* နမူနာ 2</string>
+    <string name="sample3_label">* နမူနာ 3</string>
+    <string name="average_p_p_spacing_label">ပျမ်းမျှ P-P ကို ​​Interval သည်:</string>
+    <string name="average_r_r_spacing_label">ပျမ်းမျှ R-R ကို Interval သည်:</string>
+    <string name="average_germination_label">ပျမ်းမျှအပင်ပေါက်ရန်အတွက်:</string>
+    <string name="germination_sapcing_activity_title">အပင်ပေါက်ရန်အတွက်နှင့်အကွာ</string>
+    <string name="enter_configured_of_sample1_msg">နမူနာ 1 ရဲ့ config ကိုလယ်ပြင်ကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="enter_pp_spacing_of_sample1_msg">အစီအစဉ်နမူနာ 1 စက်ရုံရိုက်ထည့်ပေးပါကြားကာလ</string>
+    <string name="enter_rr_spacing_of_sample1_msg">နမူနာတစ်ခုလိုင်းကြားကာလကိုရိုက်ထည့်ပေးပါ 1</string>
+    <string name="enter_actual_pop_of_sample1_msg">နမူနာ၏အမှန်တကယ်လူဦးရေကိုရိုက်ထည့်ပေးပါ 1</string>
+    <string name="invalid_area_msg">မှားနေသောလယ်ပြင်</string>
+    <string name="invalid_pp_spacing_msg">မှားနေသော, P-P ကို ​​Interval သည်</string>
+    <string name="invalid_rr_spacing_msg">မှားနေသော R-R ကို Interval သည်</string>
+    <string name="invalid_population_msg">မှားနေသောလူဦးရေ</string>
+    <string name="enter_configured_of_sample2_msg">နမူနာများ၏ configured ကိုလယ်ဝင် ကျေးဇူးပြု. 2</string>
+    <string name="enter_pp_spacing_of_sample2_msg">အစီအစဉ်နမူနာ 2 စက်ရုံရိုက်ထည့်ပေးပါကြားကာလ</string>
+    <string name="enter_rr_spacing_of_sample2_msg">နမူနာတစ်ခုလိုင်းကြားကာလကိုရိုက်ထည့်ပေးပါ 2</string>
+    <string name="enter_actual_pop_of_sample2_msg">နမူနာ၏အမှန်တကယ်လူဦးရေကိုရိုက်ထည့်ပေးပါ 2</string>
+
+    <string name="enter_configured_of_sample3_msg">နမူနာများ၏ config ကိုဧရိယာကိုရိုက်ထည့်ပေးပါ 3</string>
+    <string name="enter_pp_spacing_of_sample3_msg">အစီအစဉ်နမူနာ 3 စက်ရုံရိုက်ထည့်ပေးပါကြားကာလ</string>
+    <string name="enter_rr_spacing_of_sample3_msg">နမူနာတစ်ခုတန်းကြားကာလကိုရိုက်ထည့်ပေးပါ 3</string>
+    <string name="enter_actual_pop_of_sample3_msg">နမူနာ၏အမှန်တကယ်လူဦးရေကိုရိုက်ထည့်ပေးပါ 3</string>
+    <string name="fill_fourth_sample_msg">ပထမဦးဆုံး 4 နမူနာဖြည့်ပါ</string>
+    <string name="fill_all_field_of_sample4">အားလုံးနမူနာ 4 လယ်ကွင်းဖြည့်ပါ</string>
+    <string name="fill_all_field_of_sample5">အားလုံးနမူနာ 5 လယ်ကွင်းဖြည့်ပါ</string>
+    <string name="germination_submitted_success_msg">အပင်ပေါက်ရန်အတွက်ဒေတာများကိုအောင်မြင်စွာ updated ။</string>
+    <string name="germination_update_fail_msg">ယင်းအပင်ပေါက်ရန်အတွက်ကြားကာလကို update ရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="harvest_done_date_label">စပါးရိတ်ရာကာလနေ့စွဲ</string>
+    <string name="weighment_date_label">အလေးချိန်၏နေ့စွဲ</string>
+    <string name="harvested_area_label">စပါးရိတ်ရာကာလ၏ဖျော်ဖြေမှု</string>
+    <string name="standing_area_label">အမြဲတမ်းဧရိယာ</string>
+    <string name="bag_details_label">အိတ်အသေးစိတ်</string>
+    <string name="weight_in_kgs_label">အလေးချိန် (ကီလိုဂရမ်အတွက်)</string>
+    <string name="harvest_report_activity_title">စပါးရိတ်ရာကာလအစီရင်ခံစာ</string>
+    <string name="bags_no_label">အိတ်မပါ</string>
+
+    <string name="stock_weight_label">စတော့အိတ်အလေးချိန်:</string>
+    <string name="bags_blk_label">အိတ် (Blk):</string>
+    <string name="remark_label">comment:</string>
+    <string name="vehicle_weight_label">ယာဉ်အလေးချိန်:</string>
+    <string name="total_bags_label">စုစုပေါင်းအိတ်:</string>
+
+    <string name="acre_msg">ဧက</string>
+    <string name="growing_area_msg">မျိုးစေ့ကြဲဧရိယာ</string>
+    <string name="farm_area_label">ကွင်းဆင်းဧရိယာ</string>
+    <string name="address_label">နေရပ်လိပ်စာ:</string>
+    <string name="profile_btn_update">Update ကို</string>
+    <string name="password_label">Password ကို</string>
+
+    <string name="vehicle_number">မော်တော်ယာဉ်အရေအတွက်က</string>
+    <string name="vehicle_net_weight">မော်တော်ယာဉ်၏ Net ကအလေးချိန်</string>
+    <string name="remark">မှတ်ချက်</string>
+
+    <string name="total_planned_weight">စုစုပေါင်းစီစဉ်ထားအလေးချိန်</string>
+    <string name="farm_details_view_area">field အမြင်</string>
+    <string name="farm_details_edit_details">ပြင်ဆင်ရန်အသေးစိတျ</string>
+    <string name="previous_visits_label">နောက်ဆုံးခရီးစဉ်ကို</string>
+    <string name="forget_password_activity_title">Password ကိုပြန်ညှိမှု</string>
+    <string name="show_sample_germination_activity_title">နမူနာအပင်ပေါက်ရန်အတွက်နှင့် Space</string>
+
+
+    <string name="add_expense_title">Image ကို Add!</string>
+
+
+    <string name="visit_button_label">အဆိုပါခရီးစဉ်</string>
+    <string name="harvest_button_label">ရိတ်သိမ်း</string>
+    <string name="flowering_date_hint">ပန်းပွင့်နေ့စွဲ</string>
+    <string name="harvesting_date_hint">ရိတ်သိမ်းသည့်ရက်စွဲ</string>
+    <string name="bag_added_harvest">အိတ်အောင်မြင်စွာကဆက်ပြောသည်</string>
+    <string name="setting_change_language">ပြောင်းလဲမှုဘာသာစကား</string>
+
+    <string name="login_hint_password">Password ကို</string>
+    <string name="add_expense_take_photo">image ကိုကလစ်နှိပ်ပါ</string>
+    <string name="add_expense_choose_from_library">စာကြည့်တိုက်ကနေကို Select လုပ်ပါ</string>
+    <string name="add_expense_cancel">cancel</string>
+    <string name="expense_content_amount">ရာသီခွင်:</string>
+    <string name="txt_select_a_language">ဘာသာစကားများကိုရွေးချယ်ပါ▼</string>
+
+    <!--18/1/19-->
+    <string name="configured_area_in_sqm_label">(စင်တီမီတာ၌) Not Configured ကိုဧရိယာ</string>
+    <string name="plant_to_plant_spacing_label">စက်ရုံ Interval သည်မှစက်ရုံ:</string>
+    <string name="row_to_row_spacing_label">အတန်း Interval သည်မှ row:</string>
+    <string name="activity_details_label">activity ကိုဖျေါပွခကျြ</string>
+    <string name="description_label">ဖော်ပြချက်:</string>
+    <string name="chemical_label">ဓါတုဗေဒ</string>
+    <string name="quantity_label">အရေအတွက်:</string>
+    <string name="i_have_completed_the_activity_label">ငါလှုပ်ရှားမှုပြီးစီးခဲ့ပါပြီ။</string>
+    <string name="activity_inputs_label">input input ကို</string>
+    <string name="number_of_labour_hint">အလုပ်သမားအရေအတွက်</string>
+    <string name="labour_total_cost_hint">အဆိုပါအလုပ်သမား</string>
+    <string name="number_of_machines_hint">စက်တွေအရေအတွက်</string>
+    <string name="machine_total_cost_hint">စက်တွေစုစုပေါင်းကုန်ကျစရိတ်</string>
+    <string name="chemical_quantity_hint">ဓာတုငွေပမာဏ</string>
+    <string name="total_cost_of_chemical_hint">ဓာတုစုစုပေါင်းကုန်ကျစရိတ်</string>
+    <string name="chemicals_added_label">ဓာတု ADDED</string>
+    <string name="chemicals_label">ဓာတု: -</string>
+    <string name="chemical_name_label">ဓာတုနာမကိုအမှီ</string>
+    <string name="upload_images_label">လွှတ်တင်ခြင်းပုံရိပ်</string>
+    <string name="farmer_reply_hint">လယ်သမားရဲ့အဖြေ</string>
+    >
+    <!--19/1/19-->
+    <string name="capture_all_images_msg">အားလုံးပုံရိပ်တွေကိုဖမ်းယူပေးပါ။</string>
+    <string name="cannot_view_farm_in_offline_msg">သငျသညျအော့ဖ်လိုင်း mode မှာလယ်မြေဧရိယာကိုမမွငျနိုငျသညျ။</string>
+    <string name="no_data_for_this_visit_msg">ဒီခရီးစဉ်များအတွက်ရရှိနိုင်မပါဒေတာရှိပါတယ်။</string>
+    <string name="view_germination_label">အပင်ပေါက်ရန်အတွက်ကြည့်ရှုပါ</string>
+    <string name="add_germination_label">အပင်ပေါက်ရန်အတွက် Add</string>
+    <string name="fail_to_load_farm_data">ဝန်လယ်ယာဒေတာရန်မအောင်မြင်ခဲ့ပါ။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="no_chart_data_msg">ဇယားများအတွက်ရရှိနိုင်မပါဒေတာရှိပါတယ်</string>
+    <string name="location_unavailable">မရရှိနိုင်ပါ</string>
+    <string name="probability">အခွင့်အလမ်း</string>
+    <string name="rain">မိုးရေ</string>
+    <string name="wind">လေ</string>
+    <string name="humidity">စိုထိုင်းဆ</string>
+    <string name="cloud_cover">မိုဃ်းတိမ်ကိုအဖုံး</string>
+    <string name="city">မြို့</string>
+    <string name="region">ဧရိယာ</string>
+    <string name="weather">ရာသီဥတု</string>
+    <string name="today_s_weather_report">ယနေ့ရာသီဥတုအစီရင်ခံစာ</string>
+    <string name="max">အများစု</string>
+    <string name="min">နိမ့်ဆုံး</string>
+    <string name="sort_by">စီ</string>
+    <string name="harvest_date_high_to_low">စပါးရိတ်ရာကာလနေ့စွဲ - နိမ့်ဆုံးမှအမြင့်ဆုံး</string>
+    <string name="standing_area_high_to_low">အမြဲတမ်းဇုန် - အမြင့်ဆုံးမှအနိမ့်ဆုံးမှ</string>
+    <string name="standing_area_low_to_high">အမြဲတမ်းဧရိယာ - အမြင့်ဆုံးမှနိမ့်ဆုံး</string>
+
+    <string name="open">ဖွင့်လှစ်</string>
+    <string name="close">ပိတ်</string>
+    <string name="otp_message">OTP Enter</string>
+    <string name="loading">ဒါဟာတင်ဖြစ်ပါတယ် ...</string>
+    <string name="invalid_code_message_label">မှားနေသောကုဒ်</string>
+    <string name="invalid_number_message_label">မမှန်ကန်တဲ့ဖုန်းနံပါတ်ကို</string>
+    <string name="message_quota_finished_message_label">သင့်အနေဖြင့်ရဲ့ login တက်ရောက်သူန့်သတ်ချက်ထက်ကျော်လွန်ပါပြီ</string>
+    <string name="title_activity_check_area_map">မြေပုံ</string>
+    <string name="title_activity_show_area_on_map">မြေပုံ</string>
+    <string name="season_label">ရာသီ</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="msg_token_fmt">တိုကင်</string>
+    <string name="input_cost_head_label">အဆင့် 1: Input အားကုန်ကျစရိတ် Add</string>
+    <string name="resource_cost_head_label">အဆင့် 2: တပတ်ရစ်အရင်းအမြစ်များထည့်သွင်းရန်</string>
+    <string name="resource_name_hint">အရင်းအမြစ်အမည်ဖြင့်</string>
+    <string name="txt_no_cost_and_resource_data_avaialble">ရရှိနိုင်ပါ input ကိုကုန်ကျစရိတ်နှင့်သယံဇာတဒေတာအဘယ်သူမျှမ</string>
+    <string name="enter_area_hint">ဒေသ Enter</string>
+    <string name="no_of_days_offline_exceeded">ဆာဗာမှနေ့စဉ်တစ်ပြိုင်တည်းချိန်ကိုက် ကျေးဇူးပြု. , သငျသညျ 3 ရက်အတွင်းဦးရေအများဆုံးများအတွက်အော့ဖ်လိုင်း mode မှာရှိနိုင်ပါသည်</string>
+    <string name="map_option_bottom_sheet">အနေအထားကို Select လုပ်ပါ</string>
+    <string name="map_option_easy_mode">လွယ်ကူသောအနေအထား</string>
+    <string name="map_option_normal_mode">ပုံမှန်အခွအေနေ</string>
+    <string name="area_entere_manually_msg">တိုင်းဒေသကြီးကိုယ်တိုင်ထည့်သွင်းတာဖြစ်ပါတယ်</string>
+    <string name="nutrient_management_label">အာဟာရစံချိန်</string>
+    <string name="weight_management_label">အလေးချိန်စံချိန်</string>
+    <string name="pest_management_label">ပိုးသတ်ဆေးစံချိန်</string>
+    <string name="soil_moisture_level_label">မြေဆီလွှာတွင်အစိုဓာတ်အဆင့်ကိုစံချိန်တင်</string>
+    <string name="add_comment_label">မှတ်ချက် Add</string>
+    <string name="update_standing_area">Update ကိုရပ်ဧရိယာ</string>
+    <string name="add_photo_msg">add ဓာတ်ပုံကို</string>
+    <string name="farms_label">လယ်ယာ</string>
+    <string name="farmers_label">လယ်သမား</string>
+    <string name="add_more_details_label">အသေးစိတ် Add</string>
+    <string name="remove_details_label">remove အားအသေးစိတ်အချက်အလက်</string>
+    <string name="no_germination_available_msg">အဘယ်သူမျှမပင်ပေါက်ရန်အတွက်သေးပေါင်းထည့်ပြီးပါပြီ</string>
+    <string name="enter_weight_label">အလေးချိန် Enter:</string>
+    <string name="invalid_input_msg">မှားနေသော Input</string>
+    <string name="standing_area_not_available_harvest_msg">အမြဲတမ်းလယ်ကွင်းစပါးရိတ်ရာကာလအဘို့အမရရှိနိုင်</string>
+    <string name="bags_qty_label">ထုပ်ပိုးအရေအတွက်</string>
+    <string name="enter_total_weghts_of_packing_count_msg">အဆိုပါထုပ်ပိုးအရေအတွက်စုစုပေါင်းအလေးချိန်ရိုက်ထည့်ပေးပါ</string>
+    <string name="enter_packing_count_msg">အဆိုပါထုပ်ပိုးအရေအတွက်ရိုက်ထည့်ပေးပါ</string>
+    <string name="select_harvest_done_date_msg">စပါးရိတ်ရာကာလနေ့စွဲကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="enter_weighment_date_msg">ရက်စွဲကိုအလေးချိန်ရိုက်ထည့်ပေးပါ</string>
+    <string name="enter_harvested_area_msg">အဆိုပါရိတ်သိမ်းဧရိယာရိုက်ထည့်ပေးပါ</string>
+    <string name="add_farm_label">ပုံစံ Add</string>
+    <string name="add_more_farm_label">ပိုပြီးပုံစံ Add</string>
+    <string name="help_label">ကူညီပါ</string>
+    <string name="crop_loss_damage_labe">သီးနှံဆုံးရှုံးမှု</string>
+    <string name="version_label">လျှောက်လွှာဗားရှင်း:</string>
+    <string name="near_me_label">ငါ့ကိုအနီး</string>
+    <string name="submit_area">ဧရိယာ Submit</string>
+    <string name="add_more_label">ပိုပြီး Add</string>
+    <string name="no_actual_area_available_go_to_capture">အဘယ်သူမျှမအစစ်အမှန်လယ်ကိုမရရှိနိုင်ပါသည်ဖမ်းယူလယ်ပြင်သို့ သွား. ကျေးဇူးတင်</string>
+    <string name="add_existing_farm_title">လက်ရှိလယ်သမားမှလယ်ယာ Add</string>
+    <string name="dash">-</string>
+    <string name="farm_id_label">Form ကိုအိုင်ဒီ:</string>
+    <string name="farm_name_label">လယ်ယာ name ကို</string>
+    <string name="acres_msg_brkt">(ဧက)</string>
+    <string name="hectare_msg_brkt">(Ha)</string>
+    <string name="please_try_again_later_msg">နောက်တခါထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="account_deactivated_contact_admin_msg">ပရိုဖိုင်းကိုပိတ်ထားလိုက်ပါသည်။ reactivity မှသင်၏စီမံအုပ်ချုပ်သူကိုဆက်သွယ်ပါ။</string>
+    <string name="notification_label">သတိပေးချက်</string>
+    <string name="txt_no_timeline_data_avaialble">မရှိနိုင်ပါအချိန်ဇယားဒေတာ</string>
+    <string name="txt_no_notification_available">ရရှိနိုင်ပါအကြောင်းကြားစာကိုအဘယ်သူမျှမ</string>
+    <string name="txt_no_harvest_data_avaialble">မရှိနိုင်ပါသီးနှံဒေတာ</string>
+    <string name="landing_filter">အဆိုပါ filter</string>
+    <string name="password_updated">Update ကိုဆက်ခံ</string>
+    <string name="enter_bag_no_and_weights_in_which_crop_can_be_seen_easy">သီးနှံကြည့်ရှုနိုင်ပါသည်ထားတဲ့အတွက်စုစုပေါင်းအလေးချိန်နှင့်ထုပ်အရေအတွက် Enter</string>
+    <string name="invalid_number_please_check">မှားနေသောနံပါတ်, ကျေးဇူးပြု. စစ်ဆေးမှုများ</string>
+    <string name="submit_label_login">Submit</string>
+    <string name="bigha_msg_brkt">(Bigha)</string>
+    <string name="please_select_chemical_msg">ဓါတုဗေဒကို select ပေးပါ</string>
+    <string name="please_select_chemical_unit_msg">ဓာတုယူနစ်ကို select ပေးပါ</string>
+    <string name="no_harvest_paln_data_avaialble_label">စံချိန်စီစဉ်ထားသီးနှံအဘို့မျှမတွေ့</string>
+    <string name="no_harvest_data_available">မှတ်တမ်းများသီးနှံစုဆောင်းခြင်းများအတွက်မျှမတွေ့</string>
+    <string name="expense_type_hint">ကုန်ကျစရိတ်အမျိုးအစား Enter</string>
+    <string name="harvest_date_exp_label_act">သီးနှံနေ့စွဲ (အမှန်တကယ်)</string>
+    <string name="harvest_date_exp_label_exp">စပါးရိတ်ရာကာလ၏နေ့စွဲ (လိုအပ်)</string>
+    <string name="adhaar_label">အခြေစိုက်စခန်း</string>
+    <string name="address_line_1_label">လိပ်စာလိုင်းမျှ။ 1</string>
+    <string name="address_line_2_label">လိပ်စာလိုင်းမျှ။ 2</string>
+    <string name="india_label">အိန္ဒိယ</string>
+    <string name="bank_name_label">ဘဏ်အမည်</string>
+    <string name="account_number_label">အကောင့်နံပါတ်</string>
+    <string name="account_holder_name_label">အကောင့် Holder ရဲ့အမည်</string>
+    <string name="ifsc_code_label">Ifsc ကုဒ်</string>
+    <string name="branch_label">ဘဏ်ခွဲအ</string>
+    <string name="current_crop_label">လက်ရှိသီးနှံ</string>
+    <string name="submit_area_label">ဧရိယာ Submit</string>
+    <string name="area_label">ဧရိယာ</string>
+    <string name="multiple_login_msg">CropTrails အခြားဖုန်းပေါ်မှာဖွင့်လှစ်သည်။ ဒီဖုန်းကိုသုံးစွဲဖို့နောက်တဖန် login ပေးပါ။</string>
+    <string name="farmer_and_farm_added_succes_msg">လယ်သမားနှင့်လယ်ယာမြေကိုအောင်မြင်စွာပူးပေါင်း</string>
+    <string name="already_registered_mobile_msg">ယခုပင်လျှင်မှတ်ပုံတင်မိုဘိုင်းနံပါတ်</string>
+    <string name="failed_add_farm_and_farmer_msg">Connect လယ်သမားနှင့်လယ်ယာရန်မအောင်မြင်ခဲ့ပါ</string>
+    <string name="login_again_label">login ကိုထပ်</string>
+    <string name="select_irri_source_prompt">တစ်ဦးဆည်မြောင်းအရင်းအမြစ်ကို Select လုပ်ပါ</string>
+    <string name="select_irri_type_prompt">ဆည်မြောင်းအမျိုးအစားကိုရွေးပါ</string>
+    <string name="select_soil_type_prompt">မြေဆီလွှာတွင်အမျိုးအစားကိုရွေးပါ</string>
+    <string name="select_season_prompt">ရာသီကို Select လုပ်ပါ</string>
+    <string name="failed_to_load_data_msg">ဝန်ဒေတာမအောင်မြင်, ကျေးဇူးပြု. နောက်မှထပ်ကြိုးစား</string>
+    <string name="enter_farm_id_msg">ပုံစံအိုင်ဒီကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="enter_farm_area_msg">လယ်ပြင်ကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="select_season_msg">ရာသီဥတုကို select ပေးပါ</string>
+    <string name="farm_added_success_msg">Form ကိုအောင်မြင်စွာကဆက်ပြောသည်</string>
+    <string name="failed_add_farm_msg">လယ်ပြင် add ရန်မအောင်မြင်ခဲ့ပါ, ကျေးဇူးပြု. ထပ်ကြိုးစား</string>
+    <string name="enter_sowing_date_hint">မျိုးစေ့ကြဲရာနေ့စွဲကိုရိုက်ထည့်</string>
+    <string name="enter_expected_flowering_date_hint">အဆိုပါမျှော်လင့်ထားသည့်ပန်းပွင့်နေ့စွဲကိုရိုက်ထည့်</string>
+    <string name="enter_expected_harvesting_date_hint">မျှော်လင့်ထားသည့်ကောက်ရိတ်သိမ်းနေ့စွဲကိုရိုက်ထည့်</string>
+    <string name="total_expense_labe">စုစုပေါင်းကုန်ကျစရိတ်:</string>
+    <string name="sure_want_to_enter_actual_flowering_mg">သင်ပန်းပွင့်ရက်စွဲကိုရိုက်ထည့်ချင်သေချာပါသလား?</string>
+    <string name="sure_want_to_enter_actual_harvest_mg">သင်အမှန်တကယ်ရိတ်သိမ်းနေ့စွဲကိုရိုက်ထည့်ချင်သင်သေချာပါသလား?</string>
+    <string name="view_more_label">ထိုအကြည့်ရှု</string>
+    <string name="now_not_allowed_to_add_activity_msg">သငျသညျလှုပ်ရှားမှုပေါင်းထည့်ခွင့်ရှိသည်မဟုတ်တော့</string>
+    <string name="add_input_cost_label">input ကိုကုန်ကျစရိတ် Add</string>
+    <string name="you_can_add_upto_10_visit_in_offline">သင်သာအော့ဖ်လိုင်း mode မှာလယ်မြေ 10 လာရောက်လည်ပတ်သူမှတက် add နိုင်ပါတယ်</string>
+    <string name="timeline_activity_label">timeline ကိုလှုပ်ရှားမှု</string>
+    <string name="no_data_found_for_activity_msg">ဒေတာကဒီလှုပ်ရှားမှုမတွေ့ပါ</string>
+    <string name="error_occurred_msg">မှားယွင်းမှုတစ်ခုဖြစ်ပွားခဲ့သည်။</string>
+    <string name="no_image_found_for_activity_msg">ပုံရိပ်ကဒီလှုပ်ရှားမှုမတွေ့ပါ</string>
+    <string name="soil_moisture">မြေဆီလွှာတွင်အစိုဓာတ်ကို</string>
+    <string name="material_label">ပစ္စည်း</string>
+    <string name="days_label">နေ့</string>
+    <string name="seed_provided_on_label">အမျိုးအနွယ်ကိုထောက်ပံ့ပေး</string>
+    <string name="qty_seed_provided_label">အရေအတွက် (အမျိုးအနွယ်ပေးအပ်)</string>
+    <string name="grade_d">grade ဃ</string>
+    <string name="grade_c">တန်းက c</string>
+    <string name="grade_b">တန်းခ</string>
+    <string name="grade_a">တန်းတစ်ဦးက</string>
+    <string name="farmer_not_allowed_to_add_area_msg">လယ်သမားလယ်ကိုထည့်သွင်းဖို့ခွင့်မပြု</string>
+    <string name="details_label">ဖေါ်ပြချက်</string>
+    <string name="sample_label">နမူနာ</string>
+    <string name="sample_data_stored_msg">နမူနာဒေတာကိုအောင်မြင်စွာကောက်ယူ</string>
+    <string name="weight_label">အလေးချိန်</string>
+    <string name="kg_label">ကီလိုဂရမ်</string>
+    <string name="total_expenses_label">စုစုပေါင်းကုန်ကျစရိတ်</string>
+    <string name="monthly_expenses_expense">လစဉ်ကုန်ကျစရိတ်</string>
+    <string name="remove_label">remove အား</string>
+    <string name="calendar_activity_details_label">ပြက္ခဒိန်လုပ်ဆောင်ချက်ဖျေါပွခကျြ</string>
+    <string name="farmer_cost_title">လယ်သမားကုန်ကျစရိတ်</string>
+    <string name="fail_to_load_cost_msg">ဝန်ကုန်ကျစရိတ်ဒေတာမအောင်မြင်, ကျေးဇူးပြု. နောက်မှထပ်ကြိုးစား</string>
+    <string name="input_cost_and_resource_title">input ကုန်ကျစရိတ်နှင့်အရင်းအမြစ်များအသုံးပြုကြသည်</string>
+    <string name="enter_expense_ammount_msg">သုံးစွဲငွေပမာဏရိုက်ထည့်ပေးပါ</string>
+    <string name="enter_date_of_expense_msg">အသုံးစရိတ်၏နေ့စွဲကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="enter_expense_reson_msg">ကုန်ကျစရိတ်များအတွက်အကြောင်းပြချက်ရိုက်ထည့်ပေးပါ</string>
+    <string name="cost_added_sussessful_msg">လယ်သမားကုန်ကျစရိတ်ကိုအောင်မြင်စွာကဆက်ပြောသည်</string>
+    <string name="failed_to_add_farmer_expense">ကုန်ကျစရိတ်ကိုထည့်သွင်းရန်မအောင်မြင်ခဲ့ပါ, နောက်မှာထပ်ကြိုးစားကြည့်ပါ</string>
+    <string name="select_cost_type_promt">input ကိုကုန်ကျစရိတ်အမျိုးအစားကိုရွေးချယ်ပါ</string>
+    <string name="select_resource_type_prompt">သယံဇာတအမျိုးအစားကိုရွေးပါ</string>
+    <string name="other_labe">အခြား</string>
+    <string name="select_cost_type_msg">ကုန်ကျစရိတ်မဆိုအမျိုးအစားကိုရွေးပါ ကျေးဇူးပြု.</string>
+    <string name="enter_cost_ammount_msg">ကုန်ကျစရိတ်ငွေပမာဏကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="enter_cost_date_msg">ကုန်ကျနေ့စွဲကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="enter_expense_type_msg">အသုံးစရိတ်အမျိုးအစားကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="select_resource_type_msg">မည်သည့်သယံဇာတအမျိုးအစားကိုရွေးပါ ကျေးဇူးပြု.</string>
+    <string name="please_enter_resource_qty_msg">အဆိုပါအပြောင်းအလဲနဲ့အရေအတွက်ရိုက်ထည့်ပေးပါ</string>
+    <string name="enter_resource_name_msg">သယံဇာတ name ကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="enter_resource_unit_msg">သယံဇာတယူနစ်ကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="select_date_msg">မည်သည့်ရက်စွဲကို Select လုပ်ပါ</string>
+    <string name="select_resource_use_date_msg">သယံဇာတအသုံးနေ့စွဲကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="data_submit_success_msg">အောင်မြင်စွာ Submitted ဒေတာများ</string>
+    <string name="failed_to_submit_resource_and_cost_msg">input ကိုကုန်ကျစရိတ်နှင့်သယံဇာတဒေတာတင်ပြရန်မအောင်မြင်, ကျေးဇူးပြု. နောက်မှထပ်ကြိုးစား</string>
+    <string name="need_to_fill_input_or_resorce_msg">သငျသညျတင်ပြရန် input ကိုကုန်ကျစရိတ်ပုံစံသို့မဟုတ်သယံဇာတအသုံးပုံစံလိုအပ်ပါတယ်</string>
+    <string name="enable_location_msg">သင့်တည်နေရာဝန်ဆောင်မှုကို enable ပေးပါ</string>
+    <string name="no_far_found_near_you">သငျသညျအနီးအဘယ်သူမျှမလယ်ကွင်းရှိပါတယ်</string>
+    <string name="input_cost_label">input ကုန်ကျစရိတ်</string>
+    <string name="farmer_details_label">လယ်သမားအသေးစိတ်</string>
+    <string name="farm_details_label">လယ်ယာ၏ဖော်ပြချက်</string>
+    <string name="uploaded_images_label">Uploaded ပုံများ</string>
+    <string name="expense_remove_success_msg">ကုန်ကျစရိတ်ကိုအောင်မြင်စွာဖယ်ရှား</string>
+    <string name="expense_remove_fail_msg">ရှင်းရှင်းလင်းလင်းအသုံးစရိတ်ရန်မအောင်မြင်ခဲ့ပါ</string>
+    <string name="confirm_remove_ecpense_msg">ဒီစရိတ်ဖယ်ရှားပစ်ရန်သေချာလား?</string>
+
+    <string name="enter_health_card_number_msg">မြေဆီကျန်းမာရေးကဒ်နံပါတ်ကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="enter_health_card_validity_date_start_msg">ကဒ်သက်တမ်းစတင်နေ့စွဲကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="enter_health_card_validity_date_end_msg">ကဒ်၏သက်တမ်း၏နောက်ဆုံးရက်စွဲကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="add_atleast_one_param_health_card">အနည်းဆုံးတဦးတည်း parameter သည် add ပေးပါ</string>
+    <string name="required_label">လိုအပ်သော</string>
+    <string name="capure_1_image_msg">ပထမဦးဆုံးပုံရိပ်ဖမ်းယူပေးပါ</string>
+    <string name="capure_2_image_msg">ဒုတိယပုံရိပ်ဖမ်းယူပေးပါ</string>
+    <string name="capure_3_image_msg">တတိယပုံရိပ်ကိုဖမ်းယူပေးပါ</string>
+    <string name="activity_added_success_msg">dynamic</string>
+    <string name="enter_health_card_sample_number_msg">မြေဆီလွှာကိုနမူနာအရေအတွက်အားရိုက်ထည့်ပေးပါ</string>
+    <string name="enter_health_card_sample_collect_date_msg">နမူနာစုဆောင်းခြင်းနေ့စွဲကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="card_please_enter_value_msg">တန်ဖိုးရိုက်ထည့်ပေးပါ</string>
+    <string name="card_please_enter_unit_msg">ယင်းယူနစ်ကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="enter_crop_id_msg">ပုံစံအိုင်ဒီကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="select_crop_for_farm_msg">လယ်ယာများအတွက်သီးနှံကို Select လုပ်ပါ</string>
+    <string name="select_crop_rompt">သီးနှံကို Select လုပ်ပါ</string>
+    <string name="soil_health_card_no_label">မြေဆီလွှာကိုကနျြးမာရေးကတ်မပါ။</string>
+    <string name="health_card_no_hint">* ကျန်းမာရေးကဒ်မပါ။</string>
+    <string name="validity_label">တရားဝင်မှု</string>
+    <string name="from_date_hint">ကနေ *</string>
+    <string name="to_date_hint">* သို့မရောက်မှီတိုင်အောင်</string>
+    <string name="parameters_label">parameter</string>
+    <string name="soil_sample_details_label">မြေဆီလွှာကိုနမူနာဖျေါပွခကျြ</string>
+    <string name="soil_sample_number_hint">* မြေဆီလွှာနမူနာအရေအတွက်</string>
+    <string name="sample_collected_on_hint">* နမူနာစုဆောင်းခြင်းနေ့စွဲ</string>
+    <string name="mobile_number_not_availbale_msg">မိုဘိုင်းနံပါတ်ကိုမရရှိနိုင်</string>
+    <string name="arrow_symbol">\ u2BC8</string>
+    <string name="sowing_date_not_available_label">မျိုးစေ့ကြဲရာရက်စွဲကိုမရရှိနိုင်သေးပါ</string>
+    <string name="sure_want_to_enter_sowing_date_mg">သင်မျိုးစေ့ကြဲရာ၏နေ့စွဲကိုရိုက်ထည့်ချင်တယ်သေချာပါသလား?</string>
+    <string name="add_sowing_date_msg">ရက်စွဲသည်မျိုးစေ့ကြဲကိုမရရှိနိုင်ဖြစ်ပါသည်, မျိုးစေ့ကြဲရာရက်စွဲကို add ကျေးဇူးပြုပြီး</string>
+    <string name="sowing_date_updated_success_msg">အောင်မြင်စွာ updated သလိုပဲနေ့စွဲ</string>
+    <string name="soil_health_card_label">မြေဆီလွှာတွင်ကျန်းမာရေးကဒ်</string>
+    <string name="no_soil_health_card_data_added_yet_msg">အဘယ်သူမျှမမြေဆီလွှာတွင်ကျန်းမာရေးကဒ်ဒေတာသေးပေါင်းထည့်ပြီးပါပြီ!</string>
+    <string name="add_new_sample_health_card_label">အသစ်ကနမူနာ Add</string>
+    <string name="soil_health_card_seen_and_addded_in_online_mode_msg">လောလောဆယ်မြေဆီလွှာတွင်ကျန်းမာရေးကဒ်ဒေတာကြည့်ရှုအားပေးမရနိုငျ / အွန်လိုင်း mode မှာထည့်သွင်း</string>
+    <string name="no_parameter_values_found_for_adding_soil_health_card">မျှမတွေ့သောမြေဆီလွှာကျန်းမာရေးကဒ် parameters တွေကို, သို့သော်လည်း parameter ကိုထည့်သွင်းဖို့သင့်ကုမ္ပဏီဆက်သွယ်နိုင်ပါသည်</string>
+    <string name="health_card_added_success_msg">အောင်မြင်စွာကဆက်ပြောသည်မြေဆီလွှာကိုကနျြးမာရေးကတ်</string>
+    <string name="laboratory_name">Lab ကအမည်အား</string>
+    <string name="select_parameter_prompt">parameter သည်ကို Select လုပ်ပါ</string>
+    <string name="test_value_hint">* စမ်းသပ်တန်ဖိုးကို</string>
+    <string name="unit_hint_star">* ယူနစ်</string>
+    <string name="add_health_card_title">add ကျန်းမာရေးကဒ်</string>
+    <string name="rainfall_label">မိုးရေ</string>
+    <string name="mm_unit">mm</string>
+    <string name="farm_coordinates_not_availabe_showing_weather_data_of_your_current_location">လယ်ယာကိုသြဒီနိတ်သင့်လက်ရှိတည်နေရာရာသီဥတု data တွေကိုဖေါ်ပြခြင်း, မရရှိနိုင်မဟုတ်</string>
+    <string name="showing_weather_data_of_your_farm_location">လယ်ယာတည်နေရာရာသီဥတုဒေတာဖေါ်ပြသည်</string>
+
+
+    <string name="please_zoom_map_msg_easy_mode">အတိုင်းအတာဧရိယာမှတဖန်မြေပုံနှင့်ထိပုတ်ပါချဲ့ ကျေးဇူးပြု.</string>
+    <string name="try_again_msg">ထပ်ကြိုးစားပါ</string>
+    <string name="failed_to_measure_area_msg">အတိုင်းအတာဧရိယာရန်မအောင်မြင်ခဲ့ပါ</string>
+    <string name="enter_laboratory_name_msg">ဓာတ်ခွဲခန်း name ကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="resources_used_label">အသုံးပြုအရင်းအမြစ်များ</string>
+    <string name="sample_number_label">နမူနာအရေအတွက်</string>
+    <string name="sample_collected_on_label">တွင်ကောက်ခံနမူနာ</string>
+    <string name="input_cost_type_label">input ကုန်ကျစရိတ်အမျိုးအစား</string>
+    <string name="added_by_label">Added အားဖြင့်</string>
+    <string name="pick_expense_date_hint">သုံးစွဲမှုနေ့စွဲ Pick</string>
+    <string name="pick_used_date_hint">တပတ်ရစ်နေ့စွဲ Pick</string>
+    <string name="expense_date_label">စရိတ်နေ့စွဲ</string>
+    <string name="resource_used_date_label">တပတ်ရစ်နေ့စွဲအရင်းအမြစ်</string>
+    <string name="resource_type_label">အရင်းအမြစ်အမျိုးအစား</string>
+    <string name="filter_by_label">filter အားဖြင့်</string>
+    <string name="harvest_label">စပါးရိတ်ရာကာလ</string>
+    <string name="weather_data_not_available_right_now_msg">ယခုမိုးလေဝသညာဘက် data တွေကိုရရှိနိုင်ဘူး။</string>
+    <string name="plant_population_label">စက်ရုံပြည်သူ့အင်အား</string>
+    <string name="input_cost_and_resource_label">input ကုန်ကျစရိတ်နှင့်အရင်းအမြစ်</string>
+    <string name="already_added_visit_for_today">အလည်အပတ်ပြီးသားယနေ့အဘို့အဆက်ပြောသည်ဖြစ်ပါတယ်။</string>
+    <string name="please_enter_seed_lot_number_label">အမျိုးအနွယ်ကိုအများကြီးအရေအတွက်ကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="pease_enter_dispached_area_label">စေလွှတ်ဧရိယာရိုက်ထည့်ပေးပါ</string>
+    <string name="please_enter_quantity_msg">အရေအတွက်ရိုက်ထည့်ပေးပါ</string>
+    <string name="please_enter_date_label">ရက်စွဲကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="failed_to_add_seed_issue_details_msg">အမျိုးအနွယ်ကိုပြဿနာအသေးစိတ်ကို add ရန်မအောင်မြင်ခဲ့ပါ</string>
+    <string name="seed_added_successful_msg">အမျိုးအနွယ်ကိုပြဿနာအသေးစိတ်ကိုအောင်မြင်စွာကဆက်ပြောသည်</string>
+    <string name="seed_quantity_label">အမျိုးအနွယ်ကိုပမာဏ</string>
+    <string name="seed_issue_label">အမျိုးအနွယ်ကို Issue</string>
+    <string name="seed_issue_details_label">အမျိုးအနွယ်ကိုပြဿနာအသေးစိတ်</string>
+    #VALUE!
+    <string name="plsease_select_atleast_one_farm">တဦးတည်းလယ်ယာ atleast add ပေးပါ</string>
+    <string name="please_select_a_farmer_msg">လယ်သမားရွေးချယ်ပါ။</string>
+    <string name="please_select_a_cluser_msg">တစ်စပျစ်သီးပြွတ်ရွေးချယ်ပါ။</string>
+    <string name="click_to_add_farm_msg">လယ်သမားအနည်းဆုံးတဦးတည်းလယ်ယာရှိရမည်။ လယ်ယာ add ဖို့ကိုနှိပ်ပါပေးပါ။</string>
+    <string name="enter_farmer_contact_number_msg">လယ်သမားအဆက်အသွယ်အရေအတွက်ကိုရိုက်ထည့်ပေးပါ။</string>
+    <string name="enter_farmer_name_msg">လယ်သမား name ကိုရိုက်ထည့်ပေးပါ။</string>
+    <string name="select_cluster_label">Cluster ကို Select လုပ်ပါ</string>
+    <string name="please_enter_password_msg">စကားဝှက်ကိုရိုက်ထည့်ပေးပါ</string>
+    <string name="satelite_view_label">Satelite ကြည့်ရန်</string>
+    <string name="average_value_label">ပျမ်းမျှ</string>
+    <string name="no_cluster_found_to_add_cluster">အဲဒီမှာလယ်ယာ add ရန်မစပျစ်သီးပြွတ်ဖြစ်ပါသည်, စပျစ်သီးပြွတ်ကိုထည့်သွင်းဖို့ကို web ရဲ့ login ကိုသွားပါ။</string>
+    <string name="invalid_ifsc_code_msg">မှားနေသော IFSC ကုဒ်</string>
+    <string name="please_enter_account_number">အကောင့်အရေအတွက်ကရိုက်ထည့်ပေးပါ</string>
+    <string name="please_enter_account_holder_name">အကောင့်ပိုင်ရှင်အမည်ရိုက်ထည့်ပေးပါ</string>
+    <string name="invalid_mobile_number_msg">မှားနေသောမိုဘိုင်းနံပါတ်</string>
+    <string name="invalid_aadhar_number_msg">မှားနေသော aadhar အရေအတွက်ကို</string>
+    <string name="no_data_available_msg">မရှိနိုင်ပါဒေတာ။</string>
+    <string name="loss_date_label">အရှုံးနေ့စွဲ</string>
+    <string name="addfarm_tour_farmer_sel_title">လယ်သမားရွေးချယ်ရေး</string>
+    <string name="addfarm_tour_farmer_sel_content">အဆိုပါ dropdown စာရင်းထဲကနေလယ်သမားကို Select လုပ်ပါ</string>
+    <string name="addfarm_tour_farmer_farmid_content">လယ်ယာအိုင်ဒီ Enter</string>
+    <string name="addfarm_tour_farmer_farmarea_content">လယ်ယာဧရိယာ Enter</string>
+    <string name="addfarm_tour_farmer_selcrop_content">Select လုပ်သီးနှံအမည်ဖြင့်</string>
+    <string name="addfarm_tour_farmer_selseason_content">သီးနှံရာသီကို Select လုပ်ပါ</string>
+    <string name="addfarm_tour_farmer_addmore_farm_content">သငျသညျမျိုးစုံစိုက်ခင်း add နိုင်ပါတယ်</string>
+    <string name="crop_track_label">သီးနှံ Track</string>
+    <string name="invalid_qr_code_msg">မှားနေသော QR ကုဒ်ကို</string>
+    <string name="scan_label">scan</string>
+    <string name="assign_crop_cycle">Assign သီးနှံသံသရာ</string>
+    <string name="select_crop_cycle_label">သီးနှံ Cycle ကို Select လုပ်ပါ</string>
+    <string name="cycle_name_label">သံသရာအမည်</string>
+    <string name="crop_name">သီးနှံအမည်</string>
+    <string name="growing_season">ကြီးထွားလာရာသီ</string>
+    <string name="growing_region">ကြီးထွားလာဒေသ</string>
+    <string name="confirmation">အတည်ပြုခြင်း</string>
+    <string name="sure_want_to_add_crop_cycle">သငျသညျသေချာသင်လယ်ယာဤသီးနှံသံသရာ assign ချင်ကြဘူးပါသလား?</string>
+    <string name="or_fingerprint_login">သို့မဟုတ်လက်ဗွေရဲ့ login</string>
+    <string name="date_of_birth_label">မွေးရက်</string>
+    <string name="cast_category">Cast ကို / Category:</string>
+    <string name="estimated_consumer_income">ခန့်မှန်းခြေစားသုံးသူဝင်ငွေခွန်</string>
+    <string name="male_label">အထီး</string>
+    <string name="female_label">အမြိုးသမီး</string>
+    <string name="back_label">ပြန်.</string>
+    <string name="seed_label">အစေ့</string>
+    <string name="expected_label">မျှော်လင့်ထားသည့်</string>
+    <string name="actual_label">အမှန်တကယ်</string>
+    <string name="company_label">ကုမ္ပဏီ</string>
+    <string name="breed">အမျိုး</string>
+    <string name="fertilizer_ors_organic">ဓာတ်မြေသြဇာ / အော်ဂဲနစ်</string>
+    <string name="price_label">စျေးနှုန်း</string>
+    <string name="how_much">ဘယ်လောက်လဲ</string>
+    <string name="pesticides">ပိုးသတ်ဆေး</string>
+    <string name="type">ပုံစံ</string>
+    <string name="workers">အလုပ်သမားများ</string>
+    <string name="work_where">အလုပ်ရှိရာ</string>
+    <string name="tractor">လယ်ထွန်စက်</string>
+    <string name="from_where">ဘယ်ကလဲ</string>
+    <string name="how_many_hours">ဘယ်နှစ်ယောက်နာရီ</string>
+    <string name="expenses_incurred">မြှုတ်ကုန်ကျစရိတ်</string>
+    <string name="harvester">စပါးရိတ်ရာကာလ</string>
+    <string name="pestilence">ကာလနာ</string>
+    <string name="measures">ဆောင်ရွက်ချက်များ</string>
+    <string name="product_sales">ထုတ်ကုန် / အရောင်း</string>
+    <string name="dimensions_unit">dimensions / ယူနစ်</string>
+    <string name="buyer">ဝယ်ခြမ်းသူ</string>
+    <string name="add_more_crop_label">ပိုပြီးသီးနှံအသေးစိတ်ကို Add</string>
+    <string name="profit_loss">အမြတ်အစွန်း / အရှုံး</string>
+    <string name="satisafactory_1_to_2">ကျေနပ် 1 မှ 2</string>
+    <string name="add_crop_details">သီးနှံအသေးစိတျ Add</string>
+    <string name="shareholder">အစုစပ်ပါဝင်သူ</string>
+    <string name="is_shareholder">ရှယ်ယာရှင်ဖြစ်ပါသည်</string>
+    <string name="how_many_certificate">ဘယ်နှစ်ယောက်လက်မှတ်</string>
+    <string name="how_much_value">ဘယ်လောက်တန်ဖိုးက</string>
+    <string name="is_there_a_share_certificate">ရှယ်ယာလက်မှတ်ရှိပါသလား?</string>
+    <string name="cows_cattle_cows_buffalo">နွား / ကျွဲနွားနွား / Buffalo</string>
+    <string name="count">ရေတွက်</string>
+    <string name="daily_milk_sale_in_litter">(လီတာအတွက်) နေ့စဉ်နို့ရောင်းမည်</string>
+    <string name="sale_price_approx">ရောင်းရန်စျေးနှုန်း (အနီးစပ်ဆုံး)</string>
+    <string name="if_there_are_chickens_goats_or_other_animals">ကြက်, ဆိတ်, သို့မဟုတ်အခြားတိရိစ္ဆာန်များရှိပါတယ် အကယ်. ?</string>
+    <string name="is_using_smart_phone">စမတ်ဖုန်းကို အသုံးပြု. သလဲ?</string>
+    <string name="permission_necessary">ခွင့်ပြုချက်လိုအပ်သော</string>
+    <string name="external_storage_permission_is_necessary">external storage ခွင့်ပြုချက်လိုအပ်</string>
+    <string name="is_owned">ပိုင်ဆိုင်သည်</string>
+    <string name="fpo_msg_if_season_past">အောက်ပါဒေသများ၏ရသော, သင် FPO မှတဆင့်အကူအညီတောင်းလက်ခံရရှိကြပြီလော</string>
+    <string name="fpo_msg_if_season_present">လာမယ့်ရာသီအတွက်အောက်ပါလုပ်ငန်းစဉ်များ၏အရာအဘို့သင် FPO မှတဆင့်အကူအညီလိုသလဲ?</string>
+    <string name="app_tour">App ကိုလှည့်လည်</string>
+    <string name="hide_details_label">ဖျောက်အသေးစိတ်</string>
+    <string name="pan">PAN</string>
+
+<!--    <string name="hide_details_label">ဖျောက်အသေးစိတ်</string>-->
+    <string name="select_farmer">လယ်သမားကို Select လုပ်ပါ</string>
+    <string name="system_auto_detect_mode">System ကိုအော်တို Mode ကိုထောက်လှမ်း</string>
+    <string name="contact_us_label">ကြှနျုပျတို့ကိုဆကျသှယျရနျ</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="add_query">Query Add</string>
+    <string name="enter_query">Entery Query</string>
+    <string name="query_registered_successfully">သငျသညျစုံစမ်းမှုကိုအောင်မြင်စွာမှတ်ပုံတင်ထားပြီး</string>
+    <string name="failed_to_submit_query">သင့်ရဲ့စုံစမ်းမှုတင်သွင်းရန်မအောင်မြင်ခဲ့ပါ</string>
+    <string name="select_query_type">အကြောင်းအရာတစ်ခုကိုရွေးချယ်ပါ</string>
+    <string name="please_select_subject">ဘာသာရပ်ကို select ပေးပါ</string>
+    <string name="please_enter_query">query ကိုရိုက်ထည့်ပါ</string>
+    <string name="query">မေးခွန်း</string>
+    <string name="please_select_at_least_1_farm_to_go_offline">အော့ဖ်လိုင်းသွားကြဖို့အနည်းဆုံး 1 လယ်ယာကို select ပေးပါ</string>
+    <string name="you_can_only_take_10_farms_in_offline_mode_at_a_time">သင်တစ်ဦးအချိန်တွင်အော့ဖ်လိုင်း mode မှာ 10 ခြံမှသာယူနိုင်ပါသည်</string>
+    <string name="unauthorized_access">ခွင့်ပြုချက်မရှိဘဲဝင်ရောက်ခွင့်, တဖန် login ကျေးဇူးပြု.</string>
+    <string name="authorization_expired">authorization လက္ခဏာသက်သေကိုထပ်ရဲ့ login, ကျေးဇူးပြု. ကုန်ဆုံး</string>
+    <string name="change_company">ပြောင်းလဲမှုကိုကုမ္ပဏီ</string>
+    <string name="please_select_a_company">ကုမ္ပဏီကို select ပေးပါ</string>
+    <string name="select_company">Select လုပ်ကုမ္ပဏီ</string>
+    <string name="no_other_company_available">သင်တို့အဘို့အမရရှိနိုင်အဘယ်သူမျှမကအခြားကုမ္ပဏီရှိပါတယ်</string>
+    <string name="switch_account">switch အကောင့်</string>
+    <string name="verify_farm_area_label">လယ်ယာဧရိယာ Verify</string>
+    <string name="pin_drop_mode">pin Drop Mode ကို</string>
+    <string name="walk_around_mode">Mode ကိုခန့်လမ်းလျှောက်</string>
+    <string name="easy_mode">လွယ်ကူသော Mode ကို</string><string name="clear_area_to_add_point">ရှင်းရှင်းလင်းလင်းဧရိယာနှင့် add အမှတ် ကျေးဇူးပြု.</string>
+    <string name="title_activity_maps_new">မြေပုံ</string>
+    <string name="invalid_point_marked_msg">မှားနေသောအမှတ်မရွေး, ခိုင်လုံသောအချက်အထိမ်းအမှတ် ကျေးဇူးပြု.</string>
+
+    <string name="personal_info">လယ်သမားကိုယ်ရေးကိုယ်တာသတင်းအချက်အလက်များ</string>
+    <string name="farmer_social_info">လယ်သမားလူမှုသတင်းအချက်အလက်</string>
+    <string name="civil_status">ပြည်တွင်းစစ်အခြေအနေ</string>
+    <string name="spouse">အိမ်ထောင်ဖက်အမည်</string>
+    <string name="benefeciary">အသကျမှေးမှုကြေးဇူးခံစားရသူ</string>
+    <string name="identity">အထောက်အထား</string>
+    <string name="bank">ကမ်း</string>
+    <string name="upi">UPI</string>
+    <string name="select_civil_status">ပြည်တွင်းစစ်အခြေအနေကို Select လုပ်ပါ</string>
+    <string name="select_land_category">မြေအမျိုးအစားကိုရွေးချယ်ပါ</string>
+    <string name="select_cropping_pattern">ကောက်ပဲသီးနှံများကိုစံနမူနာကို Select လုပ်ပါ</string>
+    <string name="select_planting_method">Method ကိုစိုက်ကို Select လုပ်ပါ</string>
+    <string name="date_of_transplanting">အစားထိုးကုသမှု၏နေ့စွဲ</string>
+    <string name="swift_code">ဆွစ်ကုဒ်အမှတ်</string>
+    <string name="farmer_contact_information">လယ်သမားကိုဆက်သွယ်ရန်သတင်းအချက်အလက်</string>
+    <string name="farmer_family_information">လယ်သမားမိသားစုသတင်းအချက်အလက်</string>
+    <string name="farmer_family_members">မိသားစုအဖွဲ့ဝင်များအရေအတွက်</string>
+    <string name="adults_count">အရွယ်ရောက်ပြီးသူအရေအတွက်</string>
+    <string name="kids_count">ကလေးများအရေအတွက်</string>
+    <string name="dependent_count">မှီခိုအရေအတွက်</string>
+    <string name="farmer_financial_information">လယ်သမားဘဏ္ဍာရေးသတင်းအချက်အလက်</string>
+    <string name="select_state">Select လုပ်ပြည်နယ်</string>
+    <string name="select_district">Select လုပ်ခရိုင်</string>
+    <string name="data_sync_success">ဒေတာကိုအောင်မြင်စွာညှိ</string>
+    <string name="refresh">Refresh ဒေတာများ</string>
+
+
+</resources>

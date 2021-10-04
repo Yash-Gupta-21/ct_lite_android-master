@@ -1,0 +1,243 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_setting"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_setting" />
+
+    <TextView
+        android:id="@+id/area_tv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_setting"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@color/button_background_color"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/button_text_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/acer_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_setting"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/area_tv"
+        android:text="@string/acers_label"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/back_to_farm"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@id/acer_label"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:background="@android:color/white"
+        android:padding="@dimen/_1sdp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/farm_icon_map" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/progressBar_cyclic"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:elevation="@dimen/_30sdp"
+        android:src="@drawable/croptrails_loader2"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:text="Heading: 0.0"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/tvHeadingMove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHeading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Heading: 0.0"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_12ssp" />
+
+        <ImageView
+            android:id="@+id/imageViewCompass"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_below="@+id/tvHeadingMove"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img_compass"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:elevation="5dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:layout_marginBottom="@dimen/_80sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp">
+
+
+
+        <pl.droidsonroids.gif.GifImageView
+
+            android:visibility="gone"
+            android:id="@+id/imageGif1"
+            android:layout_centerInParent="true"
+            android:src="@drawable/arrow_north_1"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/image1"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img_1"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:rotation="45"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:id="@+id/image2"
+            android:src="@drawable/img_1"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/image3"
+            android:visibility="invisible"
+            android:src="@drawable/img_3"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/image4"
+            android:rotation="45"
+            android:visibility="invisible"
+            android:src="@drawable/img_3"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/image5"
+            android:visibility="invisible"
+            android:src="@drawable/img_5"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"/>
+
+        <pl.droidsonroids.gif.GifImageView
+
+            android:layout_alignParentBottom="true"
+            android:id="@+id/image6"
+            android:visibility="invisible"
+            android:rotation="45"
+            android:src="@drawable/img_5"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/image7"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_5"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:visibility="invisible"
+            android:rotation="45"
+            android:id="@+id/image8"
+            android:src="@drawable/img_7"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:id="@+id/googleMapTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/button_background_color"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="Show Directions"
+        android:textColor="@color/button_text_color"
+        android:textSize="20sp" />
+
+    <include
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adLayout"
+        layout="@layout/ad_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>
+
+
+
+
+

@@ -1,0 +1,175 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'io.fabric'
+android {
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+    compileSdkVersion 29
+    defaultConfig {
+//        applicationId "com.i9930.croptrails"
+        applicationId "com.i9930.croptrails"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 161
+        versionName "1.1.161"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        dataBinding {
+            enabled = true
+        }
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false // Add this
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        /*ct{
+            initWith debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }*/
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    buildToolsVersion = '28.0.3'
+}
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+}
+dependencies {
+//WaterMark
+    implementation 'com.github.shallcheek:RatingBar:v1.0'
+    implementation 'com.huangyz0918:androidwm-light:0.1.2'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0-beta01'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.0'
+    implementation 'com.android.support:appcompat-v7:29.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test:runner:1.3.0-alpha05'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0-alpha05'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.0'
+    implementation 'com.android.support:design:29.0.0'
+    implementation 'com.android.support:support-v4:29.0.0'
+    implementation 'com.android.support:support-vector-drawable:29.0.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:cardview-v7:29.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation 'com.github.chathuralakmal:AndroidImagePopup:1.2.1'
+    implementation 'com.github.Lukle:ClickableAreasImages:v0.1'
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.4'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.android.support:gridlayout-v7:29.0.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
+    implementation 'com.github.dimorinny:show-case-card-view:0.0.4'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.github.GrenderG:Toasty:1.3.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    // Room
+    implementation "android.arch.persistence.room:runtime:1.1.1"
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+    implementation "android.arch.persistence.room:rxjava2:1.1.1"
+
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.maps.android:android-maps-utils:1.0.2'
+    //RxJava
+    implementation "io.reactivex.rxjava2:rxjava:2.1.16"
+    implementation "io.reactivex.rxjava2:rxandroid:2.0.2"
+
+    implementation 'com.github.Utkarsh167:MultiSelectImage:6'
+    implementation 'com.hedgehog.ratingbar:app:1.1.2'
+    implementation 'com.diegodobelo.expandingview:expanding-view:0.9.4'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    implementation 'androidx.work:work-runtime:2.3.4';
+    implementation 'androidx.work:work-rxjava2:2.3.4';
+    androidTestImplementation 'androidx.work:work-testing:2.3.4';
+    implementation 'com.google.firebase:firebase-core:17.3.0';
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.1'    
+    implementation 'com.google.firebase:firebase-messaging:20.1.4'
+    implementation 'com.google.android.libraries.places:places:2.2.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.hbb20:ccp:2.4.0'
+    implementation 'me.relex:circleindicator:2.1.2'
+    implementation 'com.google.android.play:core:1.7.2'
+
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+
+    /*app tour guide*/
+    implementation 'com.github.deano2390:MaterialShowcaseView:1.3.4'
+
+    implementation 'uk.co.samuelwall:material-tap-target-prompt:3.0.0'
+
+    implementation 'com.github.vihtarb:tooltip:0.2.0'
+    //Aws s3
+    /* implementation 'com.amazonaws:aws-android-sdk-s3:2.15.+'
+    implementation('com.amazonaws:aws-android-sdk-mobile-client:2.15.+@aar') { transitive = true }
+    implementation('com.amazonaws:aws-android-sdk-auth-userpools:2.15.+@aar') { transitive = true }*/
+
+    implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+    implementation 'ai.api:sdk:2.0.7@aar'
+    implementation 'ai.api:libai:1.6.12'
+    api 'org.apache.commons:commons-lang3:3.10'
+//    implementation 'com.esri.arcgisruntime:arcgis-android:100.8.0'
+//    implementation 'com.esri.arcgis.android:arcgis-android:10.2.9'
+
+// Interner speed
+    implementation 'fr.bmartel:jspeedtest:1.32.1'
+    implementation 'com.github.anastr:speedviewlib:1.3.0'
+    implementation 'com.github.oatrice:internet-speed-testing:1.0.1'
+    implementation 'gr.escsoft.michaelprimez.searchablespinner:SearchableSpinner:1.0.9'
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+//    implementation 'com.google.android.material:material:1.3.0-rc01'
+//    implementation 'com.google.android.material:material:1.1.0-alpha07'
+//    implementation 'com.google.android.material:material:1.3.0-rc01'
+    implementation 'com.github.IBM:auto-format-edit-text:1.0.3-beta'
+    implementation 'android.helper:datetimepickeredittext:1.0.4'
+    implementation 'com.github.douglasjunior:android-simple-tooltip:1.0.0-rc.0'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    implementation 'com.github.halilozercan:Android-Download-Manager-Pro:0.0.1'
+    implementation 'me.saket:better-link-movement-method:2.2.0'
+    implementation 'com.github.oatrice:internet-speed-testing:1.0.1'
+    implementation 'com.google.android.exoplayer:exoplayer:2.8.4'
+    //For google ad
+    implementation ('com.google.android.gms:play-services-ads:20.2.0'){ force = true; }
+    implementation 'com.varunjohn1990.libraries:WhatsappMessengerView:2.1.0'
+    implementation platform('com.google.firebase:firebase-bom:26.1.1')
+
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+

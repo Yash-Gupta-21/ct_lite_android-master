@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        tools:context=".CropCycle.Create.CreateCropCycleActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar_setting"
+            layout="@layout/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_setting"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_130sdp">
+
+                <LinearLayout
+                    android:id="@+id/personalOuter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/cycleDetailsRel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:text="Crop cycle details"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageView
+                            android:id="@+id/arrowCycle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:src="@drawable/ic_keyboard_arrow_down_grey_24dp">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cycleDetailsInner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:hint="@{@string/crop_cycle_name + '*'}"
+                            android:padding="1dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etCropCycleName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="4dp"
+
+                                android:inputType="textPersonName"
+                                android:padding="8dp"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                            android:id="@+id/cropSpinner"
+                            app:RevealEmptyText="@string/select_crop_star"
+                            app:ShowBorders="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/spinner_background2"
+                            android:gravity="center_horizontal"
+                            android:outlineProvider="background" />
+
+                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                            android:id="@+id/seasonSpinner"
+                            app:RevealEmptyText="@string/select_season_star"
+                            app:ShowBorders="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/spinner_background2"
+                            android:gravity="center_horizontal"
+                            android:outlineProvider="background" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:hint="@{@string/growing_region + '*'}"
+                            android:padding="1dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etRegion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="4dp"
+
+                                android:inputType="textPersonName"
+                                android:padding="8dp"
+                                android:textColor="@color/black"
+                                 />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                            android:id="@+id/soilTypeSpinner"
+                            app:RevealEmptyText="@string/select_soil_type_star"
+                            app:ShowBorders="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/spinner_background2"
+                            android:gravity="center_horizontal"
+                            android:outlineProvider="background" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:hint="@{@string/expected_harvesting_day + '*'}"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:padding="2dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etExpHarvestDay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="4dp"
+
+                                android:inputType="number"
+                                android:padding="8dp"
+                                android:textColor="@color/black"
+                                 />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:hint="@{@string/expected_flowering_day + '*'}"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:padding="2dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etExpFlowerDay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="4dp"
+                                android:inputType="number"
+                                android:padding="8dp"
+                                android:textColor="@color/black"
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/activityRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addMore"
+                app:backgroundTint="@color/colorPrimary"
+                app:fabCustomSize="@dimen/_35sdp"
+                app:srcCompat="@drawable/ic_add_white_36dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:clickable="true"
+                android:tooltipText="Add more activities" />
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/submit"
+                android:textColor="@color/white"></Button>
+
+            <View
+                android:id="@+id/connectivityLine"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/yellow"
+                android:visibility="gone" />
+
+            <include
+
+                android:id="@+id/adLayout"
+                layout="@layout/ad_view_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

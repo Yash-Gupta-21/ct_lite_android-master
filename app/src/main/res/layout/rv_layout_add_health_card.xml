@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_2sdp"
+    android:layout_marginRight="@dimen/_2sdp"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_3sdp"
+    app:cardElevation="@dimen/_3sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="@dimen/_3sdp"
+            android:id="@+id/removeParamImage"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_cross_delete_red"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp" />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_15sdp">
+
+            <Spinner
+                android:id="@+id/paramSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ti_farmarea"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/previous_crops_array"
+                android:gravity="center"
+                android:padding="3dp"
+                android:stateListAnimator="@drawable/spinner_state_listener_animator"></Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ti_farmid"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight=".5"
+                    android:paddingBottom="@dimen/_3sdp">
+
+                    <EditText
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:id="@+id/valueEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:hint="@string/test_value_hint"
+                        android:inputType="numberDecimal"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/yel_gre_mix_dark" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ti_farmid"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight=".5"
+                    android:paddingBottom="@dimen/_3sdp">
+
+                    <EditText
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:id="@+id/unitEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:hint="@string/unit_hint_star"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/yel_gre_mix_dark" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

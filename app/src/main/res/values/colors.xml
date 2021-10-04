@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vw_BgToolBar">#373B3E</color>
+    <color name="vw_BgRv">#191919</color>
+    <color name="vw_BgItem">#353535</color>
+
+    <color name="vw_ShadowItem">#94333232</color>
+
+    <color name="vw_BgRvFileDivider">#EEEEEE</color>
+    <color name="colorPrimary">#008000</color>
+    <!--<color name="colorPrimaryDark">#4a6082</color>-->
+    <color name="colorPrimaryDark">#008000</color>
+    <color name="colorAccent">#ff5252</color>
+    <color name="main_theme">#3c4e66</color>
+    <color name="dark_theme">#2f3e50</color>
+    <color name="dimnish_white">#F8F8FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_grey">#bababa</color>
+    <color name="turqouise">#40e0d0</color>
+    <color name="dark_turqouise">#00ad9f</color>
+
+    <color name="light_turqouise">#7fffff</color>
+    <color name="new_theme_dark">#362e3e</color>
+    <color name="red">#F92D18</color>
+    <!--
+        <color name="new_theme">#6ea300</color>
+    -->
+
+    <color name="new_theme_light_leaf1">#009300</color>
+    <color name="new_theme_light_leaf">#00ad00</color>
+    <color name="new_theme_leaf">#4D6E29</color>
+    <color name="new_theme">#00ad00</color>
+    <color name="new_theme_status_bar">#008000</color>
+    <color name="notification_unread">#007100</color>
+    <color name="notification_read">#FAFAFA</color>
+
+    <color name="new_theme_light">#5d77a2</color>
+    <color name="new_theme_middle_color">#4a6082</color>
+    <color name="light_text_color">#e4ebed</color>
+    <color name="faded_text">#AFB6C0</color>
+    <color name="darkgrey">#A9A9A9</color>
+    <color name="lightgreen">#DEFDE0</color>
+    <color name="darkgreen">#008000</color>
+    <color name="yellow1">#FBFB06</color>
+    <color name="yellow2">#e5e506</color>
+    <color name="yellow3">#e5d306</color>
+    <color name="yellow4">#eee041</color>
+    <color name="yellow5">#fbca02</color>
+    <color name="opaque">#80ffffff</color>
+    <color name="carbon_black">#323232</color>
+
+    <!--old colors-->
+    <!-- <color name="start_color_butt">#17B7C8</color>
+     <color name="middle_color_butt">#3ABDB4</color>
+     <color name="end_color_butt">#3EC5CC</color>
+     <color name="li8_grey_back">#DCDEA0</color>
+     <color name="li8_new_theme_back">#bec8da</color>
+     <color name="intense_li8_new_theme_back">#eff1f6</color>
+     <color name="end_color_butt">#3EC5CC</color>-->
+
+    <color name="start_color_butt">#ffcc33</color>
+    <!--
+        <color name="middle_color_butt">#f7cb00</color>
+    -->
+    <color name="middle_color_butt">#ffc107</color>
+    <color name="end_color_butt">#e6ac00</color>
+    <color name="li8_grey_back">#dcdea0</color>
+
+    <color name="li8_new_theme_back">#f5f5f0</color>
+    <color name="intense_li8_new_theme_back">#ffffff</color>
+
+    <color name="intense_li8_new_theme_back_for_landing">#f8f8ec</color>
+    <color name="black">#000000</color>
+    <color name="grey">#888888</color>
+    <color name="yel_gre_mix_dark">#8b9800</color>
+    <color name="yel_gre_mix_primary">#bfc931</color>
+    <color name="yel_gre_mix_light">#f4fc66</color>
+    <color name="dark_grey">#1e1c1c</color>
+    <!-- New Colors -->
+    <color name="background_color">#ffffff</color>
+    <color name="textcolor">#000000</color>
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395FF</color>
+    <color name="bg_screen4">#c873f4</color>
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+    <color name="blue_light_color">#8fa3bd</color>
+    <color name="blue_middle_color">#afbed0</color>
+    <color name="blue_intense_light_color">#B3cfd8e3</color>
+    <color name="blue1">#5FCE02</color>
+    <color name="blue2">#f64c73</color>
+    <color name="blue3">#4d6e29</color>
+    <color name="blue4">#40e0d0</color>
+    <color name="blue5">#4a6082</color>
+    <array name="mix_blue">
+        <item>@color/blue1</item>
+        <item>@color/blue2</item>
+        <item>@color/blue3</item>
+        <item>@color/blue4</item>
+        <item>@color/blue5</item>
+    </array>
+    <color name="timeline_act_done">#008000</color>
+    <color name="timeline_act_today_pending">#ff471a</color>
+    <color name="timeline_vis_today">#00aaff</color>
+    <color name="timeline_vis_done">#33bbff</color>
+    <color name="timeline_act_upcomming">#696969</color>
+    <color name="timeline_act_pending">#ff471a</color>
+
+
+    <color name="single_text">#ffc107</color>
+
+
+
+    <color name="pink">#FF308E</color>
+    <color name="orange">#FA9301</color>
+    <color name="yellow">#F8D411</color>
+    <color name="blue">#20CBF3</color>
+    <color name="purple">#6F26FA</color>
+    <color name="green">#49CC56</color>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+
+    <color name="darkred1">#FFCC0000</color>
+    <color name="new_color">#2f2fFb</color>
+    <color name="dashboardcolo1">#ff5252</color>
+    <color name="dashboardcolor2">#00bfa5</color>
+    <color name="dashboardcolor3">#ff6e40</color>
+    <color name="dashboardcolor4">#00bcd4</color>
+    <color name="newwhite">#F8F8FF</color>
+
+    <integer-array name="androidcolors">
+        <item>@color/dashboardcolo1</item>
+        <item>@color/dashboardcolor2</item>
+        <item>@color/dashboardcolor3</item>
+        <item>@color/dashboardcolor4</item>
+    </integer-array>
+
+    <color name="dull_green">#699864</color>
+
+
+    <!-- PickerUI lines colors -->
+    <color name="lines_panel_pickerui">#aaaaaa</color>
+
+    <!-- PickerUI panel colors -->
+    <color name="background_panel_pickerui">#fffafafa</color>
+
+    <!-- PickerUI items colors -->
+    <color name="text_center_pickerui">#ffffffff</color>
+    <color name="text_no_center_pickerui">#fff</color>
+    <drawable name="list_item_selected">#ffffff</drawable>
+
+    <!-- PickerUI shadow colors -->
+    <color name="grey1">#00CCCCCC</color>
+    <color name="grey2">#10CCCCCC</color>
+    <color name="grey3">#20CCCCCC</color>
+    <color name="grey4">#30CCCCCC</color>
+    <color name="grey5">#50747474</color>
+    <color name="background_picker">#ff579fff</color>
+
+    <color name="button_text_color">#ffffff</color>
+    <color name="button_background_color">@color/darkgreen</color>
+
+    <color name="timeline_cal_act">#ff579fff</color>
+    <color name="timeline_farm">#00ad00</color>
+    <color name="timeline_visit">#ff579fff</color>
+    <color name="timeline_harvest">#d9ca0d</color>
+    <color name="timeline_seed_issue">#d9ca0d</color>
+    <color name="timeline_sell_record">#da7400</color>
+    <color name="timeline_plant_population">#286c00</color>
+    <color name="timeline_soil_health_card">#de9159</color>
+    <color name="timeline_loss_damage">#fd2332</color>
+    <color name="timeline_input_cost">#e19100</color>
+    <color name="timeline_resourced">#e6a426</color>
+    <color name="map_area_blue">#330000FF</color>
+    <color name="map_area_yellow">#3300ad00</color>
+
+
+</resources>

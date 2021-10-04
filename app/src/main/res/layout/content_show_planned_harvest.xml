@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/show_har_plan_rel_full_lay"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/whole_cv_farm_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardBackgroundColor="#F8F8FF"
+        app:cardCornerRadius="@dimen/_1sdp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <!--1nd linear layout-->
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.2"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/total_bag_count_show_hr_tv"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight=".3"
+                        android:background="@drawable/circle"
+                        android:gravity="center"
+                        android:text="123"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_20sdp"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:id="@+id/total_bags_label"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:textSize="@dimen/_8sdp"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_bags_label"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:id="@+id/plan_no_linear_lay"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.8"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_5sdp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/_2sdp">
+
+                            <TextView
+                                android:drawableLeft="@drawable/ic_harvest_planning"
+                                android:id="@+id/title_show_planning"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_3sdp"
+                                android:text="Plan - 01 "
+                                android:textSize="@dimen/_12ssp" />
+                            <TextView
+                                android:id="@+id/date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_3sdp"
+                                android:text="PickUpDate : 12/08/2018"
+                                android:textSize="@dimen/_10ssp" />
+
+
+                        </LinearLayout>
+                        <!-- <LinearLayout
+                             android:id="@+id/tv_addres_linear_lay"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:orientation="horizontal"
+                             android:weightSum="1">
+
+                             <TextView
+                                 android:layout_width="5dp"
+                                 android:layout_height="wrap_content"
+                                 android:layout_weight="0.3"
+                                 android:text="@string/setting_no_fathername"
+                                 android:textColor="?attr/textColor"
+                                 android:textSize="@dimen/_11ssp" />
+                             <TextView
+                                 android:id="@+id/farm_farmer_fathers_name"
+                                 android:layout_width="0dp"
+                                 android:layout_height="wrap_content"
+                                 android:layout_gravity="start"
+                                 android:layout_weight="0.7"
+                                 android:text=""
+                                 android:textColor="?attr/textColor"
+                                 android:textSize="@dimen/_11ssp" />
+
+                         </LinearLayout>-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/_3sdp"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/remark_label"
+                                    android:layout_weight=".2"
+                                    android:layout_width="0dp"
+                                    android:textSize="@dimen/_9sdp"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/remark_label"/>
+                                <TextView
+                                    android:textColor="@color/darkgreen"
+                                    android:id="@+id/remark_show_hr_tv"
+                                    android:gravity="start"
+                                    android:layout_weight=".8"
+                                    android:textSize="@dimen/_9sdp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Hello New comment"/>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--1nd linear layout end-->
+            <View
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="1px"
+                android:background="@color/darkgrey"
+                android:layout_gravity="center"
+                >
+
+            </View>
+            <!--2nd linear layout-->
+            <LinearLayout
+                android:id="@+id/weight_linear_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:paddingBottom="@dimen/_2sdp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:textColor="@color/darkgreen"
+                        android:id="@+id/vehicle_wt_show_hr_tv"
+                        android:text="@string/dash"
+                        android:gravity="center"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_weight=".2"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/vehicle_wt_label"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:textSize="@dimen/_8sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vehicle_weight_label" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkgrey"
+                    android:layout_gravity="center">
+                </View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:layout_weight="1">
+                    <TextView
+                        android:textColor="@color/darkgreen"
+                        android:id="@+id/stock_wt_show_hr_tv"
+                        android:text="@string/dash"
+                        android:layout_weight=".3"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/stock_wt_label"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:textSize="@dimen/_8sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stock_weight_label" />
+                </LinearLayout>
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkgrey"
+                    android:layout_gravity="center">
+
+                </View>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textColor="@color/darkgreen"
+                        android:gravity="center"
+                        android:id="@+id/blk_bag_count_show_hr_tv"
+                        android:text="@string/dash"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_weight=".3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/bags_blk_label"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:textSize="@dimen/_8sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bags_blk_label" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!--2nd linear layout end-->
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

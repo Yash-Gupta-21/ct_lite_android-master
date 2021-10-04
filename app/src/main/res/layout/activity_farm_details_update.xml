@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_lay_farm_det_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_setting"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/sowing_full_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/rel_sowing_inst"
+                    android:layout_width="match_parent"
+                    android:background="@color/li8_new_theme_back"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/black"
+                        android:id="@+id/sowing_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/update_farm_details_title"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_13sdp"/>
+                    <TextView
+                        android:id="@+id/sowing_instructions"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_below="@id/sowing_title"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/_11ssp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/update_farm_details_sub_msg"
+                        />
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/sowing_form"
+                    android:background="@color/white"
+                    android:layout_below="@id/rel_sowing_inst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <TextView
+                            android:layout_margin="@dimen/_10sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_width="0dp"
+                            android:layout_weight=".4"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13ssp"
+                            android:text="@string/irrigation_source_label"/>
+
+                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                            android:outlineProvider="background"
+                            app:RevealEmptyText="@string/select_irri_source_prompt"
+                            android:id="@+id/spinner_irrigation_source"
+                            android:layout_width="0dp"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".6"
+                            android:layout_height="wrap_content"></gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/faded_text"/>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <TextView
+                            android:layout_margin="@dimen/_10sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_width="0dp"
+                            android:layout_weight=".4"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13ssp"
+                            android:text="@string/irrigation_type"/>
+
+                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                            android:outlineProvider="background"
+                            android:id="@+id/spinner_irrigation_type"
+                            app:RevealEmptyText="@string/select_irri_type_prompt"
+                            android:entries="@array/irrigation_type_array"
+                            android:layout_width="0dp"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".6"
+                            android:layout_height="wrap_content"></gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/faded_text"/>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <TextView
+                            android:layout_margin="@dimen/_10sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_width="0dp"
+                            android:layout_weight=".4"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13ssp"
+                            android:text="@string/soil_type_label"/>
+
+                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                            android:outlineProvider="background"
+                            android:id="@+id/spinner_soil_type"
+                            app:RevealEmptyText="@string/select_soil_type_prompt"
+                            android:entries="@array/soil_type_array"
+                            android:layout_width="0dp"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".6"
+                            android:layout_height="wrap_content"></gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/faded_text"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <TextView
+                            android:layout_margin="@dimen/_10sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_width="0dp"
+                            android:layout_weight=".4"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13ssp"
+                            android:text="@string/previous_crop_label"/>
+
+
+                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                            android:id="@+id/cropSpinnerPrevious"
+                            android:layout_width="0dp"
+                            android:layout_weight=".6"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ti_farmarea"
+                            android:gravity="center_horizontal"
+                            android:outlineProvider="background"
+                            app:RevealEmptyText="@string/previous_crop_label"
+                            app:ShowBorders="true" />
+                        <AutoCompleteTextView
+                            android:visibility="gone"
+                            android:id="@+id/previousCropEt"
+                            android:hint="@string/previous_crop_label"
+                            android:layout_width="0dp"
+                            android:layout_weight=".6"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_gravity="center"
+
+                            android:layout_height="wrap_content"></AutoCompleteTextView>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/faded_text"/>
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <TextView
+                            android:layout_margin="@dimen/_10sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_width="0dp"
+                            android:layout_weight=".4"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13ssp"
+                            android:text="@string/sowing_date_label"/>
+
+                        <TextView
+                            android:drawableRight="@drawable/ic_mode_edit_black_18dp"
+                            android:id="@+id/sowing_date_et"
+                            android:cursorVisible="false"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_weight=".6"
+                            android:layout_width="0dp"
+                            android:hint="@string/enter_sowing_date_hint"
+                            android:clickable="true"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/faded_text"/>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <TextView
+                            android:layout_margin="@dimen/_10sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_width="0dp"
+                            android:layout_weight=".4"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13ssp"
+                            android:text="@string/expected_flowering_date_label"/>
+
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/exp_flowering_date_et"
+                            android:cursorVisible="false"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_weight=".6"
+                            android:clickable="true"
+                            android:layout_width="0dp"
+                            android:hint="@string/enter_expected_flowering_date_hint"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/faded_text"/>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <TextView
+                            android:layout_margin="@dimen/_10sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_width="0dp"
+                            android:layout_weight=".4"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13ssp"
+                            android:text="@string/expected_harvest_date_label"/>
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/exp_harvesting_date_et"
+                            android:cursorVisible="false"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_weight=".6"
+                            android:layout_width="0dp"
+                            android:hint="@string/enter_expected_harvesting_date_hint"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/faded_text"/>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <TextView
+                            android:layout_margin="@dimen/_10sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_width="0dp"
+                            android:layout_weight=".4"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13ssp"
+                            android:text="Seed Provided On"/>
+
+                        <EditText
+                            android:id="@+id/seed_provided_on_et"
+                            android:cursorVisible="false"
+                            android:gravity="center"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_weight=".6"
+                            android:layout_width="0dp"
+                            android:hint="Enter Seed Date"
+                            android:clickable="true"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/faded_text"/>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <TextView
+                            android:layout_margin="@dimen/_10sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_width="0dp"
+                            android:layout_weight=".4"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13ssp"
+                            android:text="Qty Seed Provided"/>
+
+                        <EditText
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_weight=".2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".4"
+                            android:layout_height="wrap_content"></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:background="@color/button_background_color"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_below="@id/sowing_full_layout"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/button_text_color"
+                android:id="@+id/update_farm_details"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15ssp"
+                android:padding="@dimen/_9sdp"
+                android:text="@string/submit_label"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+   <!-- <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/progressBar_cyclic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />-->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/progressBar_cyclic"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/croptrails_loader2"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/connectivityLine"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+</RelativeLayout>

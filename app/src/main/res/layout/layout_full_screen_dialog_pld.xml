@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/timeline_view_activity_parent_rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_20sdp"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_20sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_full_screen_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_full"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/new_theme"/>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/timeline_view_activity_full_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar_full_screen_dialog"
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/_5sdp">
+
+        <androidx.core.widget.NestedScrollView
+            android:paddingBottom="@dimen/_50sdp"
+            android:id="@+id/whole_nested_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/timeline_view_activity_inner_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:background="@color/intense_li8_new_theme_back"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:gravity="center_horizontal"
+                        android:background="@color/li8_new_theme_back"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/farm_detail_label_visit"
+                        android:textColor="@color/dark_theme"
+                        android:textStyle="bold"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/crop_loss_damage_labe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <!--<TextView
+                        android:id="@+id/vst_rprt_vst_no"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_15ssp"
+                        android:text="Visit Number : 23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />-->
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_3sdp"
+                        android:layout_below="@id/farm_detail_label_visit"
+                        android:id="@+id/vst_dt_nd_num"
+                        android:weightSum="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_weight=".5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:gravity="center_vertical"
+                                android:textStyle="bold"
+                                android:id="@+id/visit_number_timeline"
+                                android:padding="@dimen/_2sdp"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/darkgreen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""/>
+
+                            <TextView
+                                android:textColor="#696969"
+                                android:padding="@dimen/_1sdp"
+                                android:textSize="@dimen/_9sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/visit_number_label"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight=".5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:id="@+id/visited_on_timeline"
+                                android:padding="@dimen/_2sdp"
+                                android:textColor="@color/darkgreen"
+                                android:textSize="@dimen/_13sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""/>
+
+                            <TextView
+                                android:textColor="#696969"
+                                android:padding="@dimen/_1sdp"
+                                android:textSize="@dimen/_9sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/visited_on_label"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_3sdp"
+                        android:id="@+id/vst_rprt_lot_nd_frmr_name"
+                        android:layout_below="@id/vst_dt_nd_num"
+                        android:weightSum="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight=".5"
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:id="@+id/lot_no_timeline"
+                                android:padding="@dimen/_2sdp"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/darkgreen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""/>
+
+                            <TextView
+                                android:textColor="#696969"
+                                android:padding="@dimen/_1sdp"
+                                android:textSize="@dimen/_9sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/farm_id_label"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight=".5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:id="@+id/farmer_name_timeline"
+                                android:padding="@dimen/_2sdp"
+                                android:textColor="@color/darkgreen"
+                                android:textSize="@dimen/_13sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""/>
+
+                            <TextView
+                                android:textColor="#696969"
+                                android:padding="@dimen/_1sdp"
+                                android:textSize="@dimen/_9sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/farmer_name_hint"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/lossAreaTv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".30"
+                                android:maxLines="1"
+                                android:paddingLeft="@dimen/_3sdp"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_3sdp"
+                                android:paddingBottom="@dimen/_3sdp"
+                                android:text="@string/pld_acres_label"
+                                android:textSize="@dimen/_11ssp"
+                                tools:fontFamily="@font/roboto_thin" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/timeline_center_image"
+                                android:layout_weight=".05"
+                                android:maxLines="1"
+                                android:paddingLeft="@dimen/_3sdp"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_3sdp"
+                                android:paddingBottom="@dimen/_3sdp"
+                                android:text=":"
+                                android:textSize="@dimen/_11ssp"
+                                tools:fontFamily="@font/roboto_thin" />
+
+                            <TextView
+                                android:id="@+id/timelineLossArea"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/timeline_center_image"
+                                android:layout_weight=".65"
+                                android:maxLines="1"
+                                android:paddingLeft="@dimen/_3sdp"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_3sdp"
+                                android:paddingBottom="@dimen/_3sdp"
+                                android:text="-"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/sowingAreaLabel"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight=".30"
+                                android:ellipsize="end"
+                                android:padding="@dimen/_3sdp"
+                                android:text="@string/loss_date_label"
+                                android:textSize="@dimen/_11ssp" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/timeline_center_image"
+                                android:layout_weight=".05"
+                                android:maxLines="1"
+                                android:paddingLeft="@dimen/_3sdp"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_3sdp"
+                                android:paddingBottom="@dimen/_3sdp"
+                                android:text=":"
+                                android:textSize="@dimen/_11ssp"
+                                tools:fontFamily="@font/roboto_thin" />
+
+                            <TextView
+                                android:id="@+id/lossDateTv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/timeline_activity_type"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight=".65"
+                                android:ellipsize="end"
+                                android:padding="@dimen/_3sdp"
+                                android:text="-"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/standingAreaLabel"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/timeline_activity_type"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight=".30"
+                                android:ellipsize="end"
+                                android:padding="@dimen/_3sdp"
+                                android:text="@string/reason_for_pld_label"
+                                android:textSize="@dimen/_11ssp" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/timeline_center_image"
+                                android:layout_weight=".05"
+                                android:maxLines="1"
+                                android:paddingLeft="@dimen/_3sdp"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_3sdp"
+                                android:paddingBottom="@dimen/_3sdp"
+                                android:text=":"
+                                android:textSize="@dimen/_11ssp"
+                                tools:fontFamily="@font/roboto_thin" />
+
+                            <TextView
+                                android:id="@+id/lossReasonTv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/timeline_activity_type"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight=".65"
+                                android:ellipsize="end"
+                                android:padding="@dimen/_3sdp"
+                                android:text="-"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card1"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/addedByTvLabel"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/timeline_activity_type"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight=".30"
+                                android:ellipsize="end"
+                                android:padding="@dimen/_3sdp"
+                                android:text="@string/added_by_label"
+                                android:textSize="@dimen/_11ssp" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/timeline_center_image"
+                                android:layout_weight=".05"
+                                android:maxLines="1"
+                                android:paddingLeft="@dimen/_3sdp"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_3sdp"
+                                android:paddingBottom="@dimen/_3sdp"
+                                android:text=":"
+                                android:textSize="@dimen/_11ssp"
+                                tools:fontFamily="@font/roboto_thin" />
+
+                            <TextView
+                                android:id="@+id/addedByTv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/timeline_activity_type"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight=".65"
+                                android:ellipsize="end"
+                                android:padding="@dimen/_3sdp"
+                                android:text="-"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/whole_input_rel_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+                    <!--Gone above rel lay-->
+
+
+                    <LinearLayout
+                        android:id="@+id/images_linear_layout_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/farmer_reply_linear_lay"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/label_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/li8_new_theme_back"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/uploaded_images_label"
+                            android:textColor="@color/darkgreen"
+                            android:textSize="@dimen/_15ssp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@color/white"
+                            app:cardElevation="@dimen/_3sdp">
+
+                            <LinearLayout
+                                android:id="@+id/images_to_upload_lieanr_lay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/pld_acres_and_reason_linear_lay"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight=".5"
+                                        android:gravity="center">
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:id="@+id/farm_image1_timeline_visit"
+                                                android:layout_width="@dimen/_60sdp"
+                                                android:layout_height="@dimen/_60sdp"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginBottom="@dimen/_4sdp"
+                                                android:paddingBottom="@dimen/_4sdp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/photo_big" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@id/farm_image1_timeline_visit"
+                                                android:layout_centerHorizontal="true"
+                                                android:padding="@dimen/_5sdp"
+                                                android:text="@string/visit_farm_image1_msg"
+                                                android:textColor="@color/yel_gre_mix_dark"
+                                                android:textSize="@dimen/_11ssp" />
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight=".5"
+                                        android:gravity="center">
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:id="@+id/farm_image2_timeline_visit"
+                                                android:layout_width="@dimen/_60sdp"
+                                                android:layout_height="@dimen/_60sdp"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginBottom="@dimen/_4sdp"
+                                                android:paddingBottom="@dimen/_4sdp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/photo_big" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@id/farm_image2_timeline_visit"
+                                                android:layout_centerHorizontal="true"
+                                                android:padding="@dimen/_5sdp"
+                                                android:text="@string/visit_farm_image2_msg"
+                                                android:textColor="@color/yel_gre_mix_dark"
+                                                android:textSize="@dimen/_11ssp" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight=".5"
+                                        android:gravity="center">
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:id="@+id/farm_image3_timeline_visit"
+                                                android:layout_width="@dimen/_60sdp"
+                                                android:layout_height="@dimen/_60sdp"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginBottom="@dimen/_4sdp"
+                                                android:paddingBottom="@dimen/_4sdp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/photo_big" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@id/farm_image3_timeline_visit"
+                                                android:layout_centerHorizontal="true"
+                                                android:padding="@dimen/_5sdp"
+                                                android:text="@string/visit_farm_and_farmer_image_msg"
+                                                android:textColor="@color/yel_gre_mix_dark"
+                                                android:textSize="@dimen/_11ssp" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight=".5"
+                                        android:gravity="center">
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:id="@+id/farm_image4_timeline_visit"
+                                                android:layout_width="@dimen/_60sdp"
+                                                android:layout_height="@dimen/_60sdp"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginBottom="@dimen/_4sdp"
+                                                android:paddingBottom="@dimen/_4sdp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/photo_big" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@id/farm_image4_timeline_visit"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="@dimen/_15sdp"
+                                                android:gravity="center"
+                                                android:padding="@dimen/_5sdp"
+                                                android:text="@string/visit_selfie_famer_image_msg"
+                                                android:textColor="@color/yel_gre_mix_dark"
+                                                android:textSize="@dimen/_11ssp" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/extra_img_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight=".5"
+                                        android:gravity="center">
+
+
+                                        <ImageView
+                                            android:id="@+id/farm_image5_timeline_visit"
+                                            android:layout_width="@dimen/_80sdp"
+                                            android:layout_height="@dimen/_80sdp"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginBottom="@dimen/_7sdp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/photo_big" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight=".5"
+                                        android:gravity="center">
+
+
+                                        <ImageView
+                                            android:id="@+id/farm_image6_timeline_visit"
+                                            android:layout_width="@dimen/_80sdp"
+                                            android:layout_height="@dimen/_80sdp"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:paddingBottom="@dimen/_7sdp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/photo_big" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/add_more_img_butt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_margin="@dimen/_5sdp"
+                                    android:background="@drawable/ic_add_circle_outline_dark_grey_black_24dp"
+                                    android:padding="@dimen/_5sdp"
+                                    android:visibility="gone" />
+
+
+                                <LinearLayout
+                                    android:id="@+id/hidden_linear_extra_images"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight=".5"
+                                        android:gravity="center">
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_margin="@dimen/_5sdp"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:id="@+id/farm_image5"
+                                                android:layout_width="@dimen/_80sdp"
+                                                android:layout_height="@dimen/_80sdp"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginBottom="@dimen/_7sdp"
+                                                android:paddingBottom="@dimen/_7sdp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/photo_big" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@id/farm_image5"
+                                                android:layout_centerHorizontal="true"
+                                                android:padding="@dimen/_5sdp"
+                                                android:text="Extra Farm Image1"
+                                                android:textColor="@color/yel_gre_mix_dark"
+                                                android:textSize="@dimen/_13ssp" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight=".5"
+                                        android:gravity="center">
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_margin="@dimen/_5sdp"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:id="@+id/farm_image6"
+                                                android:layout_width="@dimen/_80sdp"
+                                                android:layout_height="@dimen/_80sdp"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginBottom="@dimen/_7sdp"
+                                                android:paddingBottom="@dimen/_7sdp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/photo_big" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@id/farm_image6"
+                                                android:layout_centerHorizontal="true"
+                                                android:padding="@dimen/_5sdp"
+                                                android:text="Extra Farm Image2"
+                                                android:textColor="@color/yel_gre_mix_dark"
+                                                android:textSize="@dimen/_13ssp" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/farmer_reply_linear_lay_only"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar_full_screen_dialog"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/li8_new_theme_back"
+            android:padding="@dimen/_5sdp"
+            android:text="User Reply"
+            android:textColor="@color/darkgreen"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:id="@+id/farmer_reply_tv_only"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp" />
+
+    </LinearLayout>
+
+
+    <!-- <ProgressBar
+         android:id="@+id/view_activity_progress_bar"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:elevation="@dimen/_20sdp"
+         android:visibility="invisible" />-->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/view_activity_progress_bar"
+        android:elevation="@dimen/_10sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/croptrails_loader2"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+    <include
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adLayout"
+        layout="@layout/ad_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>

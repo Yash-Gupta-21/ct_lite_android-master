@@ -1,0 +1,1324 @@
+<resources>
+    <string name="app_name">CropTrails</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">ईमेल</string>
+    <string name="prompt_password">पासवर्ड (वैकल्पिक)</string>
+    <string name="action_sign_in">साइन इन और रजिस्टर</string>
+    <string name="action_sign_in_short">साइन इन</string>
+    <string name="error_invalid_email">ईमेल एड्रेस गलत  है।</string>
+    <string name="error_invalid_password">Password is too short</string>
+    <string name="error_incorrect_password">पासवर्ड गलत है</string>
+    <string name="error_field_required">फील्ड जरुरी है </string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="amount_cant_be_null">राशि शून्य नहीं हो सकती</string>
+    <string name="title_activity_maps">नक्शा</string>
+    <string name="title_activity_landing">LandingActivity</string>
+    <string name="title_home">होम </string>
+    <string name="title_dashboard">डैशबोर्ड</string>
+    <string name="title_notifications">नोटिफिकेशन्स</string>
+    <string name="back_press">वापस बाहर निकलने के लिए फिर से दबाएँ।</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="internet_not_connected">अपने इंटरनेट कनेक्शन की जाँच करें और पुन: प्रयास करें</string>
+
+    <string name="action_settings">सेटिंग्स </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="country_prompt">देश चुनें</string>
+    <string-array name="country_arrays">
+        <item>भारत</item>
+        <item>मलेशिया</item>
+        <item>यूनाइटेड स्टेट्स </item>
+        <item>इंडोनेशिया</item>
+        <item>फ्रांस</item>
+        <item>इटली</item>
+        <item>सिंगापुर</item>
+        <item>न्यूजीलैंड</item>
+    </string-array>
+
+    <string name="state_prompt">Choose a state</string>
+    <string-array name="state_arrays">
+        <item>म. प्र.</item>
+        <item>यु. पी.</item>
+        <item>दिल्ली</item>
+    </string-array>
+
+    <string name="tehsil_prompt">Choose a tehsil</string>
+    <string-array name="tehsil_arrays">
+        <item>इंदौर</item>
+        <item>उज्जैन</item>
+        <item>देवास</item>
+    </string-array>
+
+    <string name="city_prompt">Choose a City</string>
+    <string-array name="city_arrays">
+        <item>इंदौर</item>
+        <item>उज्जैन</item>
+        <item>देवास</item>
+    </string-array>
+
+    <string name="district_prompt">Choose a Destrict</string>
+    <string-array name="district_arrays">
+        <item>इंदौर</item>
+        <item>उज्जैन</item>
+        <item>देवास</item>
+    </string-array>
+
+
+    <string name="date_prompt">Choose a Date</string>
+    <string-array name="date_arrays">
+        <item>2018/06/8</item>
+        <item>2018/06/9</item>
+    </string-array>
+
+    <string-array name="irrigation_type_array">
+        <item>Select</item>
+        <item>Surface irrigation</item>
+        <item>Localized irrigation</item>
+        <item>Drip irrigation</item>
+        <item>Sprinkler irrigation</item>
+        <item>Center pivot irrigation</item>
+        <item>Lateral move irrigation</item>
+        <item>Sub-irrigation</item>
+        <item>Manual irrigation</item>
+    </string-array>
+
+
+    <string-array name="previous_crops_array">
+        <item>Select</item>
+        <item>Soybean</item>
+        <item>Maize</item>
+        <item>Sunflower</item>
+        <item>Mustard</item>
+        <item>Wheat</item>
+        <item>Barley</item>
+        <item>NA</item>
+    </string-array>
+
+
+    <string-array name="irrigation_source_array">
+        <item>Select</item>
+        <item>Canals</item>
+        <item>Wells</item>
+        <item>Tube-wells</item>
+        <item>Tanks</item>
+    </string-array>
+
+    <string-array name="soil_type_array">
+        <item>Select</item>
+        <item>Clay Soil</item>
+        <item>Loam Soil</item>
+        <item>Sandy Soil</item>
+        <item>Silty Soil</item>
+        <item>Peaty Soil</item>
+    </string-array>
+
+    <!--<string-array name="irrigation_type_array">
+        <item>चयन करे</item>
+        <item>सतही सिंचाई</item>
+        <item>स्थानीय सिंचाई</item>
+        <item>ड्रिप सिंचाई</item>
+        <item>छिड़काव सिंचाई</item>
+        <item>केंद्र धुरी सिंचाई</item>
+        <item>पार्श्व चाल सिंचाई</item>
+        <item>उप-सिंचाई</item>
+        <item>मैनुअल सिंचाई</item>
+    </string-array>
+
+    <string-array name="previous_crops_array">
+        <item>चयन करे</item>
+        <item>सोयाबीन</item>
+        <item>मक्का</item>
+        <item>सूरजमुखी</item>
+        <item>सरसों</item>
+        <item>गेहूँ</item>
+        <item>जौ</item>
+        <item>NA</item>
+    </string-array>
+
+
+    <string-array name="irrigation_source_array">
+        <item>चयन करे</item>
+        <item>नहरें</item>
+        <item>कुंआ</item>
+        <item>नलकूप</item>
+        <item>टैंक</item>
+    </string-array>
+
+    <string-array name="soil_type_array">
+        <item>चयन करे</item>
+        <item>चिकनी मिट्टी</item>
+        <item>दोमट मिट्टी</item>
+        <item>रेतीली मिट्टी</item>
+        <item>सिली मिट्टी</item>
+        <item>पीटी मिट्टी</item>
+    </string-array>-->
+
+    <string name="moisture_prompt">नमी का स्तर चुनें</string>
+    <string-array name="moisture_level">
+        <item>चयन करे</item>
+        <item>नम</item>
+        <item>नम नहीं</item>
+        <item>कम नम</item>
+        <item>उच्च नमी</item>
+    </string-array>
+
+    <string name="grade_prompt">Select Grade</string>
+    <string-array name="grade">
+        <item>चयन करे</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+
+    <string name="ipm_prompt">Select Material</string>
+    <string-array name="ipm">
+        <item>चयन करे</item>
+        <item>सेराज़ीन </item>
+        <item>इमिस्टर</item>
+    </string-array>
+
+    <string name="unit_prompt">इकाई</string>
+    <string-array name="unit">
+        <item>किलोग्राम</item>
+        <item>लीटर</item>
+        <item>क्विंटल</item>
+        <item>टन</item>
+    </string-array>
+
+
+    <string name="iwm_prompt">Select Material</string>
+    <string-array name="iwm">
+        <item>चयन करे</item>
+        <item>Atrizen</item>
+        <item>Laudis</item>
+        <item>Roundup</item>
+    </string-array>
+
+    <string name="inm_prompt">Select Material</string>
+    <string-array name="inm">
+        <item>चयन करे</item>
+        <item>DAP</item>
+        <item>MOP</item>
+        <item>Urea</item>
+        <item>20-20-0-13</item>
+    </string-array>
+
+    <string name="path_below">M7.41,7.84L12,12.42l4.59,-4.58L18,9.25l-6,6 -6,-6z</string>
+    <string name="search_hint">यूज़र सर्च करें </string>
+
+
+    <item name="myDynamic1" type="id" />
+    <item name="rt1" type="id" />
+
+    <string name="inm_test_status">मटेरियल सेलेक्ट करें</string>
+    <string-array name="status_test">
+        <item>चयन करे</item>
+        <item>अच्छा</item>
+        <item>खराब</item>
+        <item>और भी बुरा</item>
+    </string-array>
+    <string name="title_activity_harvest_show_single_plan_map">मानचित्र</string>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">अगला</string>
+    <string name="skip">स्किप करें </string>
+    <string name="start">समझ गया</string>
+
+
+    <string name="rupee_symbol">\u20A8</string>
+    <string name="no_response">ओह! कुछ गलत हो गया है। कृपया पुन: प्रयास करें</string>
+    <string name="no_response_plz_reload">ओह! कुछ गलत हो गया है। कृपया पुनः लोड करें</string>
+
+    <string name="setting_activity_title">सेटिंग्स</string>
+    <string name="setting_no_username">नाम: -</string>
+    <string name="setting_no_fathername">पिता का नाम : -</string>
+    <string name="signout_alert_dialog_message">क्या आप लॉगआउट करना चाहते है </string>
+    <string name="signout_alert_dialog_yes">हाँ</string>
+    <string name="signout_alert_dialog_no">नहीं</string>
+    <string name="offline_mode_logout_error">आप ऑफ़लाइन मोड में लॉगआउट नहीं कर सकते</string>
+    <string name="snackbar_ok">ठीक</string>
+    <string name="share_title">शेयर करें </string>
+
+    <string name="image_select_image_title">फोटो एड करें </string>
+    <string name="image_choose_from_library">गैलरी से चयन करें</string>
+    <string name="image_take_photo">फोटो क्लिक करें</string>
+    <string name="image_cancel">रद्द करें</string>
+    <string name="gallery_intent_title">फ़ाइल का चयन करें</string>
+    <string name="select_from_gallery_error">कुछ त्रुटि हुई! बाद में पुन: प्रयास करें</string>
+    <string name="alert_title_label">सावधान!</string>
+    <string name="profile_alert_dialog_message">क्या आप परिवर्तनों को छोड़ना चाहते हैं?</string>
+    <string name="profile_alert_dialog_yes">हाँ</string>
+    <string name="profile_alert_dialog_no">नहीं</string>
+    <string name="profile_image_update_failed">प्रोफ़ाइल फ़ोटो अपडेट करने में विफल। कृपया पुन: प्रयास करें</string>
+
+    <string name="name_label">नाम:</string>
+    <string name="father_name_label">पिता का नाम :</string>
+    <string name="dob_label">जन्म तिथि:</string>
+    <string name="contact_label">संपर्क करें :</string>
+    <string name="email_label">ईमेल :</string>
+    <string name="setting_add_farm">फार्म जोड़ें</string>
+    <string name="setting_reset_password">पासवर्ड बदलें</string>
+    <string name="setting_share">शेयर करे</string>
+    <string name="setting_rate_us">रेटिंग दें</string>
+    <string name="setting_signout">साइन आउट</string>
+    <string name="setting_privacy_policy">गोपनीयता</string>
+    <string name="setting_feedback">प्रतिक्रिया</string>
+    <string name="setting_terms_and_conditions">नियम और शर्तें</string>
+    <string name="mayur_nagdev">मयूर नागदेव </string>
+    <string name="harvest_date">कटाई तिथि:</string>
+    <string name="_10_07_2018">10/07/2018</string>
+    <string name="father_s_name">पिता का नाम :</string>
+    <string name="no_old_expnse_data_avaialble_label">पुराने खर्च का कोई रिकॉर्ड नहीं मिला</string>
+    <string name="amount_hint">राशि</string>
+    <string name="date_msg">तिथि</string>
+    <string name="narration">वर्णन</string>
+    <string name="submit">सबमिट करें</string>
+    <string name="no_internet_connection">कोई इंटरनेट कनेक्शन नहीं</string>
+    <string name="cant_add_expense_in_offline_mode">ऑफ़लाइन मोड में व्यय जोड़ नहीं सकते</string>
+    <string name="add_new_expenditure">नया व्यय जोड़ें</string>
+    <string name="expenditure_amount">व्यय राशि:</string>
+    <string name="expenditure_hint">व्यय राशि</string>
+    <string name="narration_hint">वर्णन</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="add_an_image_of_bill_msg">बिल फोटो जोड़ें</string>
+    <string name="add_label">जोड़ें</string>
+    <string name="chemicals">केमिकल्स </string>
+    <string name="e_g_10_hint">जैसे 10</string>
+    <string name="activity_label">गतिविधि</string>
+    <string name="activity_type_label">एक्टिविटी टाइप</string>
+    <string name="desc_label">वर्णन</string>
+    <string name="more_label">अधिक</string>
+    <string name="view_activity_label">गतिविधि देखें</string>
+    <string name="add_todays_activity_label">आज की गतिविधि जोड़ें</string>
+    <string name="pending_label">अपूर्ण</string>
+    <string name="upcomming_activity_label">आगामी गतिविधि</string>
+    <string name="visit_label">दौरा</string>
+    <string name="visit_added_for_today_label">आज का दौरा जोड़ा गया है</string>
+    <string name="visited_label">दौरा किया</string>
+    <string name="view_visit_label">दौरा देखे</string>
+    <string name="timeline_label">टाइमलाइन</string>
+    <string name="failed_to_load_timeline_msg">टाइमलाइन लोड करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="no_network_available_msg">कोई नेटवर्क उपलब्ध नहीं है</string>
+    <string name="there_is_no_standing_area_avilable_to_enter_for_pld_label">PLD में प्रवेश करने के लिए कोई स्थायी क्षेत्र उपलब्ध नहीं है</string>
+    <string name="ok_label">ठीक</string>
+    <string name="date_label">दिनांक</string>
+    <string name="please_enter_integrated_nutrient_management_data_in_the_below_form_label">कृपया नीचे दिए गए फ़ॉर्म में एकीकृत पोषक प्रबंधन डेटा दर्ज करें</string>
+    <string name="please_enter_integrated_weight_management_data_in_the_below_form_label">कृपया नीचे दिए गए फ़ॉर्म में एकीकृत भार प्रबंधन डेटा दर्ज करें</string>
+    <string name="please_enter_integrated_pest_management_data_in_the_below_form_label">कृपया नीचे दिए गए फॉर्म में एकीकृत कीट प्रबंधन डेटा दर्ज करें</string>
+    <string name="please_grade_crop_physical_condition_label">कृपया क्रॉप फिजिकल कंडीशन ग्रेड करें</string>
+    <string name="please_provide_soil_moisture_level_label">कृपया मिट्टी नमी स्तर प्रदान करें</string>
+
+
+
+    <!--MultiLanguages Strings Starting here-->
+    <string name="add_farm_title">फार्म जोड़ें</string>
+    <string name="new_farm_added_msg">नया खेत सफलतापूर्वक जोड़ा गया</string>
+    <string name="new_farm_fail_msg">खेत जोड़ने में विफल। बाद में पुन: प्रयास करें।</string>
+    <string name="add_farmer_name_msg">कृषक नाम दर्ज करें</string>
+    <string name="farmer_name_cant_null_msg">किसान का नाम रिक्त नहीं हो सकता</string>
+    <string name="enter_father_name_msg">कृपया पिता का नाम दर्ज करें</string>
+    <string name="father_name_cant_null_msg">पिता का नाम रिक्त नहीं हो सकता</string>
+    <string name="farmer_name_hint">किसान का नाम</string>
+    <string name="farmer_father_name_hint">पिता का नाम</string>
+    <string name="farmer_phone_hint">फ़ोन</string>
+    <string name="farmer_village_or_city_hint">गाँव या शहर</string>
+    <string name="farmer_madal_or_tehsil_hint">मंडल या तहसील</string>
+    <string name="farmer_district_hint">जिला</string>
+    <string name="farmer_state_hint">राज्य</string>
+    <string name="farmer_counrty_hint">देश</string>
+    <string name="submit_label">सबमिट करें</string>
+    <string name="opps_message">ऊप्स!!</string>
+
+    <string name="update_farm_details_title">खेत का विवरण अपडेट करें</string>
+    <string name="update_farm_details_sub_msg">किसान द्वारा वर्णित फार्म विवरण दर्ज करें</string>
+    <string name="select_message_tag">चयन करे</string>
+    <string name="select_irrigation_source_msg">कृपया सिंचाई स्रोत का चयन करें</string>
+    <string name="select_previous_crop_msg">कृपया पिछली फसल का चयन करें</string>
+    <string name="select_irrigation_type_msg">कृपया सिंचाई प्रकार चुनें</string>
+    <string name="select_soil_type_msg">कृपया मिट्टी का प्रकार का चयन करें</string>
+    <string name="select_sowing_date_msg">कृपया बुवाई की तिथि चुनें</string>
+    <string name="farm_detail_update_fail_msg">खेत का विवरण अपडेट करने में विफल। कृपया पुन: प्रयास करें।</string>
+    <string name="farm_details_updated_success">फार्म का विवरण सफलतापूर्वक अपडेट किया गया।</string>
+    <string name="dynamic_bag_act_title">कटाई विवरण</string>
+    <string name="irrigation_source_label">सिंचाई स्रोत</string>
+    <string name="previous_crop_label">पिछली फसल</string>
+    <string name="irrigation_type">सिंचाई का प्रकार</string>
+    <string name="soil_type_label">मिट्टी का प्रकार</string>
+    <string name="sowing_date_label">बुवाई की तिथि</string>
+    <string name="expected_flowering_date_label">अपेक्षित पुष्पण की तिथि</string>
+    <string name="expected_harvest_date_label">अपेक्षित कटाई की तिथि</string>
+    <string name="additional_farm_details_label">अतिरिक्त फार्म विवरण</string>
+    <string name="capture_farm_area_label">फार्म क्षेत्र कैप्चर करें</string>
+    <string name="mobile_label">मोबाइल</string>
+    <string name="expected_area_label">भेजा गया क्षेत्र</string>
+    <string name="actual_area_label">बुवाई क्षेत्रर</string>
+    <string name="exp_flowering_date_label">अ. पुष्पण की तिथि</string>
+    <string name="exp_harvest_date">अ. कटाई की तिथि</string>
+    <string name="actual_flowering_date_label">वास्तविक पुष्पण की तिथि</string>
+    <string name="actual_harvest_date_label">वास्तविक कटाई तिथि</string>
+
+    <string name="average_pp_spacing_label">औसत P-P अंतराल:</string>
+    <string name="average_rr_spacing_label">औसत R-R अंतराल:</string>
+    <string name="average_germiantion_label">   औसत पौधों की सं.(%):</string>
+    <string name="average_farm_population_label">औसत कुल पौधों की सं.:</string>
+
+    <string name="view_samples_label">सैम्पल्स देखे</string>
+    <string name="add_visit_label">दौरा जोड़ें</string>
+    <string name="harvest_details_label">कटाई विवरण</string>
+    <string name="visit_step1_head_label">चरण 1: स्थायी फसल क्षेत्र दर्ज करें</string>
+    <string name="visit_step2_head_label">चरण 2: किसान द्वारा की गई गतिविधियाँ दर्ज करें</string>
+    <string name="visit_step1_msg_label">फसल क्षेत्र जिसमें फसल देखी जा सकती है, दर्ज करें।</string>
+    <string name="visit_step2_msg_label">नीचे दिए गए फॉर्म में दौरे का विवरण दर्ज करें। ये विवरण आपकी दौरे पर किसान द्वारा प्रदान किए जाएंगे</string>
+    <string name="last_standing_area">* अंतिम स्थायी क्षेत्र</string>
+    <string name="pld_form_label">पीएलडी फॉर्म</string>
+    <string name="standing_crop_area_label">खड़ी फसल क्षेत्र</string>
+    <!--<string name="in_acres_msg">(एकड़)</string>-->
+    <string name="in_acres_hint">एकड़</string>
+    <string name="inm_label">आई एन एम</string>
+    <string name="visit_inm_msg1">नीचे दिए गए फॉर्म में एकीकृत पोषक तत्व प्रबंधन डेटा दर्ज करें।</string>
+    <string name="visit_select_na_msg">यदि उपलब्ध नहीं है तो एन / ए का चयन करें।</string>
+    <string name="visit_inm_msg3">आई एन एम फॉर्म भरें और सेव पर क्लिक करें। आप कई प्रविष्टियों को सहेज सकते हैं।</string>
+    <string name="quantity_hint">मात्रा</string>
+    <string name="prescribed_comment_hint">बताई गई टिप्पणी</string>
+    <string name="iwm_label">आई डब्ल्यू एम</string>
+    <string name="visit_iwm_msg1">नीचे दिए गए फॉर्म में एकीकृत वजन प्रबंधन डेटा दर्ज करें।</string>
+    <string name="visit_iwm_msg3">आई डब्ल्यू एम फॉर्म भरें और सेव पर क्लिक करें। आप कई प्रविष्टियों को सहेज सकते हैं।</string>
+    <string name="done_date_label">संपन्न तिथि:</string>
+    <string name="save_label">सेव करें </string>
+    <string name="ipm_label">आई पी एम</string>
+    <string name="visit_ipm_msg1">नीचे दिए गए फॉर्म में एकीकृत कीट प्रबंधन डेटा दर्ज करें।</string>
+    <string name="visit_ipm_msg3">आई पी एम फॉर्म भरें और सेव पर क्लिक करें। आप कई प्रविष्टियों को सहेज सकते हैं।</string>
+    <string name="cpc_label">सी पी सी</string>
+    <string name="visit_cpc_msg">ग्रेड फसल शारीरिक स्थिति का चयन करें</string>
+    <string name="grade_label">ग्रेड</string>
+    <string name="sml_label">एस एम एल</string>
+    <string name="visit_sml_msg">मृदा नमी स्तर प्रदान करें</string>
+    <string name="mositure_level_label">नमी का स्तर</string>
+    <string name="other_label">अन्य</string>
+    <string name="visit_other_msg">यदि कोई विशेष टिप्पणी या कार्य कृपया यहाँ निर्दिष्ट करें</string>
+    <string name="comment_label">टिप्पणी</string>
+    <string name="visit_farm_image1_msg">* फार्म छवि 1</string>
+    <string name="visit_farm_image2_msg">* फार्म छवि 2</string>
+    <string name="visit_farm_and_farmer_image_msg">* खेत और किसान</string>
+    <string name="visit_selfie_famer_image_msg">* फार्म और किसान के साथ सेल्फी</string>
+    <string name="add_new_harvest_label">नया विवरण जोड़ें</string>
+    <string name="flowering_date_updated_success_msg">पुष्पण की तिथि अद्यतन सफलतापूर्वक</string>
+    <string name="flowering_date_update_fail_msg">पुष्पण की तिथि अपडेट करने में विफल। बाद में पुन: प्रयास करें।</string>
+    <string name="harvest_date_updated_success_msg">कटाई की तिथि अद्यतन सफलतापूर्वक</string>
+    <string name="harvest_date_update_fail_msg">कटाई की तिथि अपडेट करने में विफल। बाद में पुन: प्रयास करें।</string>
+    <string name="no_standing_area_for_harvest_msg">कटाई के लिए कोई स्थायी क्षेत्र शेष नहीं है।</string>
+    <string name="farm_detail_label">खेत का विवरण</string>
+    <string name="germination_and_spacing_form_label">अंकुरण और अंतराल</string>
+    <string name="select_dropdown">चयन करे</string>
+    <string name="unit_dropdown">इकाई</string>
+
+    <string name="please_select_inm_msg">कृपया आई एन एम सामग्री का चयन करें।</string>
+    <string name="please_select_iwm_msg">कृपया आई डब्ल्यू एम सामग्री का चयन करें।</string>
+    <string name="please_select_ipm_msg">कृपया आई पी एम सामग्री का चयन करें।</string>
+
+    <string name="please_enter_material_quantity">कृपया सामग्री मात्रा दर्ज करें।</string>
+    <string name="please_select_quantity_unit_msg">कृपया सामग्री मात्रा की किसी भी इकाई का चयन करें।</string>
+    <string name="please_choose_done_date_msg">कृपया दिनांक का चयन करें।</string>
+    <string name="please_fill_validation_text">अधिक फ़ील्ड जोड़ने के लिए कृपया उपरोक्त सभी फ़ील्ड भरें।</string>
+    <string name="please_fill_in_field">कृपया इस फ़ील्ड को भरें</string>
+    <string name="correct_harvest_area">कृपया सही फसल क्षेत्र को दर्ज करें</string>
+    <string name="capture_first_image_msg">कृपया पहले 1 इमेज कैप्चर करें</string>
+    <string name="capure_secong_image_msg">कृपया पहले 2 छवि कैप्चर करें</string>
+    <string name="capture_third_image_msg">कृपया पहले 3 छवि कैप्चर करें</string>
+    <string name="capture_fourth_image_msg">कृपया पहले 4 छवि कैप्चर करें</string>
+    <string name="capture_fifth_image_msg">Pकृपया पहले 5 छवि कैप्चर करें</string>
+    <string name="capture_all_image_msg">कृपया अधिक चित्र जोड़ने के लिए सभी छवियों को कैप्चर करें</string>
+    <string name="standing_area_cant_null_msg">स्थायी दर्ज खाली नहीं हो सकता</string>
+    <string name="enter_standing_crop_area_msg">कृपया स्थायी फसल क्षेत्र दर्ज करें।</string>
+    <string name="enter_appropriate_area_msg">कृपया खड़ी फसल का उपयुक्त क्षेत्र भरें</string>
+    <string name="enter_coorect_standing_area_msg">कृपया स्थायी क्षेत्र का सही मान दर्ज करें।</string>
+    <string name="add_chemical_or_na_msg">कृपया कोई भी रसायन जोड़ें या आई एन एम में N / A चुनें।</string>
+    <string name="add_chemical_na_iwm_msg">कृपया कोई भी रसायन जोड़ें या आई डब्ल्यू एम में N / A चुनें।</string>
+    <string name="add_chemical_or_na_ipm_msg">कृपया कोई भी रसायन जोड़ें या आई पी एम में N / A चुनें।</string>
+    <string name="select_cpc_msg">कृपया सी पी सी चुनें</string>
+    <string name="select_sml_msg">कृपया एस एम एल चुनें</string>
+    <string name="uploading_visit_msg">अपलोड हो रहा है ...</string>
+    <string name="visit_submit_success_msg">सफलतापूर्वक अपलोड किया गया।</string>
+    <string name="visit_submit_fail_msg">इस यात्रा को जोड़ने में विफल। कृपया पुन: प्रयास करें</string>
+    <string name="fail_to_connect_msg">कनेक्ट करने में विफल!</string>
+    <string name="check_internet_connection_msg">कृपया अपने इंटरनेट कनेक्शन की जाँच करें।</string>
+    <string name="visit_data_saved_msg">आपका डेटा सहेजा गया।</string>
+    <string name="cant_view_farm_in_offline_msg">आप ऑफ़लाइन मोड में फ़ार्म नहीं देख सकते हैं।</string>
+    <string name="no_standing_area_for_visit">यात्रा के लिए कोई स्थायी क्षेत्र नहीं है।</string>
+    <string name="error_message">त्रुटि!</string>
+    <string name="verify_farm_area_first_msg">कृपया पहले खेत के क्षेत्र का सत्यापन करें।</string>
+    <string name="no_previous_visit_available_msg">इस फार्म के लिए कोई पिछली यात्रा उपलब्ध नहीं है।</string>
+    <string name="failed_to_load_visits_msg">विज़िट डेटा लोड करने में विफल। कृपया पुन: प्रयास करें</string>
+    <string name="failed_to_load_previous_harvest_msg">पिछली फसल का डेटा लोड करने में विफल। कृपया पुन: प्रयास करें</string>
+    <string name="need_to_mark_gps_coordinates">खेत क्षेत्र को देखने के लिए आपको सबसे पहले Gps निर्देशांक को चिह्नित करने की आवश्यकता है</string>
+    <string name="failed_to_get_farm_location_msg">खेत का स्थान पाने में असफल। बाद में पुन: प्रयास करें</string>
+    <string name="timeline_activity_title">टाइमलाइन</string>
+    <string name="failed_to_load_timeline">टाइमलाइन लोड करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="moisture_level_label">नमी का स्तर</string>
+    <string name="add_visit_activity_title">विजिट जोड़ें</string>
+    <string name="choose_other_image_to_upload_msg">कृपया अपलोड करने के लिए दूसरी छवि चुनें।</string>
+    <string name="please_wait_msg">कृपया प्रतीक्षा करें...</string>
+    <string name="fill_date_msg">डेटा भरें</string>
+    <string name="select_chemical_label">रासायनिक का चयन करें</string>
+    <string name="please_fill_date_msg">कृपया डेटा भरें</string>
+    <string name="farmer_reply_must_entered_msg">किसान उत्तर दर्ज किया जाना चाहिए</string>
+    <string name="ok_msg">ठीक</string>
+    <string name="fill_data_properly_msg">कृपया डेटा ठीक से भरें</string>
+    <string name="select_file_msg">फ़ाइल का चयन करें</string>
+    <string name="activity_submitted_success_msg">गतिविधि सफलतापूर्वक प्रस्तुत की गई।</string>
+    <string name="activity_submit_fail_msg">टाइमलाइन पर डेटा अपलोड करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="error_occurred_try_again_msg">त्रुटि हुई। पुनः प्रयास करें</string>
+    <string name="retry_msg">पुन: प्रयास करें</string>
+    <string name="something_went_wrong_msg">कुछ त्रुटि हुई</string>
+    <string name="visit_report_activity_title">फार्म का दौरा रिपोर्ट</string>
+    <string name="farm_visit_details_label">फार्म का दौरा विवरण </string>
+    <string name="visit_number_label">दौरा संख्या:</string>
+    <string name="visited_on_label">दौरा तिथि:</string>
+
+    <string name="farmer_name_label">किसान का नाम:</string>
+    <string name="click_to_view_images_label">चित्र देखने के लिए क्लिक करें</string>
+    <string name="downloading_is_pending">कुछ छवि डाउनलोड करना लंबित है।</string>
+    <string name="no_image_for_this_visit">इस दौरे के लिए कोई चित्र नहीं</string>
+    <string name="image_activity_title">तस्वीरें</string>
+    <string name="enter_pld_details_label">पी एल डी विवरण दर्ज करें</string>
+    <string name="please_enter_pld_area_and_its_reason_in_the_fields_mentioned_below_label">कृपया नीचे बताए गए क्षेत्रों में फसल हानि / नुकसान क्षेत्र दर्ज करें और इसका कारण है।</string>
+    <string name="effective_farm_area_label">प्रभावी कृषि क्षेत्र</string>
+    <string name="pld_acres_label">हानि क्षेत्र</string>
+    <string name="reason_for_pld_label">हानि का कारण</string>
+    <string name="pld_already_submitted_for_this_farm_label">* इस फार्म के लिए पहले से ही फसल हानि / नुकसान क्षेत्र जमा कर दिया गया है</string>
+    <string name="pld_form_title">फसल हानि / नुकसान क्षेत्र फ़ार्म</string>
+    <string name="already_pld_added">पहले से ही फसल हानि / नुकसान क्षेत्र जोड़ा गया।</string>
+    <string name="invalid_entry_error">क्षेत्र में अमान्य प्रविष्टि</string>
+    <string name="invalid_entry_in_pld">फसल हानि / नुकसान क्षेत्र कारण में अमान्य प्रविष्टि</string>
+    <string name="your_pld_data_update">आपका फसल हानि / नुकसान क्षेत्र डेटा अपडेट किया गया</string>
+    <string name="failure_upload_msg">फसल हानि / नुकसान क्षेत्र डेटा अपलोड करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="enter_pld_hint">यहां पफसल हानि / नुकसान क्षेत्र दर्ज करें।</string>
+    <string name="enter_reason_for_pld_hint">फसल हानि / नुकसान क्षेत्र के लिए कारण दर्ज करें</string>
+    <string name="enter_pld_here_hint">यहां फसल हानि / नुकसान क्षेत्र दर्ज करें।</string>
+    <string name="make_offline_label">ऑफ़ लाइन जाएँ</string>
+    <string name="lot_no">फ़ार्म आई.डी.</string>
+    <string name="fathers_name">पिता का नाम:</string>
+    <string name="offline_mode_title">ऑफ़लाइन मोड</string>
+    <string name="preparing_your_data_for_offline_mode">ऑफ़लाइन मोड के लिए अपना डेटा तैयार कर रहे है। इसमें कुछ मिनट लग सकते हैं</string>
+    <string name="stay_connected">जुड़े रहें</string>
+    <string name="please_select_at_least_one_farm">ऑफ़लाइन जाने के लिए कृपया कम से कम एक खेत का चयन करें</string>
+    <string name="please_check_your_internet">कृपया अपने इंटरनेट कनेक्शन की जाँच करें.</string>
+    <string name="fail_to_load_offline_mode">ऑफ़लाइन मोड के लिए फ़ार्म लोड करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="oops_messsage_label">ओह! कुछ गलत हो गया है। कृपया पुन: प्रयास करें</string>
+    <string name="failed_to_make_data_offline">डेटा ऑफ़लाइन करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="please_allow_storage_permission">कृपया ऑफ़लाइन मोड के लिए संग्रहण अनुमति दें।</string>
+    <string name="click_on_storage"><![CDATA[Permissions-> Click on storage]]></string>
+    <string name="yes">हाँ</string>
+    <string name="go_offline">ऑफ़ लाइन जाएँ</string>
+    <string name="check_area_title">क्षेत्र की जाँच करें</string>
+    <string name="area">क्षेत्र</string>
+    <string name="clear">हटाएँ</string>
+    <string name="acers_label">एकड़</string>
+    <string name="please_submit_at_least_3_points">कृपया कम से कम 3 बिंदु जमा करें</string>
+    <string name="outside_circle_radius">सर्किल के दायरे के बाहर</string>
+    <string name="this_app_needs_location_permisssion">इस एप्लिकेशन को स्थान का उपयोग करने की आवश्यकता है, स्थान कार्यक्षमता का उपयोग करने के लिए एप्लिकेशन को अनुमति दें</string>
+    <string name="permission_denied">अनुमति नहीं मिली</string>
+    <string name="please_clear_then_add">कृपया हटाएँ फिर और जोड़ें</string>
+    <string name="response_error">प्रतिक्रिया त्रुटि बाद में पुन: प्रयास करें</string>
+    <string name="farm_area_title">कृषि क्षेत्र</string>
+    <string name="this_app_needs_location_permission">इस एप्लिकेशन को स्थान की अनुमति की आवश्यकता है, कृपया स्थान कार्यक्षमता का उपयोग करने के लिए स्वीकार करें</string>
+    <string name="please_clear_then_add_more">कृपया हटाएँ फिर और जोड़ें</string>
+    <string name="should_have_at_least_two_points_to_display">प्रदर्शित करने के लिए कम से कम 2 बिंदु होने चाहिए</string>
+    <string name="capture_farm_area_maps_activity_title">फार्म क्षेत्र कैप्चर करे</string>
+    <string name="sure_to_submit_area">क्या आप क्षेत्र सबमिट करना चाहते हैं?</string>
+    <string name="area_is_too_short_for_capture">फार्म क्षेत्र करने के लिए बहुत छोटा है। कृपया फिर से फार्म क्षेत्र कैप्चर करें</string>
+    <string name="no">नहीं</string>
+    <string name="please_enter_valid_area">कृपया मान्य क्षेत्र दर्ज करें</string>
+    <string name="actual_area_update_successfully">बुवाई क्षेत्र सफलतापूर्वक अपडेट किया गया।</string>
+    <string name="failed_to_update_actual_area">बुवाई क्षेत्र को अपडेट करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="please_click_inside_circle_to_mark">कृपया बिंदु चिह्नित करने के लिए सर्कल के अंदर पर क्लिक करें</string>
+    <string name="location_permission_needed">स्थान अनुमति की आवश्यकता है</string>
+    <string name="this_apps_needs_location_permission">इस एप्लिकेशन को स्थान की अनुमति की आवश्यकता है, कृपया स्थान कार्यक्षमता का उपयोग करने के लिए स्वीकार करें</string>
+    <string name="cant_add_more_points">अधिक बिंदु नहीं जोड़ सकते</string>
+    <string name="failed_to_get_farm_ocation_please_try_again_later">फार्म स्थानों को पाने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="area_successfully_added">क्षेत्र सफलतापूर्वक जोड़ा गया ...</string>
+    <string name="failed_to_verify_farm_area">खेत क्षेत्र को सत्यापित करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="add_actual_area_manually">मैन्युअल रूप से बुवाई क्षेत्र जोड़ें</string>
+    <string name="old_password">पुराना पासवर्ड</string>
+    <string name="new_password">नया पासवर्ड</string>
+    <string name="confirm_new_password">नए पासवर्ड की पुष्टि करें</string>
+    <string name="username">उपयोगकर्ता नाम</string>
+    <string name="log_in">लॉग इन</string>
+    <string name="username_cant_be_null">उपयोगकर्ता नाम खाली नहीं हो सकता</string>
+    <string name="password_cant_be_empty">पासवर्ड खाली नहीं हो सकता</string>
+    <string name="failed_to_connect">कनेक्ट करने में विफल!</string>
+    <string name="invalid_username_password">अमान्य उपयोगकर्ता नाम या पासवर्ड। बाद में पुन: प्रयास करें</string>
+    <string name="failed_to_login">लॉगिन करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="plan">योजना -</string>
+    <string name="location_not_available">वर्तमान स्थान उपलब्ध नहीं है कृपया बाद में पुनः प्रयास करें</string>
+    <string name="server_error">त्रुटि हुई। कृपया पुन: प्रयास करें</string>
+    <string name="bags">बैग:</string>
+    <string name="harvest_plan">कटाई प्लान</string>
+    <string name="failed_to_load_harvest_data">फसल कटाई डेटा लोड करने में विफल। बाद में पुन: प्रयास करें</string>
+
+    <string name="profile_activity_title">प्रोफाइल</string>
+    <string name="old_expense_data_unavaialble">पुराने व्यय का कोई डेटा उपलब्ध नहीं है</string>
+    <string name="hint_amount">राशि</string>
+    <string name="txt_date">तिथि</string>
+    <string name="hint_narration">वर्णन</string>
+    <string name="hint_submit">सबमिट करें</string>
+    <string name="txt_no_internet">कोई इंटरनेट कनेक्शन नहीं</string>
+    <string name="txt_can_not_add_expense_offline_mode">ऑफ़लाइन मोड में व्यय जोड़ नहीं सकते</string>
+    <string name="txt_no_farm_data_avaialble">कोई फार्म डेटा उपलब्ध नहीं है</string>
+    <string name="txt_total_farms">कुल खेत</string>
+    <string name="txt_total_standing_area">कुल स्थायी क्षेत्र</string>
+    <string name="txt_in_acres">(एकड़ में)</string>
+    <string name="txt_total_expected_area">कुल अपेक्षित क्षेत्र</string>
+    <string name="txt_last_visited_farm">अंतिम बार देखा गया खेत</string>
+    <string name="txt_max_standing_area">अधि. स्थायी क्षेत्र</string>
+    <string name="txt_max_population">अधि. आबादी</string>
+    <string name="txt_grade_wise_distribution">ग्रेड वार वितरण</string>
+    <string name="drawer_check_area">क्षेत्र चेक करें</string>
+    <string name="drawer_offline_mode">ऑफ़लाइन मोड</string>
+    <string name="drawer_plan_harvest">कटाई प्लान करें</string>
+    <string name="drawer_planned_harvest">नियोजित कटाई</string>
+    <string name="drawer_back_to_online">वापस ऑनलाइन आएं</string>
+    <string name="drawer_settings">सेटिंग्स</string>
+    <string name="main_menu_search">खोजें</string>
+    <string name="harvest_plan_submit">सबमिट करें</string>
+    <string name="bottom_nav_dashboard">डैशबोर्ड</string>
+    <string name="bottom_nav_home">होम</string>
+    <string name="bottom_nav_expenditure">खर्च</string>
+    <string name="landing_search">खोजें</string>
+    <string name="update_farm_failure">फ़ार्म डेटा अपडेट करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="txt_data_uploaded_to_server">डेटा सर्वर पर अपलोड किया गया</string>
+    <string name="txt_germination_data_upload_failed">अंकुरण और नमूना डेटा अपलोड करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="txt_harvest_data_upload_failed">फसल कटाई डेटा अपलोड करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="txt_visit_data_upload_failed">दौरे का डेटा अपलोड करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="online_now_no_offline_upload">आप अभी ऑनलाइन हैं ... कोई ऑफ़लाइन डेटा अपलोड करने के लिए नहीं मिला है</string>
+    <string name="txt_uploading_data">डेटा अपलोड हो रहा है ...</string>
+    <string name="txt_server_error">सर्वर त्रुटि। कृपया पुन: प्रयास करें</string>
+    <string name="dialog_heading_unable_to_connect">कनेक्ट करने में असमर्थ!</string>
+    <string name="connect_to_3g_or_4g">सुनिश्चित करें कि आप डेटा अपलोड करने के लिए 3G या 4G नेटवर्क से जुड़े हैं।</string>
+    <string name="go_online_upload_offline_data">क्या आप ऑनलाइन वापस जाना चाहते हैं और ऑफ़लाइन डेटा अपलोड करना चाहते हैं?</string>
+
+    <string name="validation_amount_null">राशि खाली नहीं हो सकती</string>
+    <string name="validation_comment_null">टिप्पणी खाली नहीं हो सकती</string>
+    <string name="validation_date_null">कृपया तिथि चुनें</string>
+    <string name="validation_image_null">कृपया व्यय छवि अपलोड करें</string>
+
+    <string name="expense_data_upload_failed">व्यय डेटा लोड करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="expense_added">व्यय सफलतापूर्वक जोड़ा गया</string>
+    <string name="expense_error_occured">त्रुटि हुई। बाद में पुन: प्रयास करें</string>
+    <string name="pick_up_date">(बैग उठाने की तिथि :</string>
+    <string name="select_all">सभी का चयन करे</string>
+    <string name="bag">बैग</string>
+    <string name="please_enter_valid_vehicle_no">कृपया मान्य वाहन सं. दर्ज करें</string>
+    <string name="please_enter_valid_vehicle_weight">कृपया वाहन का वैध वजन दर्ज करें</string>
+    <string name="please_enter_valid_remark">कृपया मान्य टिप्पणी दर्ज करें</string>
+    <string name="please_choose_valid_date">कृपया मान्य तिथि चुनें</string>
+    <string name="harvest_collection_planned_successfully">हार्वेस्ट कलेक्शन सफलतापूर्वक प्लान किया गया</string>
+    <string name="failed_to_plan_harvest_collection">फसल संग्रह की योजना बनाने में विफल। कृपया पुन: प्रयास करें</string>
+    <string name="please_select">कृपया चयन करें</string>
+    <string name="harvest_plan_activity_title">फसल संग्रह</string>
+    <string name="no_data_available_to_plan_harvest">फसल की योजना के लिए कोई डेटा उपलब्ध नहीं है। कृपया पुन: प्रयास करें</string>
+    <string name="failed_to_load_plan_harvest">फसल की योजना बनाने के लिए खेतों को लोड करने में विफल। कृपया पुन: प्रयास करें</string>
+    <string name="farm_details">फार्म का विवरण</string>
+    <string name="harvest_done_date">फसल कटाई की तिथि</string>
+    <string name="bag_details">बैग विवरण</string>
+    <string name="you_must_fill_this_field_first">आपको पहले इस फ़ील्ड को भरना होगा</string>
+    <string name="harvest_data">फसल कटाई डेटा</string>
+    <string name="do_you_want_to_submit_this_data">क्या आप यह डेटा सबमिट करना चाहते हैं?</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="please_fill_out_this_field">कृपया इस क्षेत्र को भरें</string>
+    <string name="are_you_want_to_submit_this_data">क्या आप वाकई यह डेटा सबमिट करना चाहते हैं?</string>
+    <string name="failed_to_add_harvest_data">फसल कटाई डेटा जोड़ने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="your_data_saved">आपका डेटा सहेजा गया।</string>
+    <string name="bags_no">बैग नं.</string>
+    <string name="weight_in_kgs">वजन (किलोग्राम में)</string>
+    <string name="step_2_enter_bag_details">चरण 2: बैग विवरण दर्ज करें</string>
+    <string name="enter_bag_no_and_weights_in_which_crop_can_be_seen">बैग नंबर और वजन दर्ज करें जिसमें फसल देखी जा सकती है</string>
+    <string name="step_1_enter_farmer_details">चरण 1: फसल का विवरण दर्ज करें</string>
+    <string name="enter_crop_area_in_which_crop_can_be_seen">फसल क्षेत्र जिसमें फसल देखी जा सकती है, दर्ज करें</string>
+
+    <string name="framer_lot_no">lot_no</string>
+    <string name="farmer_no_of_farms">खेतों की संख्या</string>
+    <string name="location_permission_title">लोकेशन अनुमति की आवश्यकता है</string>
+    <string name="location_permission_message">इस एप्लिकेशन को स्थान की अनुमति की आवश्यकता है, कृपया स्थान कार्यक्षमता का उपयोग करने के लिए स्वीकार करें</string>
+    <string name="toast_permission_denied">अनुमति नहीं मिली</string>
+    <string name="farm_fragment_toast_selected">चयनित</string>
+    <string name="farm_fragment_dates_not_equal">तारीखें नहीं के बराबर हैं, डालें ...</string>
+    <string name="farm_fragment_in_expecption">अपवाद में, सम्मिलित करना ...</string>
+    <string name="frm_fragment_no_previous_date">कोई पिछला दिनांक, सम्मिलित नहीं किया जा रहा है ...</string>
+    <string name="failed_load_farm">खेतों को लोड करने में विफल। बाद में पुन: प्रयास करें</string>
+
+    <string name="enter_germination_heading">पौधों की आबादी और रिक्ति विवरण दर्ज करेंें</string>
+    <string name="germination_desc_msg">कृपया नमूना वार के नीचे के क्षेत्रों में मापा गया क्षेत्र दर्ज करें। आपको कम से कम 3 नमूने दर्ज करने होंगे।</string>
+    <string name="sample1_msg">* नमूना 1</string>
+    <string name="configured_area_hint">कॉन्फ़िगर किया गया क्षेत्र (वर्ग फुट में)</string>
+    <string name="p_p_spacing_in_inches_hint">P-P अंतराल (इंच में)</string>
+    <string name="r_r_spacing_in_inches_hint">R-R  अंतराल (इंच में)</string>
+    <string name="ideal_population_label">आदर्श आबादी</string>
+    <string name="actual_population_hint">वास्तविक आबादी</string>
+    <string name="germination_label">पौधे की संख्या</string>
+    <string name="total_farm_population_label">कुल पौधों की संख्या</string>
+    <string name="sample2_label">* नमूना 2</string>
+    <string name="sample3_label">* नमूना 3</string>
+    <string name="average_p_p_spacing_label">औसत P-P अंतराल:</string>
+    <string name="average_r_r_spacing_label">औसत R-R अंतराल:</string>
+    <string name="average_germination_label">औसत अंकुरण:</string>
+    <string name="germination_sapcing_activity_title">अंकुरण और अंतराल</string>
+    <string name="enter_configured_of_sample1_msg">कृपया नमूना 1 का कॉन्फ़िगर क्षेत्र दर्ज करें</string>
+    <string name="enter_pp_spacing_of_sample1_msg">कृपया सैंपल 1 का प्लांट टू प्लान अंतराल दर्ज करें</string>
+    <string name="enter_rr_spacing_of_sample1_msg">कृपया नमूना 1 की पंक्ति अंतराल दर्ज करें</string>
+    <string name="enter_actual_pop_of_sample1_msg">कृपया नमूना 1 की वास्तविक आबादी दर्ज करें</string>
+    <string name="invalid_area_msg">अमान्य क्षेत्र</string>
+    <string name="invalid_pp_spacing_msg">अमान्य P-P अंतराल</string>
+    <string name="invalid_rr_spacing_msg">अमान्य R-R अंतराल</string>
+    <string name="invalid_population_msg">अमान्य आबादी</string>
+    <string name="enter_configured_of_sample2_msg">कृपया नमूना 2 का कॉन्फ़िगर क्षेत्र दर्ज करे</string>
+    <string name="enter_pp_spacing_of_sample2_msg">कृपया सैंपल 2 का प्लांट टू प्लान अंतराल दर्ज करें</string>
+    <string name="enter_rr_spacing_of_sample2_msg">कृपया नमूना 2 की पंक्ति अंतराल दर्ज करें</string>
+    <string name="enter_actual_pop_of_sample2_msg">कृपया नमूना 2 की वास्तविक आबादी दर्ज करें</string>
+
+    <string name="enter_configured_of_sample3_msg">कृपया नमूना 3 का कॉन्फ़िगर क्षेत्र दर्ज करे</string>
+    <string name="enter_pp_spacing_of_sample3_msg">कृपया सैंपल 3 का प्लांट टू प्लान अंतराल दर्ज करें</string>
+    <string name="enter_rr_spacing_of_sample3_msg">कृपया नमूना 3 की पंक्ति अंतराल दर्ज करें</string>
+    <string name="enter_actual_pop_of_sample3_msg">कृपया नमूना 3 की वास्तविक आबादी दर्ज करें</string>
+    <string name="fill_fourth_sample_msg">पहले 4 सैंपल भरें</string>
+    <string name="fill_all_field_of_sample4">सभी नमूने 4 फ़ील्ड भरें</string>
+    <string name="fill_all_field_of_sample5">सभी नमूने 5 फ़ील्ड भरें</string>
+    <string name="germination_submitted_success_msg">पादप जनसंख्या रिकॉर्ड सफलतापूर्वक जोड़ा गया</string>
+    <string name="germination_update_fail_msg">अंकुरण अंतराल को अद्यतन करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="harvest_done_date_label">हार्वेस्ट की तिथि</string>
+    <string name="weighment_date_label">तौल की तिथि</string>
+    <string name="harvested_area_label">हार्वेस्ट का क्षेत्र</string>
+    <string name="standing_area_label">स्थायी क्षेत्र</string>
+    <!--<string name="bag_details_label">Bag Details</string>
+    <string name="bags_no_label">Bags No.</string>-->
+    <string name="weight_in_kgs_label">वजन (किलोग्राम में)</string>
+    <string name="harvest_report_activity_title">हार्वेस्ट रिपोर्ट</string>
+    <string name="bags_no_label">बैग नं.</string>
+
+    <string name="stock_weight_label">स्टॉक वजन:</string>
+    <string name="bags_blk_label">बैग (Blk):</string>
+    <string name="remark_label">टिप्पणी:</string>
+    <string name="vehicle_weight_label">वाहन का वजन:</string>
+    <string name="total_bags_label">कुल बैग:</string>
+
+    <string name="acre_msg"> एकड़</string>
+    <string name="growing_area_msg">बोया हुआ क्षेत्र</string>
+    <string name="farm_area_label">खेत क्षेत्र</string>
+    <string name="address_label">पता : </string>
+    <string name="profile_btn_update">अपडेट करें</string>
+    <string name="password_label">पासवर्ड</string>
+
+    <string name="login_hint_password">पासवर्ड</string>
+    <string name="add_expense_title">इमेज ऐड करें!</string>
+    <string name="add_expense_take_photo">इमेज क्लिक करें</string>
+    <string name="add_expense_choose_from_library">लाइब्रेरी से चयन करें</string>
+    <string name="add_expense_cancel">रद्द करें</string>
+    <string name="expense_content_amount">राशि:</string>
+    <string name="txt_select_a_language">भाषा चुनें</string>
+    <string name="vehicle_number">वाहन संख्या</string>
+    <string name="vehicle_net_weight">वाहन का नेट वजन</string>
+    <string name="remark">टिप्पणी</string>
+
+    <string name="total_planned_weight">कुल योजनाबद्ध वजन</string>
+    <string name="farm_details_view_area">क्षेत्र देखें</string>
+    <string name="farm_details_edit_details">विवरण संपादित करें</string>
+    <string name="previous_visits_label">पिछला दौरा</string>
+    <string name="forget_password_activity_title">पासवर्ड रीसेट</string>
+    <string name="show_sample_germination_activity_title">नमूना अंकुरण और रिक्ति</string>
+
+
+    <!-- <string name="login_hint_password">पासवर्ड</string>
+     <string name="add_expense_title">इमेज ऐड करें!</string>
+     <string name="add_expense_take_photo">इमेज क्लिक करें</string>
+     <string name="add_expense_choose_from_library">लाइब्रेरी से चयन करें</string>
+     <string name="add_expense_cancel">रद्द करें</string>
+     <string name="expense_content_amount">राशि:</string>
+     <string name="txt_select_a_language">भाषा चुनें</string>-->
+
+
+    <string name="visit_button_label">दौरा</string>
+    <string name="harvest_button_label">फसल कटाई</string>
+    <string name="flowering_date_hint">पुष्पन तिथि</string>
+    <string name="harvesting_date_hint">कटाई की तिथि </string>
+    <string name="bag_added_harvest">बैग सफलतापूर्वक जोड़ा गया</string>
+    <string name="setting_change_language">भाषा बदलो</string>
+
+    <!-- <string name="login_hint_password">पासवर्ड</string>
+     <string name="add_expense_title">इमेज ऐड करें!</string>
+     <string name="add_expense_take_photo">इमेज क्लिक करें</string>
+     <string name="add_expense_choose_from_library">लाइब्रेरी से चयन करें</string>
+     <string name="add_expense_cancel">रद्द करें</string>
+     <string name="expense_content_amount">राशि:</string>
+     <string name="txt_select_a_language">भाषा चुनें</string>-->
+
+    <!--18/1/19-->
+    <string name="configured_area_in_sqm_label">कॉन्फ़िगर किया गया क्षेत्र(व.मी. में)</string>
+    <string name="plant_to_plant_spacing_label">प्लांट टू प्लांट अंतराल:</string>
+    <string name="row_to_row_spacing_label">पंक्ति से पंक्ति अंतराल :</string>
+    <string name="activity_details_label">गतिविधि विवरण</string>
+    <string name="description_label">विवरण :</string>
+    <string name="chemical_label">केमिकल</string>
+    <string name="quantity_label">मात्रा :</string>
+    <string name="i_have_completed_the_activity_label">मैंने गतिविधि पूरी कर ली है।</string>
+    <string name="activity_inputs_label">गतिविधि में इनपुट</string>
+    <string name="number_of_labour_hint">मजदूरों की संख्या</string>
+    <string name="labour_total_cost_hint">मजदूरों की कुल लागत</string>
+    <string name="number_of_machines_hint">मशीनों की संख्या</string>
+    <string name="machine_total_cost_hint">मशीनों की कुल लागत</string>
+    <string name="chemical_quantity_hint">केमिकल की मात्रा</string>
+    <string name="total_cost_of_chemical_hint">केमिकल की कुल लागत</string>
+    <string name="chemicals_added_label">केमिकल जोड़ा गया</string>
+    <string name="chemicals_label">केमिकल :-</string>
+    <string name="chemical_name_label">केमिकल नाम</string>
+    <string name="upload_images_label">इमेज अपलोड करें</string>
+    <string name="farmer_reply_hint">किसान का जवाब</string>
+
+    <!--19/1/19-->
+    <string name="capture_all_images_msg">कृपया सभी चित्र कैप्चर करें।</string>
+    <string name="cannot_view_farm_in_offline_msg">आप ऑफ़लाइन मोड में फ़ार्म क्षेत्र नहीं देख सकते हैं।</string>
+    <string name="no_data_for_this_visit_msg">इस यात्रा के लिए कोई डेटा उपलब्ध नहीं है।</string>
+    <!--<string name="view_germination_label">अंकुरण देखें</string>
+    <string name="add_germination_label">अंकुरण जोड़ें</string>-->
+    <string name="fail_to_load_farm_data">खेत का डेटा लोड करने में विफल। बाद में पुन: प्रयास करें</string>
+    <string name="no_chart_data_msg">चार्ट के लिए कोई डेटा उपलब्ध नहीं है</string>
+    <string name="location_unavailable">अनुपलब्ध</string>
+    <string name="probability">संभावना</string>
+    <string name="rain">वर्षा</string>
+    <string name="wind">हवा</string>
+    <string name="humidity">नमी</string>
+    <string name="cloud_cover">बादल मूंदना</string>
+    <string name="city">शहर</string>
+    <string name="region">क्षेत्र</string>
+    <string name="weather">मौसम</string>
+    <string name="today_s_weather_report">आज की मौसम रिपोर्ट</string>
+    <string name="max">अधिकांश</string>
+    <string name="min">न्यूनतम</string>
+    <string name="sort_by">क्रमबद्ध करें</string>
+    <string name="harvest_date_high_to_low">हार्वेस्ट तिथि - उच्चतम से निम्नतम</string>
+    <string name="standing_area_high_to_low">स्थायी क्षेत्र - उच्चतम से निम्नतम तक</string>
+    <string name="standing_area_low_to_high">स्थायी क्षेत्र - निम्नतम से उच्चतम</string>
+
+    <string name="open">खुला</string>
+    <string name="close">बंद करे</string>
+    <string name="otp_message">ओ टी पी दर्ज करें</string>
+    <string name="loading">लोड हो रहा है...</string>
+    <string name="invalid_code_message_label">अमान्य कोड</string>
+    <string name="invalid_number_message_label">अवैध फोन नंबर</string>
+    <string name="message_quota_finished_message_label">आपने लॉगिन अटेंड की अधिकतम सीमा पार कर ली है</string>
+    <string name="title_activity_check_area_map">नक्शा</string>
+    <string name="title_activity_show_area_on_map">नक्शा</string>
+    <string name="season_label">सीज़न</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="msg_token_fmt">टोकन</string>
+    <string name="input_cost_head_label">चरण 1: इनपुट लागत जोड़ें</string>
+    <string name="resource_cost_head_label">चरण 2: प्रयुक्त संसाधन जोड़ें</string>
+    <string name="resource_name_hint">संसाधन का नाम</string>
+    <string name="txt_no_cost_and_resource_data_avaialble">कोई इनपुट लागत और संसाधन डेटा उपलब्ध नहीं है</string>
+    <string name="enter_area_hint">क्षेत्र दर्ज करें</string>
+    <string name="no_of_days_offline_exceeded">कृपया सर्वर से प्रतिदिन सिंक करें, अधिकतम 3 दिनों के लिए आप ऑफ़लाइन मोड में हो सकते हैं</string>
+    <string name="map_option_bottom_sheet">स्थिति चुनें</string>
+    <string name="map_option_easy_mode">आसान स्थिति</string>
+    <string name="map_option_normal_mode">सामान्य स्थिति</string>
+    <string name="area_entere_manually_msg">क्षेत्र मैन्युअल रूप से जोड़ा जाता है</string>
+    <string name="nutrient_management_label">पोषक तत्व रिकॉर्ड</string>
+    <string name="weight_management_label">शाकनाशी रिकॉर्ड</string>
+    <string name="pest_management_label">कीटनाशक रिकॉर्ड</string>
+    <string name="soil_moisture_level_label">मृदा नमी स्तर रिकॉर्ड</string>
+    <string name="add_comment_label">टिप्पणी जोड़ें</string>
+    <string name="update_standing_area">स्टैंडिंग एरिया को अपडेट करें</string>
+    <string name="add_photo_msg">तस्वीर जोड़ो</string>
+    <string name="farms_label">खेत</string>
+    <string name="farmers_label">किसान</string>
+    <string name="add_more_details_label">अधिक विवरण जोड़ें</string>
+    <string name="remove_details_label">विवरण हटाएं</string>
+    <string name="no_germination_available_msg">कोई अंकुरण अभी तक जोड़ा नहीं गया है</string>
+    <string name="enter_weight_label">वजन दर्ज करें :</string>
+    <string name="invalid_input_msg">अमान्य निवेश</string>
+    <string name="standing_area_not_available_harvest_msg">स्थायी क्षेत्र फसल के लिए उपलब्ध नहीं है</string>
+    <string name="bags_qty_label">पैकिंग गिनती</string>
+    <string name="enter_total_weghts_of_packing_count_msg">कृपया पैकिंग गिनती के कुल वजन दर्ज करें</string>
+    <string name="enter_packing_count_msg">कृपया पैकिंग गिनती दर्ज करें</string>
+    <string name="select_harvest_done_date_msg">कृपया कटाई की गई तिथि दर्ज करें</string>
+    <string name="enter_weighment_date_msg">कृपया तौल तिथि दर्ज करें</string>
+    <string name="enter_harvested_area_msg">कृपया कटाई क्षेत्र दर्ज करें</string>
+    <string name="add_farm_label">फार्म जोड़ें</string>
+    <string name="add_more_farm_label">अधिक फार्म जोड़ें</string>
+    <string name="help_label">Help</string>
+    <string name="crop_loss_damage_labe">फसल हानि / नुकसान</string>
+    <string name="version_label">एप्लिकेशन संस्करण:</string>
+    <string name="near_me_label">मेरे पास</string>
+    <string name="submit_area">क्षेत्र जमा करें</string>
+    <string name="add_more_label">अधिक जोड़ें</string>
+    <string name="no_actual_area_available_go_to_capture">कोई वास्तविक क्षेत्र उपलब्ध नहीं है, कृपया खेत क्षेत्र पर कब्जा करने के लिए जाएं</string>
+    <string name="add_existing_farm_title">मौजूदा किसान के लिए खेत जोड़ें</string>
+    <string name="dash"> - </string>
+    <string name="farm_id_label">फार्म आईडी:</string>
+    <string name="farm_name_label">खेत का नाम</string>
+    <string name="acres_msg_brkt">(एकड़)</string>
+    <string name="hectare_msg_brkt">(हेक्टेयर)</string>
+    <string name="please_try_again_later_msg">बाद में पुन: प्रयास करें</string>
+    <string name="account_deactivated_contact_admin_msg">प्रोफ़ाइल निष्क्रिय कर दी गई। पुनः सक्रिय करने के लिए कृपया अपने व्यवस्थापक से संपर्क करें।</string>
+    <string name="notification_label">अधिसूचना </string>
+    <string name="txt_no_timeline_data_avaialble">कोई समयरेखा डेटा उपलब्ध नहीं है</string>
+    <string name="txt_no_notification_available">कोई अधिसूचना उपलब्ध नहीं है</string>
+    <string name="txt_no_harvest_data_avaialble">कोई फसल डेटा उपलब्ध नहीं है</string>
+    <string name="landing_filter">फ़िल्टर</string>
+    <string name="password_updated">अद्यतन सफलतापूर्ण हो गया</string>
+    <string name="enter_bag_no_and_weights_in_which_crop_can_be_seen_easy">कुल वजन और पैक्स की संख्या दर्ज करें जिसमें फसल देखी जा सकती है</string>
+    <string name="invalid_number_please_check">अमान्य नंबर, कृपया जाँच करें</string>
+    <string name="submit_label_login">जमा करें</string>
+    <string name="bigha_msg_brkt">(बीघा)</string>
+    <string name="please_select_chemical_msg">कृपया रासायनिक का चयन करें</string>
+    <string name="please_select_chemical_unit_msg">कृपया रासायनिक इकाई का चयन करें</string>
+    <string name="no_harvest_paln_data_avaialble_label">नियोजित फसल के लिए कोई रिकॉर्ड नहीं मिला</string>
+    <string name="no_harvest_data_available">फसल संग्रह के लिए कोई रिकॉर्ड नहीं मिला</string>
+    <string name="expense_type_hint">व्यय प्रकार दर्ज करें</string>
+    <string name="harvest_date_exp_label_act">फसल तिथि (वास्तविक)</string>
+    <string name="harvest_date_exp_label_exp">फसल की तिथि (अपेक्षित)</string>
+    <string name="adhaar_label">आधार</string>
+    <string name="address_line_1_label">पता पंक्ति नं. 1</string>
+    <string name="address_line_2_label">पता पंक्ति नं. 2</string>
+    <string name="india_label">भारत</string>
+    <string name="bank_name_label">बैंक का नाम</string>
+    <string name="account_number_label">खाता संख्या</string>
+    <string name="account_holder_name_label">खाताधारक का नाम</string>
+    <string name="ifsc_code_label">आई एफ एस सी कोड</string>
+    <string name="branch_label">शाखा</string>
+    <string name="current_crop_label">वर्तमान फसल</string>
+    <string name="submit_area_label">क्षेत्र जमा करें</string>
+    <string name="area_label">क्षेत्र</string>
+    <string name="multiple_login_msg">CropTrails दूसरे फोन पर खुली है। इस फ़ोन में उपयोग करने के लिए फिर से लॉगिन करें।</string>
+    <string name="farmer_and_farm_added_succes_msg">किसान और खेत सफलतापूर्वक जुड़ गए</string>
+    <string name="already_registered_mobile_msg">पहले से ही पंजीकृत मोबाइल नंबर</string>
+    <string name="failed_add_farm_and_farmer_msg">किसान और खेत को जोड़ने में विफल</string>
+    <string name="login_again_label">फिर से लॉगिन करें</string>
+    <string name="select_irri_source_prompt">सिंचाई स्रोत का चयन करें</string>
+    <string name="select_irri_type_prompt">सिंचाई प्रकार का चयन करें</string>
+    <string name="select_soil_type_prompt">मिट्टी के प्रकार का चयन करें</string>
+    <string name="select_season_prompt">सीजन का चयन करें</string>
+    <string name="failed_to_load_data_msg">डेटा लोड करने में विफल, कृपया बाद में पुन: प्रयास करें</string>
+    <string name="enter_farm_id_msg">कृपया फार्म आईडी दर्ज करें</string>
+    <string name="enter_farm_area_msg">कृपया खेत क्षेत्र प्रवेश करें</string>
+    <string name="select_season_msg">कृपया मौसम का चयन करें</string>
+    <string name="farm_added_success_msg">फार्म सफलतापूर्वक जोड़ा गया</string>
+    <string name="failed_add_farm_msg">खेत जोड़ने में विफल, कृपया पुनः प्रयास करें</string>
+    <string name="enter_sowing_date_hint">बोने की तिथि दर्ज करें</string>
+    <string name="enter_expected_flowering_date_hint">अपेक्षित पुष्पण की तिथि दर्ज करें</string>
+    <string name="enter_expected_harvesting_date_hint">अपेक्षित कटाई तिथि दर्ज करें</string>
+    <string name="total_expense_labe">कुल खर्च:</string>
+    <string name="sure_want_to_enter_actual_flowering_mg">क्या आप वाकई फ्लावरिंग तिथि दर्ज करना चाहते हैं?</string>
+    <string name="sure_want_to_enter_actual_harvest_mg">क्या आप वाकई वास्तविक कटाई की तिथि दर्ज करना चाहते हैं?</string>
+    <string name="view_more_label">और देखो</string>
+    <string name="now_not_allowed_to_add_activity_msg">अब आपको गतिविधि जोड़ने की अनुमति नहीं है</string>
+    <string name="add_input_cost_label">इनपुट लागत जोड़ें</string>
+    <string name="you_can_add_upto_10_visit_in_offline">आप केवल ऑफ़लाइन मोड में फ़ार्म पर 10 विज़िट तक जोड़ सकते हैं</string>
+    <string name="timeline_activity_label">समयरेखा गतिविधि</string>
+    <string name="no_data_found_for_activity_msg">इस गतिविधि के लिए कोई डेटा नहीं मिला</string>
+    <string name="error_occurred_msg">त्रुटि हुई।</string>
+    <string name="no_image_found_for_activity_msg">इस गतिविधि के लिए कोई छवि नहीं मिली</string>
+    <string name="soil_moisture">मिटटी की नमी</string>
+    <string name="material_label">सामग्री</string>
+    <string name="days_label">दिन</string>
+    <string name="seed_provided_on_label">बीज उपलब्ध कराया गया</string>
+    <string name="qty_seed_provided_label">मात्रा (बीज उपलब्ध कराया गया)</string>
+    <string name="grade_d">ग्रेड डी</string>
+    <string name="grade_c">ग्रेड सी</string>
+    <string name="grade_b">ग्रेड बी</string>
+    <string name="grade_a">ग्रेड ए</string>
+    <string name="farmer_not_allowed_to_add_area_msg">किसान को खेत क्षेत्र जोड़ने की अनुमति नहीं है</string>
+    <string name="details_label">विवरण</string>
+    <string name="sample_label">नमूना</string>
+    <string name="sample_data_stored_msg">नमूना डेटा सफलतापूर्वक संग्रहीत किया गया</string>
+    <string name="weight_label">वजन</string>
+    <string name="kg_label">किलोग्राम</string>
+    <string name="total_expenses_label">कुल खर्च</string>
+    <string name="monthly_expenses_expense">मासिक खर्च</string>
+    <string name="remove_label">हटाना</string>
+    <string name="calendar_activity_details_label">कैलेंडर गतिविधि विवरण</string>
+    <string name="farmer_cost_title">किसान की लागत</string>
+    <string name="fail_to_load_cost_msg">लागत डेटा लोड करने में विफल, कृपया बाद में पुनः प्रयास करें</string>
+    <string name="input_cost_and_resource_title">इनपुट लागत और संसाधन</string>
+    <string name="enter_expense_ammount_msg">कृपया व्यय राशि दर्ज करें</string>
+    <string name="enter_date_of_expense_msg">कृपया व्यय की तिथि दर्ज करें</string>
+    <string name="enter_expense_reson_msg">कृपया व्यय का कारण दर्ज करें</string>
+    <string name="cost_added_sussessful_msg">किसान लागत सफलतापूर्वक जोड़ा गया</string>
+    <string name="failed_to_add_farmer_expense">व्यय जोड़ने में विफल, कृपया बाद में पुनः प्रयास करें</string>
+    <string name="select_cost_type_promt">इनपुट कॉस्ट टाइप चुनें</string>
+    <string name="select_resource_type_prompt">संसाधन प्रकार का चयन करें</string>
+    <string name="other_labe">अन्य</string>
+    <string name="select_cost_type_msg">कृपया किसी भी प्रकार का लागत चयन करें</string>
+    <string name="enter_cost_ammount_msg">कृपया लागत राशि दर्ज करें</string>
+    <string name="enter_cost_date_msg">कृपया लागत तिथि दर्ज करें</string>
+    <string name="enter_expense_type_msg">कृपया व्यय प्रकार दर्ज करें</string>
+    <string name="select_resource_type_msg">कृपया किसी भी संसाधन प्रकार का चयन करें</string>
+    <string name="please_enter_resource_qty_msg">कृपया संसाधन मात्रा दर्ज करें</string>
+    <string name="enter_resource_name_msg">कृपया संसाधन नाम दर्ज करें</string>
+    <string name="enter_resource_unit_msg">कृपया संसाधन इकाई दर्ज करें</string>
+    <string name="select_date_msg">किसी भी तिथि का चयन करें</string>
+    <string name="select_resource_use_date_msg">कृपया संसाधन प्रयुक्त दिनांक दर्ज करें</string>
+    <string name="data_submit_success_msg">डेटा सफलतापूर्वक सबमिट किया गया</string>
+    <string name="failed_to_submit_resource_and_cost_msg">इनपुट लागत और संसाधन डेटा सबमिट करने में विफल, कृपया बाद में पुनः प्रयास करें</string>
+    <string name="need_to_fill_input_or_resorce_msg">आपको सबमिट करने के लिए इनपुट लागत फ़ॉर्म या संसाधन उपयोग किए गए फ़ॉर्म की आवश्यकता है</string>
+    <string name="enable_location_msg">कृपया अपनी स्थान सेवा सक्षम करें</string>
+    <string name="no_far_found_near_you">आपके आस-पास कोई खेत नहीं है</string>
+    <string name="input_cost_label">इनपुट लागत</string>
+    <string name="farmer_details_label">किसान का विवरण</string>
+    <string name="farm_details_label">खेत का विवरण</string>
+    <string name="uploaded_images_label">अपलोड की गईं छवियाँ </string>
+    <string name="expense_remove_success_msg">व्यय सफलतापूर्वक हटा दिया गया</string>
+    <string name="expense_remove_fail_msg">व्यय हटाने में विफल</string>
+    <string name="confirm_remove_ecpense_msg">क्या आप इस खर्च को हटाना सुनिश्चित कर रहे हैं?</string>
+
+    <string name="enter_health_card_number_msg">कृपया मृदा स्वास्थ्य कार्ड नंबर दर्ज करें</string>
+    <string name="enter_health_card_validity_date_start_msg">कृपया कार्ड वैधता की प्रारंभ तिथि दर्ज करें</string>
+    <string name="enter_health_card_validity_date_end_msg">कृपया कार्ड की वैधता की अंतिम तिथि दर्ज करें</string>
+    <string name="add_atleast_one_param_health_card">कृपया कम से कम एक पैरामीटर जोड़ें</string>
+    <string name="required_label">आवश्यक</string>
+    <string name="capure_1_image_msg">कृपया पहली छवि कैप्चर करें</string>
+    <string name="capure_2_image_msg">कृपया द्वितीय छवि कैप्चर करे</string>
+    <string name="capure_3_image_msg">कृपया तृतीय छवि कैप्चर करे</string>
+    <string name="activity_added_success_msg">गतिविधि को सफलतापूर्वक जोड़ा गया</string>
+    <string name="enter_health_card_sample_number_msg">कृपया मिट्टी नमूना संख्या दर्ज करें</string>
+    <string name="enter_health_card_sample_collect_date_msg">कृपया नमूना संग्रह की तिथि दर्ज करें</string>
+    <string name="card_please_enter_value_msg">कृपया मान दर्ज करें</string>
+    <string name="card_please_enter_unit_msg">कृपया इकाई दर्ज करें</string>
+    <string name="enter_crop_id_msg">कृपया फार्म आईडी दर्ज करें</string>
+    <string name="select_crop_for_farm_msg">खेत के लिए फसल का चयन करें</string>
+    <string name="select_crop_rompt">फसल का चयन करें</string>
+    <string name="soil_health_card_no_label">मृदा स्वास्थ्य कार्ड नं.</string>
+    <string name="health_card_no_hint">* हेल्थ कार्ड नं.</string>
+    <string name="validity_label">वैधता</string>
+    <string name="from_date_hint">*से</string>
+    <string name="to_date_hint">*तक</string>
+    <string name="parameters_label">पैरामीटर</string>
+    <string name="soil_sample_details_label">मिट्टी का नमूना विवरण</string>
+    <string name="soil_sample_number_hint">* मृदा नमूना संख्या</string>
+    <string name="sample_collected_on_hint">* नमूना संग्रह की तिथि</string>
+    <string name="mobile_number_not_availbale_msg">मोबाइल नंबर उपलब्ध नहीं</string>
+    <string name="arrow_symbol">\u2BC8</string>
+    <string name="sowing_date_not_available_label">बुवाई की तिथि उपलब्ध नहीं है</string>
+    <string name="sure_want_to_enter_sowing_date_mg">क्या आप वाकई बुवाई की तिथि दर्ज करना चाहते हैं?</string>
+    <string name="add_sowing_date_msg">बुवाई की तिथि अनुपलब्ध है, कृपया बुवाई की तिथि जोड़ें</string>
+    <string name="sowing_date_updated_success_msg">बोने की तिथि अद्यतन सफलतापूर्वक</string>
+    <string name="soil_health_card_label">मृदा स्वास्थ्य कार्ड</string>
+    <string name="no_soil_health_card_data_added_yet_msg">कोई मृदा स्वास्थ्य कार्ड डेटा अभी तक जोड़ा नहीं गया है!</string>
+    <string name="add_new_sample_health_card_label">नया नमूना जोड़ें</string>
+    <string name="soil_health_card_seen_and_addded_in_online_mode_msg">वर्तमान में मृदा स्वास्थ्य कार्ड डेटा को ऑनलाइन मोड में देखा / जोड़ा नहीं जा सकता है</string>
+    <string name="no_parameter_values_found_for_adding_soil_health_card">कोई मृदा स्वास्थ्य कार्ड पैरामीटर नहीं मिला, कृपया पैरामीटर को जोड़ने के लिए अपनी कंपनी से संपर्क करें</string>
+    <string name="health_card_added_success_msg">मृदा स्वास्थ्य कार्ड सफलतापूर्वक जोड़ा गया</string>
+    <string name="laboratory_name">प्रयोगशाला का नाम</string>
+    <string name="select_parameter_prompt">पैरामीटर का चयन करें</string>
+    <string name="test_value_hint">*परीक्षण मूल्य</string>
+    <string name="unit_hint_star">*इकाई</string>
+    <string name="add_health_card_title">स्वास्थ्य कार्ड जोड़ें</string>
+    <string name="rainfall_label">वर्षा</string>
+    <string name="mm_unit">मिमी</string>
+    <string name="farm_coordinates_not_availabe_showing_weather_data_of_your_current_location">आपके वर्तमान स्थान का मौसम डेटा दिखा रहा है, क्योंकि फ़ार्म जियोलोकेशन अनुपलब्ध है</string>
+    <string name="showing_weather_data_of_your_farm_location">खेत के स्थान का मौसम डेटा दिखा रहा है</string>
+    <string name="please_zoom_map_msg_easy_mode">कृपया मानचित्र ज़ूम करें और क्षेत्र को मापने के लिए फिर से टैप करें</string>
+    <string name="try_again_msg">पुनः प्रयास करें</string>
+    <string name="failed_to_measure_area_msg">क्षेत्र को मापने में विफल</string>
+    <string name="enter_laboratory_name_msg">कृपया प्रयोगशाला नाम दर्ज करें</string>
+    <string name="resources_used_label">प्रयुक्त संसाधन</string>
+    <string name="sample_number_label">नमूने की संख्या</string>
+    <string name="sample_collected_on_label">सैंपल कलेक्ट किया गया</string>
+    <string name="input_cost_type_label">इनपुट लागत प्रकार</string>
+    <string name="added_by_label">द्वारा जोड़ा</string>
+    <string name="pick_expense_date_hint">व्यय की तारीख चुनें</string>
+    <string name="pick_used_date_hint">प्रयुक्त तिथि चुनें</string>
+    <string name="expense_date_label">व्यय तिथि</string>
+    <string name="resource_used_date_label">संसाधन प्रयुक्त दिनांक</string>
+    <string name="resource_type_label">संसाधन प्रकार</string>
+    <string name="filter_by_label">के द्वारा छनित</string>
+    <string name="harvest_label">फसल की कटाई</string>
+    <string name="weather_data_not_available_right_now_msg">मौसम का डेटा अभी उपलब्ध नहीं है।</string>
+    <string name="plant_population_label">पौधे की जनसंख्या</string>
+    <string name="input_cost_and_resource_label">इनपुट लागत और संसाधन</string>
+    <string name="already_added_visit_for_today">दौरा आज के लिए पहले से ही जोड़ा गया है।</string>
+
+    <string name="please_enter_seed_lot_number_label">बीज लॉट संख्या दर्ज करें</string>
+    <string name="pease_enter_dispached_area_label">भेजा क्षेत्र दर्ज करें</string>
+    <string name="please_enter_quantity_msg">मात्रा डालें</string>
+    <string name="please_enter_date_label">दिनांक दर्ज करें</string>
+    <string name="failed_to_add_seed_issue_details_msg">बीज मुद्दा विवरण जोड़ने में विफल</string>
+    <string name="seed_added_successful_msg">बीज मुद्दा विवरण को सफलतापूर्वक जोड़</string>
+    <string name="seed_quantity_label">बीज मात्रा</string>
+    <string name="seed_issue_label">बीज अंक</string>
+    <string name="seed_issue_details_label">बीज अंक विवरण</string>
+
+    <string name="plsease_select_atleast_one_farm">कम से कम एक खेत जोड़ें</string>
+    <string name="please_select_a_farmer_msg">कृपया किसान का चयन करें।</string>
+    <string name="please_select_a_cluser_msg">कृपया एक क्लस्टर का चयन करें।</string>
+    <string name="click_to_add_farm_msg">किसान कम से कम एक खेत होना आवश्यक है। कृपया खेत जोड़ने के लिए क्लिक करें।</string>
+    <string name="enter_farmer_contact_number_msg">किसान संपर्क नंबर डालें।</string>
+    <string name="enter_farmer_name_msg">किसान नाम दर्ज करें।</string>
+    <string name="select_cluster_label">क्लस्टर का चयन करें</string>
+    <string name="please_enter_password_msg">कृप्या पास्वर्ड भरो</string>
+    <string name="satelite_view_label">उपग्रह देखें</string>
+    <string name="average_value_label">औसत माप</string>
+    <string name="no_cluster_found_to_add_cluster">खेत जोड़ने के लिए कोई क्लस्टर है, कृपया क्लस्टर जोड़ने के लिए वेब प्रवेश करने के लिए जाना।</string>
+    <string name="invalid_ifsc_code_msg">अमान्य IFSC कोड</string>
+    <string name="please_enter_account_number">खाता संख्या दर्ज करें</string>
+    <string name="please_enter_account_holder_name">खाताधारक का नाम दर्ज करें</string>
+    <string name="invalid_mobile_number_msg">अमान्य मोबाइल नंबर</string>
+    <string name="invalid_aadhar_number_msg">अमान्य आधार संख्या</string>
+    <string name="no_data_available_msg">कोई डेटा उपलब्ध नहीं है।</string>
+    <string name="loss_date_label">क्षति की तिथि</string>
+
+    <string name="invalid_farmer_name_msg">अमान्य किसान का नाम</string>
+    <string name="invalid_father_name_msg">अमान्य पिता का नाम</string>
+
+    <string name="area_unit_label">क्षेत्र इकाई</string>
+    <string name="are_you_sure_exit_without_saving">क्या आप वाकई डेटा को सहेजे बिना बाहर निकलना चाहते हैं?</string>
+
+
+    <string name="update_has_been_just_dowloaded_msg">अभी एक अपडेट डाउनलोड किया गया है।</string>
+    <string name="restart_label">पुनर्प्रारंभ करें</string>
+    <string name="select_loss_damage_reason_prompt">नुकसान / नुकसान का कारण चुनें</string>
+    <string name="select_label">चयन करें</string>
+    <string name="high_to_low">उच्चतम से निम्नतम</string>
+    <string name="low_to_high">निम्नतम से उच्चतम </string>
+    <string name="select_atleast_one_bag_to_pick_up">कृपया चुने हुए एक बैग को चिह्नित करने के लिए कम से कम एक बैग चुनें</string>
+    <string name="net_weight_label">कुल भार</string>
+    <string name="pickup_date_label">संग्रह तिथि</string>
+    <string name="no_of_bags">बैग की संख्या</string>
+    <string name="total_amount_label">कुल रकम</string>
+    <string name="sell_quantity_label">बिक्री की मात्रा</string>
+    <string name="sold_on_label">बिक्री की तारीख</string>
+    <string name="rate_label">दर</string>
+    <string name="per_kg_label">प्रति किलोग्राम</string>
+    <string name="sell_record_updated_success_msg">रिकॉर्ड सफलतापूर्वक अपडेट किया गया</string>
+    <string name="already_added_all_information_about_sell_msg">पहले से ही इस रिकॉर्ड के बारे में सभी जानकारी जोड़ दी</string>
+
+
+
+
+    <string name="sell_record_label">रिकॉर्ड बेचते हैं</string>
+    <string name="optional_label">वैकल्पिक</string>
+    <string name="pickup_label">उठाना</string>
+    <string name="picked_up_label">उठाया</string>
+    <string name="select_bags_label">बैग का चयन करें</string>
+    <string name="alredy_all_bags_selected_label">पहले से ही सभी बैग चुने गए</string>
+    <string name="mark_bags_tip_msg">बैग उठाएं और जमा करें</string>
+    <string name="mark_bags_tip_no_remaining_bags_msg">इस फसल संग्रह में उठाए गए के रूप में चिह्नित करने के लिए कोई बैग उपलब्ध नहीं है</string>
+    <string name="enter_sell_qty_of_harvest_msg">कृपया फसल की बिक्री की मात्रा दर्ज करें</string>
+    <string name="enter_total_selling_amount_msg">कृपया बिक्री की कुल राशि दर्ज करें</string>
+    <string name="enter_current_rate_of_crop_msg">कृपया फसल की वर्तमान दर दर्ज करें</string>
+    <string name="enter_selling_date">कृपया बिक्री की तारीख दर्ज करें</string>
+    <string name="failed_to_add_sell_record_msg">बेचने का रिकॉर्ड जोड़ने में विफल</string>
+    <string name="sell_record_added_msg">रिकॉर्ड बिक्री सफलतापूर्वक जोड़ा गया</string>
+
+    <!--08/11/19 app Tour-->
+    <string name="tour_menu_how_to_use">कैसे इस्तेमाल करे</string>
+    <string name="tour_dashboard_title">डैशबोर्ड</string>
+    <string name="tour_dashboard_content">यह आपको ग्राफिकल प्रतिनिधित्व और क्लस्टर के विश्लेषण और उनके खेतों को प्राप्त करने में मदद करता है</string>
+    <string name="tour_home_title">घर</string>
+    <string name="tour_home_farmer_content">अपने खेतों तक पहुँचें और प्रबंधित करें</string>
+    <string name="tour_home_supervisor_content">अपने क्लस्टर में सभी खेतों तक पहुंच और प्रबंधन करें</string>
+    <string name="tour_home_admin_content">अपनी कंपनी के सभी खेतों तक पहुँचें और उनका प्रबंधन करें</string>
+    <string name="tour_nearest_farm_title">निकटतम खेत </string>
+    <string name="tour_nearest_farm_content">अपने नजदीकी खेत की जाँच करें</string>
+    <string name="tour_expenses_title">खर्च</string>
+    <string name="tour_expenses_content">सुपरवाइजर के खर्च का ब्योरा</string>
+    <string name="got_it">समझ गया</string>
+    <string name="tour_skip">छोड़ें</string>
+
+    <string name="addfarm_tour_clust_sel_title">क्लस्टर चयन</string>
+    <string name="addfarm_tour_clust_sel_content">ड्रॉपडाउन सूची से क्लस्टर का चयन करें</string>
+    <string name="addfarm_tour_farmer_detail_title">किसान विवरण</string>
+    <string name="addfarm_tour_farmer_detail_content">किसान का नाम दर्ज करें</string>
+    <string name="addfarm_tour_contact_detail_title">संपर्क विवरण</string>
+    <string name="addfarm_tour_contact_details_content">देश कोड चुनें और फोन नंबर दर्ज करें</string>
+    <string name="addfarm_tour_farm_detail_title">फार्म का विवरण</string>
+    <string name="addfarm_tour_farm_detail_content">फार्मआईडी, फार्म क्षेत्र, फसल का नाम और मौसम जैसे विवरण दर्ज करें</string>
+    <string name="addfarm_tour_submit_title">प्रस्तुत</string>
+    <string name="addfarm_tour_submit_content">खेत का विवरण सहेजें</string>
+
+    <string name="testing_tour_filter_title">फ़िल्टर</string>
+    <string name="testing_tour_filter_content">आपको जो चाहिए वो आसानी से मिल जाएगा</string>
+    <string name="testing_tour_more_option_title">अधिक विकल्प</string>
+    <string name="testing_tour_more_option_content">विवरण जोड़ने के लिए अधिक कार्यक्षमता प्राप्त करें</string>
+    <string name="testing_tour_cost_title">लागत / संसाधन</string>
+    <string name="testing_tour_cost_content">व्यय और प्रयुक्त संसाधन जोड़ें</string>
+    <string name="testing_tour_damage_title">नुक़सान</string>
+    <string name="testing_tour_damage_content">किसी भी फसल हानि और उसके कारण को जोड़ें</string>
+    <string name="testing_tour_soil_health_title">मृदा स्वास्थ्य</string>
+    <string name="testing_tour_soil_health_content">मिट्टी की गुणवत्ता और लैब परीक्षण के परिणाम के बारे में विवरण जोड़ें</string>
+    <string name="testing_tour_plant_popl_title">पौधे की जनसंख्या</string>
+    <string name="testing_tour_plant_popl_content">एक इकाई क्षेत्र में मौजूद पौधों की कुल संख्या जोड़ें</string>
+    <string name="testing_tour_seed_issue_title">बीज मुद्दा</string>
+    <string name="testing_tour_seed_issue_content">बीज के मुद्दों के बारे में जानकारी जोड़ें</string>
+    <string name="testing_tour_harvesting_title">फसल कटाई</string>
+    <string name="testing_tour_harvesting_content">कटाई क्षेत्र और पैकेज वजन और मात्रा विवरण जोड़ें</string>
+    <string name="testing_tour_farm_visit_title">खेत का दौरा</string>
+    <string name="testing_tour_farm_visit_content">फ़ार्म विज़िट जोड़ें, फ़ोटो क्लिक करें और फसल की स्थिति चुनें</string>
+    <string name="ok">ठीक</string>
+
+
+    <string name="timeline_ac3_tour_upload_img_title">तश्वीरें अपलोड करो</string>
+    <string name="timeline_ac3_tour_upload_img_content">फार्म के फोटो और किसान के साथ क्लिक करें और तस्वीरें अपलोड करें</string>
+    <string name="timeline_ac3_tour_crop_cond_title">फसल की स्थिति</string>
+    <string name="timeline_ac3_tour_crop_cond_content">फसल शारीरिक स्थिति का चयन करें</string>
+    <string name="timeline_ac3_tour_add_more_details_title">अधिक विवरण जोड़ें</string>
+    <string name="timeline_ac3_tour_add_comment_title">टिप्पणी जोड़ें</string>
+    <string name="timeline_ac3_tour_add_comment_content">अपने भेंट के बारे में कुछ कहें</string>
+    <string name="timeline_ac3_tour_soil_moisture_record_title">मृदा नमी रिकॉर्ड</string>
+    <string name="timeline_ac3_tour_soil_moisture_record_content">मृदा मॉइस्चराइजेशन स्तर जोड़ें</string>
+    <string name="timeline_ac3_tour_pesticide_record_title">कीटनाशक रिकॉर्ड</string>
+    <string name="timeline_ac3_tour_pesticide_record_content">कीटनाशक छिड़काव मात्रा और तिथि जोड़ें</string>
+    <string name="timeline_ac3_tour_herbicide_record_title">हर्बिसाइड रिकॉर्ड</string>
+    <string name="timeline_ac3_tour_herbicide_record_content">शाकनाशी छिड़काव मात्रा और तिथि जोड़ें</string>
+    <string name="timeline_ac3_tour_nutrient_record_title">पोषक तत्व रिकॉर्ड</string>
+    <string name="timeline_ac3_tour_nutrient_record_content">दिनांक और मात्रा के साथ उपयोग किए गए किसी भी पोषक तत्व के बारे में विवरण जोड़ें</string>
+    <string name="login_label">लॉग इन करें</string>
+    <string name="biometric_subtitle">अपने Croptrails खाते में लॉगिन करें</string>
+    <string name="biometric_description">अपने खाते को सत्यापित करने के लिए अपनी उंगली को फिंगरप्रिंट सेंसर पर रखें</string>
+    <string name="biometric_negative_button_text">रद्द करें</string>
+    <string name="please_login_manually">कृपया लॉगिन करें</string>
+    <string name="fingerprint_login_label">फ़िंगरप्रिंट लॉगिन</string>
+    <string name="touch_the_fingerprint_sensor_to_unlock_msg">अनलॉक करने के लिए फिंगरप्रिंट सेंसर को स्पर्श करें</string>
+    <string name="hi_label">नमस्ते!</string>
+    <string name="enable_fingerprint_label">फिंगरप्रिंट सक्षम करें</string>
+
+    <string name="fingerprint_app_lock_unlock_label">फिंगरप्रिंट ऐप लॉक / अनलॉक</string>
+    <string name="don_t_ask_again_label">फिर मत पूछो</string>
+    <string name="lock_unlock_label">लॉक करो /अनलॉक करें</string>
+    <string name="enable_fingerprint_to_label">फिंगरप्रिंट को विकल्पों में सक्षम करें</string>
+
+    <string name="addfarm_tour_farmer_sel_title">किसान चयन</string>
+    <string name="addfarm_tour_farmer_sel_content">ड्रॉपडाउन सूची से किसान का चयन करें</string>
+    <string name="addfarm_tour_farmer_farmid_content">खेत आईडी दर्ज</string>
+    <string name="addfarm_tour_farmer_farmarea_content">कृषि क्षेत्र दर्ज करें</string>
+    <string name="addfarm_tour_farmer_selcrop_content">चुनें फसल नाम</string>
+    <string name="addfarm_tour_farmer_selseason_content">फसल मौसम का चयन करें</string>
+    <string name="addfarm_tour_farmer_addmore_farm_content">आप एक से अधिक खेतों में जोड़ सकते हैं</string>
+    <string name="crop_track_label">क्रॉप ट्रैक</string>
+    <string name="invalid_qr_code_msg">अमान्य QR कोड</string>
+    <string name="scan_label">स्कैन</string>
+    <string name="assign_crop_cycle">असाइन फसल चक्र</string>
+    <string name="select_crop_cycle_label">फसल चक्र का चयन करें</string>
+    <string name="cycle_name_label">साइकिल नाम</string>
+    <string name="crop_name">फसल का नाम</string>
+    <string name="growing_season">बढ़ता हुआ मौसम</string>
+    <string name="growing_region">बढ़ते क्षेत्र</string>
+    <string name="confirmation">पुष्टीकरण</string>
+    <string name="sure_want_to_add_crop_cycle">क्या आप वाकई कि तुम खेत को यह फसल चक्र आवंटित करने के लिए चाहते हैं?</string>
+    <string name="or_fingerprint_login">या अंगुली की छाप लॉगिन</string>
+    <string name="date_of_birth_label">जन्म की तारीख</string>
+    <string name="cast_category">कास्ट / श्रेणी</string>
+    <string name="estimated_consumer_income">अनुमानित उपभोक्ता आय</string>
+    <string name="male_label">पुरुष</string>
+    <string name="female_label">महिला</string>
+    <string name="back_label">वापस</string>
+    <string name="seed_label">बीज</string>
+    <string name="expected_label">अपेक्षित होना</string>
+    <string name="actual_label">वास्तविक</string>
+    <string name="company_label">कंपनी</string>
+    <string name="breed">नस्ल</string>
+    <string name="fertilizer_ors_organic">उर्वरक / कार्बनिक</string>
+    <string name="price_label">मूल्य</string>
+    <string name="how_much">कितना</string>
+    <string name="pesticides">कीटनाशकों</string>
+    <string name="type">प्रकार</string>
+    <string name="workers">कर्मी</string>
+    <string name="work_where">कार्य जहां</string>
+    <string name="tractor">ट्रैक्टर</string>
+    <string name="from_where">कहाँ से</string>
+    <string name="how_many_hours">कितने घंटे</string>
+    <string name="expenses_incurred">किये गए खर्चे</string>
+    <string name="harvester">फ़सल काटने की मशीन</string>
+    <string name="pestilence">ताऊन</string>
+    <string name="measures">उपाय</string>
+    <string name="product_sales">उत्पाद की बिक्री</string>
+    <string name="dimensions_unit">आयाम / इकाई</string>
+    <string name="buyer">क्रेता</string>
+    <string name="add_more_crop_label">अधिक फसल विवरण जोड़ें</string>
+    <string name="profit_loss">लाभ हानि</string>
+    <string name="satisafactory_1_to_2">संतोषजनक 1 से 2</string>
+    <string name="add_crop_details">फसल विवरण जोड़ें</string>
+    <string name="shareholder">शेयरहोल्डर</string>
+    <string name="is_shareholder">शेयरधारक है</string>
+    <string name="how_many_certificate">कितने प्रमाण पत्र</string>
+    <string name="how_much_value">कितना मूल्य</string>
+    <string name="is_there_a_share_certificate">वहाँ एक हिस्से के प्रमाण पत्र है?</string>
+    <string name="cows_cattle_cows_buffalo">गायों / मवेशी गाय / भैंस</string>
+    <string name="count">गिनती</string>
+    <string name="daily_milk_sale_in_litter">प्रतिदिन दूध बिक्री (लीटर में)</string>
+    <string name="sale_price_approx">बिक्री मूल्य (लगभग)</string>
+    <string name="if_there_are_chickens_goats_or_other_animals">अगर वहाँ मुर्गी, बकरी, या अन्य जानवर हैं?</string>
+    <string name="is_using_smart_phone">स्मार्ट फोन का उपयोग कर रहा है?</string>
+    <string name="permission_necessary">अनुमति आवश्यक</string>
+    <string name="external_storage_permission_is_necessary">बाह्य भंडारण अनुमति आवश्यक है</string>
+    <string name="is_owned">स्वामित्व में है</string>
+    <string name="fpo_msg_if_season_past">निम्नलिखित क्षेत्रों में से जो में, आप एफपीओ के माध्यम से मदद मिली है?</string>
+    <string name="fpo_msg_if_season_present">आने वाले सत्र में, निम्नलिखित प्रक्रियाओं की है जिसके लिए आप एफपीओ के माध्यम से मदद की जरूरत है?</string>
+    <string name="app_tour">अनुप्रयोग टूर</string>
+    <string name="hide_details_label">जानकारी छिपाएँ</string>
+    <string name="pan">पैन</string>
+    <string name="select_farmer">किसान का चयन करें</string>
+    <string name="system_auto_detect_mode">सिस्टम ऑटो डिटेक्शन मोड</string>
+
+    <string name="contact_us_label">संपर्क करें</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="add_query">क्वेरी जोड़ें</string>
+    <string name="enter_query">entery क्वेरी</string>
+    <string name="query_registered_successfully">आप क्वेरी सफलतापूर्वक पंजीकृत किया गया</string>
+    <string name="failed_to_submit_query">आपकी क्वेरी सबमिट करने में विफल</string>
+    <string name="select_query_type">विषय का चयन करें</string>
+    <string name="please_select_subject">कृपया विषय का चयन</string>
+    <string name="please_enter_query">क्वेरी दर्ज करें</string>
+    <string name="query">सवाल</string>
+    <string name="please_select_at_least_1_farm_to_go_offline">कृपया कम से कम 1 खेत ऑफ़लाइन जाने के लिए चयन</string>
+    <string name="you_can_only_take_10_farms_in_offline_mode_at_a_time">आप एक बार में केवल ऑफलाइन मोड में 10 खेतों ले जा सकते हैं</string>
+    <string name="unauthorized_access">अनधिकृत पहुँच, फिर से लॉग इन करें</string>
+    <string name="authorization_expired">प्राधिकरण टोकन समाप्त हो, कृपया प्रवेश को पुनः</string>
+    <string name="change_company">कंपनी बदलें</string>
+    <string name="please_select_a_company">कृपया एक कंपनी का चयन</string>
+    <string name="select_company">कंपनी का चयन</string>
+    <string name="no_other_company_available">वहाँ कोई अन्य कंपनी आप के लिए उपलब्ध है</string>
+    <string name="switch_account">खाता बदलिये</string>
+    <string name="verify_farm_area_label">कृषि क्षेत्र की जाँच करें</string>
+    <string name="pin_drop_mode">पिन ड्रॉप मोड</string>
+    <string name="walk_around_mode">के आसपास चलने के मोड</string>
+    <string name="easy_mode">आसान मोड</string>
+    <string name="clear_area_to_add_point">कृपया क्षेत्र को साफ़ करें और बिंदु जोड़ने</string>
+    <string name="title_activity_maps_new">नक्शा</string>
+    <string name="invalid_point_marked_msg">अमान्य बिंदु चुना गया, एक वैध बिंदु चिह्नित करें</string>
+    <string name="personal_info">किसान व्यक्तिगत जानकारी</string>
+    <string name="farmer_social_info">किसान और सामाजिक सूचना</string>
+    <string name="civil_status">शिष्टता का स्तर</string>
+    <string name="spouse">जीवनसाथी का नाम</string>
+    <string name="benefeciary">लाभार्थी</string>
+    <string name="identity">पहचान</string>
+    <string name="bank">बैंक</string>
+    <string name="upi">UPI</string>
+    <string name="select_civil_status">सिविल स्थिति का चयन करें</string>
+    <string name="select_land_category">चुनें भूमि श्रेणी</string>
+    <string name="select_cropping_pattern">चुनें फसल पैटर्न</string>
+    <string name="select_planting_method">रोपण करें विधि</string>
+    <string name="date_of_transplanting">रोपाई की तिथि</string>
+    <string name="swift_code">स्विफ्ट कोड</string>
+    <string name="farmer_contact_information">किसान संपर्क जानकारी</string>
+    <string name="farmer_family_information">किसान परिवार में जानकारी</string>
+    <string name="farmer_family_members">परिवार के सदस्यों गणना</string>
+    <string name="adults_count">एडल्ट गणना</string>
+    <string name="kids_count">बच्चे गणना</string>
+    <string name="dependent_count">आश्रित गणना</string>
+    <string name="farmer_financial_information">किसान वित्तीय सूचना</string>
+    <string name="select_state">राज्य चुनें</string>
+    <string name="select_district">जिला चुनें</string>
+    <string name="data_sync_success">डेटा सफलतापूर्वक समन्वयित</string>
+    <string name="refresh">ताज़ा डाटा</string>
+
+</resources>
+

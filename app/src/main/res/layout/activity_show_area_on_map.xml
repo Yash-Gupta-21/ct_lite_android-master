@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_setting"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@id/toolbar_setting"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:background="@color/new_theme"
+        android:layout_below="@+id/toolbar_setting"
+        android:id="@+id/kasraAndFarmerLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/farmerNameLayout"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_2sdp">
+
+            <TextView
+                android:id="@+id/farmerNameLabel"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight=".35"
+                android:text="@string/farmer_name_hint"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp" />
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/farmerNamrTv"
+                android:layout_width="0dp"
+                android:layout_weight=".65"
+                android:layout_height="wrap_content"
+                android:text="Name Here"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_2sdp"
+            android:id="@+id/khasraLayout"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_2sdp">
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/kasraLabelTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".35"
+                android:text="@string/khasra"
+                android:textSize="@dimen/_11ssp" />
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/khasraTv"
+                android:layout_width="0dp"
+                android:layout_weight=".65"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myLocationCard"
+        app:cardCornerRadius="@dimen/_3sdp"
+        android:layout_below="@id/acer_label"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:layout_width="@dimen/_30sdp"
+        app:contentPadding="@dimen/_5sdp"
+        android:background="@drawable/circle_transparent"
+        android:layout_alignParentRight="true"
+        android:layout_height="@dimen/_30sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/myLocationImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_my_location"
+            android:tooltipText="Current Location"
+            app:srcCompat="@drawable/ic_my_location"
+
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:visibility="gone"
+        android:elevation="@dimen/_20sdp"
+        android:id="@+id/imageView"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"/>
+
+    <TextView
+        android:layout_below="@id/kasraAndFarmerLayout"
+        android:id="@+id/area_tv"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:layout_width="100dp"
+        android:textColor="@color/button_text_color"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@color/button_background_color"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/acer_label"
+        android:layout_below="@id/kasraAndFarmerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acers_label"
+        android:layout_toRightOf="@id/area_tv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:padding="@dimen/_1sdp"
+        android:id="@+id/back_to_farm"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        app:srcCompat="@drawable/farm_icon_map"
+        android:layout_below="@id/myLocationCard"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_11sdp"/>
+
+    <!-- <ProgressBar
+         android:visibility="invisible"
+         android:id="@+id/progressBar_cyclic"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:minHeight="50dp"
+         android:minWidth="50dp"
+         android:layout_centerVertical="true"
+         android:layout_centerHorizontal="true" />-->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/progressBar_cyclic"
+        android:elevation="@dimen/_30sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/croptrails_loader2"
+        android:visibility="invisible" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:background="#A6A9A9A9"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/circleIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</RelativeLayout>
+
+
+
+
+

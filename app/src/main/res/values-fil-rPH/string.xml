@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CropTrails</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Password (opsyonal)</string>
+    <string name="action_sign_in">Mag-sign in at magrehistro</string>
+    <string name="action_sign_in_short">Mag-sign in</string>
+    <string name="error_invalid_email">E-mail address ay hindi tama.</string>
+    <string name="error_invalid_password">Masyadong maikli ang password</string>
+    <string name="error_incorrect_password">Ang password ay hindi tama</string>
+    <string name="error_field_required">Field ay kailangan</string>
+    <string name="permission_rationale">Contact pahintulot ay kailangan para sa pagbibigay ng email completions."></string>
+    <string name="amount_cant_be_null">Ang halaga ay hindi maaaring zero</string>
+    <string name="title_activity_maps">mapa</string>
+    <string name="title_activity_landing">LandingActivity</string>
+    <string name="title_home">bahay</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Mga Notification</string>
+    <string name="back_press">Pindutin muli upang lumabas.</string>
+    <string name="navigation_drawer_open">Buksan ang navigation drawer</string>
+    <string name="navigation_drawer_close">Isara navigation drawer</string>
+    <string name="internet_not_connected">Mangyaring suriin ang iyong koneksyon sa internet at subukang muli</string>
+    <string name="action_settings">Mga Setting</string>
+    <string name="hello_blank_fragment">Kamusta blangko fragment</string>
+    <string name="country_prompt">Piliin ang bansa</string>
+    <string-array name="country_arrays">
+        <item>India</item>
+        <item>Malaisiya</item>
+        <item>Estados Unidos</item>
+        <item>Indonesiya</item>
+        <item>Pransiya</item>
+        <item>Italya</item>
+        <item>Singgapur</item>
+        <item>Niyusiland</item>
+    </string-array>
+
+    <string name="state_prompt">Pumili ng isang estado</string>
+    <string-array name="state_arrays">
+        <item>M Q.</item>
+        <item>U. P.</item>
+        <item>Deli</item>
+    </string-array>
+
+    <string name="tehsil_prompt">Pumili ng isang Tehsil</string>
+    <string-array name="tehsil_arrays">
+        <item>Indore</item>
+        <item>Ujjain</item>
+        <item>Dewas</item>
+    </string-array>
+
+    <string name="city_prompt">Pumili ng Lungsod</string>
+    <string-array name="city_arrays">
+        <item>Indore</item>
+        <item>Ujjain</item>
+        <item>Dewas</item>
+    </string-array>
+
+    <string name="district_prompt">Pumili ng isang Destrict</string>
+    <string-array name="district_arrays">
+        <item>Indore</item>
+        <item>Ujjain</item>
+        <item>Dewas</item>
+    </string-array>
+
+
+    <string name="date_prompt">Pumili ng isang Petsa</string>
+    <string-array name="date_arrays">
+        <item>#########</item>
+        <item>#########</item>
+    </string-array>
+
+    <string-array name="irrigation_type_array">
+        <item>piliin</item>
+        <item>ibabaw ng patubig</item>
+        <item>Localized patubig</item>
+        <item>Pumatak-patak patubig</item>
+        <item>Sprinkler patubig</item>
+        <item>Center pivot patubig</item>
+        <item>Lateral ilipat patubig</item>
+        <item>Sub-irigasyon</item>
+        <item>manual patubig</item>
+    </string-array>
+
+
+
+    <string-array name="soil_type_array">
+        <item>piliin</item>
+        <item>Clay lupa</item>
+        <item>loam lupa</item>
+        <item>mabuhanging lupa</item>
+        <item>silty lupa</item>
+        <item>piti lupa</item>
+    </string-array>
+    <string-array name="previous_crops_array">
+    <item>piliin</item>
+    <item>toyo</item>
+    <item>mais</item>
+    <item>mirasol</item>
+    <item>mustasa</item>
+    <item>trigo</item>
+    <item>barley</item>
+    <item>NA</item>
+    </string-array>
+    <string-array name="irrigation_source_array">
+    <item>piliin</item>
+    <item>ang mga kanal</item>
+    <item>mabuti</item>
+    <item>tube well</item>
+    <item>Ang tangke</item>
+    </string-array>
+
+    <string name="moisture_prompt">Pumili ng halumigmig na antas</string>
+    <string-array name="moisture_level">
+    <item>piliin</item>
+    <item>basa-basa</item>
+    <item>hindi moist</item>
+    <item>Mas moist</item>
+    <item>Sobrang alinsangan</item>
+    </string-array>
+
+    <string name="grade_prompt">Piliin ang grade</string>
+    <string-array name="grade">
+    <item>piliin</item>
+    <item>A</item>
+    <item>B</item>
+    <item>C</item>
+    <item>D</item>
+    </string-array>
+
+    <string name="ipm_prompt">Pumili ng Material</string>
+    <string-array name="ipm">
+    <item>piliin</item>
+    <item>Serrazine</item>
+    <item>Imister</item>
+    </string-array>
+
+    <string name="unit_prompt">yunit</string>
+    <string-array name="unit">
+    <item>kilo</item>
+    <item>litro</item>
+    <item>kwintal</item>
+    <item>Tonelada</item>
+    </string-array>
+
+
+    <string name="iwm_prompt">Pumili ng Material</string>
+    <string-array name="iwm">
+    <item>piliin</item>
+    <item>Atrizen</item>
+    <item>Laudis</item>
+    <item>pag-iipon</item>
+    </string-array>
+
+    <string name="inm_prompt">Pumili ng Material</string>
+    <string-array name="inm">
+    <item>piliin</item>
+    <item>DAP</item>
+    <item>MOP</item>
+    <item>yurya</item>
+    <item>20-20-0-13</item>
+    </string-array>
+
+    <string name="path_below">M7.41,7.84L12,12.42l4.59, -4.58L18,9.25l-6,6 -6, -6z</string>
+    <string name="search_hint">Hanapin ang user</string>
+
+
+    <item name="myDynamic1" type="id" />
+    <item name="rt1" type="id" />
+
+    <string name="inm_test_status">Pumili ng materyal na</string>
+    <string-array name="status_test">
+    <item>piliin</item>
+    <item>mabuti</item>
+    <item>masama</item>
+    <item>mas masama</item>
+    </string-array>
+    <string name="title_activity_harvest_show_single_plan_map">mapa</string>
+
+
+    <string name="title_activity_welcome">Home screen</string>
+    <string name="next">susunod</string>
+    <string name="skip">Laktawan</string>
+    <string name="start">alam</string>
+
+
+    <string name="rupee_symbol">\ u20A8</string>
+    <string name="no_response">Oh, ganoon ba! May nangyaring mali. Pakiulit muli</string>
+    <string name="no_response_plz_reload">Oh, ganoon ba! May nangyaring mali. Mangyaring i-reload</string>
+
+    <string name="setting_activity_title">Mga Setting</string>
+    <string name="setting_no_username">Pangalanan: -</string>
+    <string name="setting_no_fathername">pangalan ng Ama : -</string>
+    <string name="signout_alert_dialog_message">Gusto mo bang mag-logout</string>
+    <string name="signout_alert_dialog_yes">oo</string>
+    <string name="signout_alert_dialog_no">Hindi</string>
+    <string name="offline_mode_logout_error">Hindi ka maaaring mag-logout sa offline mode</string>
+    <string name="snackbar_ok">multa</string>
+    <string name="share_title">ibahagi ito</string>
+
+    <string name="image_select_image_title">add litrato</string>
+    <string name="image_choose_from_library">Pumili mula sa gallery</string>
+    <string name="image_take_photo">I-click ang larawan</string>
+    <string name="image_cancel">kanselahin</string>
+    <string name="gallery_intent_title">Pumili ng file</string>
+    <string name="select_from_gallery_error">Nagkaproblema! Subukan ulit mamaya</string>
+    <string name="alert_title_label">mag-ingat!</string>
+    <string name="profile_alert_dialog_message">Gusto mo bang itapon ang mga pagbabago?</string>
+    <string name="profile_alert_dialog_yes">oo</string>
+    <string name="profile_alert_dialog_no">Hindi</string>
+    <string name="profile_image_update_failed">Nabigong photo update ng profile. Pakiulit muli</string>
+
+    <string name="name_label">pangalanan:</string>
+    <string name="father_name_label">pangalan ng Ama :</string>
+    <string name="dob_label">araw ng kapanganakan:</string>
+    <string name="contact_label">Contact:</string>
+    <string name="email_label">E-mail:</string>
+    <string name="setting_add_farm">Magdagdag ng paraan</string>
+    <string name="setting_reset_password">baguhin ang password</string>
+    <string name="setting_share">ibahagi ito</string>
+    <string name="setting_rate_us">rate</string>
+    <string name="setting_signout">Mag-sign Out</string>
+    <string name="setting_privacy_policy">Privacy</string>
+    <string name="setting_feedback">reaksyon</string>
+    <string name="setting_terms_and_conditions">Mga Tuntunin at kundisyon</string>
+    <string name="mayur_nagdev">Mayur Nagdev</string>
+    <string name="harvest_date">Pag-ani ng petsa:</string>
+    <string name="_10_07_2018">#########</string>
+    <string name="father_s_name">pangalan ng Ama :</string>
+    <string name="no_old_expnse_data_avaialble_label">Walang tala ng mga nakaraang mga gastusin natagpuan</string>
+    <string name="amount_hint">zodiac</string>
+    <string name="date_msg">Ang petsa</string>
+    <string name="narration">ang pagsasalarawan</string>
+    <string name="submit">Ipasa</string>
+    <string name="no_internet_connection">walang koneksyon sa Internet</string>
+    <string name="cant_add_expense_in_offline_mode">Hindi makapagdagdag ng gastos sa offline mode</string>
+    <string name="add_new_expenditure">Magdagdag ng bagong gastos</string>
+    <string name="expenditure_amount">Paggasta halaga:</string>
+    <string name="expenditure_hint">paggasta halaga</string>
+    <string name="narration_hint">ang pagsasalarawan</string>
+    <string name="dd_mm_yyyy">DD / MM / YYYY</string>
+    <string name="add_an_image_of_bill_msg">Add bill litrato</string>
+    <string name="add_label">magdagdag</string>
+    <string name="chemicals">kemikal</string>
+    <string name="e_g_10_hint">tulad ng 10</string>
+    <string name="activity_label">ang aktibidad</string>
+    <string name="activity_type_label">Klase ng gawain</string>
+    <string name="desc_label">ang pagsasalarawan</string>
+    <string name="more_label">pa</string>
+    <string name="view_activity_label">Tingnan ang aktibidad</string>
+    <string name="add_todays_activity_label">Magdagdag ng aktibidad ngayong araw</string>
+    <string name="pending_label">kulang</string>
+    <string name="upcomming_activity_label">Mga nalalapit na aktibidad</string>
+    <string name="visit_label">Ang paglalakbay</string>
+    <string name="visit_added_for_today_label">tour ngayong araw ay naidagdag na</string>
+    <string name="visited_label">Binisitang</string>
+    <string name="view_visit_label">Tingnan tour</string>
+    <string name="timeline_label">ang takdang panahon</string>
+    <string name="failed_to_load_timeline_msg">Nabigong i-load timeline. Subukan ulit mamaya</string>
+    <string name="no_network_available_msg">Walang network na magagamit</string>
+    <string name="there_is_no_standing_area_avilable_to_enter_for_pld_label">Walang permanenteng lugar ay magagamit upang ipasok PLD</string>
+    <string name="ok_label">multa</string>
+    <string name="date_label">petsa</string>
+    <string name="please_enter_integrated_nutrient_management_data_in_the_below_form_label">Pakipasok ang pinagsamang mga pagkaing nakapagpalusog data management sa form sa ibaba</string>
+    <string name="please_enter_integrated_weight_management_data_in_the_below_form_label">Pakipasok ang pinagsamang data sa pamamahala ng timbang sa form sa ibaba</string>
+    <string name="please_enter_integrated_pest_management_data_in_the_below_form_label">Pakipasok ang integrated pest data management sa form sa ibaba</string>
+    <string name="please_grade_crop_physical_condition_label">Mangyaring grade crop pisikal na kalagayan</string>
+    <string name="please_provide_soil_moisture_level_label">Mangyaring magbigay ng lupa kahalumigmigan antas</string>
+    <!--MultiLanguages Strings Starting here-->
+    <string name="add_farm_title">Magdagdag ng paraan</string>
+    <string name="new_farm_added_msg">New sakahan matagumpay na naidagdag</string>
+    <string name="new_farm_fail_msg">Nabigong magdagdag ng field. Subukang muli mamaya.</string>
+    <string name="add_farmer_name_msg">Ipasok ang pangalan ng maglilinang</string>
+    <string name="farmer_name_cant_null_msg">pangalan Farmer Hindi maaaring blangko</string>
+    <string name="enter_father_name_msg">Pakipasok ang pangalan ng ama</string>
+    <string name="father_name_cant_null_msg">Pangalan ng Ama Hindi maaaring walang laman</string>
+    <string name="farmer_name_hint">pangalan Farmer</string>
+    <string name="farmer_father_name_hint">pangalan ng Ama</string>
+    <string name="farmer_phone_hint">Ang telepono</string>
+    <string name="farmer_village_or_city_hint">Village o bayan</string>
+    <string name="farmer_madal_or_tehsil_hint">Mandal o Tehsil</string>
+    <string name="farmer_district_hint">distrito</string>
+    <string name="farmer_state_hint">estado</string>
+    <string name="farmer_counrty_hint">bansa</string>
+    <string name="submit_label">Ipasa</string>
+    <string name="opps_message">Oops !!</string>
+
+    <string name="update_farm_details_title">update ang mga detalye farm</string>
+    <string name="update_farm_details_sub_msg">Ipasok Detalye Farm Inilarawan Sa pamamagitan ng Farmer</string>
+    <string name="select_message_tag">piliin</string>
+    <string name="select_irrigation_source_msg">Mangyaring pumili ng patubig pinagmulan</string>
+    <string name="select_previous_crop_msg">Pakipili ang huling-crop</string>
+    <string name="select_irrigation_type_msg">Mangyaring piliin ang uri ng patubig</string>
+    <string name="select_soil_type_msg">Mangyaring piliin ang uri ng lupa</string>
+    <string name="select_sowing_date_msg">Mangyaring pumili ng petsa paghahasik</string>
+    <string name="farm_detail_update_fail_msg">Nabigong update ang mga detalye farm. Pakiulit muli.</string>
+    <string name="farm_details_updated_success">Form detalye update matagumpay.</string>
+    <string name="dynamic_bag_act_title">mga detalye Harvesting</string>
+    <string name="irrigation_source_label">Irrigation mapagkukunan</string>
+    <string name="previous_crop_label">huling crop</string>
+    <string name="irrigation_type">Uri ng patubig</string>
+    <string name="soil_type_label">uri ng lupa</string>
+    <string name="sowing_date_label">Paghahasik date</string>
+    <string name="expected_flowering_date_label">Inaasahang may bulaklak date</string>
+    <string name="expected_harvest_date_label">Inaasahang ani date</string>
+    <string name="additional_farm_details_label">Karagdagang Form Paglalarawan</string>
+    <string name="capture_farm_area_label">Capture lugar sakahan</string>
+    <string name="mobile_label">mobile</string>
+    <string name="expected_area_label">Ipinadala ang patlang</string>
+    <string name="actual_area_label">Paghahasik fielder</string>
+    <string name="exp_flowering_date_label">a. Petsa ng namumulaklak</string>
+    <string name="exp_harvest_date">a. Harvesting date</string>
+    <string name="actual_flowering_date_label">Aktwal na namumulaklak na petsa</string>
+    <string name="actual_harvest_date_label">Aktwal na petsa ng pag-aani</string>
+    <string name="average_pp_spacing_label">Average P-P Palugit:</string>
+    <string name="average_rr_spacing_label">Average R-R Palugit:</string>
+    <string name="average_germiantion_label">Average Pagsibol:</string>
+    <string name="average_farm_population_label">Average populasyon farm:</string>
+    <string name="view_samples_label">Tingnan ang mga sample</string>
+    <string name="add_visit_label">add tour</string>
+    <string name="harvest_details_label">mga detalye Harvesting</string>
+    <string name="visit_step1_head_label">Hakbang 1: Ipasok Permanenteng Area I-crop</string>
+    <string name="visit_step2_head_label">Hakbang 2: Ipasok ang mga gawain tapos na sa pamamagitan ng mga magsasaka</string>
+    <string name="visit_step1_msg_label">Ipasok ang lugar na kung saan ang crop maaaring matingnan.</string>
+    <string name="visit_step2_msg_label">Ipasok ang mga detalye ng tour sa form sa ibaba. Ang mga detalye ay ibinigay sa pamamagitan ng ang magsasaka sa iyong paglilibot</string>
+    <string name="last_standing_area">* Huling permanenteng lugar</string>
+    <string name="pld_form_label">PLD Form</string>
+    <string name="standing_crop_area_label">Standing crop na lugar</string>
+    <string name="in_acres_hint">acre</string>
+    <string name="inm_label">INM</string>
+    <string name="visit_inm_msg1">Ipasok ang pinagsamang data nutrient management sa form sa ibaba.</string>
+    <string name="visit_select_na_msg">Piliin N / A kung hindi magagamit.</string>
+    <string name="visit_inm_msg3">Punan ang INM form at i-click ang i-save. Maaari mong i-save ang maramihang mga entries.</string>
+    <string name="quantity_hint">Ang dami</string>
+    <string name="prescribed_comment_hint">isinaad puna</string>
+    <string name="iwm_label">IWM</string>
+    <string name="visit_iwm_msg1">Ipasok ang pinagsamang data sa pamamahala ng timbang sa form sa ibaba.</string>
+    <string name="visit_iwm_msg3">Punan ang IWM form at i-click ang i-save. Maaari mong i-save ang maramihang mga entries.</string>
+    <string name="done_date_label">Nakumpleto ang petsa:</string>
+    <string name="save_label">I-save ang</string>
+    <string name="ipm_label">IPM</string>
+    <string name="visit_ipm_msg1">Ipasok ang integrated pest data management sa form sa ibaba.</string>
+    <string name="visit_ipm_msg3">Punan ang IPM form at i-click ang i-save. Maaari mong i-save ang maramihang mga entries.</string>
+    <string name="cpc_label">cpc</string>
+    <string name="visit_cpc_msg">Pumili grade crop pisikal na kalagayan</string>
+    <string name="grade_label">baitang</string>
+    <string name="sml_label">SML</string>
+    <string name="visit_sml_msg">Magbigay ng mga lupa kahalumigmigan antas</string>
+    <string name="mositure_level_label">antas ng kahalumigmigan</string>
+    <string name="other_label">iba</string>
+    <string name="visit_other_msg">Kung ang anumang espesyal na mga komento o trabaho pakitukoy dito</string>
+    <string name="comment_label">puna</string>
+    <string name="visit_farm_image1_msg">* Form Larawan 1</string>
+    <string name="visit_farm_image2_msg">* Form Imahe 2</string>
+    <string name="visit_farm_and_farmer_image_msg">* Farm at Farmer</string>
+    <string name="visit_selfie_famer_image_msg">* Selfie may farm at magsasaka</string>
+    <string name="add_new_harvest_label">Magdagdag ng bagong paglalarawan</string>
+    <string name="flowering_date_updated_success_msg">Floris date Matagumpay na</string>
+    <string name="flowering_date_update_fail_msg">Nabigong i-update namumulaklak na petsa. Subukang muli mamaya.</string>
+    <string name="harvest_date_updated_success_msg">Harvest date Matagumpay na</string>
+    <string name="harvest_date_update_fail_msg">Nabigong date update aani. Subukang muli mamaya.</string>
+    <string name="no_standing_area_for_harvest_msg">Walang permanenteng lugar na natitira para sa pag-aani.</string>
+    <string name="farm_detail_label">Paglalarawan ng sakahan</string>
+    <string name="germination_and_spacing_form_label">Pagsibol at espasyo</string>
+    <string name="select_dropdown">piliin</string>
+    <string name="unit_dropdown">yunit</string>
+
+    <string name="please_select_inm_msg">Mangyaring piliin ang INM nilalaman.</string>
+    <string name="please_select_iwm_msg">Mangyaring pumili IWM materyal.</string>
+    <string name="please_select_ipm_msg">Mangyaring pumili IPM nilalaman.</string>
+
+    <string name="please_enter_material_quantity">Pakipasok ang nilalaman dami.</string>
+    <string name="please_select_quantity_unit_msg">Mangyaring piliin ang anumang yunit ng nilalaman dami.</string>
+    <string name="please_choose_done_date_msg">Mangyaring pumili ng petsa.</string>
+    <string name="please_fill_validation_text">Mangyaring punan ang lahat ng mga patlang sa itaas upang magdagdag ng higit pang mga patlang.</string>
+    <string name="please_fill_in_field">Mangyaring punan ang patlang na ito</string>
+    <string name="correct_harvest_area">Mangyaring ipasok ang tamang lugar crop</string>
+    <string name="capture_first_image_msg">Mangyaring kumuha 1 image unang</string>
+    <string name="capure_secong_image_msg">Mangyaring makuha ang unang 2 mga imahe</string>
+    <string name="capture_third_image_msg">Mangyaring makuha ang unang 3 mga imahe</string>
+    <string name="capture_fourth_image_msg">Mangyaring kumuha 4 mga imahe unang</string>
+    <string name="capture_fifth_image_msg">P Mangyaring makuha ang unang 5 mga imahe</string>
+    <string name="capture_all_image_msg">Mangyaring makuha ang lahat ng mga imahe upang magdagdag ng higit pang mga imahe.</string>
+    <string name="standing_area_cant_null_msg">Permanenteng talaan Hindi maaaring walang laman</string>
+    <string name="enter_standing_crop_area_msg">Pakipasok ang permanent crop area.</string>
+    <string name="enter_appropriate_area_msg">Mangyaring punan ang mga naaangkop na patlang ng nakatayo crop</string>
+    <string name="enter_coorect_standing_area_msg">Mangyaring ipasok ang wastong halaga ng permanenteng field.</string>
+    <string name="add_chemical_or_na_msg">Mangyaring magdagdag ng anumang mga kemikal o pumili N / A sa INM.</string>
+    <string name="add_chemical_na_iwm_msg">Mangyaring magdagdag ng anumang mga kemikal o pumili N / A sa IWM.</string>
+    <string name="add_chemical_or_na_ipm_msg">Mangyaring magdagdag ng anumang mga kemikal o pumili N / A sa IPM.</string>
+    <string name="select_cpc_msg">Mangyaring piliin ang cpc</string>
+    <string name="select_sml_msg">Mangyaring piliin ang sml</string>
+    <string name="uploading_visit_msg">Ina-upload ...</string>
+    <string name="visit_submit_success_msg">Mga na-upload matagumpay.</string>
+    <string name="visit_submit_fail_msg">Nabigong idagdag ang biyahe. Pakiulit muli</string>
+    <string name="fail_to_connect_msg">nabigo upang kumonekta!</string>
+    <string name="check_internet_connection_msg">Mangyaring suriin ang iyong koneksyon sa Internet.</string>
+    <string name="visit_data_saved_msg">Ang iyong data ay nai-save.</string>
+    <string name="cant_view_farm_in_offline_msg">Hindi mo maaaring tingnan ang mga bukid sa offline mode.</string>
+    <string name="no_standing_area_for_visit">Walang permanenteng lugar para sa paglalakbay.</string>
+    <string name="error_message">Error!</string>
+    <string name="verify_farm_area_first_msg">Paki-verify ang lugar ng patlang muna.</string>
+    <string name="no_previous_visit_available_msg">Walang nakaraang biyahe ay magagamit para sa form na ito.</string>
+    <string name="failed_to_load_visits_msg">Nabigong data load pagbisita. Pakiulit muli</string>
+    <string name="failed_to_load_previous_harvest_msg">Nabigong i-load ang data ng nakaraang crop. Pakiulit muli</string>
+    <string name="need_to_mark_gps_coordinates">Upang makita ang mga patlang lugar kailangan mo munang markahan ang mga coordinate Gps.</string>
+    <string name="failed_to_get_farm_location_msg">Nabigong kunin ang lokasyon farm. Subukan ulit mamaya</string>
+    <string name="timeline_activity_title">ang takdang panahon</string>
+    <string name="failed_to_load_timeline">Nabigong i-load timeline. Subukan ulit mamaya</string>
+    <string name="moisture_level_label">antas ng kahalumigmigan</string>
+    <string name="add_visit_activity_title">add pagbisita</string>
+    <string name="choose_other_image_to_upload_msg">Mangyaring pumili ng isa pang larawan upang i-upload.</string>
+    <string name="please_wait_msg">pakihintay ...</string>
+    <string name="fill_date_msg">data fill</string>
+    <string name="select_chemical_label">Pumili ng kemikal</string>
+    <string name="please_fill_date_msg">Mangyaring ipasok ang data</string>
+    <string name="farmer_reply_must_entered_msg">Magsasaka reply ay dapat na naitala</string>
+    <string name="ok_msg">multa</string>
+    <string name="fill_data_properly_msg">Mangyaring punan ang data ng maayos</string>
+    <string name="select_file_msg">Pumili ng file</string>
+    <string name="activity_submitted_success_msg">Ang aktibidad na ito ay matagumpay na iniharap.</string>
+    <string name="activity_submit_fail_msg">Nabigong i-upload ang data sa timeline. Subukan ulit mamaya</string>
+    <string name="error_occurred_try_again_msg">May pagkakamaling naganap. subukan muli</string>
+    <string name="retry_msg">subukan muli</string>
+    <string name="something_went_wrong_msg">naganap ang ilang mga error</string>
+    <string name="visit_report_activity_title">Pagbisita Farm Isumbong ang</string>
+    <string name="farm_visit_details_label">Farm Detalye Pagbisita</string>
+    <string name="visit_number_label">Bilang Pagbisita:</string>
+    <string name="visited_on_label">Tour petsa:</string>
+
+    <string name="farmer_name_label">Pangalan Farmer:</string>
+    <string name="click_to_view_images_label">I-click upang tingnan ang larawan</string>
+    <string name="downloading_is_pending">Ang ilang mga pag-download na imahe ay nakabinbin.</string>
+    <string name="no_image_for_this_visit">Walang mga larawan para sa tour na ito</string>
+    <string name="image_activity_title">ang mga larawan</string>
+    <string name="enter_pld_details_label">Ipasok pld detalye</string>
+    <string name="please_enter_pld_area_and_its_reason_in_the_fields_mentioned_below_label">Mangyaring ipasok ang crop pagkawala / pagkawala zone sa mga lugar na nabanggit sa ibaba at ang dahilan para sa na ito.</string>
+    <string name="effective_farm_area_label">Ang mabisang pang-agrikultura sektor</string>
+    <string name="pld_acres_label">pagkawala zone</string>
+    <string name="reason_for_pld_label">Sanhi ng pagkawala</string>
+    <string name="pld_already_submitted_for_this_farm_label">* I-crop ang pagkawala / pagkawala lugar naisumite para sa form na ito</string>
+    <string name="pld_form_title">I-crop Pagkawala / Pagkawala Area Farm</string>
+    <string name="already_pld_added">I-crop ang pagkawala / pagkawala na lugar na naidagdag.</string>
+    <string name="invalid_entry_error">Hindi wastong entry sa larangan</string>
+    <string name="invalid_entry_in_pld">Di-wastong entry sa I-crop Pagkawala / Pagkawala Area Cause</string>
+    <string name="your_pld_data_update">Ang iyong crop pagkawala / pagkawala na lugar ng data ay na-update</string>
+    <string name="failure_upload_msg">Nabigong ma-upload crop pagkawala / data pagkawala area. Subukan ulit mamaya</string>
+    <string name="enter_pld_hint">Ipasok ang crop pagkawala / pagkawala field dito.</string>
+    <string name="enter_reason_for_pld_hint">Ilagay ang dahilan ng crop pagkawala / pagkawala na lugar</string>
+    <string name="enter_pld_here_hint">Ipasok ang crop pagkawala / pagkawala field dito.</string>
+    <string name="make_offline_label">Mag-offline</string>
+    <string name="lot_no">Farm id</string>
+    <string name="fathers_name">pangalan ng Ama:</string>
+    <string name="offline_mode_title">di konektado</string>
+    <string name="preparing_your_data_for_offline_mode">Inihahanda ang iyong data para sa offline mode. Maaaring tumagal ng ilang minuto</string>
+    <string name="stay_connected">Manatiling Konektado</string>
+    <string name="please_select_at_least_one_farm">Mangyaring pumili ng hindi bababa sa isang field upang mag-offline</string>
+    <string name="please_check_your_internet">Mangyaring suriin ang iyong koneksyon sa Internet.</string>
+    <string name="fail_to_load_offline_mode">Nabigong i-load form para sa offline mode. Subukan ulit mamaya</string>
+    <string name="oops_messsage_label">Oh, ganoon ba! May nangyaring mali. Pakiulit muli</string>
+    <string name="failed_to_make_data_offline">Nabigong offline data. Subukan ulit mamaya</string>
+    <string name="please_allow_storage_permission">Mangyaring maglaan imbakan para sa offline mode.</string>
+    <string name="click_on_storage"><![CDATA[Permissions-> Click on storage]]></string>
+    <string name="yes">oo</string>
+    <string name="go_offline">Mag-offline</string>
+    <string name="check_area_title">Suriin ang lugar</string>
+    <string name="area">lugar</string>
+    <string name="clear">Remove</string>
+    <string name="acers_label">acre</string>
+    <string name="please_submit_at_least_3_points">Mangyaring magsumite ng hindi bababa sa 3 points</string>
+    <string name="outside_circle_radius">Sa labas ng bilog</string>
+    <string name="this_app_needs_location_permisssion">Ang application na ito mga pangangailangan upang gamitin ang lokasyon, payagan application sa pag-andar ng lokasyon</string>
+    <string name="permission_denied">pahintulot tinanggihan</string>
+    <string name="please_clear_then_add">Mangyaring tanggalin pagkatapos ay magdagdag ng higit pang</string>
+    <string name="response_error">Response error subukan muli mamaya</string>
+    <string name="farm_area_title">agrikultura sektor</string>
+    <string name="this_app_needs_location_permission">Ang application na ito ay nangangailangan ng pahintulot ng lokasyon, pakitanggap gamitin functionality lokasyon</string>
+    <string name="please_clear_then_add_more">Mangyaring tanggalin pagkatapos ay magdagdag ng higit pang</string>
+    <string name="should_have_at_least_two_points_to_display">Kailangan ay may hindi bababa sa 2 points upang ipakita ang</string>
+    <string name="capture_farm_area_maps_activity_title">Capture patlang</string>
+    <string name="sure_to_submit_area">Gusto mo bang mag-sumite ng isang bukid?</string>
+    <string name="area_is_too_short_for_capture">Ang sakahan ay masyadong maliit upang field. Mangyaring capture ng field ng form muli</string>
+    <string name="no">Hindi</string>
+    <string name="please_enter_valid_area">Mangyaring magpasok ng wastong field</string>
+    <string name="actual_area_update_successfully">Matagumpay na paghahasik area.</string>
+    <string name="failed_to_update_actual_area">Nabigong i-update ang paghahasik area. Subukan ulit mamaya</string>
+    <string name="please_click_inside_circle_to_mark">Mangyaring mag-click sa loob ng bilog upang markahan ang mga punto</string>
+    <string name="location_permission_needed">Lokasyon Pahintulot Kinakailangan</string>
+    <string name="this_apps_needs_location_permission">Ang application na ito ay nangangailangan ng pahintulot ng lokasyon, pakitanggap gamitin functionality lokasyon</string>
+    <string name="cant_add_more_points">Hindi maaaring magdagdag ng higit pang mga point</string>
+    <string name="failed_to_get_farm_ocation_please_try_again_later">Nabigong kunin ang mga lokasyon farm. Subukan ulit mamaya</string>
+    <string name="area_successfully_added">Lugar matagumpay na naidagdag ...</string>
+    <string name="failed_to_verify_farm_area">Upang i-verify ang mga patlang</string>
+    <string name="add_actual_area_manually">Manu-manong magdagdag sowing na lugar</string>
+    <string name="old_password">Lumang password</string>
+    <string name="new_password">bagong Password</string>
+    <string name="confirm_new_password">kumpirmahin ang bagong password</string>
+    <string name="username">Palayaw</string>
+    <string name="log_in">mag log in</string>
+    <string name="username_cant_be_null">Hindi Username maaaring alisan ng laman</string>
+    <string name="password_cant_be_empty">Password ay hindi maaaring walang laman</string>
+    <string name="failed_to_connect">nabigo upang kumonekta!</string>
+    <string name="invalid_username_password">Di-wastong username o password. Subukan ulit mamaya</string>
+    <string name="failed_to_login">nabigong pag-login. Subukan ulit mamaya</string>
+    <string name="plan">plan -</string>
+    <string name="location_not_available">Ang kasalukuyang lokasyon ay hindi magagamit pakisubukang muli sa ibang pagkakataon</string>
+    <string name="server_error">May pagkakamaling naganap. Pakiulit muli</string>
+    <string name="bags">bag:</string>
+    <string name="harvest_plan">Pag-ani ng plano</string>
+    <string name="failed_to_load_harvest_data">Nabigong data load aani. Subukan ulit mamaya</string>
+
+    <string name="profile_activity_title">profile</string>
+    <string name="old_expense_data_unavaialble">Walang data sa mga nakaraang paggasta ay magagamit</string>
+    <string name="hint_amount">zodiac</string>
+    <string name="txt_date">Ang petsa</string>
+    <string name="hint_narration">ang pagsasalarawan</string>
+    <string name="hint_submit">Ipasa</string>
+    <string name="txt_no_internet">walang koneksyon sa Internet</string>
+    <string name="txt_can_not_add_expense_offline_mode">Hindi makapagdagdag ng gastos sa offline mode</string>
+    <string name="txt_no_farm_data_avaialble">Walang data form na makukuha</string>
+    <string name="txt_total_farms">Kabuuang mga sakahan</string>
+    <string name="txt_total_standing_area">Kabuuang permanenteng lugar</string>
+    <string name="txt_in_acres">(Sa acres)</string>
+    <string name="txt_total_expected_area">Kabuuang mga kinakailangang na lugar</string>
+    <string name="txt_last_visited_farm">Huling nakita farm</string>
+    <string name="txt_max_standing_area">Max Permanenteng lugar</string>
+    <string name="txt_max_population">populasyon Max Ang</string>
+    <string name="txt_grade_wise_distribution">Grade matalinong pamamahagi</string>
+    <string name="drawer_check_area">Suriin ang lugar</string>
+    <string name="drawer_offline_mode">di konektado</string>
+    <string name="drawer_plan_harvest">plan aani</string>
+    <string name="drawer_planned_harvest">Planned aani</string>
+    <string name="drawer_back_to_online">Bumalik online</string>
+    <string name="drawer_settings">Mga Setting</string>
+    <string name="main_menu_search">Hanapan</string>
+    <string name="harvest_plan_submit">Ipasa</string>
+    <string name="bottom_nav_dashboard">Dashboard</string>
+    <string name="bottom_nav_home">bahay</string>
+    <string name="bottom_nav_expenditure">paggasta</string>
+    <string name="landing_search">Hanapan</string>
+    <string name="update_farm_failure">Nabigong i-update ang data farm. Subukan ulit mamaya</string>
+    <string name="txt_data_uploaded_to_server">Data-upload sa server</string>
+    <string name="txt_germination_data_upload_failed">Nabigong ma-upload pagtubo at sample na data. Subukan ulit mamaya</string>
+    <string name="txt_harvest_data_upload_failed">Nabigong ma-upload aani data. Subukan ulit mamaya</string>
+    <string name="txt_visit_data_upload_failed">Nabigong ma-upload tour data. Subukan ulit mamaya</string>
+    <string name="online_now_no_offline_upload">Kasalukuyan kang online ... Walang mga offline na data na natagpuan na mag-upload</string>
+    <string name="txt_uploading_data">Pag-upload ng data ...</string>
+    <string name="txt_server_error">Server Error. Pakiulit muli</string>
+    <string name="dialog_heading_unable_to_connect">hindi maka konekta!</string>
+    <string name="connect_to_3g_or_4g">Tiyakin na ikaw ay konektado sa isang 3G o 4G network upang mag-upload ng data.</string>
+    <string name="go_online_upload_offline_data">Gusto mo bang bumalik sa online at i-upload ang data offline?</string>
+
+    <string name="validation_amount_null">Ang halaga ay hindi maaaring walang laman</string>
+    <string name="validation_comment_null">Comment Hindi maaaring walang laman</string>
+    <string name="validation_date_null">Mangyaring pumili ng petsa</string>
+    <string name="validation_image_null">Paki-upload ang paggastos ng imahe</string>
+
+    <string name="expense_data_upload_failed">Nabigong data load gastos. Subukan ulit mamaya</string>
+    <string name="expense_added">Gastos matagumpay na naidagdag</string>
+    <string name="expense_error_occured">May pagkakamaling naganap. Subukan ulit mamaya</string>
+    <string name="pick_up_date">(Bag-aangat ng petsa:</string>
+    <string name="select_all">Piliin lahat</string>
+    <string name="bag">supot</string>
+    <string name="please_enter_valid_vehicle_no">Mangyaring valid sasakyan no. pumasok sa</string>
+    <string name="please_enter_valid_vehicle_weight">Mangyaring ipasok ang wastong timbang ng sasakyan</string>
+    <string name="please_enter_valid_remark">Mangyaring magpasok ng wastong puna</string>
+    <string name="please_choose_valid_date">Mangyaring pumili ng wastong petsa</string>
+    <string name="harvest_collection_planned_successfully">Harvest Collection Planned Matagumpay</string>
+    <string name="failed_to_plan_harvest_collection">Nabigong plan crop koleksyon. Pakiulit muli</string>
+    <string name="please_select">Pakipili</string>
+    <string name="harvest_plan_activity_title">I-crop koleksyon</string>
+    <string name="no_data_available_to_plan_harvest">Walang magagamit na data para crop pagpaplano. Pakiulit muli</string>
+    <string name="failed_to_load_plan_harvest">Nabigong patlang ng pagkarga para sa crop pagpaplano. Pakiulit muli</string>
+    <string name="farm_details">Form Paglalarawan</string>
+    <string name="harvest_done_date">Harvest date</string>
+    <string name="bag_details">bag Paglalarawan</string>
+    <string name="you_must_fill_this_field_first">Kailangan mong punan ang patlang na ito unang</string>
+    <string name="harvest_data">Harvest data</string>
+    <string name="do_you_want_to_submit_this_data">Gusto mo bang mag-sumite ng data na ito?</string>
+    <string name="cancel">kanselahin</string>
+    <string name="please_fill_out_this_field">Mangyaring punan ang patlang na ito</string>
+    <string name="are_you_want_to_submit_this_data">Sigurado ka bang gusto mong isumite ang data na ito?</string>
+    <string name="failed_to_add_harvest_data">Nabigong idagdag ang pag-aani ng data. Subukan ulit mamaya</string>
+    <string name="your_data_saved">Ang iyong data ay nai-save.</string>
+    <string name="bags_no">bag walang</string>
+    <string name="weight_in_kgs">Timbang (sa kg)</string>
+    <string name="step_2_enter_bag_details">Hakbang 2: Ipasok ang mga detalye bag</string>
+    <string name="enter_bag_no_and_weights_in_which_crop_can_be_seen">Ipasok ang numero ng bag at timbang na kung saan ang crop maaaring matingnan</string>
+    <string name="step_1_enter_farmer_details">Hakbang 1: Ipasok ang mga detalye magsasaka</string>
+    <string name="enter_crop_area_in_which_crop_can_be_seen">Ipasok ang lugar na kung saan ang crop maaaring matingnan</string>
+
+    <string name="framer_lot_no">lot_no</string>
+    <string name="farmer_no_of_farms">Bilang ng mga patlang</string>
+    <string name="location_permission_title">pahintulot Location kinakailangan</string>
+    <string name="location_permission_message">Ang application na ito ay nangangailangan ng pahintulot ng lokasyon, pakitanggap gamitin functionality lokasyon</string>
+    <string name="toast_permission_denied">pahintulot tinanggihan</string>
+    <string name="farm_fragment_toast_selected">napiling</string>
+    <string name="farm_fragment_dates_not_equal">Ang mga petsa ay hindi umiiral, isingit ...</string>
+    <string name="farm_fragment_in_expecption">Sa kataliwasan, ipasok ...</string>
+    <string name="frm_fragment_no_previous_date">Walang nakaraang petsa ay ipinasok ...</string>
+    <string name="failed_load_farm">Nabigong patlang load. Subukan ulit mamaya</string>
+
+    <string name="enter_germination_heading">Ipasok ang pagtubo at bakante detalye</string>
+    <string name="germination_desc_msg">Mangyaring ipasok ang area sinusukat sa mga lugar sa ibaba ng sample matalino. Kailangan mong magpasok ng hindi bababa sa 3 mga sample.</string>
+    <string name="sample1_msg">* Sample 1</string>
+    <string name="configured_area_hint">Na-configure na lugar (sa square feet)</string>
+    <string name="p_p_spacing_in_inches_hint">P-P interval (sa pulgada)</string>
+    <string name="r_r_spacing_in_inches_hint">R-R interval (sa pulgada)</string>
+    <string name="ideal_population_label">Tamang-tama populasyon</string>
+    <string name="actual_population_hint">Ang aktwal na populasyon</string>
+    <string name="germination_label">pagsibol</string>
+    <string name="total_farm_population_label">Kabuuang agrikulturang populasyon</string>
+    <string name="sample2_label">* Sample 2</string>
+    <string name="sample3_label">* Sample 3</string>
+    <string name="average_p_p_spacing_label">Average P-P Palugit:</string>
+    <string name="average_r_r_spacing_label">Average R-R Palugit:</string>
+    <string name="average_germination_label">Average Pagsibol:</string>
+    <string name="germination_sapcing_activity_title">Pagsibol at espasyo</string>
+    <string name="enter_configured_of_sample1_msg">Pakipasok ang config patlang sample 1 ni</string>
+    <string name="enter_pp_spacing_of_sample1_msg">Pakipasok ang sample 1 plant sa plano interval</string>
+    <string name="enter_rr_spacing_of_sample1_msg">Pakipasok ang isang linya agwat ng sample 1</string>
+    <string name="enter_actual_pop_of_sample1_msg">Mangyaring ipasok ang aktwal na populasyon ng sample 1</string>
+    <string name="invalid_area_msg">Di-wastong field</string>
+    <string name="invalid_pp_spacing_msg">Di-wastong P-P Palugit</string>
+    <string name="invalid_rr_spacing_msg">Di-wastong R-R Palugit</string>
+    <string name="invalid_population_msg">Di-wastong populasyon</string>
+    <string name="enter_configured_of_sample2_msg">Mangyaring ipasok ang naka-configure larangan ng sample 2</string>
+    <string name="enter_pp_spacing_of_sample2_msg">Pakipasok ang sample 2 plant sa plano interval</string>
+    <string name="enter_rr_spacing_of_sample2_msg">Pakipasok ang isang linya agwat ng sample 2</string>
+    <string name="enter_actual_pop_of_sample2_msg">Mangyaring ipasok ang aktwal na populasyon ng sample 2</string>
+
+    <string name="enter_configured_of_sample3_msg">Mangyaring ipasok ang config lugar ng sample 3</string>
+    <string name="enter_pp_spacing_of_sample3_msg">Pakipasok ang sample 3 plant sa plano interval</string>
+    <string name="enter_rr_spacing_of_sample3_msg">Pakipasok ang isang hilera ng agwat ng mga sample 3</string>
+    <string name="enter_actual_pop_of_sample3_msg">Mangyaring ipasok ang aktwal na populasyon ng sample 3</string>
+    <string name="fill_fourth_sample_msg">Punan ang unang 4 na mga sample</string>
+    <string name="fill_all_field_of_sample4">Punan ang lahat ng samples 4 mga patlang</string>
+    <string name="fill_all_field_of_sample5">Punan ang lahat ng samples 5 mga patlang</string>
+    <string name="germination_submitted_success_msg">update matagumpay na pagtubo ng data.</string>
+    <string name="germination_update_fail_msg">Nabigong i-update ang pagtubo interval. Subukan ulit mamaya</string>
+    <string name="harvest_done_date_label">Harvest date</string>
+    <string name="weighment_date_label">Petsa ng tumitimbang</string>
+    <string name="harvested_area_label">Patlang ng pag-aani</string>
+    <string name="standing_area_label">permanenteng lugar</string>
+    <string name="weight_in_kgs_label">Timbang (sa kg)</string>
+    <string name="harvest_report_activity_title">Harvest ulat</string>
+    <string name="bags_no_label">bag walang</string>
+    <string name="stock_weight_label">Stock timbang:</string>
+    <string name="bags_blk_label">Bag (Blk):</string>
+    <string name="remark_label">Komento:</string>
+    <string name="vehicle_weight_label">Vehicle Weight:</string>
+    <string name="total_bags_label">Kabuuang Bag:</string>
+
+    <string name="acre_msg">acre</string>
+    <string name="growing_area_msg">hasik lugar</string>
+    <string name="farm_area_label">field na lugar</string>
+    <string name="address_label">address:</string>
+    <string name="profile_btn_update">I-update</string>
+    <string name="password_label">password</string>
+
+    <string name="login_hint_password">password</string>
+    <string name="vehicle_number">number ng sasakyan</string>
+    <string name="vehicle_net_weight">Net timbang ng sasakyan</string>
+    <string name="remark">puna</string>
+
+    <string name="total_planned_weight">Kabuuang nakaplanong timbang</string>
+    <string name="farm_details_view_area">field na view</string>
+    <string name="farm_details_edit_details">edit ng mga detalye</string>
+    <string name="previous_visits_label">Huling Bisita</string>
+    <string name="forget_password_activity_title">Baguhin ang password</string>
+    <string name="show_sample_germination_activity_title">Sample Pagsibol at Spacing</string>
+
+    <string name="add_expense_title">Magdagdag ng larawan!</string>
+    <string name="add_expense_take_photo">I-click ang imahe</string>
+    <string name="add_expense_choose_from_library">Pumili mula sa library</string>
+    <string name="add_expense_cancel">kanselahin</string>
+    <string name="expense_content_amount">zodiac:</string>
+    <string name="txt_select_a_language">Pumili ng Wika ▼</string>
+
+
+    <string name="visit_button_label">Ang paglalakbay</string>
+    <string name="harvest_button_label">pag-aani</string>
+    <string name="flowering_date_hint">May bulaklak date</string>
+    <string name="harvesting_date_hint">Harvesting date</string>
+    <string name="bag_added_harvest">Bag matagumpay na naidagdag</string>
+    <string name="setting_change_language">Baguhin ang wika</string>
+    <string name="configured_area_in_sqm_label">Na-configure na lugar (sa cm)</string>
+    <string name="plant_to_plant_spacing_label">Magtanim sa Plant Palugit:</string>
+    <string name="row_to_row_spacing_label">Hilera sa hilera Palugit:</string>
+    <string name="activity_details_label">Activity Paglalarawan</string>
+    <string name="description_label">paglalarawan:</string>
+    <string name="chemical_label">kimiko</string>
+    <string name="quantity_label">dami:</string>
+    <string name="i_have_completed_the_activity_label">Nakumpleto ko na ang aktibidad.</string>
+    <string name="activity_inputs_label">input input</string>
+    <string name="number_of_labour_hint">Bilang ng mga laborers</string>
+    <string name="labour_total_cost_hint">ang laborers</string>
+    <string name="number_of_machines_hint">Bilang ng machine</string>
+    <string name="machine_total_cost_hint">Kabuuang gastos ng machine</string>
+    <string name="chemical_quantity_hint">Chemical Halaga</string>
+    <string name="total_cost_of_chemical_hint">Kabuuang halaga ng kemikal</string>
+    <string name="chemicals_added_label">Chemical idinagdag</string>
+    <string name="chemicals_label">Chemical: -</string>
+    <string name="chemical_name_label">Pangalan ng kemikal</string>
+    <string name="upload_images_label">Mag-upload ng imahe</string>
+    <string name="farmer_reply_hint">Ang sagot ni Farmer</string>
+    >
+    <!--19/1/19-->
+    <string name="capture_all_images_msg">Mangyaring makuha ang lahat ng mga imahe.</string>
+    <string name="cannot_view_farm_in_offline_msg">Hindi mo maaaring makita ang mga sakahan na lugar sa offline mode.</string>
+    <string name="no_data_for_this_visit_msg">Walang data na magagamit para sa biyahe.</string>
+    <string name="add_germination_label">add pagtubo</string>
+    <string name="fail_to_load_farm_data">Nabigong data load farm. Subukan ulit mamaya</string>
+    <string name="no_chart_data_msg">Walang data na magagamit para sa mga tsart</string>
+    <string name="location_unavailable">Unavailable</string>
+    <string name="probability">pagkakataon</string>
+    <string name="rain">ulan</string>
+    <string name="wind">himpapawid</string>
+    <string name="humidity">kahalumigmigan</string>
+    <string name="cloud_cover">takip na ulap</string>
+    <string name="city">lungsod</string>
+    <string name="region">lugar</string>
+    <string name="weather">panahon</string>
+    <string name="today_s_weather_report">Ang ulat ng panahon ngayong araw</string>
+    <string name="max">karamihan ng mga</string>
+    <string name="min">Ang pinakamababa</string>
+    <string name="sort_by">uri</string>
+    <string name="harvest_date_high_to_low">Harvest Petsa - Pinakamataas na sa Pinakamababa</string>
+    <string name="standing_area_high_to_low">Permanenteng Zone - Mula sa pinakamataas hanggang sa pinakamababa</string>
+    <string name="standing_area_low_to_high">Permanenteng Lugar - Pinakamababa sa pinakamurang</string>
+
+    <string name="open">bukas</string>
+    <string name="close">malapit</string>
+    <string name="otp_message">Ipasok ang OTP</string>
+    <string name="loading">Ito ay naglo-load ...</string>
+    <string name="invalid_code_message_label">Di-wastong code</string>
+    <string name="invalid_number_message_label">di-wastong numero ng telepono</string>
+    <string name="message_quota_finished_message_label">Lumagpas ka sa limitasyon sa pag-login attendee</string>
+    <string name="title_activity_check_area_map">mapa</string>
+    <string name="title_activity_show_area_on_map">mapa</string>
+    <string name="season_label">panahon</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="msg_token_fmt">token</string>
+    <string name="input_cost_head_label">Hakbang 1: Magdagdag Input Gastos</string>
+    <string name="resource_cost_head_label">Hakbang 2: Magdagdag Ginamit Mapagkukunan</string>
+    <string name="resource_name_hint">pangalan resource</string>
+    <string name="txt_no_cost_and_resource_data_avaialble">Walang input ng gastos at mapagkukunan magagamit na data</string>
+    <string name="enter_area_hint">Magpasok ng rehiyon</string>
+    <string name="no_of_days_offline_exceeded">Mangyaring i-sync araw-araw na sa server, maaari kang maging sa offline mode para sa isang maximum ng 3 araw</string>
+    <string name="map_option_bottom_sheet">Pumili ng posisyon</string>
+    <string name="map_option_easy_mode">Easy posisyon</string>
+    <string name="map_option_normal_mode">normal na kalagayan</string>
+    <string name="area_entere_manually_msg">Rehiyon ay idinagdag nang mano-mano</string>
+    <string name="nutrient_management_label">Pagkaing nakapagpalusog record</string>
+    <string name="weight_management_label">timbang record</string>
+    <string name="pest_management_label">pesticide record</string>
+    <string name="soil_moisture_level_label">Lupa kahalumigmigan antas ng record</string>
+    <string name="add_comment_label">add comment</string>
+    <string name="update_standing_area">I-update ang lugar na standing</string>
+    <string name="add_photo_msg">add litrato</string>
+    <string name="farms_label">sakahan</string>
+    <string name="farmers_label">magsasaka</string>
+    <string name="add_more_details_label">Magdagdag ng higit pang mga detalye</string>
+    <string name="remove_details_label">mga detalye hide</string>
+    <string name="no_germination_available_msg">Walang sibol ay naidagdag pa</string>
+    <string name="enter_weight_label">Ipasok Timbang:</string>
+    <string name="invalid_input_msg">Di-wastong Input</string>
+    <string name="standing_area_not_available_harvest_msg">Permanenteng field ay hindi magagamit para sa pag-aani</string>
+    <string name="bags_qty_label">packing count</string>
+    <string name="enter_total_weghts_of_packing_count_msg">Mangyaring ipasok ang kabuuang bigat ng count packing</string>
+    <string name="enter_packing_count_msg">Mangyaring ipasok ang packing count</string>
+    <string name="select_harvest_done_date_msg">Mangyaring ipasok ang harvested date</string>
+    <string name="enter_weighment_date_msg">Pakipasok ang bigat na petsa</string>
+    <string name="enter_harvested_area_msg">Mangyaring ipasok ang pag-aani na lugar</string>
+    <string name="add_farm_label">Magdagdag ng paraan</string>
+    <string name="add_more_farm_label">Magdagdag pa ng form</string>
+    <string name="help_label">Tulong</string>
+    <string name="crop_loss_damage_labe">I-crop ang pagkawala</string>
+    <string name="version_label">Application Bersyon:</string>
+    <string name="near_me_label">malapit sa akin</string>
+    <string name="submit_area">Isumite ang lugar</string>
+    <string name="add_more_label">Magdagdag pa</string>
+    <string name="no_actual_area_available_go_to_capture">Walang tunay na field ay magagamit, mangyaring pumunta sa makuha ang field</string>
+    <string name="add_existing_farm_title">Magdagdag ng sakahan sa mga umiiral na magsasaka</string>
+    <string name="dash">-</string>
+    <string name="farm_id_label">Form ID:</string>
+    <string name="farm_name_label">pangalan Farm</string>
+    <string name="acres_msg_brkt">(Acre)</string>
+    <string name="hectare_msg_brkt">(Ha)</string>
+    <string name="please_try_again_later_msg">Subukan ulit mamaya</string>
+    <string name="account_deactivated_contact_admin_msg">Profile ay hindi pinagana. Mangyaring makipag-ugnay sa iyong administrator upang muling isaaktibo.</string>
+    <string name="notification_label">abiso</string>
+    <string name="txt_no_timeline_data_avaialble">Walang data timeline magagamit</string>
+    <string name="txt_no_notification_available">Walang notification magagamit</string>
+    <string name="txt_no_harvest_data_avaialble">Walang data na i-crop na magagamit</string>
+    <string name="landing_filter">ang filter</string>
+    <string name="password_updated">I-update ang nagtagumpay</string>
+    <string name="enter_bag_no_and_weights_in_which_crop_can_be_seen_easy">Ipasok ang kabuuang bigat at bilang ng mga pack na kung saan ang crop maaaring matingnan</string>
+    <string name="invalid_number_please_check">Di-wastong numero, pakitingnan</string>
+    <string name="submit_label_login">Ipasa</string>
+    <string name="bigha_msg_brkt">(Bigha)</string>
+    <string name="please_select_chemical_msg">Mangyaring piliin ang chemical</string>
+    <string name="please_select_chemical_unit_msg">Mangyaring piliin ang kemikal unit</string>
+    <string name="no_harvest_paln_data_avaialble_label">Walang natagpuang talaan ng nakaplanong crop</string>
+    <string name="no_harvest_data_available">Walang talaang nahanap para sa crop koleksyon</string>
+    <string name="expense_type_hint">Ipasok ang uri gastos</string>
+    <string name="harvest_date_exp_label_act">I-crop Petsa (Aktwal)</string>
+    <string name="harvest_date_exp_label_exp">Petsa ng pag-aani (kailangan)</string>
+    <string name="adhaar_label">base</string>
+    <string name="address_line_1_label">Address line no. 1</string>
+    <string name="address_line_2_label">Address line no. 2</string>
+    <string name="india_label">India</string>
+    <string name="bank_name_label">Pangalan ng bangko</string>
+    <string name="account_number_label">account Number</string>
+    <string name="account_holder_name_label">Pangalan ng Account Holder ni</string>
+    <string name="ifsc_code_label">IFSC code</string>
+    <string name="branch_label">sangay</string>
+    <string name="current_crop_label">kasalukuyang crop</string>
+    <string name="submit_area_label">Isumite ang lugar</string>
+    <string name="area_label">lugar</string>
+    <string name="multiple_login_msg">CropTrails ay bukas sa isa pang telepono. Mangyaring mag-login muli upang gamitin ang teleponong ito.</string>
+    <string name="farmer_and_farm_added_succes_msg">Magsasaka at sakahan matagumpay na sumali</string>
+    <string name="already_registered_mobile_msg">Nakarehistro na numero ng mobile</string>
+    <string name="failed_add_farm_and_farmer_msg">Nabigong kumonekta magsasaka at sakahan</string>
+    <string name="login_again_label">Mag-login muli</string>
+    <string name="select_irri_source_prompt">Pumili ng patubig pinagmulan</string>
+    <string name="select_irri_type_prompt">Pumili ng uri ng patubig</string>
+    <string name="select_soil_type_prompt">Piliin ang uri ng lupa</string>
+    <string name="select_season_prompt">Pumili ng season</string>
+    <string name="failed_to_load_data_msg">Nabigong i-load ng data, pakisubukang muli sa ibang pagkakataon</string>
+    <string name="enter_farm_id_msg">Mangyaring ipasok ang porma id</string>
+    <string name="enter_farm_area_msg">Pakilagay ang mga patlang</string>
+    <string name="select_season_msg">Pakipili ang panahon</string>
+    <string name="farm_added_success_msg">Bumuo ng matagumpay na naidagdag</string>
+    <string name="failed_add_farm_msg">Nabigong magdagdag ng field, pakisubukang muli</string>
+    <string name="enter_sowing_date_hint">Ipasok ang petsa paghahasik</string>
+    <string name="enter_expected_flowering_date_hint">Ipasok ang inaasahang pamumulaklak date</string>
+    <string name="enter_expected_harvesting_date_hint">Ipasok ang inaasahang petsa ng pag-aani</string>
+    <string name="total_expense_labe">kabuuang gastos:</string>
+    <string name="sure_want_to_enter_actual_flowering_mg">Sigurado ka bang gusto mong magpasok ng isang may bulaklak na petsa?</string>
+    <string name="sure_want_to_enter_actual_harvest_mg">Sigurado ka bang gusto mong upang ipasok ang aktwal na petsa ng pag-aani?</string>
+    <string name="view_more_label">At makita</string>
+    <string name="now_not_allowed_to_add_activity_msg">Hindi mo na magkaroon ng pahintulot upang magdagdag ng aktibidad</string>
+    <string name="add_input_cost_label">Magdagdag ng input ng gastos</string>
+    <string name="you_can_add_upto_10_visit_in_offline">Maaari ka lamang magdagdag ng hanggang sa 10 mga pagbisita sa mga sakahan sa offline mode</string>
+    <string name="timeline_activity_label">timeline aktibidad</string>
+    <string name="no_data_found_for_activity_msg">Walang data na natagpuan para sa aktibidad</string>
+    <string name="error_occurred_msg">May pagkakamaling naganap.</string>
+    <string name="no_image_found_for_activity_msg">Walang larawan natagpuan para sa aktibidad</string>
+    <string name="soil_moisture">lupa kahalumigmigan</string>
+    <string name="material_label">materyal</string>
+    <string name="days_label">araw</string>
+    <string name="seed_provided_on_label">buto na ibinigay</string>
+    <string name="qty_seed_provided_label">Dami (binhi ibinigay)</string>
+    <string name="grade_d">grade d</string>
+    <string name="grade_c">grade c</string>
+    <string name="grade_b">grade B</string>
+    <string name="grade_a">grade A</string>
+    <string name="farmer_not_allowed_to_add_area_msg">Magsasaka hindi pinahihintulutang magdagdag ng field</string>
+    <string name="details_label">paglalarawan</string>
+    <string name="sample_label">sample</string>
+    <string name="sample_data_stored_msg">Halimbawang data ay matagumpay na nakolekta</string>
+    <string name="weight_label">timbang</string>
+    <string name="kg_label">kilo</string>
+    <string name="total_expenses_label">kabuuang gastos</string>
+    <string name="monthly_expenses_expense">Buwanang gastos</string>
+    <string name="remove_label">remove</string>
+    <string name="calendar_activity_details_label">Calendar Activity Paglalarawan</string>
+    <string name="farmer_cost_title">Farmer cost</string>
+    <string name="fail_to_load_cost_msg">Nabigong i-load ang data ng gastos, pakisubukang muli sa ibang pagkakataon</string>
+    <string name="input_cost_and_resource_title">Input mga gastos at mga mapagkukunan ay ginagamit</string>
+    <string name="enter_expense_ammount_msg">Mangyaring ipasok ang halaga na ginastos</string>
+    <string name="enter_date_of_expense_msg">Pakilagay ang mga petsa ng paggasta</string>
+    <string name="enter_expense_reson_msg">Pakilagay ang mga dahilan para sa gastos</string>
+    <string name="cost_added_sussessful_msg">Farmer cost matagumpay na naidagdag</string>
+    <string name="failed_to_add_farmer_expense">Nabigong idagdag ang gastos, pakisubukang muli sa ibang pagkakataon</string>
+    <string name="select_cost_type_promt">Pumili ng input type cost</string>
+    <string name="select_resource_type_prompt">Pumili ng uri ng mapagkukunan</string>
+    <string name="other_labe">iba</string>
+    <string name="select_cost_type_msg">Mangyaring pumili ng anumang uri ng cost</string>
+    <string name="enter_cost_ammount_msg">Mangyaring ipasok ang halaga ng gastos</string>
+    <string name="enter_cost_date_msg">Mangyaring magpasok ng isang cost date</string>
+    <string name="enter_expense_type_msg">Mangyaring ipasok ang uri ng paggasta</string>
+    <string name="select_resource_type_msg">Mangyaring piliin ang anumang uri ng mapagkukunan</string>
+    <string name="please_enter_resource_qty_msg">Mangyaring ipasok ang pagproseso ng dami</string>
+    <string name="enter_resource_name_msg">Pakipasok ang pangalan ng mapagkukunan</string>
+    <string name="enter_resource_unit_msg">Pakipasok ang resource unit</string>
+    <string name="select_date_msg">Piliin ang anumang petsa</string>
+    <string name="select_resource_use_date_msg">Pakilagay ang mga mapagkukunan na ginamit date</string>
+    <string name="data_submit_success_msg">Data Isinumite Matagumpay</string>
+    <string name="failed_to_submit_resource_and_cost_msg">Nabigong magsumite ng input ng gastos at mga mapagkukunan ng data, pakisubukang muli sa ibang pagkakataon</string>
+    <string name="need_to_fill_input_or_resorce_msg">Kailangan mong input ng gastos na form o mapagkukunan na ginagamit form na ito upang isumite ang</string>
+    <string name="enable_location_msg">Mangyaring paganahin ang iyong mga serbisyo sa lokasyon</string>
+    <string name="no_far_found_near_you">Walang mga patlang na malapit sa iyo</string>
+    <string name="input_cost_label">input cost</string>
+    <string name="farmer_details_label">Mga Detalye magsasaka</string>
+    <string name="farm_details_label">Paglalarawan ng sakahan</string>
+    <string name="uploaded_images_label">Mga na-upload Images</string>
+    <string name="expense_remove_success_msg">Gastos matagumpay na naalis</string>
+    <string name="expense_remove_fail_msg">Nabigong malinaw na paggasta</string>
+    <string name="confirm_remove_ecpense_msg">Sigurado ka bang alisin ang gastos?</string>
+
+    <string name="enter_health_card_number_msg">Mangyaring ipasok ang numero ng lupa health card</string>
+    <string name="enter_health_card_validity_date_start_msg">Mangyaring ipasok ang card bisa petsa ng pagsisimula</string>
+    <string name="enter_health_card_validity_date_end_msg">Pakipasok ang huling petsa ng pagkabisa ng card</string>
+    <string name="add_atleast_one_param_health_card">Mangyaring magdagdag ng hindi bababa sa isang parameter</string>
+    <string name="required_label">Kailangan</string>
+    <string name="capure_1_image_msg">Mangyaring kumuha unang imahe</string>
+    <string name="capure_2_image_msg">Mangyaring kumuha pangalawang larawan</string>
+    <string name="capure_3_image_msg">Mangyaring kumuha pangatlong larawan</string>
+    <string name="activity_added_success_msg">dynamic</string>
+    <string name="enter_health_card_sample_number_msg">Pakipasok ang lupa sample number</string>
+    <string name="enter_health_card_sample_collect_date_msg">Pakipasok ang sample date koleksyon</string>
+    <string name="card_please_enter_value_msg">Maglagay ng value</string>
+    <string name="card_please_enter_unit_msg">Mangyaring ipasok ang yunit</string>
+    <string name="enter_crop_id_msg">Mangyaring ipasok ang porma id</string>
+    <string name="select_crop_for_farm_msg">Piliin ang crop para sa mga sakahan</string>
+    <string name="select_crop_rompt">Pumili ng crop</string>
+    <string name="soil_health_card_no_label">Soil Health Card no.</string>
+    <string name="health_card_no_hint">* Health card no.</string>
+    <string name="validity_label">katotohanan</string>
+    <string name="from_date_hint">mula sa *</string>
+    <string name="to_date_hint">* hanggang</string>
+    <string name="parameters_label">parametro</string>
+    <string name="soil_sample_details_label">Soil Sample Paglalarawan</string>
+    <string name="soil_sample_number_hint">* Soil Sample Numero</string>
+    <string name="sample_collected_on_hint">* Sample date koleksyon</string>
+    <string name="mobile_number_not_availbale_msg">Mobile number hindi magagamit</string>
+    <string name="arrow_symbol">\ u2BC8</string>
+    <string name="sowing_date_not_available_label">Paghahasik date hindi magagamit</string>
+    <string name="sure_want_to_enter_sowing_date_mg">Sigurado ka bang gusto mong ipasok ang petsa ng paghahasik?</string>
+    <string name="add_sowing_date_msg">Paghahasik petsa ay hindi magagamit, mangyaring idagdag ang petsa paghahasik</string>
+    <string name="sowing_date_updated_success_msg">Seeding Matagumpay na petsa</string>
+    <string name="soil_health_card_label">Lupa health card</string>
+    <string name="no_soil_health_card_data_added_yet_msg">Walang idinagdag na lupa data sa kalusugan card pa!</string>
+    <string name="add_new_sample_health_card_label">Magdagdag ng bagong sample</string>
+    <string name="soil_health_card_seen_and_addded_in_online_mode_msg">Sa kasalukuyan data lupa health card ay hindi maaaring tiningnan / idinagdag sa online mode</string>
+    <string name="no_parameter_values_found_for_adding_soil_health_card">Walang mga parameter lupa health card ang nahanap, mangyaring makipag-ugnayan sa iyong kumpanya upang idagdag ang parameter</string>
+    <string name="health_card_added_success_msg">Soil Health Card matagumpay na naidagdag</string>
+    <string name="laboratory_name">lab pangalan</string>
+    <string name="select_parameter_prompt">Pumili ng parameter</string>
+    <string name="test_value_hint">* Test halaga</string>
+    <string name="unit_hint_star">* Unit</string>
+    <string name="add_health_card_title">Add health card</string>
+    <string name="rainfall_label">ulan</string>
+    <string name="mm_unit">mm</string>
+    <string name="farm_coordinates_not_availabe_showing_weather_data_of_your_current_location">Farm coordinates ay hindi magagamit, na nagpapakita ng data ng panahon para sa iyong kasalukuyang lokasyon</string>
+    <string name="showing_weather_data_of_your_farm_location">Ipinapakita data ng panahon para sa lokasyon farm</string>
+
+
+    <string name="please_zoom_map_msg_easy_mode">Mangyaring mag-zoom ang mapa at i-tap muli upang masukat lugar</string>
+    <string name="try_again_msg">subukan muli</string>
+    <string name="failed_to_measure_area_msg">Nabigong upang masukat lugar</string>
+    <string name="enter_laboratory_name_msg">Mangyaring ipasok ang lab Pangalan</string>
+    <string name="resources_used_label">Ginamit na mga mapagkukunan</string>
+    <string name="sample_number_label">sample Numero</string>
+    <string name="sample_collected_on_label">Sample Nakolektang On</string>
+    <string name="input_cost_type_label">Input Uri ng Gastos</string>
+    <string name="added_by_label">Idinagdag ni</string>
+    <string name="pick_expense_date_hint">Pumili Gastos Petsa</string>
+    <string name="pick_used_date_hint">Pumili Ginamit Date</string>
+    <string name="expense_date_label">gastos Petsa</string>
+    <string name="resource_used_date_label">Ang mapagkukunan Ginamit Date</string>
+    <string name="resource_type_label">Resource type</string>
+    <string name="filter_by_label">Filter Sa pamamagitan ng</string>
+    <string name="harvest_label">pag-aani</string>
+    <string name="weather_data_not_available_right_now_msg">data ng panahon ay hindi magagamit sa ngayon.</string>
+    <string name="plant_population_label">Plant Populasyon</string>
+    <string name="input_cost_and_resource_label">Input Gastos At Resource</string>
+    <string name="already_added_visit_for_today">Pagbisita Naidagdag para sa araw na ito.</string>
+    <string name="please_enter_seed_lot_number_label">Pakipasok ang binhi lot number</string>
+    <string name="pease_enter_dispached_area_label">Pakipasok ang despatsado lugar</string>
+    <string name="please_enter_quantity_msg">Pakipasok ang dami</string>
+    <string name="please_enter_date_label">Pakipasok ang petsa</string>
+    <string name="failed_to_add_seed_issue_details_msg">Nabigong magdagdag ng mga detalye binhi isyu</string>
+    <string name="seed_added_successful_msg">mga detalye Seed isyu matagumpay na naidagdag</string>
+    <string name="seed_quantity_label">buto Dami</string>
+    <string name="seed_issue_label">buto Issue</string>
+    <string name="seed_issue_details_label">Mga Detalye Seed Issue</string>
+    #VALUE!
+    <string name="plsease_select_atleast_one_farm">Mangyaring magdagdag ng di bababa sa isang sakahan</string>
+    <string name="please_select_a_farmer_msg">Mangyaring piliin ang magsasaka.</string>
+    <string name="please_select_a_cluser_msg">Pakipili ang isang kumpol.</string>
+    <string name="click_to_add_farm_msg">Magsasaka ay dapat magkaroon ng hindi bababa sa isang bukid. Mangyaring i-click upang magdagdag ng farm.</string>
+    <string name="enter_farmer_contact_number_msg">Pakipasok ang farmer numero ng contact.</string>
+    <string name="enter_farmer_name_msg">Pakipasok ang pangalan ng magsasaka.</string>
+    <string name="select_cluster_label">Pumili ng Cluster</string>
+    <string name="please_enter_password_msg">Mangyaring ipasok ang password</string>
+    <string name="satelite_view_label">Satelite View</string>
+    <string name="average_value_label">karaniwan</string>
+    <string name="no_cluster_found_to_add_cluster">Walang cluster upang magdagdag ng bukid, Mangyaring pumunta sa web sa pag-login upang magdagdag ng cluster.</string>
+    <string name="invalid_ifsc_code_msg">Di-wastong IFSC code</string>
+    <string name="please_enter_account_number">Mangyaring ipasok ang numero ng account</string>
+    <string name="please_enter_account_holder_name">Mangyaring ipasok ang account name holder</string>
+    <string name="invalid_mobile_number_msg">Di-wastong numero ng mobile</string>
+    <string name="invalid_aadhar_number_msg">Di-wastong numero Aadhar</string>
+    <string name="no_data_available_msg">Walang available na data.</string>
+    <string name="loss_date_label">Petsa pagkawala</string>
+    <string name="addfarm_tour_farmer_sel_title">magsasaka ang Pinili</string>
+    <string name="addfarm_tour_farmer_sel_content">Piliin Farmer mula sa dropdown na listahan</string>
+    <string name="addfarm_tour_farmer_farmid_content">Ipasok farm id</string>
+    <string name="addfarm_tour_farmer_farmarea_content">Ipasok ang farm na lugar</string>
+    <string name="addfarm_tour_farmer_selcrop_content">Piliin ang pangalan ng crop</string>
+    <string name="addfarm_tour_farmer_selseason_content">Piliin ang i-crop ang season</string>
+    <string name="addfarm_tour_farmer_addmore_farm_content">Maaari kang magdagdag ng maramihang mga sakahan</string>
+    <string name="crop_track_label">I-crop ang Track</string>
+    <string name="invalid_qr_code_msg">Di-wastong QR code</string>
+    <string name="scan_label">Scan</string>
+    <string name="assign_crop_cycle">Magtalaga ng ikot ng crop</string>
+    <string name="select_crop_cycle_label">Piliin ang I-crop Cycle</string>
+    <string name="cycle_name_label">Ikot Pangalan</string>
+    <string name="crop_name">I-crop Pangalan</string>
+    <string name="growing_season">lumalagong season</string>
+    <string name="growing_region">lumalagong rehiyon</string>
+    <string name="confirmation">pagpapatibay</string>
+    <string name="sure_want_to_add_crop_cycle">Sigurado ka bang gusto mong italaga ito crop cycle sa sakahan?</string>
+    <string name="or_fingerprint_login">O kaya fingerprint sa pag-login</string>
+    <string name="date_of_birth_label">Araw ng kapanganakan</string>
+    <string name="cast_category">Cast / Kategorya</string>
+    <string name="estimated_consumer_income">Tinatayang Consumer Kita</string>
+    <string name="male_label">lalaki</string>
+    <string name="female_label">babae</string>
+    <string name="back_label">likod</string>
+    <string name="seed_label">magbigay ng binhi</string>
+    <string name="expected_label">inaasahang</string>
+    <string name="actual_label">tunay</string>
+    <string name="company_label">kompanya</string>
+    <string name="breed">mag-anak</string>
+    <string name="fertilizer_ors_organic">Fertilizers / Organic</string>
+    <string name="price_label">presyo</string>
+    <string name="how_much">Magkano</string>
+    <string name="pesticides">pesticides</string>
+    <string name="type">uri</string>
+    <string name="workers">manggagawa</string>
+    <string name="work_where">work kung saan</string>
+    <string name="tractor">traktor</string>
+    <string name="from_where">Mula saan</string>
+    <string name="how_many_hours">Ilang oras</string>
+    <string name="expenses_incurred">gastos na natamo</string>
+    <string name="harvester">taga-ani</string>
+    <string name="pestilence">salot</string>
+    <string name="measures">hakbang</string>
+    <string name="product_sales">Produkto / Sales</string>
+    <string name="dimensions_unit">Mga Dimensyon / unit</string>
+    <string name="buyer">mamimili</string>
+    <string name="add_more_crop_label">Magdagdag ng higit pang mga detalye crop</string>
+    <string name="profit_loss">Tubo / pagkawala</string>
+    <string name="satisafactory_1_to_2">Kailangang makatapos ng 1 hanggang 2</string>
+    <string name="add_crop_details">Magdagdag ng mga detalye crop</string>
+    <string name="shareholder">may sapi</string>
+    <string name="is_shareholder">ay shareholder</string>
+    <string name="how_many_certificate">Gaano karaming mga certificate</string>
+    <string name="how_much_value">Magkano ang halaga</string>
+    <string name="is_there_a_share_certificate">Mayroon bang isang share certificate?</string>
+    <string name="cows_cattle_cows_buffalo">Baka / Mga baka Baka / Buffalo</string>
+    <string name="count">bilangin</string>
+    <string name="daily_milk_sale_in_litter">Araw-araw Milk Sale (sa Litro)</string>
+    <string name="sale_price_approx">Presyo ng pagbebenta (Approx)</string>
+    <string name="if_there_are_chickens_goats_or_other_animals">Kung may mga manok, kambing, o iba pang mga hayop?</string>
+    <string name="is_using_smart_phone">Ay gumagamit ng smart phone?</string>
+    <string name="permission_necessary">pahintulot na kinakailangan</string>
+    <string name="external_storage_permission_is_necessary">Panlabas na pahintulot imbakan ay kinakailangan</string>
+    <string name="is_owned">ay pag-aari</string>
+    <string name="fpo_msg_if_season_past">Sa alin sa mga sumusunod na lugar, ikaw ay may natanggap na tulong sa pamamagitan ng FPO?</string>
+    <string name="fpo_msg_if_season_present">Sa mga darating na panahon, para sa alin sa mga sumusunod na proseso mo kailangan ng tulong sa pamamagitan ng FPO?</string>
+    <string name="app_tour">app Tour</string>
+    <string name="pan">PAN</string>
+    <string name="hide_details_label">Itago ang Mga Detalye</string>
+    <string name="select_farmer">Pumili ng Farmer</string>
+    <string name="system_auto_detect_mode">System Awtomatikong Hanapin Mode</string>
+    <string name="contact_us_label">Makipag-ugnayan sa amin</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="add_query">Magdagdag ng Query</string>
+    <string name="enter_query">entery Query</string>
+    <string name="query_registered_successfully">Ikaw query ay matagumpay na nakarehistro</string>
+    <string name="failed_to_submit_query">Nabigong isumite ang iyong query</string>
+    <string name="select_query_type">Piliin ang Paksa</string>
+    <string name="please_select_subject">Mangyaring piliin ang paksa</string>
+    <string name="please_enter_query">mangyaring ilagay ang query</string>
+    <string name="query">Tanong</string>
+    <string name="please_select_at_least_1_farm_to_go_offline">Mangyaring pumili ng hindi bababa sa 1 farm upang mag-offline</string>
+    <string name="you_can_only_take_10_farms_in_offline_mode_at_a_time">Maaari mo lamang tumagal ng 10 mga sakahan sa offline mode sa isang pagkakataon</string>
+    <string name="unauthorized_access">Di-awtorisadong pag-access, Mangyaring mag-login muli</string>
+    <string name="authorization_expired">Authorization token nag-expire, Mangyaring mag-login muli</string>
+    <string name="change_company">Baguhin kumpanya</string>
+    <string name="please_select_a_company">Mangyaring pumili ng isang kumpanya</string>
+    <string name="select_company">Pumili ng kumpanya</string>
+    <string name="no_other_company_available">May ay walang iba pang mga kumpanya na magagamit para sa iyo</string>
+    <string name="switch_account">Lumipat ng Account</string>
+    <string name="verify_farm_area_label">I-verify ang farm na lugar</string>
+    <string name="pin_drop_mode">Pin Drop Mode</string>
+    <string name="walk_around_mode">Maglakad Around Mode</string>
+    <string name="easy_mode">Easy Mode</string>
+    <string name="clear_area_to_add_point">Mangyaring i-clear na lugar at magdagdag ng point</string>
+    <string name="title_activity_maps_new">mapa</string>
+    <string name="invalid_point_marked_msg">Di-wastong point napili, Mangyaring markahan ang isang may-bisang point</string>
+    <string name="personal_info">Impormasyon sa Personal na Magsasaka</string>
+    <string name="farmer_social_info">Impormasyon sa Araling Panlipunan</string>
+    <string name="civil_status">Katayuan ng Sibil</string>
+    <string name="spouse">Pangalan ng Asawa</string>
+    <string name="benefeciary">Makikinabang</string>
+    <string name="identity">Pagkakakilanlan</string>
+    <string name="bank">bangko</string>
+    <string name="upi">UPI</string>
+    <string name="select_civil_status">Piliin ang Katayuan ng Sibil</string>
+    <string name="select_land_category">Piliin ang Land Land</string>
+    <string name="select_cropping_pattern">Piliin ang Pag-crop ng pattern</string>
+    <string name="select_planting_method">Piliin ang Paraan ng Pagtatanim</string>
+    <string name="date_of_transplanting">Petsa ng paglipat</string>
+    <string name="swift_code">Swift Code</string>
+    <string name="farmer_contact_information">Impormasyon sa Pakikipag-ugnay sa Magsasaka</string>
+    <string name="farmer_family_information">Impormasyon sa Pamilya ng Magsasaka</string>
+    <string name="farmer_family_members">Bilang ng Mga Miyembro ng Pamilya</string>
+    <string name="adults_count">Bilang ng Pang-adulto</string>
+    <string name="kids_count">Bilangin ng Mga Bata</string>
+    <string name="dependent_count">Umaasa Bilang</string>
+    <string name="farmer_financial_information">Impormasyon sa Pananalapi ng Magsasaka</string>
+    <string name="select_state">piliin ang lalawigan</string>
+    <string name="select_district">Piliin ang Distrito</string>
+    <string name="data_sync_success">Matagumpay na na-synchronize ang data</string>
+    <string name="refresh">Data ng Refresh</string>
+</resources>

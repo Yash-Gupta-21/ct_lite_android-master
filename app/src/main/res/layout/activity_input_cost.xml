@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubmitInputCost.InputCostActivity">
+
+
+    <include
+        android:id="@+id/toolbar_actionbar_add_input_cost"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:paddingBottom="@dimen/_50sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_actionbar_add_input_cost">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--OLD-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Expense "
+                        android:textColor="@color/darkgreen"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/expenseLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/amountLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Amount"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <EditText
+                            android:id="@+id/amountEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/amountLabel"
+                            android:drawableLeft="@drawable/ic_indian_rupee"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:hint="Enter Amount"
+                            android:inputType="number"
+                            android:padding="@dimen/_8sdp"
+                            android:textSize="@dimen/_13ssp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Expense Date "
+                        android:textColor="@color/darkgreen"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/dateLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/dateLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Date: "
+                            android:textSize="@dimen/_13ssp" />
+
+                        <TextView
+                            android:id="@+id/dateTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/dateLabel"
+                            android:hint="DD/MM/YYYY"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_13ssp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Particular "
+                        android:textColor="@color/darkgreen"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/commentEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/large_edittext_background"
+                        android:gravity="top"
+                        android:hint="Comments"
+                        android:minLines="5"
+                        android:padding="@dimen/_5sdp"
+                        android:textSize="@dimen/_13ssp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/submitCostInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/images_to_upload_lieanr_lay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:background="@color/yellow4"
+                    android:gravity="center"
+                    android:padding="@dimen/_9sdp"
+                    android:text="@string/submit_label"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="@dimen/_15ssp" />
+
+            </LinearLayout>
+
+
+            <!--NEW UNDER PRODUCTION-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--INPUT COST-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/li8_new_theme_back"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/rel_standing_crop_inst_title_timeline_visit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/input_cost_head_label"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:elevation="@dimen/_5sdp"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="horizontal">
+
+
+                                <Spinner
+                                    android:layout_toRightOf="@+id/input_type_label"
+                                    android:id="@+id/spinner_input_cost"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="@dimen/_5sdp"
+                                    android:layout_weight=".5"
+                                    android:prompt="@string/inm_prompt" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:visibility="gone"
+                                    android:id="@+id/et_other_cost_type"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".5"
+                                    android:hint="@string/expense_type_hint"
+                                    android:inputType="textAutoComplete" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/et_input_cost_amount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/amount_hint"
+                                    android:inputType="numberDecimal" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:id="@+id/dateLayoutNew"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:drawablePadding="@dimen/_5sdp"
+                                        android:drawableLeft="@drawable/ic_date_range_grey_24dp"
+                                        android:id="@+id/dateTvNew"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/pick_expense_date_hint"
+                                        android:padding="@dimen/_5sdp"
+                                        android:textSize="@dimen/_13ssp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recycler_amount_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+
+                            <ImageView
+                                android:id="@+id/addMoreAmountImg"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_gravity="end"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_add_circle_outline_dark_grey_black_24dp" />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <!--RESOURCE COST-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/li8_new_theme_back"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/resource_cost_head_label"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:elevation="@dimen/_5sdp"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="vertical">
+                                <Spinner
+                                    android:layout_toRightOf="@+id/input_type_label"
+                                    android:id="@+id/spinner_resources_cost"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="@dimen/_5sdp"
+                                    android:layout_weight=".5"
+                                    android:prompt="@string/inm_prompt" />
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_gravity="end"
+                                    android:id="@+id/unit_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:visibility="gone"
+                                    android:id="@+id/et_other_resource_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/resource_name_hint"
+                                    android:inputType="textAutoComplete" />
+
+                                <EditText
+                                    android:visibility="gone"
+                                    android:id="@+id/et_other_resource_unit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/unit_dropdown"
+                                    android:inputType="textAutoComplete" />
+
+                                <EditText
+
+                                    android:id="@+id/et_resource_qty"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/quantity_hint"
+                                    android:inputType="numberDecimal" />
+
+                            </LinearLayout>
+
+
+
+                            <RelativeLayout
+                                android:id="@+id/dateLayoutResource"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:drawablePadding="@dimen/_5sdp"
+                                    android:drawableLeft="@drawable/ic_date_range_grey_24dp"
+                                    android:id="@+id/dateTvResource"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/pick_used_date_hint"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textSize="@dimen/_13ssp" />
+
+                            </RelativeLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recycler_resource_amount_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+
+                            <ImageView
+                                android:id="@+id/addMoreResourceAmountImg"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_gravity="end"
+                                android:padding="@dimen/_5sdp"
+                                app:srcCompat="@drawable/ic_add_circle_outline_dark_grey_black_24dp" />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/submitCostInputN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/images_to_upload_lieanr_lay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:background="@color/button_background_color"
+                    android:gravity="center"
+                    android:padding="@dimen/_9sdp"
+                    android:text="@string/submit_label"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/_15ssp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/connectivityLine"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <include
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adLayout"
+        layout="@layout/ad_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>

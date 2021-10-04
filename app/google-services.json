@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "206871851766",
+    "project_id": "croptrails-lite",
+    "storage_bucket": "croptrails-lite.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206871851766:android:95cab71198458ff42a72d7",
+        "android_client_info": {
+          "package_name": "com.i9930.croptrails"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206871851766-q934f3nj4eav5carv1ms8c1ffo0g0160.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i9930.croptrails",
+            "certificate_hash": "14d55e7bbb2a9681f36d5c89fbc87c32cf91566f"
+          }
+        },
+        {
+          "client_id": "206871851766-lcle915blijfpr4sj7krc7tmq6v9eiqn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhFycyzwTUFvXrYUx54So9HNYAE872KiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206871851766-lcle915blijfpr4sj7krc7tmq6v9eiqn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
